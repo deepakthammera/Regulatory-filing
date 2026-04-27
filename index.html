@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Regulatory Affairs Console — Personal Training Platform</title>
+<title>Regulatory Terminator — Personal Training Platform</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Newsreader:ital,wght@0,300;0,400;0,500;0,600;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -318,6 +318,57 @@
   .designation-card .grid li{margin-bottom:0.15rem;color:var(--ink-soft)}
   .designation-card .citation{font-family:"JetBrains Mono",monospace;font-size:0.72rem;color:var(--gold);margin-top:0.7rem;padding-top:0.5rem;border-top:1px dotted var(--rule-soft)}
 
+  /* PHARMACOVIGILANCE */
+  .pv-tabs{display:flex;flex-wrap:wrap;gap:0;border-bottom:1px solid var(--ink);margin-bottom:1.6rem}
+  .pv-tab{font-family:"Cormorant Garamond",serif;text-transform:uppercase;letter-spacing:0.16em;font-size:0.74rem;font-weight:600;color:var(--muted);background:transparent;border:none;padding:0.7rem 1rem;cursor:pointer;border-bottom:2px solid transparent;margin-bottom:-1px;transition:all 0.15s}
+  .pv-tab:hover{color:var(--ink)}
+  .pv-tab.active{color:var(--burgundy);border-bottom-color:var(--burgundy)}
+  .pv-block{margin-bottom:2rem}
+  .pv-block-head{display:flex;align-items:baseline;gap:0.8rem;margin-bottom:0.5rem;border-bottom:1px solid var(--rule);padding-bottom:0.4rem}
+  .pv-block-head h2{font-family:"Cormorant Garamond",serif;font-size:1.5rem;font-weight:500;line-height:1.1}
+  .pv-block-head .num{color:var(--burgundy);font-style:italic;font-size:0.85rem;font-family:"Cormorant Garamond",serif}
+  .pv-block-head .cite{font-family:"JetBrains Mono",monospace;font-size:0.7rem;color:var(--gold);margin-left:auto}
+  .pv-block .lede{font-size:0.93rem;color:var(--ink-soft);line-height:1.6;margin-bottom:1rem;max-width:78ch}
+  .pv-block .body{font-size:0.92rem;line-height:1.6;color:var(--ink-soft)}
+  .pv-block .body p{margin-bottom:0.7rem}
+  .pv-block .body strong{color:var(--ink);font-weight:500}
+  .pv-block .body ul{margin:0.4rem 0 0.8rem 1.4rem}
+  .pv-block .body li{margin-bottom:0.3rem}
+  .pv-block .body ol{margin:0.4rem 0 0.8rem 1.4rem}
+  .pv-table{width:100%;border-collapse:collapse;background:var(--paper);border:1px solid var(--rule);font-size:0.86rem;margin:0.5rem 0 1.2rem}
+  .pv-table th{padding:0.55rem 0.7rem;text-align:left;font-family:"Cormorant Garamond",serif;text-transform:uppercase;letter-spacing:0.1em;font-size:0.7rem;font-weight:600;border-bottom:1px solid var(--ink);background:var(--paper-2);vertical-align:bottom}
+  .pv-table td{padding:0.55rem 0.7rem;border-bottom:1px solid var(--rule-soft);vertical-align:top;line-height:1.5}
+  .pv-table tr:last-child td{border-bottom:none}
+  .pv-table .cite{font-family:"JetBrains Mono",monospace;font-size:0.72rem;color:var(--gold)}
+  .pv-table .pname{font-family:"Cormorant Garamond",serif;font-style:italic;font-weight:500;color:var(--burgundy)}
+  .pv-formula{background:var(--paper-2);border:1px solid var(--rule);border-left:3px solid var(--burgundy);padding:1rem 1.4rem;margin:0.7rem 0 1rem;font-family:"JetBrains Mono",monospace;font-size:0.85rem;line-height:1.7;overflow-x:auto}
+  .pv-formula .label{font-family:"Cormorant Garamond",serif;text-transform:uppercase;letter-spacing:0.16em;font-size:0.72rem;color:var(--burgundy);font-weight:600;margin-bottom:0.4rem;letter-spacing:0.18em}
+  .pv-callout{background:var(--paper-2);border-left:3px solid var(--gold);padding:0.8rem 1.1rem;margin:0.7rem 0 1rem;font-size:0.88rem;line-height:1.55}
+  .pv-callout .lbl{font-family:"Cormorant Garamond",serif;text-transform:uppercase;letter-spacing:0.16em;font-size:0.7rem;color:var(--gold);font-weight:600;margin-bottom:0.3rem}
+  .pv-case{background:var(--paper);border:1px solid var(--rule);padding:1.4rem 1.6rem;margin-top:1rem}
+  .pv-case-head{display:flex;justify-content:space-between;align-items:baseline;border-bottom:1px solid var(--ink);padding-bottom:0.5rem;margin-bottom:1rem;gap:1rem;flex-wrap:wrap}
+  .pv-case-head h3{font-family:"Cormorant Garamond",serif;font-size:1.4rem;font-weight:500}
+  .pv-case-head .tag{font-family:"JetBrains Mono",monospace;font-size:0.72rem;text-transform:uppercase;letter-spacing:0.06em;padding:0.2rem 0.55rem;border:1px solid var(--burgundy);color:var(--burgundy);border-radius:2px}
+  .pv-case .meta{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border:1px solid var(--rule);background:var(--paper-2);margin-bottom:1rem}
+  .pv-case .meta>div{padding:0.7rem 0.9rem;border-right:1px solid var(--rule)}
+  .pv-case .meta>div:last-child{border-right:none}
+  .pv-case .meta .lbl{font-family:"Cormorant Garamond",serif;text-transform:uppercase;letter-spacing:0.13em;font-size:0.66rem;color:var(--muted);font-weight:600}
+  .pv-case .meta .val{font-family:"Cormorant Garamond",serif;font-size:1rem;font-weight:500;margin-top:0.18rem}
+  .pv-flow{display:grid;grid-template-columns:repeat(6,1fr);gap:0.5rem;margin:1rem 0}
+  .pv-flow .step{background:var(--paper);border:1px solid var(--rule);padding:0.8rem 0.9rem;position:relative}
+  .pv-flow .step .n{font-family:"JetBrains Mono",monospace;font-size:0.7rem;color:var(--gold);font-weight:600}
+  .pv-flow .step .t{font-family:"Cormorant Garamond",serif;font-size:1.05rem;font-weight:500;margin-top:0.2rem;line-height:1.15}
+  .pv-flow .step .d{font-size:0.78rem;color:var(--muted);margin-top:0.3rem;line-height:1.4}
+
+  @media(max-width:1024px){
+    .pv-flow{grid-template-columns:1fr 1fr}
+    .pv-case .meta{grid-template-columns:1fr 1fr}
+  }
+  @media(max-width:640px){
+    .pv-flow{grid-template-columns:1fr}
+    .pv-case .meta{grid-template-columns:1fr}
+  }
+
   /* MEDICAL DEVICES */
   .device-section{margin-bottom:2rem}
   .device-section-title{font-family:"Cormorant Garamond",serif;font-size:1.5rem;font-weight:500;margin-bottom:0.4rem;display:flex;align-items:baseline;gap:0.8rem}
@@ -458,17 +509,18 @@
 <!-- LOGIN -->
 <section id="login-screen">
   <div class="login-left">
-    <div class="brand-mark"><span class="num">§</span><span class="name">Regulatory Affairs Console</span></div>
+    <div class="brand-mark"><span class="num">§</span><span class="name">Regulatory Terminator</span></div>
     <div>
       <p class="login-quote">A submission is only as <span>defensible</span> as the documentation that anchors it.</p>
       <div class="login-pillars">
         <div><span class="num">i.</span><span>IND · NDA · ANDA · 505(b)(2)</span></div>
-        <div><span class="num">ii.</span><span>BLA 351(a) · BLA 351(k)</span></div>
-        <div><span class="num">iii.</span><span>DMF · Pre-IND · Designations</span></div>
-        <div><span class="num">iv.</span><span>Small Molecule · Biologic · Biosimilar</span></div>
+        <div><span class="num">ii.</span><span>BLA 351(a) · BLA 351(k) · DMF</span></div>
+        <div><span class="num">iii.</span><span>Devices · 510(k) · De Novo · PMA · HDE</span></div>
+        <div><span class="num">iv.</span><span>Combination Products · Designations</span></div>
+        <div><span class="num">v.</span><span>Pharmacovigilance · Materovigilance · ICSR · PBRER · DSUR</span></div>
       </div>
     </div>
-    <div class="login-foot">Personal Training Environment · Not for Production Use · v2.0</div>
+    <div class="login-foot">Personal Training Environment · Not for Production Use · v2.1</div>
   </div>
   <div class="login-right">
     <div class="login-form">
@@ -489,8 +541,8 @@
 <div id="app">
   <aside class="sidebar">
     <div class="sidebar-brand">
-      <div><span class="num">§</span> <span class="name">Reg. Console</span></div>
-      <span class="sub">Drug · Biologic · Biosimilar</span>
+      <div><span class="num">§</span> <span class="name">Regulatory Terminator</span></div>
+      <span class="sub">Drug · Biologic · Device · PV</span>
     </div>
     <div class="nav-group">
       <div class="label">Workspace</div>
@@ -511,8 +563,9 @@
       <div class="nav-item" data-nav="checklist"><span class="ico">09</span><span>Submission Checklists</span></div>
       <div class="nav-item" data-nav="templates"><span class="ico">10</span><span>Document Templates</span></div>
       <div class="nav-item" data-nav="devices"><span class="ico">11</span><span>Medical Devices</span></div>
-      <div class="nav-item" data-nav="casestudies"><span class="ico">12</span><span>Case Studies</span></div>
-      <div class="nav-item" data-nav="glossary"><span class="ico">13</span><span>Glossary</span></div>
+      <div class="nav-item" data-nav="pharmacovigilance"><span class="ico">12</span><span>Pharmacovigilance</span></div>
+      <div class="nav-item" data-nav="casestudies"><span class="ico">13</span><span>Case Studies</span></div>
+      <div class="nav-item" data-nav="glossary"><span class="ico">14</span><span>Glossary</span></div>
     </div>
     <div class="sidebar-foot">
       <div class="user-pill">
@@ -730,6 +783,28 @@
         <p class="sub">FDA medical device regulatory pathways across risk classes, plus combination drug-device products. Click any topic to expand.</p>
       </div>
       <div id="devices-content"></div>
+    </section>
+
+    <section class="view" id="view-pharmacovigilance">
+      <div class="page-head">
+        <div class="eyebrow">Reference · Post-Market Safety</div>
+        <h1>Pharmacovigilance &amp; Materovigilance</h1>
+        <p class="sub">End-to-end safety surveillance across drugs, biologics, devices, and combination products. ICSRs, aggregate reports (DSUR · PBRER · PADER), signal detection, risk management, and regulatory inspections.</p>
+      </div>
+      <div class="pv-tabs" id="pv-tabs">
+        <button class="pv-tab active" data-pvtab="foundations">Foundations</button>
+        <button class="pv-tab" data-pvtab="ae">AEs &amp; Causality</button>
+        <button class="pv-tab" data-pvtab="icsr">ICSRs</button>
+        <button class="pv-tab" data-pvtab="aggregate">Aggregate Reports</button>
+        <button class="pv-tab" data-pvtab="signal">Signal &amp; Risk</button>
+        <button class="pv-tab" data-pvtab="device">Materovigilance</button>
+        <button class="pv-tab" data-pvtab="combo">Combination PV</button>
+        <button class="pv-tab" data-pvtab="workflow">Workflows</button>
+        <button class="pv-tab" data-pvtab="inspection">Inspections</button>
+        <button class="pv-tab" data-pvtab="global">Global Authorities</button>
+        <button class="pv-tab" data-pvtab="meddra">MedDRA</button>
+      </div>
+      <div id="pv-content"></div>
     </section>
 
     <section class="view" id="view-casestudies">
@@ -1050,6 +1125,8 @@ async function initApp(){
   safeRender('designations-content', ()=>renderDesignations(), 'Designations');
   safeRender('casestudy-list', ()=>renderCaseStudies(), 'Case Studies');
   safeRender('devices-content', ()=>renderDevices(), 'Medical Devices');
+  safeRender('pv-content', ()=>renderPharmacovigilance('foundations'), 'Pharmacovigilance');
+  setupPVTabs();
   setupTabs(); setupFilters(); setupSearch();
   document.getElementById('glossary-search').addEventListener('input', e=>renderGlossary(e.target.value));
 }
@@ -1088,6 +1165,7 @@ function navigate(view){
   if(view==='new')resetNewForm();
   if(view==='casestudies')safeRender('casestudy-list', ()=>renderCaseStudies(), 'Case Studies');
   if(view==='devices')safeRender('devices-content', ()=>renderDevices(), 'Medical Devices');
+  if(view==='pharmacovigilance')safeRender('pv-content', ()=>renderPharmacovigilance('foundations'), 'Pharmacovigilance');
 }
 
 /* ============ DASHBOARD ============ */
@@ -3779,6 +3857,906 @@ function renderDevices(){
   });
 }
 
+
+/* ============================================================
+   PHARMACOVIGILANCE — Comprehensive post-market safety reference
+   ============================================================ */
+const PV_CONTENT = {
+  foundations: `
+    <div class="pv-block">
+      <div class="pv-block-head"><span class="num">№ i</span><h2>What Pharmacovigilance Is &amp; Why It Exists</h2></div>
+      <p class="lede">Pharmacovigilance (PV) is the science and activity relating to the detection, assessment, understanding, and prevention of adverse effects or any other drug-related problem. The WHO definition extends to "any product-related problem." For devices, the analogous discipline is materovigilance (or device vigilance). Both exist because pre-market clinical trials, however well-powered, cannot detect rare adverse events, long-latency events, drug-drug interactions outside the studied population, or off-label safety patterns. Post-market is where the real-world safety profile emerges.</p>
+      <div class="body">
+        <p><strong>Why pharmacovigilance is required by law.</strong> Pre-market trials typically enroll 3,000–10,000 patients. Adverse events with incidence below ~1 in 1,000 generally cannot be detected. Post-market exposure quickly reaches millions, and the long tail of rare-but-serious events surfaces only then. Regulators codify PV obligations to ensure sponsors continue surveillance after approval.</p>
+
+        <h3 style="font-family:'Cormorant Garamond',serif;font-size:1.2rem;font-weight:500;margin:1rem 0 0.4rem">Key Regulatory Frameworks</h3>
+        <table class="pv-table">
+          <tr><th>Jurisdiction</th><th>Authority</th><th>Key Regulations &amp; Guidance</th></tr>
+          <tr><td><strong>United States</strong></td><td>FDA — CDER/CBER/CDRH</td><td>21 CFR 314.80 (post-marketing reporting for drugs); 21 CFR 314.81 (PADER, NDA periodic reports); 21 CFR 600.80 (biologics); 21 CFR 803 (devices, MDR); 21 CFR 4 Subpart B (combination products); FDAAA 2007 §901 (REMS)</td></tr>
+          <tr><td><strong>European Union</strong></td><td>EMA + National Competent Authorities</td><td>Regulation (EC) 726/2004; Directive 2001/83/EC; Good Pharmacovigilance Practices (GVP) Modules I–XVI; Regulation (EU) 2017/745 (MDR) Articles 87–92 vigilance; Regulation (EU) 2017/746 (IVDR)</td></tr>
+          <tr><td><strong>ICH</strong></td><td>International Council for Harmonisation</td><td>E2A Definitions/Reporting · E2B(R3) Electronic Transmission · E2C(R2) PBRER · E2D Post-Approval Safety · E2E Pharmacovigilance Planning · E2F DSUR · M1 MedDRA</td></tr>
+          <tr><td><strong>WHO</strong></td><td>WHO-UMC (Uppsala Monitoring Centre)</td><td>VigiBase global database; WHO-UMC causality categories; ATC classification</td></tr>
+          <tr><td><strong>UK</strong></td><td>MHRA</td><td>Yellow Card scheme; UK Statutory Instruments</td></tr>
+          <tr><td><strong>India</strong></td><td>CDSCO + IPC (PvPI)</td><td>Pharmacovigilance Programme of India; Materiovigilance Programme of India (MvPI)</td></tr>
+          <tr><td><strong>Japan</strong></td><td>PMDA</td><td>PMD Act; J-DSU; Re-examination requirements</td></tr>
+        </table>
+
+        <h3 style="font-family:'Cormorant Garamond',serif;font-size:1.2rem;font-weight:500;margin:1rem 0 0.4rem">The PV Lifecycle</h3>
+        <div class="pv-flow">
+          <div class="step"><div class="n">01</div><div class="t">Case intake</div><div class="d">Patients, HCPs, literature, social media, regulators, partners, clinical trials, registries</div></div>
+          <div class="step"><div class="n">02</div><div class="t">Triage &amp; data entry</div><div class="d">Validity check (4 minimum criteria), seriousness, expectedness, MedDRA coding</div></div>
+          <div class="step"><div class="n">03</div><div class="t">Causality &amp; narrative</div><div class="d">WHO-UMC or Naranjo, medical review, narrative writing</div></div>
+          <div class="step"><div class="n">04</div><div class="t">Submission</div><div class="d">E2B(R3) transmission to FAERS, EudraVigilance, eMDR, etc.</div></div>
+          <div class="step"><div class="n">05</div><div class="t">Aggregate &amp; signal</div><div class="d">DSUR, PBRER, signal detection (PRR, ROR, EBGM)</div></div>
+          <div class="step"><div class="n">06</div><div class="t">Risk action</div><div class="d">Label change, DHCP letter, REMS update, recall, withdrawal</div></div>
+        </div>
+
+        <h3 style="font-family:'Cormorant Garamond',serif;font-size:1.2rem;font-weight:500;margin:1rem 0 0.4rem">Sources of Safety Information</h3>
+        <ul>
+          <li><strong>Spontaneous reports</strong> — patients, HCPs, MedWatch (US), Yellow Card (UK), EudraVigilance (EU), PvPI (India)</li>
+          <li><strong>Clinical trials</strong> — IND safety reports (21 CFR 312.32) for SUSARs; aggregate via DSUR</li>
+          <li><strong>Solicited reports</strong> — patient support programs, post-marketing studies, registries (treated like spontaneous unless designated otherwise per ICH E2D)</li>
+          <li><strong>Scientific literature</strong> — Embase + MEDLINE searches at minimum weekly; EMA Medical Literature Monitoring service for selected substances</li>
+          <li><strong>Regulatory authorities</strong> — direct reports forwarded by FDA, EMA, MHRA, etc.</li>
+          <li><strong>Real-world data</strong> — FDA Sentinel, EMA DARWIN EU, Optum, claims databases, EHR-linked registries</li>
+          <li><strong>Social media &amp; digital</strong> — emerging source; treated as spontaneous if four minimum criteria are present</li>
+          <li><strong>Contractual partners</strong> — license partners, distributors, CMOs — Pharmacovigilance Agreements (PVAs / SDEAs) define exchange</li>
+        </ul>
+      </div>
+    </div>
+  `,
+
+  ae: `
+    <div class="pv-block">
+      <div class="pv-block-head"><span class="num">№ ii</span><h2>Adverse Events, Reactions &amp; Causality</h2><span class="cite">ICH E2A · ICH E2D</span></div>
+      <p class="lede">The terminology distinctions are not pedantic — they determine reporting timelines and which regulator must be notified. Misusing terms causes compliance failures that show up in inspections.</p>
+      <div class="body">
+        <h3 style="font-family:'Cormorant Garamond',serif;font-size:1.2rem;font-weight:500;margin:0.8rem 0 0.4rem">Core Definitions</h3>
+        <table class="pv-table">
+          <tr><th>Term</th><th>Definition (ICH E2A)</th><th>Causality Implied?</th></tr>
+          <tr><td><strong>Adverse Event (AE)</strong></td><td>Any untoward medical occurrence in a patient or clinical investigation subject administered a medicinal product, which does not necessarily have a causal relationship with this treatment.</td><td>No — temporal only</td></tr>
+          <tr><td><strong>Adverse Drug Reaction (ADR)</strong></td><td>A response to a medicinal product which is noxious and unintended. The phrase "response to a medicinal product" means that a causal relationship between a medicinal product and an adverse event is at least a reasonable possibility.</td><td>Yes — at least possible</td></tr>
+          <tr><td><strong>Serious Adverse Event (SAE)</strong></td><td>Any AE meeting any of the seriousness criteria below — regardless of causality.</td><td>Independent of causality</td></tr>
+          <tr><td><strong>Serious Adverse Drug Reaction (SADR)</strong></td><td>An ADR that meets seriousness criteria.</td><td>Yes</td></tr>
+          <tr><td><strong>Suspected Unexpected Serious Adverse Reaction (SUSAR)</strong></td><td>A serious ADR whose nature, severity, or outcome is NOT consistent with the applicable Reference Safety Information (Investigator's Brochure for IND; SmPC/USPI for marketed product).</td><td>Yes; expedited reporting</td></tr>
+          <tr><td><strong>Unexpected ADR</strong></td><td>An ADR not listed in the Reference Safety Information, or listed at a different specificity, severity, or frequency.</td><td>Yes; expectedness assessment</td></tr>
+          <tr><td><strong>Adverse Event of Special Interest (AESI)</strong></td><td>A noteworthy event for the particular product or class for which ongoing surveillance and rapid communication to the sponsor is appropriate.</td><td>Pre-defined</td></tr>
+        </table>
+
+        <h3 style="font-family:'Cormorant Garamond',serif;font-size:1.2rem;font-weight:500;margin:1rem 0 0.4rem">Seriousness Criteria — ICH E2A</h3>
+        <p>An AE is "serious" if it results in <strong>any one</strong> of the following outcomes (the "ICH-7"):</p>
+        <ol>
+          <li>Death</li>
+          <li>Life-threatening (immediate risk of death — not "could have been serious if more severe")</li>
+          <li>Inpatient hospitalization or prolongation of existing hospitalization</li>
+          <li>Persistent or significant disability or incapacity</li>
+          <li>Congenital anomaly or birth defect</li>
+          <li>A medically important event or reaction (judgment-based — e.g., DILI, neutropenic fever, requires intervention to prevent one of the above outcomes)</li>
+        </ol>
+        <p>Some lists treat "cancer" and "drug abuse / overdose" as separate categories. Either way, "medically important" is the catch-all and it is judgment-based.</p>
+
+        <div class="pv-callout">
+          <div class="lbl">Common pitfall</div>
+          "Severe" ≠ "Serious." A severe headache that does not require hospitalization or meet any other ICH-7 criterion is not a serious AE. A mild rash that requires hospitalization for monitoring (e.g., possible Stevens-Johnson) is serious. Severity describes intensity (mild/moderate/severe); seriousness is the regulatory category.
+        </div>
+
+        <h3 style="font-family:'Cormorant Garamond',serif;font-size:1.2rem;font-weight:500;margin:1rem 0 0.4rem">Causality Assessment — WHO-UMC Criteria</h3>
+        <table class="pv-table">
+          <tr><th>Category</th><th>Criteria</th></tr>
+          <tr><td><strong>Certain</strong></td><td>Plausible time relation; cannot be explained by disease/other drugs; response to withdrawal plausible (dechallenge); event definitive pharmacologically/phenomenologically; rechallenge satisfactory if performed</td></tr>
+          <tr><td><strong>Probable / Likely</strong></td><td>Reasonable time relation; unlikely to be attributed to disease/other drugs; reasonable response to withdrawal; rechallenge not required</td></tr>
+          <tr><td><strong>Possible</strong></td><td>Reasonable time relation; could also be explained by disease/other drugs; information on withdrawal may be lacking or unclear</td></tr>
+          <tr><td><strong>Unlikely</strong></td><td>Improbable temporal relation; other drugs/disease provide plausible alternative explanation</td></tr>
+          <tr><td><strong>Conditional / Unclassified</strong></td><td>More data required for proper assessment</td></tr>
+          <tr><td><strong>Unassessable / Unclassifiable</strong></td><td>Report suggesting an ADR but cannot be judged; data is insufficient or contradictory and cannot be supplemented</td></tr>
+        </table>
+
+        <h3 style="font-family:'Cormorant Garamond',serif;font-size:1.2rem;font-weight:500;margin:1rem 0 0.4rem">Naranjo Algorithm — Quantitative Causality</h3>
+        <p>10-question instrument scored from −4 to +13. Used commonly for individual case review and in publication.</p>
+        <table class="pv-table">
+          <tr><th>Question</th><th>Yes</th><th>No</th><th>Don't know</th></tr>
+          <tr><td>1. Are there previous conclusive reports on this reaction?</td><td>+1</td><td>0</td><td>0</td></tr>
+          <tr><td>2. Did the AE appear after the suspected drug was administered?</td><td>+2</td><td>−1</td><td>0</td></tr>
+          <tr><td>3. Did the AE improve when drug was discontinued or specific antagonist administered?</td><td>+1</td><td>0</td><td>0</td></tr>
+          <tr><td>4. Did the AE reappear when drug was readministered?</td><td>+2</td><td>−1</td><td>0</td></tr>
+          <tr><td>5. Are there alternative causes that could on their own have caused the reaction?</td><td>−1</td><td>+2</td><td>0</td></tr>
+          <tr><td>6. Did the reaction reappear when placebo was given?</td><td>−1</td><td>+1</td><td>0</td></tr>
+          <tr><td>7. Was the drug detected in blood or other fluid in concentrations known to be toxic?</td><td>+1</td><td>0</td><td>0</td></tr>
+          <tr><td>8. Was the reaction more severe when the dose was increased, or less severe when the dose was decreased?</td><td>+1</td><td>0</td><td>0</td></tr>
+          <tr><td>9. Did the patient have a similar reaction to the same or similar drugs in any previous exposure?</td><td>+1</td><td>0</td><td>0</td></tr>
+          <tr><td>10. Was the AE confirmed by any objective evidence?</td><td>+1</td><td>0</td><td>0</td></tr>
+        </table>
+        <div class="pv-formula">
+          <div class="label">Naranjo interpretation</div>
+          ≥ 9 = Definite ADR<br/>
+          5 to 8 = Probable ADR<br/>
+          1 to 4 = Possible ADR<br/>
+          ≤ 0 = Doubtful ADR
+        </div>
+
+        <h3 style="font-family:'Cormorant Garamond',serif;font-size:1.2rem;font-weight:500;margin:1rem 0 0.4rem">Hy's Law — Drug-Induced Liver Injury (DILI)</h3>
+        <p>Hy's Law cases are a strong predictor of severe DILI. A Hy's Law case meets <strong>all three</strong>:</p>
+        <ol>
+          <li>ALT or AST ≥ 3× ULN <strong>and</strong></li>
+          <li>Total bilirubin ≥ 2× ULN <strong>and</strong></li>
+          <li>Alkaline phosphatase &lt; 2× ULN (excluding cholestatic pattern), with no other reason found for the abnormality</li>
+        </ol>
+        <p>Even one Hy's Law case in a clinical trial is a major signal and may stop development. Sponsors monitor LFT trajectories and apply pre-specified stopping rules in protocols.</p>
+      </div>
+    </div>
+  `,
+
+  icsr: `
+    <div class="pv-block">
+      <div class="pv-block-head"><span class="num">№ iii</span><h2>Individual Case Safety Reports (ICSRs)</h2><span class="cite">ICH E2B(R3) · 21 CFR 314.80 · MedWatch · EudraVigilance</span></div>
+      <p class="lede">An ICSR is the structured electronic report of an individual safety event. Every spontaneous AE that meets validity criteria becomes an ICSR. They are submitted in ICH E2B(R3) XML format and ingested into FAERS, EudraVigilance, VigiBase, and other databases.</p>
+      <div class="body">
+        <h3 style="font-family:'Cormorant Garamond',serif;font-size:1.2rem;font-weight:500;margin:0.8rem 0 0.4rem">Four Minimum Criteria for a Valid Case</h3>
+        <p>An ICSR is only valid (and reportable) if all four are present:</p>
+        <ol>
+          <li><strong>Identifiable patient</strong> (any one of: initials, age, sex, patient ID; "patient" alone is not enough)</li>
+          <li><strong>Identifiable reporter</strong> (HCP, patient, lawyer, etc. — name, address, profession)</li>
+          <li><strong>Suspect product</strong> (drug, biologic, device — at least one)</li>
+          <li><strong>An adverse event</strong> (or outcome / use issue)</li>
+        </ol>
+        <p>Without all four, the report is "incomplete" and the company should attempt follow-up. A case missing one criterion does <em>not</em> trigger reporting clocks until completed.</p>
+
+        <h3 style="font-family:'Cormorant Garamond',serif;font-size:1.2rem;font-weight:500;margin:1rem 0 0.4rem">Reporting Timelines (US FDA — Marketed Drugs/Biologics)</h3>
+        <table class="pv-table">
+          <tr><th>Report Type</th><th>Citation</th><th>Timeline</th><th>Form</th></tr>
+          <tr><td>Serious + Unexpected (foreign or domestic)</td><td>21 CFR 314.80(c)(1)</td><td><strong>15 calendar days</strong> from awareness</td><td>FDA 3500A (eMDR/E2B for electronic)</td></tr>
+          <tr><td>Serious + Expected</td><td>21 CFR 314.80(c)(2)</td><td>Periodic in PADER (NDA periodic, quarterly first 3 yr; annual thereafter) — or PSUR/PBRER if waived</td><td>PADER cover sheet + line listings</td></tr>
+          <tr><td>Non-Serious + Unexpected (domestic)</td><td>21 CFR 314.80(c)(2)</td><td>Periodic — PADER</td><td>PADER</td></tr>
+          <tr><td>Non-Serious + Expected (domestic)</td><td>21 CFR 314.80(c)(2)</td><td>Periodic — PADER (line listing only; not individual case forms)</td><td>PADER</td></tr>
+          <tr><td>Non-Serious foreign reports</td><td>—</td><td>Not required individually for non-serious foreign — periodic</td><td>—</td></tr>
+          <tr><td>Increased frequency of expected serious ADR</td><td>21 CFR 314.80(c)(1)(ii)</td><td>15 days</td><td>FDA 3500A</td></tr>
+        </table>
+
+        <h3 style="font-family:'Cormorant Garamond',serif;font-size:1.2rem;font-weight:500;margin:1rem 0 0.4rem">Reporting Timelines (US FDA — INDs)</h3>
+        <table class="pv-table">
+          <tr><th>Report Type</th><th>Citation</th><th>Timeline</th></tr>
+          <tr><td>Serious + Unexpected + Suspected (SUSAR — US or foreign)</td><td>21 CFR 312.32(c)(1)(i)(A)</td><td><strong>15 calendar days</strong></td></tr>
+          <tr><td>Unexpected fatal or life-threatening SUSAR</td><td>21 CFR 312.32(c)(2)</td><td><strong>7 calendar days</strong> (initial); 15-day follow-up</td></tr>
+          <tr><td>Findings from other studies / animal studies suggesting significant human risk</td><td>21 CFR 312.32(c)(1)(i)(B–C)</td><td>15 calendar days</td></tr>
+          <tr><td>Aggregate analysis showing a clinically important imbalance</td><td>21 CFR 312.32(c)(1)(i)(C)</td><td>15 calendar days</td></tr>
+        </table>
+
+        <h3 style="font-family:'Cormorant Garamond',serif;font-size:1.2rem;font-weight:500;margin:1rem 0 0.4rem">EU EMA Timelines (EudraVigilance)</h3>
+        <ul>
+          <li>Serious + EEA-occurring or non-EEA serious unexpected: <strong>15 days</strong></li>
+          <li>Non-serious EEA reactions: <strong>90 days</strong></li>
+          <li>Pregnancy outcome reports without an AE: 15 days if serious outcome</li>
+          <li>Lack of efficacy: case-by-case; usually 15 days if therapeutic class concern (e.g., antibiotics, vaccines, contraceptives)</li>
+        </ul>
+
+        <h3 style="font-family:'Cormorant Garamond',serif;font-size:1.2rem;font-weight:500;margin:1rem 0 0.4rem">E2B(R3) Data Elements (Selected)</h3>
+        <table class="pv-table">
+          <tr><th>Section</th><th>Key Elements</th></tr>
+          <tr><td>C.1 — Identification of the case safety report</td><td>Sender's case ID, type of report, country of primary source, transmission date, worldwide unique case ID (WWUID)</td></tr>
+          <tr><td>C.2 — Primary source(s)</td><td>Reporter name, address, qualification (HCP/consumer/lawyer/other), country</td></tr>
+          <tr><td>C.3 — Sender</td><td>Sender type, organization, contact person</td></tr>
+          <tr><td>C.4 — Literature reference</td><td>For literature cases: citation in Vancouver style</td></tr>
+          <tr><td>C.5 — Study identification</td><td>Sponsor study number, study name, type (IND, PASS, etc.)</td></tr>
+          <tr><td>D — Patient characteristics</td><td>Age, age group, sex, weight, height, medical history (MedDRA), concomitant medications, parent (if pregnancy/pediatric)</td></tr>
+          <tr><td>E — Reaction(s)</td><td>MedDRA Preferred Term + LLT, start/stop dates, duration, outcome (recovered/recovering/not recovered/recovered with sequelae/fatal/unknown), seriousness criteria</td></tr>
+          <tr><td>F — Tests &amp; procedures</td><td>Lab values, imaging, biopsies — relevant to AE; date, value, unit, normal range</td></tr>
+          <tr><td>G — Drug(s)</td><td>Active substance, brand, dose, route, frequency, indication, start/stop dates, action taken (withdrawn/dose reduced/continued), characterization (suspect/concomitant/interacting), dechallenge/rechallenge results</td></tr>
+          <tr><td>H — Narrative</td><td>Free-text chronological case narrative</td></tr>
+        </table>
+
+        <h3 style="font-family:'Cormorant Garamond',serif;font-size:1.2rem;font-weight:500;margin:1rem 0 0.4rem">Case Narrative — Anatomy of a Good One</h3>
+        <p>Per ICH E2D, the narrative is a stand-alone "medical story" that allows a reviewer to understand the case without seeing the structured fields. Typical structure:</p>
+        <ol>
+          <li><strong>Patient demographics</strong> (age, sex, relevant history)</li>
+          <li><strong>Suspect drug</strong> (indication, dose, route, start date)</li>
+          <li><strong>Concomitant medications</strong> &amp; relevant medical history</li>
+          <li><strong>Event onset</strong> (timing relative to drug, presenting symptoms)</li>
+          <li><strong>Course / clinical findings</strong> (labs, imaging, hospitalization)</li>
+          <li><strong>Action taken</strong> with the suspect drug (withdrawn, dose changed, continued)</li>
+          <li><strong>Dechallenge / rechallenge</strong> results</li>
+          <li><strong>Outcome</strong> at the time of the report and at last follow-up</li>
+          <li><strong>Reporter's causality assessment</strong></li>
+          <li><strong>Company's causality assessment</strong></li>
+        </ol>
+
+        <h3 style="font-family:'Cormorant Garamond',serif;font-size:1.2rem;font-weight:500;margin:1rem 0 0.4rem">Worked Example — Fully-Constructed ICSR</h3>
+        <div class="pv-case">
+          <div class="pv-case-head">
+            <h3>Case ID: NRX-2026-US-01045 — Pancytopenia after Avenituzumab</h3>
+            <span class="tag">Serious · Unexpected · 15-day</span>
+          </div>
+          <div class="meta">
+            <div><div class="lbl">Country</div><div class="val">United States</div></div>
+            <div><div class="lbl">Source</div><div class="val">HCP — Dermatologist</div></div>
+            <div><div class="lbl">Drug</div><div class="val">AVENITRA® (avenituzumab)</div></div>
+            <div><div class="lbl">Reaction (PT)</div><div class="val">Pancytopenia</div></div>
+          </div>
+          <p><strong>Patient:</strong> 58-year-old female (case-confidential ID NRX-2026-US-01045) with moderate-to-severe plaque psoriasis (DLQI 18 at baseline). Medical history: type 2 diabetes mellitus controlled on metformin; hypertension on lisinopril; no prior immunosuppressant exposure; no known hematologic disease.</p>
+          <p><strong>Suspect drug:</strong> AVENITRA® (avenituzumab) 150 mg subcutaneous, prescribed for plaque psoriasis. First dose 14 January 2026; second dose 11 February 2026; third dose was scheduled for 11 March 2026 but not given (see below).</p>
+          <p><strong>Concomitant medications:</strong> metformin 1000 mg BID; lisinopril 20 mg QD; topical clobetasol PRN.</p>
+          <p><strong>Event onset:</strong> On 04 March 2026 (approximately 21 days after the second dose), the patient developed progressive fatigue, easy bruising on bilateral lower extremities, and a 2-day history of fever (38.6°C). She presented to her dermatologist for a scheduled visit on 06 March 2026 and was referred urgently to the emergency department.</p>
+          <p><strong>Clinical findings &amp; course:</strong> CBC at presentation showed WBC 1.4 × 10⁹/L (ANC 0.4), Hgb 8.6 g/dL, platelets 18 × 10⁹/L. Peripheral smear showed no blasts. Bone marrow biopsy (08 March 2026) showed hypocellular marrow with reduced megakaryocytes, no evidence of myelodysplasia or malignancy. Viral serology (CMV, EBV, parvovirus B19, HIV) and autoimmune workup were negative. Patient was hospitalized for 9 days, received G-CSF and platelet transfusions, and recovered to ANC 1.8, Hgb 10.2, and platelets 110 by discharge on 17 March 2026.</p>
+          <p><strong>Action taken with suspect drug:</strong> AVENITRA® permanently discontinued on 06 March 2026 (no further doses planned).</p>
+          <p><strong>Dechallenge:</strong> Positive — counts began recovering within 5 days of last dose; full recovery by Week 4 post-discontinuation.</p>
+          <p><strong>Rechallenge:</strong> Not performed (clinically contraindicated).</p>
+          <p><strong>Outcome at last follow-up (08 April 2026):</strong> Recovered. CBC normalized. Patient transitioned to alternative biologic therapy.</p>
+          <p><strong>Reporter (HCP) causality:</strong> Probable — temporal association, dechallenge positive, no alternative explanation identified after thorough workup.</p>
+          <p><strong>Company causality assessment:</strong> Probable. Pancytopenia is not currently listed in the AVENITRA USPI as an adverse reaction; this case is therefore <strong>unexpected</strong>. Combined with seriousness (hospitalization), this case meets criteria for expedited 15-day reporting under 21 CFR 314.80(c)(1).</p>
+          <p><strong>Action items:</strong></p>
+          <ul>
+            <li>15-day expedited report to FDA via E2B(R3) submission (within 15 days of company awareness on 18 March 2026 — submitted 25 March 2026)</li>
+            <li>Notification to EMA EudraVigilance (Helix EU MAH affiliate)</li>
+            <li>Reporter follow-up letter sent 26 March 2026 requesting bone marrow report and follow-up labs</li>
+            <li>Case flagged for inclusion in next signal review for "hematologic disorders" cluster across the IL-23 inhibitor class</li>
+            <li>Case to be summarized in next PBRER (interval ending 30 June 2026)</li>
+          </ul>
+        </div>
+
+        <h3 style="font-family:'Cormorant Garamond',serif;font-size:1.2rem;font-weight:500;margin:1rem 0 0.4rem">Form FDA 3500A — Mandatory MedWatch Reporting Form (Selected Fields)</h3>
+        <table class="pv-table">
+          <tr><th>Section</th><th>Sample Entry (using above case)</th></tr>
+          <tr><td>A.1 Patient identifier</td><td>NRX-2026-US-01045 (case-confidential)</td></tr>
+          <tr><td>A.2 Age at event</td><td>58 years</td></tr>
+          <tr><td>A.3 Sex</td><td>Female</td></tr>
+          <tr><td>A.4 Weight</td><td>72 kg</td></tr>
+          <tr><td>B.1 Adverse Event / Product Problem</td><td>Pancytopenia (MedDRA PT 10033661)</td></tr>
+          <tr><td>B.2 Outcomes</td><td>☒ Hospitalization ☐ Death ☐ Life-threatening ☐ Disability ☐ Congenital anomaly ☒ Required intervention</td></tr>
+          <tr><td>B.3 Date of event</td><td>04 March 2026 onset</td></tr>
+          <tr><td>B.4 Date of report</td><td>25 March 2026</td></tr>
+          <tr><td>C.1–C.6 Suspect product(s)</td><td>AVENITRA® (avenituzumab) 150 mg SC; first dose 14-Jan-2026, last dose 11-Feb-2026; indication: plaque psoriasis; lot #AVN-25-0814; expiration 2027-08</td></tr>
+          <tr><td>D Suspect device</td><td>N/A</td></tr>
+          <tr><td>E.1 Reporter</td><td>Dr. R. Patel, MD (Dermatology), Boston MA; hospital affiliation listed</td></tr>
+          <tr><td>F MFR section (mandatory for industry)</td><td>NDA/BLA #: BLA 7XXXXX; manufacturer report number: NRX-2026-US-01045; date received by manufacturer: 18-Mar-2026; report type: ☒ 15-day expedited</td></tr>
+        </table>
+      </div>
+    </div>
+  `,
+
+  aggregate: `
+    <div class="pv-block">
+      <div class="pv-block-head"><span class="num">№ iv</span><h2>Aggregate Safety Reports — DSUR · PBRER · PSUR · PADER · PAER</h2><span class="cite">ICH E2C(R2) · ICH E2F · 21 CFR 314.81</span></div>
+      <p class="lede">Aggregate reports synthesize safety data over defined intervals to allow regulators (and sponsors) to see the forest, not just individual trees. Each report has a different purpose, frequency, and audience. Choosing the wrong report — or missing the cycle — is one of the top three findings in PV inspections.</p>
+      <div class="body">
+        <table class="pv-table">
+          <tr><th>Report</th><th>Stage</th><th>Frequency</th><th>Submission Window</th><th>Authority</th><th>Reference</th></tr>
+          <tr><td><span class="pname">DSUR</span><br/>Development Safety Update Report</td><td>During clinical development (IND/CTA)</td><td>Annually from IND/CTA initiation</td><td>Within 60 days of Data Lock Point (DLP) anniversary</td><td>FDA, EMA, others</td><td><span class="cite">ICH E2F</span></td></tr>
+          <tr><td><span class="pname">PBRER</span><br/>Periodic Benefit-Risk Evaluation Report</td><td>Post-marketing</td><td>Risk-based: 6-mo for first 2 yr → annual yr 3-5 → 3-yearly typical for established</td><td>Within 70 days (≤12-mo interval) or 90 days (&gt;12-mo) of DLP</td><td>EMA primarily; FDA accepts as PADER alternative if waiver granted</td><td><span class="cite">ICH E2C(R2)</span></td></tr>
+          <tr><td><span class="pname">PSUR</span><br/>Periodic Safety Update Report (older format)</td><td>Post-marketing</td><td>Same cycle as PBRER</td><td>Replaced by PBRER format ICH E2C(R2) since 2012; "PSUR" remains in use as an umbrella term</td><td>EMA</td><td><span class="cite">Legacy ICH E2C(R1)</span></td></tr>
+          <tr><td><span class="pname">PADER</span><br/>Periodic Adverse Drug Experience Report</td><td>US Post-marketing</td><td>Quarterly years 1–3 from approval; annual thereafter</td><td>Within 30 days of close of period</td><td>FDA only</td><td><span class="cite">21 CFR 314.81(b)(2)</span></td></tr>
+          <tr><td><span class="pname">PAER</span><br/>Periodic Adverse Experience Report (biologics)</td><td>US Post-marketing biologics</td><td>Same as PADER</td><td>Same as PADER</td><td>FDA / CBER</td><td><span class="cite">21 CFR 600.80</span></td></tr>
+          <tr><td><span class="pname">Annual Report (NDA/BLA)</span></td><td>Post-marketing</td><td>Annually</td><td>Within 60 days of approval anniversary</td><td>FDA</td><td><span class="cite">21 CFR 314.81(b)(1)</span></td></tr>
+        </table>
+
+        <h3 style="font-family:'Cormorant Garamond',serif;font-size:1.2rem;font-weight:500;margin:1rem 0 0.4rem">DSUR — Development Safety Update Report (ICH E2F)</h3>
+        <p>The DSUR is the annual aggregate safety report for products in clinical development. It harmonized the older US IND Annual Report and EU Annual Safety Report into a single document.</p>
+        <p><strong>DSUR Table of Contents (ICH E2F structure):</strong></p>
+        <ol>
+          <li>Introduction</li>
+          <li>Worldwide marketing approval status</li>
+          <li>Actions taken in the reporting period for safety reasons</li>
+          <li>Changes to the Reference Safety Information (Investigator's Brochure)</li>
+          <li>Inventory of clinical trials ongoing and completed during the reporting period</li>
+          <li>Estimated cumulative exposure
+            <ul><li>6.1 Cumulative subject exposure in development</li><li>6.2 Patient exposure from marketing experience (if marketed elsewhere)</li></ul>
+          </li>
+          <li>Data in line listings and summary tabulations
+            <ul><li>7.1 Reference information (MedDRA version)</li><li>7.2 Line listings of serious adverse reactions</li><li>7.3 Cumulative summary tabulations of serious adverse events</li></ul>
+          </li>
+          <li>Significant findings from clinical trials during the reporting period
+            <ul><li>8.1 Completed clinical trials</li><li>8.2 Ongoing clinical trials</li><li>8.3 Long-term follow-up</li><li>8.4 Other therapeutic use of the investigational drug</li><li>8.5 New safety data from combination therapies</li></ul>
+          </li>
+          <li>Safety findings from non-interventional studies</li>
+          <li>Other clinical trial / study safety information</li>
+          <li>Safety findings from marketing experience</li>
+          <li>Non-clinical data (new significant findings only)</li>
+          <li>Literature</li>
+          <li>Other DSURs (if multiple sponsors collaborating on same investigational product)</li>
+          <li>Lack of efficacy</li>
+          <li>Region-specific information (FDA-specific appendix; EU-specific appendix)</li>
+          <li>Late-breaking information</li>
+          <li>Overall safety assessment
+            <ul><li>18.1 Evaluation of risks</li><li>18.2 Benefit-risk considerations</li></ul>
+          </li>
+          <li>Summary of important risks</li>
+          <li>Conclusions</li>
+        </ol>
+        <p><strong>Data Lock Point (DLP):</strong> The cutoff date for safety data inclusion. Typically the anniversary of the first IND/CTA approval. The DSUR covers the period from the previous DLP through the new DLP, regardless of when the report is submitted.</p>
+
+        <h3 style="font-family:'Cormorant Garamond',serif;font-size:1.2rem;font-weight:500;margin:1rem 0 0.4rem">PBRER — Periodic Benefit-Risk Evaluation Report (ICH E2C(R2))</h3>
+        <p>The post-marketing aggregate report. Replaced the PSUR format in 2012. Emphasizes <strong>integrated benefit-risk evaluation</strong>, not just safety data dumps.</p>
+        <p><strong>PBRER Table of Contents:</strong></p>
+        <ol>
+          <li>Introduction</li>
+          <li>Worldwide marketing authorization status</li>
+          <li>Actions taken in the reporting interval for safety reasons</li>
+          <li>Changes to reference safety information</li>
+          <li>Estimated exposure and use patterns
+            <ul><li>5.1 Cumulative subject exposure in clinical trials</li><li>5.2 Cumulative and interval patient exposure from marketing experience</li></ul>
+          </li>
+          <li>Data in summary tabulations
+            <ul><li>6.1 Reference information</li><li>6.2 Cumulative summary tabulations of SAEs from clinical trials</li><li>6.3 Cumulative and interval summary tabulations from post-marketing data sources</li></ul>
+          </li>
+          <li>Summaries of significant findings from clinical trials during the reporting period</li>
+          <li>Findings from non-interventional studies</li>
+          <li>Information from other clinical trials and sources</li>
+          <li>Non-clinical data</li>
+          <li>Literature</li>
+          <li>Other periodic reports</li>
+          <li>Lack of efficacy in controlled clinical trials</li>
+          <li>Late-breaking information</li>
+          <li>Overview of signals: new, ongoing, or closed</li>
+          <li>Signal and risk evaluation
+            <ul><li>16.1 Summary of safety concerns (= updated safety specification from RMP)</li><li>16.2 Signal evaluation</li><li>16.3 Evaluation of risks and new information</li><li>16.4 Characterisation of risks</li><li>16.5 Effectiveness of risk minimisation (if applicable)</li></ul>
+          </li>
+          <li>Benefit evaluation</li>
+          <li>Integrated benefit-risk analysis for approved indications</li>
+          <li>Conclusions and actions</li>
+          <li>Appendices</li>
+        </ol>
+
+        <h3 style="font-family:'Cormorant Garamond',serif;font-size:1.2rem;font-weight:500;margin:1rem 0 0.4rem">Frequency Birth Date &amp; International Birth Date</h3>
+        <p>Reporting cycles are anchored to:</p>
+        <ul>
+          <li><strong>International Birth Date (IBD)</strong> — date of first marketing authorization for the product anywhere in the world. Drives the PBRER cycle.</li>
+          <li><strong>Development International Birth Date (DIBD)</strong> — date of first authorization to begin clinical development anywhere in the world. Drives the DSUR cycle.</li>
+          <li><strong>Data Lock Point (DLP)</strong> — cutoff date for data inclusion in a specific report.</li>
+        </ul>
+        <div class="pv-callout"><div class="lbl">Worked example</div>If a product's IBD is 17 May 2022, and the cycle is annual: DLP for the first 12-month PBRER is 16 May 2023; submission deadline is 70 days after DLP = 25 July 2023. Next DLP is 16 May 2024; submission deadline 25 July 2024.</div>
+
+        <h3 style="font-family:'Cormorant Garamond',serif;font-size:1.2rem;font-weight:500;margin:1rem 0 0.4rem">PADER — US-Specific Periodic Report (21 CFR 314.81(b)(2))</h3>
+        <p>The legacy US periodic report. Many sponsors get a waiver from FDA to submit PBRERs in lieu of PADERs once products are mature globally — this is highly recommended to harmonize reporting.</p>
+        <p><strong>PADER components:</strong></p>
+        <ul>
+          <li>Form FDA 2252 cover sheet</li>
+          <li>Narrative summary and analysis of all reports for the period</li>
+          <li>Narrative analysis of MedWatch 3500A reports submitted during the period</li>
+          <li>Index line listings of 15-day reports</li>
+          <li>Index line listings of non-15-day reports (foreign and domestic, serious expected and non-serious unexpected domestic)</li>
+          <li>History of actions taken since the last report</li>
+        </ul>
+        <p><strong>Frequency:</strong> Quarterly within the first 3 years post-approval (within 30 days of close of period); annually thereafter (within 60 days of approval anniversary).</p>
+      </div>
+    </div>
+  `,
+
+  signal: `
+    <div class="pv-block">
+      <div class="pv-block-head"><span class="num">№ v</span><h2>Signal Detection &amp; Risk Management</h2><span class="cite">CIOMS VIII · GVP IX · ICH E2E</span></div>
+      <p class="lede">Signal detection is the process of identifying new or changed safety information from spontaneous reports and other sources. Modern signal detection combines clinical review of individual cases with quantitative disproportionality analysis on large databases (FAERS, EudraVigilance, VigiBase). When a signal becomes a confirmed risk, it feeds the Risk Management Plan and may trigger label changes, REMS, or other risk-minimization measures.</p>
+      <div class="body">
+        <h3 style="font-family:'Cormorant Garamond',serif;font-size:1.2rem;font-weight:500;margin:0.8rem 0 0.4rem">Signal Definition (CIOMS Working Group VIII)</h3>
+        <p>"Information that arises from one or multiple sources (including observations and experiments) which suggests a new potentially causal association, or a new aspect of a known association, between an intervention and an event or set of related events, either adverse or beneficial, that is judged to be of sufficient likelihood to justify verificatory action."</p>
+
+        <h3 style="font-family:'Cormorant Garamond',serif;font-size:1.2rem;font-weight:500;margin:1rem 0 0.4rem">Signal Detection Methods</h3>
+        <table class="pv-table">
+          <tr><th>Method</th><th>How It Works</th><th>Best For</th></tr>
+          <tr><td>Individual case review</td><td>Medical reviewer examines each ICSR for new or unexpected patterns; particularly powerful for rare or "designated medical events"</td><td>Rare and serious AEs; small datasets</td></tr>
+          <tr><td>Tracked AEs / time-trended counts</td><td>Plot count or rate of an AE over time vs. exposure</td><td>Frequency changes</td></tr>
+          <tr><td>Disproportionality analysis</td><td>Statistical 2×2 tables — does this drug-event pair occur more frequently in the database than expected?</td><td>Hypothesis generation in large databases</td></tr>
+          <tr><td>Comparator analysis</td><td>Compare drug-event proportion against same indication / class</td><td>Within-class signal differentiation</td></tr>
+          <tr><td>Targeted medical literature surveillance</td><td>Embase + MEDLINE searches for known and suspected risks</td><td>Class effects; off-label use signals</td></tr>
+          <tr><td>Real-world database studies</td><td>Cohort or case-control on Sentinel, Optum, claims, EHR</td><td>Rate quantification; confounder-adjusted associations</td></tr>
+        </table>
+
+        <h3 style="font-family:'Cormorant Garamond',serif;font-size:1.2rem;font-weight:500;margin:1rem 0 0.4rem">Disproportionality Analysis — The Core 2×2 Table</h3>
+        <p>Every disproportionality measure starts with a 2×2 contingency table built from the database:</p>
+        <table class="pv-table">
+          <tr><th></th><th>Adverse Event of Interest (E)</th><th>All Other Adverse Events (¬E)</th><th>Total</th></tr>
+          <tr><td>Drug of Interest (D)</td><td><strong>a</strong></td><td><strong>b</strong></td><td>a + b</td></tr>
+          <tr><td>All Other Drugs (¬D)</td><td><strong>c</strong></td><td><strong>d</strong></td><td>c + d</td></tr>
+          <tr><td>Total</td><td>a + c</td><td>b + d</td><td>N = a + b + c + d</td></tr>
+        </table>
+
+        <h3 style="font-family:'Cormorant Garamond',serif;font-size:1.2rem;font-weight:500;margin:1rem 0 0.4rem">Key Disproportionality Measures</h3>
+        <div class="pv-formula">
+          <div class="label">Proportional Reporting Ratio (PRR) — MHRA / EMA</div>
+          PRR = [a / (a + b)] / [c / (c + d)]<br/><br/>
+          Signal of disproportionate reporting (SDR) when ALL three are met:<br/>
+          &nbsp;&nbsp;PRR ≥ 2<br/>
+          &nbsp;&nbsp;Chi-square (with Yates correction) ≥ 4<br/>
+          &nbsp;&nbsp;a (number of cases) ≥ 3
+        </div>
+        <div class="pv-formula">
+          <div class="label">Reporting Odds Ratio (ROR) — Lareb / Netherlands</div>
+          ROR = (a × d) / (b × c)<br/>
+          95% CI: ln(ROR) ± 1.96 × √(1/a + 1/b + 1/c + 1/d)<br/><br/>
+          SDR when lower bound of 95% CI &gt; 1 (and a ≥ 3 typically required)
+        </div>
+        <div class="pv-formula">
+          <div class="label">Information Component (IC) — WHO-UMC / VigiBase</div>
+          IC = log₂ [ N × a / ((a+b)(a+c)) ]<br/>
+          IC₀₂₅ = lower 2.5% credibility interval (Bayesian shrinkage applied)<br/><br/>
+          SDR when IC₀₂₅ &gt; 0
+        </div>
+        <div class="pv-formula">
+          <div class="label">Empirical Bayes Geometric Mean (EBGM) — FDA / Sentinel / Multi-Item Gamma Poisson Shrinker (MGPS)</div>
+          EBGM = empirical Bayes posterior estimate of the relative reporting ratio with shrinkage toward 1<br/>
+          EB05 = lower 5% one-sided credibility bound<br/><br/>
+          SDR commonly when EB05 ≥ 2 (more stringent variants use 1.8 or 2.5)
+        </div>
+
+        <h3 style="font-family:'Cormorant Garamond',serif;font-size:1.2rem;font-weight:500;margin:1rem 0 0.4rem">Worked Example — PRR Calculation</h3>
+        <p>Hypothetical: in a database of 1,200,000 ICSRs, the drug AVENITRA (a hypothetical IL-23 inhibitor) is associated with the AE "pancytopenia" as follows:</p>
+        <table class="pv-table">
+          <tr><th></th><th>Pancytopenia</th><th>Other AEs</th><th>Total</th></tr>
+          <tr><td>AVENITRA</td><td>a = 12</td><td>b = 2,388</td><td>2,400</td></tr>
+          <tr><td>All other drugs</td><td>c = 4,200</td><td>d = 1,193,400</td><td>1,197,600</td></tr>
+          <tr><td>Total</td><td>4,212</td><td>1,195,788</td><td>N = 1,200,000</td></tr>
+        </table>
+        <div class="pv-formula">
+          <div class="label">Calculation</div>
+          PRR = [12 / 2,400] / [4,200 / 1,197,600]<br/>
+          &nbsp;&nbsp;&nbsp;&nbsp; = 0.005 / 0.003508<br/>
+          &nbsp;&nbsp;&nbsp;&nbsp; = <strong>1.426</strong> &nbsp; (does not meet PRR ≥ 2)<br/><br/>
+          ROR = (12 × 1,193,400) / (2,388 × 4,200) = <strong>1.428</strong><br/>
+          95% CI: 0.81 – 2.51 → lower bound &lt; 1 → no SDR<br/><br/>
+          Chi-square: 2.55 → does not meet χ² ≥ 4 → no SDR<br/><br/>
+          <strong>Conclusion:</strong> No statistical signal of disproportionate reporting at this time. However, individual case review remains warranted given the seriousness of the event.
+        </div>
+
+        <h3 style="font-family:'Cormorant Garamond',serif;font-size:1.2rem;font-weight:500;margin:1rem 0 0.4rem">Signal Validation &amp; Workflow</h3>
+        <ol>
+          <li><strong>Detection</strong> — quantitative trigger or qualitative case observation</li>
+          <li><strong>Validation</strong> — review of individual cases supporting the signal: are the cases medically credible, well-documented, and consistent?</li>
+          <li><strong>Confirmation</strong> — review against additional databases, literature, and biological plausibility</li>
+          <li><strong>Analysis &amp; prioritization</strong> — assess seriousness, frequency, severity, preventability, public health impact</li>
+          <li><strong>Recommendation</strong> — one of: dismiss / continue monitoring / further investigation / regulatory action</li>
+          <li><strong>Action</strong> — label change (CBE-0 / CBE-30 / supplement), DHCP letter, REMS update, recall, withdrawal</li>
+          <li><strong>Communication</strong> — to regulators, prescribers, patients</li>
+          <li><strong>Effectiveness assessment</strong> — for risk minimization measures, did the action work?</li>
+        </ol>
+
+        <h3 style="font-family:'Cormorant Garamond',serif;font-size:1.2rem;font-weight:500;margin:1rem 0 0.4rem">Risk Management Plan (RMP) &amp; REMS</h3>
+        <table class="pv-table">
+          <tr><th>Element</th><th>EU RMP (GVP V)</th><th>US REMS (FDAAA 2007 §901)</th></tr>
+          <tr><td>Trigger</td><td>Required at MAA for all new products</td><td>FDA discretion when necessary to ensure benefits outweigh risks</td></tr>
+          <tr><td>Tools</td><td>Routine PV; additional PV (e.g., PASS, registries); routine risk minimisation (label, IFU); additional risk minimisation (educational materials, controlled access)</td><td>Medication Guide; Communication Plan; ETASU (Elements to Assure Safe Use) — e.g., prescriber/pharmacy/patient enrollment, lab monitoring, restricted distribution; Implementation System; Assessment timeline</td></tr>
+          <tr><td>Review</td><td>Updated as needed; full review at renewals</td><td>Periodic assessment by sponsor (typically 18, 24, 36 months and 7 years; varies by REMS)</td></tr>
+        </table>
+        <p><strong>RMP Structure (GVP Module V):</strong> Part I (product overview) · Part II (safety specification — modules SI–SVIII) · Part III (PV plan) · Part IV (post-authorisation efficacy studies) · Part V (risk minimisation measures) · Part VI (summary) · Part VII (annexes)</p>
+
+        <h3 style="font-family:'Cormorant Garamond',serif;font-size:1.2rem;font-weight:500;margin:1rem 0 0.4rem">FDA Sentinel System</h3>
+        <p>FDA's active surveillance system using a distributed-data model across &gt;100 million covered lives in claims and EHR databases. Used for:</p>
+        <ul>
+          <li>Rapid signal evaluation (modular programs)</li>
+          <li>Comparative analyses</li>
+          <li>Regulatory decision support (label change, withdrawal)</li>
+          <li>Section 905 of FDAAA mandates the system</li>
+        </ul>
+      </div>
+    </div>
+  `,
+
+  device: `
+    <div class="pv-block">
+      <div class="pv-block-head"><span class="num">№ vi</span><h2>Materovigilance — Medical Device Vigilance</h2><span class="cite">21 CFR 803 · 21 CFR 806 · EU MDR Articles 87–92 · MvPI</span></div>
+      <p class="lede">Device vigilance follows similar principles to drug PV but with critical differences in terminology, reporting forms, and use of Unique Device Identifiers. The US Medical Device Reporting (MDR) regulation 21 CFR 803 governs sponsor and importer reporting; the EU MDR Articles 87–92 establish the EU vigilance framework with EUDAMED as the central database.</p>
+      <div class="body">
+        <h3 style="font-family:'Cormorant Garamond',serif;font-size:1.2rem;font-weight:500;margin:0.8rem 0 0.4rem">FDA — Medical Device Reporting (MDR) — 21 CFR 803</h3>
+        <table class="pv-table">
+          <tr><th>Reportable Event</th><th>Reporter</th><th>Timeline</th><th>Form</th></tr>
+          <tr><td>Death</td><td>Manufacturer / Importer</td><td><strong>30 calendar days</strong> from awareness</td><td>Form FDA 3500A via eMDR</td></tr>
+          <tr><td>Serious injury</td><td>Manufacturer / Importer</td><td><strong>30 calendar days</strong></td><td>Form FDA 3500A via eMDR</td></tr>
+          <tr><td>Malfunction that would likely cause/contribute to death or serious injury if it recurred</td><td>Manufacturer / Importer</td><td><strong>30 calendar days</strong></td><td>Form FDA 3500A via eMDR</td></tr>
+          <tr><td>Event requiring remedial action to prevent unreasonable risk of substantial harm</td><td>Manufacturer / Importer</td><td><strong>5 working days</strong></td><td>Form FDA 3500A</td></tr>
+          <tr><td>FDA-requested follow-up</td><td>Manufacturer</td><td>Per FDA request (typically 15 days)</td><td>Form FDA 3500A supplement</td></tr>
+          <tr><td>Voluntary report from HCP / consumer</td><td>HCP / Consumer / User Facility (mandatory for some)</td><td>10 working days for user facility deaths</td><td>Form FDA 3500 (voluntary) / 3500A (mandatory)</td></tr>
+        </table>
+
+        <h3 style="font-family:'Cormorant Garamond',serif;font-size:1.2rem;font-weight:500;margin:1rem 0 0.4rem">User Facility Reporting</h3>
+        <p>Per 21 CFR 803.30:</p>
+        <ul>
+          <li><strong>Death</strong> — user facility reports to FDA <strong>and</strong> manufacturer within <strong>10 working days</strong></li>
+          <li><strong>Serious injury</strong> — user facility reports to manufacturer within 10 working days; reports to FDA only if manufacturer is unknown</li>
+          <li>User facilities = hospitals, ambulatory surgical facilities, nursing homes, outpatient diagnostic/treatment facilities</li>
+          <li>Annual reporting summary (Form FDA 3419) — submitted by user facilities by January 1 each year</li>
+        </ul>
+
+        <h3 style="font-family:'Cormorant Garamond',serif;font-size:1.2rem;font-weight:500;margin:1rem 0 0.4rem">21 CFR 806 — Reports of Corrections &amp; Removals</h3>
+        <p>Field actions to reduce risk to health (recalls, corrections) must be reported within <strong>10 working days</strong> of initiation. Includes Class I (high-risk recall, may cause serious health consequences/death), Class II (moderate, may cause temporary or medically reversible harm), Class III (unlikely to cause adverse health consequences). Records retained for ≥2 years.</p>
+
+        <h3 style="font-family:'Cormorant Garamond',serif;font-size:1.2rem;font-weight:500;margin:1rem 0 0.4rem">Section 522 Postmarket Surveillance Studies</h3>
+        <p>FDA may order postmarket surveillance for Class II or III devices that meet any of:</p>
+        <ul>
+          <li>Failure would be reasonably likely to have serious adverse health consequences</li>
+          <li>Expected significant pediatric use</li>
+          <li>Life-supporting / life-sustaining for use outside a device facility</li>
+          <li>Implanted in the body for &gt;1 year</li>
+        </ul>
+        <p>Sponsor submits a study plan within 30 days of order; FDA may approve it. Section 522 orders are tracked publicly on the FDA postmarket surveillance webpage.</p>
+
+        <h3 style="font-family:'Cormorant Garamond',serif;font-size:1.2rem;font-weight:500;margin:1rem 0 0.4rem">EU Medical Device Regulation Vigilance — Articles 87–92</h3>
+        <table class="pv-table">
+          <tr><th>Event</th><th>Article</th><th>Timeline</th></tr>
+          <tr><td>Serious incident (death, serious deterioration in health, public health threat)</td><td>Art. 87</td><td><strong>15 days</strong> (or 2 days if serious public health threat; 10 days if death/unanticipated serious deterioration)</td></tr>
+          <tr><td>Field Safety Corrective Action (FSCA)</td><td>Art. 89</td><td><strong>Without delay</strong> (no fixed number of days, but as soon as causal link is established)</td></tr>
+          <tr><td>Trend reporting (statistically significant increase in non-serious incidents or expected side effects)</td><td>Art. 88</td><td>As determined by manufacturer's surveillance plan</td></tr>
+          <tr><td>Periodic Safety Update Report (PSUR for devices)</td><td>Art. 86</td><td>Annually for Class IIa, IIb, III; less frequently for Class I</td></tr>
+        </table>
+        <p>Reports submitted via <strong>EUDAMED</strong> (European Database on Medical Devices). Field Safety Notices are publicly visible. PSURs are tied to the device class and risk profile.</p>
+
+        <h3 style="font-family:'Cormorant Garamond',serif;font-size:1.2rem;font-weight:500;margin:1rem 0 0.4rem">Materiovigilance Programme of India (MvPI)</h3>
+        <p>Coordinated by the Indian Pharmacopoeia Commission (IPC) under CDSCO. Mirrors FDA MDR concepts but with India-specific reporting:</p>
+        <ul>
+          <li>Voluntary HCP/user reporting via the MvPI Form (similar to MedWatch 3500)</li>
+          <li>Manufacturer reporting via MvPI Form 1: serious injury and device-associated deaths within 15 days</li>
+          <li>Field Safety Notices to be published within prescribed timelines</li>
+          <li>Coordinator: Materiovigilance Centre at IPC, Ghaziabad</li>
+        </ul>
+
+        <h3 style="font-family:'Cormorant Garamond',serif;font-size:1.2rem;font-weight:500;margin:1rem 0 0.4rem">Sample Case — Device Vigilance ICSR</h3>
+        <div class="pv-case">
+          <div class="pv-case-head">
+            <h3>MDR-2026-0118 — Insulin Pump Occlusion Detection Failure</h3>
+            <span class="tag">Serious injury · 30-day MDR</span>
+          </div>
+          <div class="meta">
+            <div><div class="lbl">Device</div><div class="val">VIVERA Insulin Pump</div></div>
+            <div><div class="lbl">UDI-DI</div><div class="val">00850001234567</div></div>
+            <div><div class="lbl">UDI-PI</div><div class="val">Lot VP-25-08812 / Exp 2027-08</div></div>
+            <div><div class="lbl">Event Type</div><div class="val">Malfunction with serious injury</div></div>
+          </div>
+          <p><strong>Patient:</strong> 42-year-old male with Type 1 diabetes, using VIVERA Insulin Pump for ~14 months without prior issues.</p>
+          <p><strong>Event:</strong> On 12 January 2026, the patient's pump failed to alarm during a 4-hour cannula occlusion. Patient developed diabetic ketoacidosis (DKA) requiring ED visit and 36-hour hospitalization. Blood glucose at presentation: 612 mg/dL; bicarbonate 9 mEq/L; pH 7.18.</p>
+          <p><strong>Device investigation:</strong> Pump returned to Vivera engineering. Occlusion sensor found to have intermittent fault traced to a specific firmware version (FW v3.2.4) deployed via OTA update on 03 January 2026. Approximately 4,200 pumps received the affected firmware.</p>
+          <p><strong>Reporter:</strong> ED physician at user facility; user facility also filed mandatory report to Vivera within 10 working days per 21 CFR 803.30.</p>
+          <p><strong>Action taken:</strong></p>
+          <ul>
+            <li>30-day MDR submitted to FDA via eMDR within reporting window (01 February 2026)</li>
+            <li>Field Safety Corrective Action initiated 05 February 2026: emergency OTA firmware rollback to v3.2.3 deployed to all affected units</li>
+            <li>Voluntary <strong>Class II Recall</strong> announced and reported under 21 CFR 806 within 10 working days</li>
+            <li>Dear Healthcare Professional letter issued to all prescribers</li>
+            <li>FDA notified within 10 working days of FSCA initiation</li>
+            <li>Root cause analysis: firmware regression test suite did not include occlusion-detection edge cases; CAPA opened (CAPA-2026-018)</li>
+            <li>Trend reporting analyzed across the lot; no other DKA cases identified at time of report</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  `,
+
+  combo: `
+    <div class="pv-block">
+      <div class="pv-block-head"><span class="num">№ vii</span><h2>Combination Product Pharmacovigilance</h2><span class="cite">21 CFR 4 Subpart B</span></div>
+      <p class="lede">Combination products (drug-device, biologic-device, drug-biologic) require integrated post-market reporting that draws from <strong>both</strong> the drug/biologic and device safety frameworks. 21 CFR Part 4 Subpart B (effective 2017, implementation refined through 2020) consolidates these obligations.</p>
+      <div class="body">
+        <h3 style="font-family:'Cormorant Garamond',serif;font-size:1.2rem;font-weight:500;margin:0.8rem 0 0.4rem">21 CFR Part 4 Subpart B — Postmarketing Safety Reporting Requirements</h3>
+        <p>The applicant of an approved combination product must comply with the reporting requirements of <strong>both</strong> constituent parts. Specifically:</p>
+        <table class="pv-table">
+          <tr><th>Constituent</th><th>Required Reports</th></tr>
+          <tr><td>Drug constituent</td><td>21 CFR 314.80, 314.81 — 15-day, PADER, Annual Report</td></tr>
+          <tr><td>Biologic constituent</td><td>21 CFR 600.80 — 15-day, PAER</td></tr>
+          <tr><td>Device constituent</td><td>21 CFR 803 — MDR (30-day, 5-day); 21 CFR 806 — Corrections &amp; Removals</td></tr>
+          <tr><td>Combination as a whole</td><td>"Five-day report" if the constituent-specific 5-day requirement applies; uses the combination product number; explicit cross-referencing</td></tr>
+        </table>
+
+        <h3 style="font-family:'Cormorant Garamond',serif;font-size:1.2rem;font-weight:500;margin:1rem 0 0.4rem">Streamlined Reporting Approach (21 CFR 4.103)</h3>
+        <p>FDA allows a streamlined approach for combination products approved under a single application:</p>
+        <ul>
+          <li><strong>Single 15-day expedited report</strong> covers serious unexpected ADR involving any constituent; submitted via the application type (NDA, BLA, or PMA)</li>
+          <li><strong>Field Alert / device MDR</strong> filed separately if a manufacturing-related drug defect or device malfunction occurs</li>
+          <li><strong>5-day reports</strong> for device-associated events that would have required a 5-day report under 21 CFR 803</li>
+          <li>Periodic reporting (PADER, PSUR/PBRER) covers all constituents</li>
+        </ul>
+
+        <h3 style="font-family:'Cormorant Garamond',serif;font-size:1.2rem;font-weight:500;margin:1rem 0 0.4rem">What's Different in a Combination Case Narrative</h3>
+        <p>The narrative must distinguish whether the AE relates to the drug, the device, or the interaction. Examples:</p>
+        <ul>
+          <li><strong>Drug-attributable:</strong> hypoglycemia after insulin from a pen — drug PV pathway primary</li>
+          <li><strong>Device-attributable:</strong> dose accuracy failure, needle clog, pen jamming — device MDR pathway primary, drug exposure also reported</li>
+          <li><strong>Combined:</strong> incorrect dose delivered due to device malfunction leading to hyperglycemia — both pathways; report references both constituents</li>
+        </ul>
+
+        <h3 style="font-family:'Cormorant Garamond',serif;font-size:1.2rem;font-weight:500;margin:1rem 0 0.4rem">Sample Case — Combination Product PV</h3>
+        <div class="pv-case">
+          <div class="pv-case-head">
+            <h3>VIV-2026-US-00224 — Pen Dose Accuracy Failure with Hypoglycemia</h3>
+            <span class="tag">Combo · Serious · 15-day + MDR</span>
+          </div>
+          <div class="meta">
+            <div><div class="lbl">Combination Product</div><div class="val">VIVERA Insulin Pen (insulin glargine)</div></div>
+            <div><div class="lbl">Drug</div><div class="val">Insulin glargine 100 U/mL</div></div>
+            <div><div class="lbl">Device UDI</div><div class="val">00850009990222 / Lot VP-25-1144</div></div>
+            <div><div class="lbl">Reaction</div><div class="val">Severe hypoglycemia (PT)</div></div>
+          </div>
+          <p><strong>Patient:</strong> 67-year-old female with Type 2 DM, on insulin glargine 28 units QHS for 3 years. Recently received new pen (lot VP-25-1144) on 14 February 2026.</p>
+          <p><strong>Event:</strong> On 19 February 2026, after taking what she believed was her standard 28-unit dose, the patient experienced severe nocturnal hypoglycemia (FSBG 32 mg/dL on awakening; required spousal-administered glucagon and 911 call). EMS measured BG 38; transported to ED; recovered with IV dextrose; discharged after 6-hour observation.</p>
+          <p><strong>Device investigation:</strong> Patient returned the pen to Vivera. Bench testing showed dose-selector ratchet had a manufacturing defect causing actual delivered dose to be ~140% of dialed dose (i.e., 28 units dialed → ~39 units delivered). Three other units from same lot showed similar defect.</p>
+          <p><strong>Causality:</strong> Device malfunction directly caused the hypoglycemia (drug acted as labeled when delivered in excess).</p>
+          <p><strong>Regulatory action:</strong></p>
+          <ul>
+            <li><strong>15-day expedited report</strong> filed under NDA reference (combination product) — covers both drug exposure and adverse event</li>
+            <li><strong>30-day MDR</strong> filed for the device malfunction component (5-day not triggered as no remedial action required to prevent unreasonable risk pending investigation)</li>
+            <li>Lot VP-25-1144 placed on stop-distribution</li>
+            <li>Class II Recall initiated covering ~38,000 affected pens; reported under 21 CFR 806 within 10 working days</li>
+            <li>Dear Patient and Dear Healthcare Provider letters issued via FDA-cleared communication plan</li>
+            <li>CAPA-2026-022 opened on dose-selector ratchet manufacturing process; root cause traced to torque calibration drift on assembly station 04; corrective action: enhanced in-process control + 100% functional testing of subsequent lots</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  `,
+
+  workflow: `
+    <div class="pv-block">
+      <div class="pv-block-head"><span class="num">№ viii</span><h2>End-to-End ICSR Workflow</h2></div>
+      <p class="lede">A typical PV department processes thousands of cases per year. The workflow below is what an inspector expects to see documented in SOPs and demonstrable through the safety database (Argus, ARISg, Veeva Vault Safety, etc.).</p>
+      <div class="body">
+        <div class="pv-flow">
+          <div class="step"><div class="n">D0</div><div class="t">Source receipt</div><div class="d">Email, call center, portal, partner exchange, literature feed, regulator forward — receipt date is anchor of all clocks</div></div>
+          <div class="step"><div class="n">D0</div><div class="t">Validity check</div><div class="d">Are all 4 minimum criteria met? If not, follow-up letter sent immediately. Day 0 of clock pauses until valid.</div></div>
+          <div class="step"><div class="n">D1</div><div class="t">Triage</div><div class="d">Seriousness, expectedness, country of origin, study vs. spontaneous → determines reporting timeline</div></div>
+          <div class="step"><div class="n">D2-3</div><div class="t">Data entry</div><div class="d">MedDRA coding (LLT → PT), drug coding (WHODrug or in-house dictionary), demographics, narrative draft</div></div>
+          <div class="step"><div class="n">D4-7</div><div class="t">Medical review</div><div class="d">Causality assessment (WHO-UMC + company), narrative finalization, follow-up question identification</div></div>
+          <div class="step"><div class="n">D7-10</div><div class="t">QC &amp; submission prep</div><div class="d">Second-person review, E2B(R3) XML generation, manual data integrity check, regulatory authority routing</div></div>
+          <div class="step"><div class="n">D10-15</div><div class="t">Submission</div><div class="d">Transmission to FAERS (eMDR for devices); EudraVigilance; PMDA; PvPI; partner exchanges per PVA</div></div>
+          <div class="step"><div class="n">D15+</div><div class="t">Follow-up</div><div class="d">Follow-up letters to reporter for missing information; subsequent ICSRs as updates flow in</div></div>
+          <div class="step"><div class="n">Periodic</div><div class="t">Aggregate &amp; signal</div><div class="d">Case included in next DSUR/PBRER/PADER; flagged for signal review if patterns emerge</div></div>
+          <div class="step"><div class="n">∞</div><div class="t">Database lock</div><div class="d">Case closed when no further follow-up expected; remains in database indefinitely</div></div>
+          <div class="step"><div class="n">∞</div><div class="t">Reconciliation</div><div class="d">Quarterly reconciliation with partners/distributors per PVA — both sides confirm same case count</div></div>
+          <div class="step"><div class="n">∞</div><div class="t">Audit trail</div><div class="d">Every change in safety database time-stamped, attributable, immutable per 21 CFR Part 11</div></div>
+        </div>
+
+        <h3 style="font-family:'Cormorant Garamond',serif;font-size:1.2rem;font-weight:500;margin:1rem 0 0.4rem">Compliance Metrics &amp; KPIs</h3>
+        <table class="pv-table">
+          <tr><th>Metric</th><th>Target</th><th>Why It Matters</th></tr>
+          <tr><td>Late case rate (% of reportable cases submitted past deadline)</td><td>&lt; 5%</td><td>Top inspection finding; FDA expects &lt; 5%; EU EMA expects &lt; 1% for serious</td></tr>
+          <tr><td>Case processing cycle time (median days from receipt to submission)</td><td>&lt; 12 days for 15-day cases</td><td>Operational health</td></tr>
+          <tr><td>Follow-up response rate (% of cases with successful follow-up)</td><td>&gt; 60%</td><td>Data quality</td></tr>
+          <tr><td>QC error rate</td><td>&lt; 2%</td><td>Inspection readiness</td></tr>
+          <tr><td>MedDRA coding accuracy (sample audit)</td><td>&gt; 95% concordance</td><td>Signal detection integrity</td></tr>
+          <tr><td>Reconciliation discrepancy rate (with partners)</td><td>&lt; 1%</td><td>PVA compliance</td></tr>
+          <tr><td>Aggregate report on-time submission</td><td>100%</td><td>Compliance hard-line</td></tr>
+        </table>
+
+        <h3 style="font-family:'Cormorant Garamond',serif;font-size:1.2rem;font-weight:500;margin:1rem 0 0.4rem">Pharmacovigilance Agreements (PVA / SDEA)</h3>
+        <p>Whenever responsibility for a product is shared (license-out, distributor, co-marketing, CMO, CRO), a Pharmacovigilance Agreement defines exchange. Standard sections:</p>
+        <ul>
+          <li><strong>Scope</strong> — products covered, territories, terms</li>
+          <li><strong>Definitions</strong> — alignment on AE, ADR, SAE, etc.</li>
+          <li><strong>Case exchange</strong> — what gets exchanged, in which direction, timelines (typically 1–3 calendar days for serious; 5–10 for non-serious)</li>
+          <li><strong>Reconciliation</strong> — frequency (typically quarterly), procedure, dispute resolution</li>
+          <li><strong>Aggregate reports</strong> — who authors, who reviews, who submits, sharing of underlying data</li>
+          <li><strong>Signal management</strong> — collaboration on signals, who has decision authority</li>
+          <li><strong>Reference safety information</strong> — how IB / SmPC / USPI changes flow between parties</li>
+          <li><strong>Audits &amp; inspections</strong> — right to audit, inspection notification, support obligations</li>
+          <li><strong>Quality system requirements</strong> — minimum requirements (ICH GVP equivalent)</li>
+          <li><strong>Termination</strong> — handling of ongoing cases, data transfer</li>
+        </ul>
+      </div>
+    </div>
+  `,
+
+  inspection: `
+    <div class="pv-block">
+      <div class="pv-block-head"><span class="num">№ ix</span><h2>Pharmacovigilance Inspections</h2><span class="cite">FDA BIMO · EMA PV Inspections · GVP Module III</span></div>
+      <p class="lede">PV inspections are how regulators verify that the system on paper matches the system in practice. Findings can range from observational comments to product withdrawals. Knowing what inspectors look for is the foundation of inspection readiness.</p>
+      <div class="body">
+        <h3 style="font-family:'Cormorant Garamond',serif;font-size:1.2rem;font-weight:500;margin:0.8rem 0 0.4rem">Inspection Programs</h3>
+        <table class="pv-table">
+          <tr><th>Authority</th><th>Program</th><th>Scope</th></tr>
+          <tr><td>FDA</td><td>BIMO (Bioresearch Monitoring) — sponsor inspections</td><td>NDA/BLA-related; clinical trial PV; post-marketing PV; can be triggered by submission, signal, or routine</td></tr>
+          <tr><td>FDA</td><td>OSI / OPDP / OND inspections related to specific applications</td><td>NDA/BLA cycle</td></tr>
+          <tr><td>EMA</td><td>PV Inspection — by individual NCAs; coordinated by EMA</td><td>Routine (every 2–3 years for MAH); for-cause; pre-authorisation</td></tr>
+          <tr><td>MHRA</td><td>GPvP Inspection</td><td>UK MAHs; routine and triggered</td></tr>
+          <tr><td>India</td><td>CDSCO PvPI inspections</td><td>Indian MAH and central PvPI partnership</td></tr>
+        </table>
+
+        <h3 style="font-family:'Cormorant Garamond',serif;font-size:1.2rem;font-weight:500;margin:1rem 0 0.4rem">PSMF — Pharmacovigilance System Master File (EU)</h3>
+        <p>The PSMF (GVP Module II) is the master document describing the EU MAH's PV system. Required at the start of EU marketing authorization; maintained continuously; available within 7 days for inspector request. Contents:</p>
+        <ol>
+          <li>Qualified Person for Pharmacovigilance (QPPV) information</li>
+          <li>Organizational structure of the MAH</li>
+          <li>Sources of safety data</li>
+          <li>Computerized systems and databases</li>
+          <li>Pharmacovigilance processes</li>
+          <li>Performance of the PV system</li>
+          <li>Quality system</li>
+          <li>Annexes</li>
+        </ol>
+
+        <h3 style="font-family:'Cormorant Garamond',serif;font-size:1.2rem;font-weight:500;margin:1rem 0 0.4rem">Top Inspection Finding Areas</h3>
+        <table class="pv-table">
+          <tr><th>Area</th><th>Common Findings</th></tr>
+          <tr><td>Late case submissions</td><td>15-day reports submitted late; clock-start dates inaccurate; weekends/holidays mishandled</td></tr>
+          <tr><td>Aggregate report quality</td><td>PBRER missing required sections; benefit-risk integration superficial; signal section incomplete; data lock points inconsistent</td></tr>
+          <tr><td>Literature surveillance</td><td>Inadequate search strategy; missed publications; coverage of all approved active substances incomplete</td></tr>
+          <tr><td>Signal management</td><td>No documented signal detection process; signals identified but not validated; no closure documentation</td></tr>
+          <tr><td>RMP / risk minimisation</td><td>Educational materials not deployed in all markets; effectiveness measurement absent; outdated risk minimisation versions in use</td></tr>
+          <tr><td>Reconciliation with partners</td><td>No reconciliation evidence; discrepancies unresolved; PVAs not signed/outdated</td></tr>
+          <tr><td>QPPV oversight</td><td>QPPV not actively involved; backup arrangements unclear; QPPV change notification timing</td></tr>
+          <tr><td>SOPs &amp; training</td><td>SOPs outdated relative to current regulations; training records gaps; no training on updates</td></tr>
+          <tr><td>Quality system &amp; CAPA</td><td>CAPAs not closed within target dates; effectiveness checks superficial; deviations not trended</td></tr>
+          <tr><td>Database integrity (Part 11 / GxP)</td><td>Audit trails disabled or incomplete; user access not periodically reviewed; system validation outdated</td></tr>
+          <tr><td>MedDRA versioning &amp; recoding</td><td>Database not on current MedDRA version; recoding not performed at version change</td></tr>
+        </table>
+
+        <h3 style="font-family:'Cormorant Garamond',serif;font-size:1.2rem;font-weight:500;margin:1rem 0 0.4rem">Inspection Readiness Checklist</h3>
+        <ul>
+          <li>PSMF or US equivalent (PVAs, SOPs index, organizational chart) up-to-date and accessible</li>
+          <li>Most recent training records for all PV staff</li>
+          <li>Current SOP set (PV intake, processing, expedited reporting, aggregate reporting, signal management, reconciliation, audit, CAPA, training, quality, deviations)</li>
+          <li>Last 12-24 months of compliance metrics dashboards</li>
+          <li>Last 2 cycles of aggregate reports and FDA/EMA correspondence</li>
+          <li>Signal log for last 24 months with status of each signal</li>
+          <li>Last 3 years of internal/external PV audits with CAPA status</li>
+          <li>List of partners and PVAs (executed, current, with dates)</li>
+          <li>Database validation documentation</li>
+          <li>Disaster recovery / business continuity plan</li>
+          <li>Litigation cases and how they're handled in PV system</li>
+        </ul>
+
+        <h3 style="font-family:'Cormorant Garamond',serif;font-size:1.2rem;font-weight:500;margin:1rem 0 0.4rem">Outcome Categories</h3>
+        <ul>
+          <li><strong>FDA Form 483</strong> — observational; sponsor responds with corrective actions</li>
+          <li><strong>FDA Warning Letter</strong> — significant violations; public; affects pending applications</li>
+          <li><strong>FDA Untitled Letter</strong> — less severe violations; not public initially</li>
+          <li><strong>EU Critical / Major / Minor findings</strong> — critical findings can lead to suspension of marketing authorization</li>
+          <li><strong>MHRA Critical / Major / Other</strong> — UK equivalent</li>
+          <li><strong>Consent decree / Suspension</strong> — extreme outcome for systemic failures</li>
+        </ul>
+      </div>
+    </div>
+  `,
+
+  global: `
+    <div class="pv-block">
+      <div class="pv-block-head"><span class="num">№ x</span><h2>Global Pharmacovigilance Authorities</h2><span class="cite">ICH · WHO-UMC · National Competent Authorities</span></div>
+      <p class="lede">Pharmacovigilance is a globally coordinated discipline anchored on ICH guidelines and the WHO-UMC programme, but each region has its own national competent authority, reporting database, timelines, and language requirements. A multi-region MAH must operate a single Global Safety Database (GSD) that feeds region-specific submissions.</p>
+      <div class="body">
+        <h3 style="font-family:'Cormorant Garamond',serif;font-size:1.2rem;font-weight:500;margin:0.8rem 0 0.4rem">Major Authorities — Side-by-Side Reference</h3>
+        <table class="pv-table">
+          <tr><th>Region</th><th>Authority</th><th>Database / Gateway</th><th>Expedited Timeline (Serious + Unexpected)</th><th>Key Citation</th></tr>
+          <tr><td>USA</td><td>FDA — CDER (drugs/biologics) · CDRH (devices)</td><td>FAERS (drug) · MAUDE (device); E2B(R3) via FDA ESG; eMDR for devices</td><td>15 calendar days (drug) · 5 working days (5-day device) / 30 days (30-day device)</td><td>21 CFR 314.80 / 21 CFR 803</td></tr>
+          <tr><td>EU (EEA)</td><td>EMA + 30 NCAs (e.g., MHRA-equivalents per state); coordinated under PRAC</td><td>EudraVigilance (EVWEB / EVPOST gateway); EUDAMED for devices</td><td>15 calendar days (serious); 90 days (non-serious EEA-origin)</td><td>GVP Modules I–XVI; Reg (EC) 726/2004; Reg (EU) 2017/745 (MDR)</td></tr>
+          <tr><td>United Kingdom</td><td>MHRA (post-Brexit independent regulator)</td><td>Yellow Card Scheme; ICSRs via MHRA Gateway (E2B(R3))</td><td>15 calendar days (serious + UK-origin or in PSUR-relevant scope)</td><td>Human Medicines Regulations 2012 (as amended)</td></tr>
+          <tr><td>Japan</td><td>PMDA (Pharmaceuticals and Medical Devices Agency); MHLW (Ministry of Health, Labour and Welfare)</td><td>PMDA Online E2B(R3) Gateway; J-DSU (Japan Drug Safety Update) format for Re-examination</td><td>15 days (serious unexpected, foreign cases); 30 days (other serious); 7 days for new clusters or class effects</td><td>PMD Act (PAL); GVP Ministerial Ordinance No. 135 (2004)</td></tr>
+          <tr><td>Canada</td><td>Health Canada — Marketed Health Products Directorate (MHPD)</td><td>Canada Vigilance Program — CV Online Database</td><td>15 calendar days (serious)</td><td>Food and Drug Regulations C.01.017–.020</td></tr>
+          <tr><td>Australia</td><td>TGA (Therapeutic Goods Administration) — Pharmacovigilance & Special Access Branch</td><td>TGA Adverse Event Notification System; DAEN (Database of Adverse Event Notifications)</td><td>15 calendar days (serious)</td><td>Therapeutic Goods Act 1989; PV Inspection Program</td></tr>
+          <tr><td>Brazil</td><td>ANVISA (Agência Nacional de Vigilância Sanitária)</td><td>VigiMed; NotivisaSNVS</td><td>15 calendar days (serious)</td><td>RDC 406/2020 (drug PV); RDC 67/2009 (device tecnovigilância)</td></tr>
+          <tr><td>China</td><td>NMPA (National Medical Products Administration); CDR (Center for Drug Reevaluation)</td><td>National Adverse Drug Reaction Monitoring System</td><td>15 calendar days (serious); 30 days (non-serious)</td><td>Drug Administration Law 2019; Provisions for Drug Reevaluation</td></tr>
+          <tr><td>South Korea</td><td>MFDS (Ministry of Food and Drug Safety); KIDS (Korea Institute of Drug Safety & Risk Management)</td><td>Korea Adverse Event Reporting System (KAERS)</td><td>15 calendar days (serious)</td><td>Pharmaceutical Affairs Act; Re-examination requirements (KRP)</td></tr>
+          <tr><td>Switzerland</td><td>Swissmedic</td><td>ElViS (Electronic Vigilance System); E2B(R3) accepted</td><td>15 calendar days (serious)</td><td>Therapeutic Products Act (HMG); SR 812.21</td></tr>
+          <tr><td>India</td><td>CDSCO + IPC (Indian Pharmacopoeia Commission); PvPI (drug) and MvPI (device)</td><td>VigiFlow India (drug) · MvPI Form 1 (device)</td><td>15 days (serious unexpected); 14-day for FSCA</td><td>Drugs and Cosmetics Rules; New Drugs and Clinical Trials Rules 2019</td></tr>
+          <tr><td>Singapore</td><td>HSA (Health Sciences Authority)</td><td>HSA Adverse Drug Reaction Online Database</td><td>15 calendar days (serious)</td><td>Health Products Act 2007</td></tr>
+          <tr><td>Global aggregation</td><td>WHO-UMC (Uppsala Monitoring Centre)</td><td>VigiBase — &gt;30 million ICSRs from 170+ member states; vigiLyze tool for signal detection</td><td>Member states submit per local rules; UMC aggregates</td><td>WHO Programme for International Drug Monitoring</td></tr>
+        </table>
+
+        <h3 style="font-family:'Cormorant Garamond',serif;font-size:1.2rem;font-weight:500;margin:1rem 0 0.4rem">Japan PMDA — Deep Dive</h3>
+        <p>Japan operates one of the most distinct PV regimes globally, with several Japan-specific obligations beyond the ICH baseline.</p>
+        <table class="pv-table">
+          <tr><th>Element</th><th>Detail</th></tr>
+          <tr><td>MAH structure</td><td>Marketing authorization holder (MAH) must have a domestic marketing supervisor (Sō-Katsu Seizō Hanbai Sekininsha) in Japan; can be the company or a designated contract MAH</td></tr>
+          <tr><td>Re-examination period (Sai-shinsa)</td><td>4 / 6 / 8 / 10 years post-approval depending on novelty; sponsor compiles and submits a comprehensive Re-examination Application with safety data, post-marketing studies, and benefit-risk assessment</td></tr>
+          <tr><td>Re-evaluation (Sai-hyōka)</td><td>Periodic safety re-evaluation triggered by emerging concerns or class effects; can result in label changes, restrictions, or withdrawal</td></tr>
+          <tr><td>Early Post-Marketing Phase Vigilance (EPPV)</td><td>Intensive 6-month surveillance immediately after launch for new active substances; MAH provides safety information to all prescribing physicians; weekly safety summaries to PMDA</td></tr>
+          <tr><td>J-DSU (Japan Drug Safety Update)</td><td>Annual safety update report submitted as part of Re-examination Application; similar in structure to PBRER but with Japan-specific exposure data</td></tr>
+          <tr><td>Periodic Safety Reports (Teiki Anzensei Hōkoku)</td><td>Submitted to PMDA on local clock — typically annually for first 3 years, then per Re-examination cycle</td></tr>
+          <tr><td>Black Triangle equivalent</td><td>"New active substance" mark in package insert during EPPV period</td></tr>
+          <tr><td>RMP — J-RMP</td><td>Japan-specific Risk Management Plan, structurally similar to EU-RMP but adapted to Japanese health system; submitted at MAA and updated periodically</td></tr>
+          <tr><td>Language</td><td>All ICSR narratives must be in Japanese; sponsors typically run a translation workflow into the GSD</td></tr>
+          <tr><td>Format</td><td>E2B(R3) accepted; PMDA Online Gateway operational since 2019</td></tr>
+        </table>
+
+        <h3 style="font-family:'Cormorant Garamond',serif;font-size:1.2rem;font-weight:500;margin:1rem 0 0.4rem">EU EudraVigilance — Operational Detail</h3>
+        <table class="pv-table">
+          <tr><th>Element</th><th>Detail</th></tr>
+          <tr><td>Database</td><td>EudraVigilance — single EEA repository, EMA-managed since 22-Nov-2017 simplified reporting</td></tr>
+          <tr><td>Gateway</td><td>EVWEB (web interface for low-volume reporters) · EVPOST (point-to-point gateway for high-volume MAHs); E2B(R3) XML</td></tr>
+          <tr><td>Module ICSR</td><td>EVDAS (EudraVigilance Data Analysis System) for signal detection by MAHs and EMA</td></tr>
+          <tr><td>EU Reference Date List (EURD)</td><td>Harmonized DLP and submission frequencies for PSUR/PBRER across the EEA — published and updated by EMA</td></tr>
+          <tr><td>PRAC (Pharmacovigilance Risk Assessment Committee)</td><td>EMA scientific committee responsible for assessing all aspects of risk management; PSURs, signals, RMPs, label changes referred to PRAC</td></tr>
+          <tr><td>QPPV (Qualified Person for Pharmacovigilance)</td><td>Mandatory designated EU resident with continuous availability; oversees the MAH's PV system; QPPV details registered in Article 57 database</td></tr>
+          <tr><td>PSMF (Pharmacovigilance System Master File)</td><td>Mandatory document describing the MAH's PV system; resides at the QPPV's location; available for inspection at any time</td></tr>
+        </table>
+
+        <h3 style="font-family:'Cormorant Garamond',serif;font-size:1.2rem;font-weight:500;margin:1rem 0 0.4rem">ICH Pharmacovigilance Guidelines (Complete List)</h3>
+        <table class="pv-table">
+          <tr><th>Guideline</th><th>Title</th><th>Applies To</th></tr>
+          <tr><td>E2A</td><td>Clinical Safety Data Management — Definitions and Standards for Expedited Reporting</td><td>SUSAR definitions; expedited timelines during development</td></tr>
+          <tr><td>E2B(R3)</td><td>Clinical Safety Data Management — Data Elements for Transmission of ICSRs</td><td>Standardized XML format for individual case transmission</td></tr>
+          <tr><td>E2C(R2)</td><td>Periodic Benefit-Risk Evaluation Report (PBRER)</td><td>Aggregate post-marketing report — replaced PSUR</td></tr>
+          <tr><td>E2D</td><td>Post-Approval Safety Data Management — Definitions and Standards for Expedited Reporting</td><td>Post-approval ICSR definitions</td></tr>
+          <tr><td>E2D(R1) (anticipated)</td><td>Update incorporating digital health, RWE, social media monitoring</td><td>In development; expected Step 4 — late 2026</td></tr>
+          <tr><td>E2E</td><td>Pharmacovigilance Planning</td><td>RMP / PV plan structure; safety specification</td></tr>
+          <tr><td>E2F</td><td>Development Safety Update Report (DSUR)</td><td>Annual safety report during clinical development</td></tr>
+          <tr><td>M1 (MedDRA)</td><td>Medical Dictionary for Regulatory Activities</td><td>Globally harmonized AE coding terminology</td></tr>
+          <tr><td>M4E(R2)</td><td>CTD — Efficacy</td><td>Clinical safety data structure in marketing applications</td></tr>
+        </table>
+      </div>
+    </div>
+  `,
+
+  meddra: `
+    <div class="pv-block">
+      <div class="pv-block-head"><span class="num">№ xi</span><h2>MedDRA — Medical Dictionary for Regulatory Activities</h2><span class="cite">ICH M1 · MSSO Maintenance</span></div>
+      <p class="lede">MedDRA is the globally adopted medical terminology for regulatory communication of adverse events. Maintained by the MedDRA MSSO under ICH governance, current version 27.0 (March 2026 release). Every reportable AE in an ICSR must be coded to a MedDRA Preferred Term (PT). Versions update twice yearly (March, September); MAHs typically re-version their safety databases within 3–6 months of release.</p>
+      <div class="body">
+        <h3 style="font-family:'Cormorant Garamond',serif;font-size:1.2rem;font-weight:500;margin:0.8rem 0 0.4rem">Five-Level Hierarchy</h3>
+        <table class="pv-table">
+          <tr><th>Level</th><th>Abbrev.</th><th>Description</th><th>Approximate Count (v27.0)</th></tr>
+          <tr><td>System Organ Class</td><td>SOC</td><td>Highest level — broad anatomical/physiological grouping</td><td>27</td></tr>
+          <tr><td>High Level Group Term</td><td>HLGT</td><td>Groupings of HLTs related by anatomy/pathology/etiology</td><td>~340</td></tr>
+          <tr><td>High Level Term</td><td>HLT</td><td>Sub-groupings of related Preferred Terms</td><td>~1,750</td></tr>
+          <tr><td>Preferred Term</td><td>PT</td><td>The single medical concept used for reporting; ICSR coding level</td><td>~25,000</td></tr>
+          <tr><td>Lowest Level Term</td><td>LLT</td><td>Synonyms, lay terms, regional variants — each LLT maps to exactly one PT</td><td>~85,000</td></tr>
+        </table>
+
+        <h3 style="font-family:'Cormorant Garamond',serif;font-size:1.2rem;font-weight:500;margin:1rem 0 0.4rem">Worked Example — Hierarchical Coding of "Pancytopenia"</h3>
+        <p>Reporter narrative: "patient developed pancytopenia with severe thrombocytopenia after second dose of avenituzumab"</p>
+        <table class="pv-table">
+          <tr><th>Level</th><th>Code</th><th>Term</th></tr>
+          <tr><td>SOC</td><td>10005329</td><td>Blood and lymphatic system disorders</td></tr>
+          <tr><td>HLGT</td><td>10005327</td><td>Anaemias nonhaemolytic and marrow depression</td></tr>
+          <tr><td>HLT</td><td>10027665</td><td>Bone marrow depression and hypoplastic anaemias</td></tr>
+          <tr><td>PT</td><td>10033661</td><td>Pancytopenia ← coded on the ICSR</td></tr>
+          <tr><td>LLT</td><td>10033661</td><td>Pancytopenia (LLT same as PT — common pattern when no synonyms)</td></tr>
+          <tr><td>LLT (alt)</td><td>10067390</td><td>Aplastic crisis (maps to a different PT but illustrates synonym mapping)</td></tr>
+        </table>
+        <p>The associated thrombocytopenia would be coded as a separate event:</p>
+        <table class="pv-table">
+          <tr><td>SOC</td><td>10005329</td><td>Blood and lymphatic system disorders</td></tr>
+          <tr><td>PT</td><td>10043554</td><td>Thrombocytopenia</td></tr>
+        </table>
+        <div class="callout"><div class="lbl">Why Multi-Coding Matters</div>Many AEs are multifaceted. The MAH should code each medically distinct concept separately — coding only "pancytopenia" loses signal-detection visibility on the thrombocytopenia component. ICH E2B(R3) supports unlimited reactions per ICSR.</div>
+
+        <h3 style="font-family:'Cormorant Garamond',serif;font-size:1.2rem;font-weight:500;margin:1rem 0 0.4rem">Standardised MedDRA Queries (SMQs)</h3>
+        <p>SMQs are pre-defined, validated groupings of PTs designed to capture all clinically relevant manifestations of a medical condition for signal detection and case retrieval.</p>
+        <table class="pv-table">
+          <tr><th>SMQ Type</th><th>Purpose</th><th>Examples</th></tr>
+          <tr><td>Narrow scope</td><td>High specificity — only clinically definitive PTs</td><td>"Anaphylactic reaction (narrow)" — anaphylactic shock, anaphylactic reaction, anaphylactoid reaction</td></tr>
+          <tr><td>Broad scope</td><td>High sensitivity — includes related PTs that may be part of the syndrome</td><td>"Anaphylactic reaction (broad)" — adds urticaria, angioedema, hypotension, etc.</td></tr>
+          <tr><td>Algorithmic SMQ</td><td>Cases qualify only when specific PT combinations occur (e.g., A AND B, OR A AND any C)</td><td>"Drug-induced liver injury" — requires both hepatic enzyme elevation AND clinical hepatotoxicity terms</td></tr>
+        </table>
+        <p><strong>Key SMQs in regular use:</strong> Anaphylactic reaction · Drug-induced liver injury (DILI) · Torsade de pointes/QT prolongation · Suicidal ideation and behaviour · Stevens-Johnson syndrome · Lack of efficacy/effect · Medication errors · Off-label use · Acute renal failure · Thrombosis · Embolic and thrombotic events</p>
+
+        <h3 style="font-family:'Cormorant Garamond',serif;font-size:1.2rem;font-weight:500;margin:1rem 0 0.4rem">Designated Medical Events (DME) and Important Medical Events (IME)</h3>
+        <ul>
+          <li><strong>IME list (EMA)</strong> — Important Medical Events list; PTs that warrant heightened attention regardless of seriousness criteria; updated periodically</li>
+          <li><strong>DME list (FDA)</strong> — Designated Medical Events; FDA-specific list of PTs that, when reported, automatically trigger expedited review even without other seriousness criteria</li>
+          <li><strong>Always-serious list (FDA Guidance)</strong> — events such as bone marrow failure, agranulocytosis, anaphylaxis, that meet the seriousness threshold by definition</li>
+        </ul>
+
+        <h3 style="font-family:'Cormorant Garamond',serif;font-size:1.2rem;font-weight:500;margin:1rem 0 0.4rem">Versioning and Change Management</h3>
+        <p>MedDRA releases occur every March and September. Each MAH must:</p>
+        <ul>
+          <li>Subscribe to MSSO and download new releases (CSV or ASCII format)</li>
+          <li>Re-version the safety database — typically a 3–6 month project including impact analysis on standing aggregate reports, signal detection algorithms, and SMQ definitions</li>
+          <li>Re-code legacy cases when terms change (e.g., a PT becomes a non-current term and is replaced)</li>
+          <li>Document the version used in every aggregate submission (PSUR/PBRER, DSUR)</li>
+          <li>Coordinate version cutover with regulators — most authorities accept a 6-month grace period</li>
+        </ul>
+      </div>
+    </div>
+  `
+};
+
+function renderPharmacovigilance(tab){
+  const target = tab || 'foundations';
+  const el = document.getElementById('pv-content');
+  if(!el) return;
+  el.innerHTML = PV_CONTENT[target] || PV_CONTENT.foundations;
+  // Update tab active state
+  const tabs = document.getElementById('pv-tabs');
+  if(tabs){
+    tabs.querySelectorAll('.pv-tab').forEach(t => {
+      if(t.dataset.pvtab === target) t.classList.add('active');
+      else t.classList.remove('active');
+    });
+  }
+}
+
+function setupPVTabs(){
+  const tabs = document.getElementById('pv-tabs');
+  if(!tabs) return;
+  tabs.querySelectorAll('.pv-tab').forEach(t => {
+    t.addEventListener('click', () => {
+      safeRender('pv-content', () => renderPharmacovigilance(t.dataset.pvtab), 'Pharmacovigilance');
+    });
+  });
+}
+
+
 /* ============================================================
    ADDITIONAL DEVICE & COMBINATION CASE STUDIES
    These are appended to CASE_STUDIES at runtime
@@ -4391,6 +5369,541 @@ const DEVICE_CASE_STUDIES = [
 
 /* Merge device case studies into the main CASE_STUDIES list */
 CASE_STUDIES.push(...DEVICE_CASE_STUDIES);
+
+/* ============================================================
+   PHARMACOVIGILANCE / VIGILANCE WORKED CASE STUDIES
+   Appended to CASE_STUDIES at runtime
+   ============================================================ */
+const PV_CASE_STUDIES = [
+  /* ============================================================
+     CASE 15 — ICSR (15-day expedited)
+     ============================================================ */
+  {
+    id: 'cs-pv-icsr',
+    pathway: 'PV-ICSR',
+    pathwayLabel: 'ICSR — 15-Day Expedited',
+    pathwayFull: 'Individual Case Safety Report (Post-Approval)',
+    title: 'Worked ICSR — Anaphylaxis Following AVENITRA® (avenituzumab) First Dose',
+    api: 'AVENITRA® (avenituzumab) — anti-IL-23p19 monoclonal antibody',
+    sponsor: 'Helix Biosciences Corp. (South San Francisco, CA) — MAH',
+    indication: 'Moderate-to-severe plaque psoriasis (post-approval)',
+    classDose: 'Solution for SC injection, 150 mg/mL pre-filled syringe',
+    cfr: '21 CFR 314.80 · ICH E2B(R3) · ICH E2D',
+    summary: 'Full E2B(R3)-compatible Individual Case Safety Report walking through every required field for a serious unexpected anaphylaxis event. Demonstrates the validity criteria, MedWatch 3500A mapping, expedited 15-day timeline, and downstream feed into PBRER and signal detection.',
+    sections: [
+      {
+        ref: 'Step 1 — Receipt',
+        title: 'Receipt & Validity Assessment',
+        ctx: 'An ICSR is "valid" and reportable only when all four validity criteria are met. If any are absent, the case is incomplete and follow-up is initiated.',
+        content: `<p><strong>Source:</strong> Voluntary report from prescribing dermatologist via Helix Medical Information line on 14 March 2026 at 14:22 ET. Caller logged as Dr. R. Patel, MD, Boston MA.</p>
+<table>
+<tr><th>Validity Criterion (ICH E2D)</th><th>Status</th><th>Evidence</th></tr>
+<tr><td>Identifiable patient</td><td>✓ Met</td><td>Adult female, age 58, hospital MR # provided to Medical Info; coded in case as confidential identifier</td></tr>
+<tr><td>Identifiable reporter</td><td>✓ Met</td><td>Dr. R. Patel, MD (NPI provided), Mass General Hospital Dermatology, Boston MA</td></tr>
+<tr><td>Suspect product</td><td>✓ Met</td><td>AVENITRA® (avenituzumab) 150 mg SC, single dose 12 March 2026 14:30 ET</td></tr>
+<tr><td>Suspect adverse reaction</td><td>✓ Met</td><td>Anaphylaxis — onset 14:35 ET (5 minutes post-dose); progressed to laryngeal edema, hypotension</td></tr>
+</table>
+<p><strong>Determination:</strong> All four validity criteria met. Case accepted into the Helix Global Safety Database (Argus). Case ID: HX-2026-US-08823. Target Tier 1 (priority) processing per Helix SOP-PV-014.</p>`
+      },
+      {
+        ref: 'Step 2 — Seriousness',
+        title: 'Seriousness, Causality & Expectedness',
+        ctx: 'These three assessments together determine the report\'s reporting category and timeline.',
+        content: `<table>
+<tr><th>Assessment</th><th>Determination</th><th>Basis</th></tr>
+<tr><td>Seriousness (ICH E2A criteria)</td><td><strong>Serious</strong> — multiple criteria met</td><td>(a) Life-threatening (laryngeal edema with hypotension); (b) Required hospitalization (5 days); (c) Important medical event per IME list</td></tr>
+<tr><td>Causality — Reporter</td><td>Probable</td><td>Reporter assessment: temporal proximity 5 min, no prior exposure, no alternative trigger identified, characteristic clinical presentation</td></tr>
+<tr><td>Causality — MAH (Helix Medical Safety)</td><td>Probable</td><td>WHO-UMC criteria: time relationship plausible, response to dechallenge (epinephrine, drug discontinued permanently), no alternative explanation, biologically plausible (anti-drug antibodies / first-dose hypersensitivity to mAb)</td></tr>
+<tr><td>Expectedness</td><td><strong>Unexpected</strong></td><td>AVENITRA® USPI lists "hypersensitivity reactions" (Section 5.2) but anaphylaxis specifically is not currently listed. Per FDA Reference Safety Information (RSI = current USPI), event is unlisted/unexpected at PT level.</td></tr>
+<tr><td>Reporting Category</td><td><strong>Serious + Unexpected → 15-day expedited</strong></td><td>Per 21 CFR 314.80(c)(1) and ICH E2D</td></tr>
+</table>
+<div class="callout"><div class="lbl">Day Zero of the Reporting Clock</div>Day 0 is the day the MAH first becomes aware of all four validity criteria being met. Helix received the call on 14 March 2026 at 14:22 ET; this is Day 0. The 15-day expedited submission is therefore due by 29 March 2026 (Day 15).</div>`
+      },
+      {
+        ref: 'Step 3 — MedDRA',
+        title: 'MedDRA Coding (v27.0)',
+        ctx: 'Every reaction, indication, medical history, and concomitant medication is coded to MedDRA terms. Multi-coding is required for multifaceted events.',
+        content: `<p><strong>Reactions Coded:</strong></p>
+<table>
+<tr><th>Reporter Term</th><th>SOC</th><th>HLT</th><th>PT (coded)</th><th>PT Code</th></tr>
+<tr><td>Anaphylactic shock</td><td>Immune system disorders</td><td>Hypersensitivity</td><td>Anaphylactic reaction</td><td>10002198</td></tr>
+<tr><td>Throat closing / laryngeal edema</td><td>Resp/thoracic/mediastinal</td><td>Upper respiratory tract signs and symptoms</td><td>Laryngeal oedema</td><td>10023845</td></tr>
+<tr><td>BP 78/42</td><td>Vascular disorders</td><td>Vascular hypotensive disorders</td><td>Hypotension</td><td>10021097</td></tr>
+<tr><td>Diffuse urticaria</td><td>Skin and subcutaneous tissue</td><td>Urticarias</td><td>Urticaria</td><td>10046735</td></tr>
+</table>
+<p><strong>Indication Coded:</strong></p>
+<table>
+<tr><td>Original indication: "moderate-to-severe plaque psoriasis"</td><td>SOC: Skin and subcutaneous tissue</td><td>PT: Psoriasis (10037153)</td></tr>
+</table>
+<p><strong>SMQ Membership Check:</strong> Anaphylactic reaction (PT 10002198) is a member of <strong>SMQ "Anaphylactic reaction (narrow scope)"</strong> — SMQ code 20000021. Triggers automatic inclusion in the next anaphylaxis cluster signal review.</p>`
+      },
+      {
+        ref: 'Step 4 — E2B(R3) Fields',
+        title: 'E2B(R3) Field-by-Field Mapping',
+        ctx: 'The structured XML data elements that get transmitted to FAERS, EudraVigilance, PMDA and other gateways. Showing key required and conditionally-required fields.',
+        content: `<table>
+<tr><th>E2B(R3) Element</th><th>Field Name</th><th>Value</th></tr>
+<tr><td>C.1.1</td><td>Sender's safety report unique identifier</td><td>HX-2026-US-08823</td></tr>
+<tr><td>C.1.2</td><td>Date of creation of report</td><td>2026-03-14T14:22:00-04:00</td></tr>
+<tr><td>C.1.3</td><td>Type of report</td><td>1 = Spontaneous report</td></tr>
+<tr><td>C.1.4</td><td>Date report was first received from source</td><td>2026-03-14</td></tr>
+<tr><td>C.1.5</td><td>Date of most recent information for this report</td><td>2026-03-25 (after follow-up Day 11)</td></tr>
+<tr><td>C.1.7</td><td>Does this case fulfil local criteria for an expedited report?</td><td>1 = Yes</td></tr>
+<tr><td>C.1.8.1</td><td>Worldwide unique case identification number</td><td>US-HELIX-2026008823</td></tr>
+<tr><td>C.1.9.1.r</td><td>Other case identifiers (regulatory)</td><td>FDA Manufacturer Report Number: HELIX-MFR-26-0823</td></tr>
+<tr><td>C.2.r</td><td>Primary source(s) of information</td><td>Reporter type: 1 (Physician); Country: US; Qualification: Dermatologist</td></tr>
+<tr><td>C.3</td><td>Information on sender of case safety report</td><td>Sender type: 2 (Pharmaceutical company); Helix Biosciences Corp.; ESG account ID</td></tr>
+<tr><td>C.5.1.r</td><td>Study identification</td><td>N/A — spontaneous, not a clinical trial</td></tr>
+<tr><td>D.1</td><td>Patient characteristics — age</td><td>Age value: 58; Age unit: 801 (Years)</td></tr>
+<tr><td>D.5</td><td>Patient sex</td><td>2 = Female</td></tr>
+<tr><td>D.7.1.r</td><td>Patient relevant medical history — type 2 diabetes mellitus, hypertension</td><td>PTs coded; both ongoing</td></tr>
+<tr><td>D.8.r</td><td>Past drug history</td><td>None reported</td></tr>
+<tr><td>D.9.1</td><td>Date of death</td><td>N/A — patient survived</td></tr>
+<tr><td>E.i.1.1.a</td><td>Reaction/event in MedDRA — Reporter PT</td><td>Anaphylactic reaction</td></tr>
+<tr><td>E.i.1.2</td><td>Reaction/event in MedDRA — PT code</td><td>10002198</td></tr>
+<tr><td>E.i.4</td><td>Date of start of reaction</td><td>2026-03-12</td></tr>
+<tr><td>E.i.5</td><td>Date of end of reaction</td><td>2026-03-17 (recovered)</td></tr>
+<tr><td>E.i.7</td><td>Outcome of reaction</td><td>1 = Recovered/resolved</td></tr>
+<tr><td>E.i.3.2.a–E.i.3.2.f</td><td>Seriousness criteria</td><td>Life-threatening: Y; Hospitalization: Y; Other medically important: Y</td></tr>
+<tr><td>G.k.2.1.1</td><td>MAH product name</td><td>AVENITRA</td></tr>
+<tr><td>G.k.2.2</td><td>MAH product MPID</td><td>To be assigned post-IDMP implementation</td></tr>
+<tr><td>G.k.2.3.r.1</td><td>Active substance</td><td>Avenituzumab</td></tr>
+<tr><td>G.k.4.r.1.a</td><td>Dose</td><td>150 mg single dose SC</td></tr>
+<tr><td>G.k.4.r.1.b–c</td><td>Dosage formulation / route</td><td>Solution for injection / Subcutaneous</td></tr>
+<tr><td>G.k.4.r.4–5</td><td>Action taken with drug</td><td>1 = Drug withdrawn (permanently)</td></tr>
+<tr><td>G.k.7.r.2</td><td>Indication as reported</td><td>Plaque psoriasis</td></tr>
+<tr><td>G.k.9.i.r.r</td><td>Causality assessment per drug-reaction pair</td><td>Method: WHO-UMC; Result: Probable</td></tr>
+<tr><td>H.1</td><td>Case narrative</td><td>(See narrative section)</td></tr>
+<tr><td>H.4</td><td>MAH comments</td><td>"First-dose hypersensitivity reaction consistent with rare anaphylaxis class effect for therapeutic monoclonal antibodies; not currently in product labeling. Case will be summarized in next PBRER and entered into anaphylaxis signal review."</td></tr>
+</table>`
+      },
+      {
+        ref: 'Step 5 — Narrative',
+        title: 'H.1 Case Narrative',
+        ctx: 'The medical narrative is the most-read field of the ICSR — must be coherent, chronological, and contain all relevant clinical detail.',
+        content: `<p><em>Patient is a 58-year-old female with moderate-to-severe plaque psoriasis (DLQI 18 at baseline), type 2 diabetes mellitus on metformin, and hypertension on lisinopril. No prior biologic exposure; no known drug allergies. AVENITRA® 150 mg was administered subcutaneously in the dermatology clinic on 12 March 2026 at approximately 14:30 ET as the patient's first dose.</em></p>
+<p><em>Five minutes after administration (~14:35), the patient reported throat tightness, lightheadedness, and pruritus. Within 10 minutes she developed diffuse urticaria, audible stridor, and a measured blood pressure of 78/42 mmHg with heart rate 124 bpm. Oxygen saturation declined to 88% on room air.</em></p>
+<p><em>The clinic activated emergency protocol. Intramuscular epinephrine 0.3 mg was administered at 14:42; supplemental oxygen was started; an IV was placed and 1 L normal saline initiated. EMS transported the patient to Mass General Hospital Emergency Department at 15:10. In the ED, she received a second dose of IM epinephrine, IV diphenhydramine 50 mg, methylprednisolone 125 mg, and additional fluids. Symptoms resolved over approximately 90 minutes.</em></p>
+<p><em>The patient was admitted for observation given biphasic anaphylaxis risk and her cardiovascular comorbidities. Hospital course was uneventful. Tryptase drawn at 90 minutes post-event was elevated at 28 ng/mL (baseline drawn 24 hours later: 4 ng/mL), supporting mast-cell-mediated anaphylaxis. She was discharged on 17 March 2026 (hospital day 5) on oral prednisone taper and instructions for permanent AVENITRA® discontinuation.</em></p>
+<p><em>At the 11-day follow-up visit (25 March 2026), the patient had fully recovered. AVENITRA® is permanently discontinued; the patient was transitioned to an alternative biologic at the dermatologist's discretion.</em></p>`
+      },
+      {
+        ref: 'Step 6 — Submission',
+        title: 'Submission to FDA, EudraVigilance, and Other Authorities',
+        ctx: 'The same case is submitted to multiple regulators on different country-specific clocks. Day 0 is the day the MAH became aware in each region.',
+        content: `<table>
+<tr><th>Authority</th><th>Submission Path</th><th>Due Date</th><th>Submitted</th><th>Acknowledgment</th></tr>
+<tr><td>FDA (FAERS)</td><td>E2B(R3) XML via FDA ESG Production Gateway</td><td>29 March 2026 (Day 15)</td><td>26 March 2026 (Day 12)</td><td>FDA ACK1, ACK2, ACK3 received within 4 hours; FAERS ID assigned 26-MAR-2026 22:14 ET</td></tr>
+<tr><td>EMA (EudraVigilance)</td><td>E2B(R3) XML via EVPOST gateway (Helix EU MAH affiliate is sender)</td><td>29 March 2026 (Day 15 from EU MAH awareness, same as global Day 0)</td><td>27 March 2026 (Day 13)</td><td>EVHUMAN ACK received; EV worldwide unique ID assigned</td></tr>
+<tr><td>UK MHRA</td><td>E2B(R3) via MHRA Gateway</td><td>29 March 2026</td><td>27 March 2026</td><td>ACK received same day</td></tr>
+<tr><td>PMDA Japan</td><td>E2B(R3) via PMDA Online Gateway; narrative translated to Japanese; case classified as foreign serious unexpected (15-day) for AVENITRA's Japan label</td><td>29 March 2026</td><td>27 March 2026</td><td>ACK received same day</td></tr>
+<tr><td>Health Canada</td><td>E2B(R3) via Canada Vigilance gateway</td><td>29 March 2026</td><td>27 March 2026</td><td>ACK received</td></tr>
+<tr><td>WHO-UMC (VigiBase)</td><td>Forwarded by FDA from FAERS automatically (no separate MAH submission)</td><td>—</td><td>Auto-forward</td><td>—</td></tr>
+</table>
+<p><strong>Follow-Up Plan:</strong></p>
+<ul>
+<li>Reporter follow-up letter sent 26 March 2026 requesting tryptase results, full hospital discharge summary, and confirmation of permanent discontinuation</li>
+<li>Hospital discharge summary received 02 April 2026; case updated to "follow-up" version, resubmitted as E2B(R3) "follow-up" report (C.1.6 = 1)</li>
+<li>Case flagged for inclusion in next signal review for "anaphylaxis" cluster across the IL-23 inhibitor class</li>
+<li>Case to be summarized as a single-case narrative in next PBRER (interval ending 30 June 2026); included in anaphylaxis-related individual case discussion</li>
+<li>Helix Risk Management Team to evaluate whether RMP/USPI Section 5.2 (Hypersensitivity) requires update to specifically mention anaphylaxis</li>
+</ul>`
+      }
+    ]
+  },
+
+  /* ============================================================
+     CASE 16 — DSUR
+     ============================================================ */
+  {
+    id: 'cs-pv-dsur',
+    pathway: 'PV-DSUR',
+    pathwayLabel: 'DSUR',
+    pathwayFull: 'Development Safety Update Report',
+    title: 'DSUR Year 2 — NRX-101 Investigational Program',
+    api: 'NRX-101 — selective NMDA glutamate receptor modulator',
+    sponsor: 'NeuroPharm Therapeutics, Inc. (Cambridge, MA) — IND Sponsor',
+    indication: 'Treatment-resistant major depressive disorder (under development)',
+    classDose: 'Tablets 25/50/100 mg; under IND',
+    cfr: 'ICH E2F · 21 CFR 312.33 · EMA Detailed Guidance on Annual Safety Reports',
+    summary: 'Worked example of an annual Development Safety Update Report at the end of Year 2 of clinical development for an IND-stage investigational product. Includes integrated safety analysis across Phase 1 and ongoing Phase 2 studies, SUSAR line listing, and benefit-risk assessment.',
+    sections: [
+      {
+        ref: 'Cover & Identification',
+        title: 'DSUR Identification — Title Page & Executive Summary',
+        ctx: 'ICH E2F Section 1 — administrative identification of the report.',
+        content: `<table>
+<tr><td><strong>Active Substance</strong></td><td>NRX-101 (proposed INN: nirexodine)</td></tr>
+<tr><td><strong>DSUR Number</strong></td><td>NRX-101-DSUR-002</td></tr>
+<tr><td><strong>Reporting Period</strong></td><td>15 March 2025 — 14 March 2026 (12 months)</td></tr>
+<tr><td><strong>Data Lock Point (DLP)</strong></td><td>14 March 2026</td></tr>
+<tr><td><strong>DIBD (Development International Birth Date)</strong></td><td>15 March 2024 (FDA IND 156782 effective)</td></tr>
+<tr><td><strong>Sponsor</strong></td><td>NeuroPharm Therapeutics, Inc. — global sponsor of record</td></tr>
+<tr><td><strong>Submitted To</strong></td><td>FDA (IND 156782); EMA (CTR EU-CT 2024-501122-18); Health Canada (CTA 240118); PMDA (J-IND 2024-082)</td></tr>
+<tr><td><strong>Due Date (60 days post-DLP)</strong></td><td>13 May 2026</td></tr>
+<tr><td><strong>Submission Date</strong></td><td>11 May 2026</td></tr>
+</table>
+<p><strong>Executive Summary (excerpt):</strong> "This second annual Development Safety Update Report covers the period 15 March 2025 through 14 March 2026 for NRX-101, an investigational selective NMDA glutamate receptor modulator under development for treatment-resistant major depressive disorder. During the reporting period, three Phase 1 studies were completed, the Phase 2 dose-finding study (NRX-101-201) entered active enrollment, and approximately 312 subjects received at least one dose of NRX-101. No new safety signals were identified that change the benefit-risk assessment supporting continued development."</p>`
+      },
+      {
+        ref: 'Section 6',
+        title: 'Section 6 — Update on Actions Taken for Safety Reasons',
+        ctx: 'ICH E2F Section 6 — chronological list of any safety-related actions during the period.',
+        content: `<p>During the reporting period, the following actions were taken for safety reasons:</p>
+<table>
+<tr><th>Date</th><th>Action</th><th>Reason</th></tr>
+<tr><td>22 Sep 2025</td><td>Investigator's Brochure v3.0 finalized and distributed to all investigators</td><td>Routine update incorporating completed Study 102 long-term data; no new safety information triggering urgent communication</td></tr>
+<tr><td>14 Nov 2025</td><td>Protocol Amendment 2 to Study NRX-101-201 (Phase 2)</td><td>Added more frequent ALT/AST monitoring (every 4 weeks instead of 8) following one case of asymptomatic Grade 2 transaminitis (study subject 201-014). Not a SUSAR. Risk-mitigation action.</td></tr>
+<tr><td>04 Feb 2026</td><td>One Urgent Safety Issue communication to Study 201 sites: temporary pause of dose-escalation cohort 4 (200 mg)</td><td>Two subjects in cohort 3 (150 mg) experienced transient orthostatic hypotension with one fall (no injury). DSMB reviewed; recommended pause pending PK analysis</td></tr>
+<tr><td>22 Feb 2026</td><td>DSMB review concluded; cohort 3 hypotension determined to be related to interaction with study food restriction protocol; cohort 4 cleared to proceed with revised dosing instructions</td><td>Risk addressed; cohort 4 enrollment resumed under amended IB</td></tr>
+</table>`
+      },
+      {
+        ref: 'Section 7',
+        title: 'Section 7 — Changes to Reference Safety Information',
+        ctx: 'Captures changes to the Investigator\'s Brochure or label-equivalent during the period.',
+        content: `<p>During the reporting period, the Investigator's Brochure was updated as follows:</p>
+<table>
+<tr><th>IB Version</th><th>Effective Date</th><th>Key Changes</th></tr>
+<tr><td>v2.1</td><td>04 May 2025</td><td>Updated PK section with completed bioavailability data from Study 103; minor editorial</td></tr>
+<tr><td>v3.0</td><td>22 Sep 2025</td><td>Major update: full integration of Study 102 (MAD) safety and PK; added new ADR "Headache" to Reference Safety Information based on Phase 1 cluster (12% incidence vs 5% placebo); added Section 6.4 covering observed CNS effects (somnolence, dizziness)</td></tr>
+<tr><td>v3.1</td><td>15 Feb 2026</td><td>Minor update following DSMB cohort 3 review; revised dosing instructions; clarified food-effect interaction</td></tr>
+</table>
+<p><strong>Reference Safety Information (RSI) used for SUSAR determination during the period:</strong> IB v3.0 (effective 22-Sep-2025 through DLP).</p>`
+      },
+      {
+        ref: 'Section 13',
+        title: 'Section 13 — Cumulative Summary Tabulation of SUSARs',
+        ctx: 'Suspected Unexpected Serious Adverse Reactions — the most-scrutinized table in the DSUR.',
+        content: `<p><strong>Cumulative SUSARs since DIBD (15 March 2024 through 14 March 2026):</strong> 7 cases</p>
+<p><strong>SUSARs in Reporting Period (15 March 2025 through 14 March 2026):</strong> 4 cases</p>
+<table>
+<tr><th>Case ID</th><th>Study</th><th>SOC</th><th>PT</th><th>Onset (Days from First Dose)</th><th>Outcome</th><th>Causality</th></tr>
+<tr><td>NRX-2025-US-0044</td><td>NRX-101-103 (Phase 1 hepatic impairment)</td><td>Hepatobiliary disorders</td><td>Drug-induced liver injury</td><td>D14</td><td>Recovered after discontinuation</td><td>Possible</td></tr>
+<tr><td>NRX-2025-EU-0078</td><td>NRX-101-201 (Phase 2)</td><td>Cardiac disorders</td><td>Atrial fibrillation</td><td>D9</td><td>Resolved with cardioversion; subject withdrawn</td><td>Possible</td></tr>
+<tr><td>NRX-2025-CA-0091</td><td>NRX-101-201 (Phase 2)</td><td>Psychiatric disorders</td><td>Suicidal ideation</td><td>D21</td><td>Resolved without intervention; subject withdrawn</td><td>Probable (not unexpected per IB v3.0; investigator initially called as SUSAR; on review NOT a SUSAR — see Note below)</td></tr>
+<tr><td>NRX-2026-US-0102</td><td>NRX-101-201 (Phase 2)</td><td>Nervous system disorders</td><td>Seizure</td><td>D5</td><td>Resolved; subject withdrawn; EEG normal at follow-up</td><td>Possible</td></tr>
+</table>
+<div class="callout"><div class="lbl">SUSAR Reclassification Note</div>Case NRX-2025-CA-0091 (Suicidal ideation) was initially submitted as a SUSAR by the investigator. On formal causality and expectedness review, the event is listed in IB v3.0 Section 6.4 as a known psychiatric adverse reaction. The case was reclassified as a Serious Expected Adverse Reaction and is no longer counted as a SUSAR; the regulatory submission was withdrawn within 5 days of reclassification per ICH E2F practice.</div>
+<p><strong>Disposition of all 4 SUSARs:</strong> Reported within ICH E2A timelines (7-day for fatal/life-threatening; 15-day for other serious unexpected). All subjects had drug discontinued; all events resolved. No deaths.</p>`
+      },
+      {
+        ref: 'Section 18',
+        title: 'Section 18 — Overall Safety Assessment',
+        ctx: 'Sponsor\'s integrated benefit-risk assessment based on the period\'s data.',
+        content: `<p><strong>Overall Conclusions:</strong></p>
+<p>The cumulative safety database for NRX-101 now includes 412 subjects exposed to at least one dose (310 healthy volunteers in Phase 1, 102 patients with TRD in ongoing Phase 2). Cumulative subject-exposure of approximately 47 patient-years is reassuring for the hypotheses tested.</p>
+<p><strong>Identified Risks (per IB v3.0):</strong></p>
+<ul>
+<li>Headache (12% vs 5% placebo) — common, mild-to-moderate, self-limited</li>
+<li>Somnolence (8% vs 4%) — dose-related; manageable with bedtime dosing</li>
+<li>Dizziness (7% vs 3%) — orthostatic; addressed by dosing-with-food per IB v3.1</li>
+<li>Nausea (6% vs 4%) — common with mAb-class drugs and CNS-active agents broadly</li>
+<li>Suicidal ideation (low rate in TRD population; expected baseline) — vigilantly monitored</li>
+</ul>
+<p><strong>Important Potential Risks (under monitoring):</strong></p>
+<ul>
+<li>Hepatotoxicity — 1 SUSAR case; Phase 2 protocol amended for more frequent LFT monitoring</li>
+<li>Cardiac arrhythmia — 1 SUSAR case (atrial fibrillation); under PK-correlated review</li>
+<li>Seizure — 1 SUSAR case in Phase 2; subject had pre-existing risk factors not previously disclosed</li>
+</ul>
+<p><strong>Important Missing Information:</strong></p>
+<ul>
+<li>Long-term (&gt;6 months) safety in TRD population — to be addressed in Phase 3</li>
+<li>Pediatric safety — pediatric study plan in development</li>
+<li>Severe renal impairment — Study 104 planned for Q3 2026</li>
+</ul>
+<p><strong>Benefit-Risk Statement:</strong> "Based on cumulative data, the safety profile of NRX-101 remains consistent with the hypotheses developed at IND stage. No new safety signals have emerged in the reporting period that change the benefit-risk assessment. Continued development is supported."</p>`
+      }
+    ]
+  },
+
+  /* ============================================================
+     CASE 17 — PBRER
+     ============================================================ */
+  {
+    id: 'cs-pv-pbrer',
+    pathway: 'PV-PBRER',
+    pathwayLabel: 'PBRER',
+    pathwayFull: 'Periodic Benefit-Risk Evaluation Report',
+    title: 'PBRER — AVENITRA® (avenituzumab) — First Year Post-Approval',
+    api: 'AVENITRA® (avenituzumab) — anti-IL-23p19 mAb',
+    sponsor: 'Helix Biosciences Corp.',
+    indication: 'Moderate-to-severe plaque psoriasis (post-approval, US + EU)',
+    classDose: 'Solution for SC injection, 150 mg/mL pre-filled syringe',
+    cfr: 'ICH E2C(R2) · GVP Module VII · 21 CFR 314.81',
+    summary: 'PBRER for the first 6-month interval after International Birth Date for AVENITRA®. Demonstrates the structure prescribed by ICH E2C(R2): exposure data, signal review, ICSR analysis, benefit-risk integration. Replaces the older PSUR format.',
+    sections: [
+      {
+        ref: 'Section 1–3',
+        title: 'PBRER Sections 1–3 — Cover, Executive Summary, Status',
+        ctx: 'Administrative metadata and the executive summary read first by regulators.',
+        content: `<table>
+<tr><td><strong>Product</strong></td><td>AVENITRA® (avenituzumab)</td></tr>
+<tr><td><strong>MAH</strong></td><td>Helix Biosciences Corp.</td></tr>
+<tr><td><strong>Active Substance</strong></td><td>Avenituzumab (humanized IgG1κ anti-IL-23p19 mAb)</td></tr>
+<tr><td><strong>International Birth Date (IBD)</strong></td><td>15 January 2026 (date of first marketing authorization globally — FDA approval)</td></tr>
+<tr><td><strong>Reporting Interval</strong></td><td>15 January 2026 — 14 July 2026 (6-month interval)</td></tr>
+<tr><td><strong>Data Lock Point</strong></td><td>14 July 2026</td></tr>
+<tr><td><strong>Due Date</strong></td><td>22 September 2026 (70 days after DLP for ≤12-month interval)</td></tr>
+<tr><td><strong>Submission Date</strong></td><td>20 September 2026</td></tr>
+<tr><td><strong>EU Reference Date</strong></td><td>15 January 2026 (matches IBD per EURD list entry for avenituzumab)</td></tr>
+</table>
+<p><strong>Executive Summary (excerpt):</strong></p>
+<p>"This first PBRER for AVENITRA® covers the 6-month interval immediately following first global approval (FDA, 15 January 2026; EMA approval anticipated Q4 2026). During the interval, an estimated 4,820 patients received AVENITRA® in the United States, contributing approximately 802 patient-years of exposure. A total of 287 individual case safety reports were received: 64 serious, 223 non-serious. No new safety signals warranted label change during the interval. One important known risk, anaphylaxis, was further characterized and is being evaluated for explicit Section 5.2 inclusion in the next labeling supplement. The benefit-risk profile of AVENITRA® remains favorable for the approved indication."</p>`
+      },
+      {
+        ref: 'Section 5',
+        title: 'Section 5 — Estimated Patient Exposure',
+        ctx: 'Critical for context — denominator for any rate calculation.',
+        content: `<p><strong>Cumulative and Interval Exposure (post-marketing):</strong></p>
+<table>
+<tr><th>Region</th><th>Approval Date</th><th>Patients Exposed (Interval)</th><th>Patient-Years (Interval)</th><th>Patients Exposed (Cumulative)</th></tr>
+<tr><td>United States</td><td>15-Jan-2026</td><td>4,820</td><td>802</td><td>4,820</td></tr>
+<tr><td>European Union</td><td>Anticipated Q4 2026</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>Other</td><td>Not yet approved</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td><strong>Total Post-Marketing</strong></td><td>—</td><td><strong>4,820</strong></td><td><strong>802</strong></td><td><strong>4,820</strong></td></tr>
+</table>
+<p><strong>Methodology for Exposure Estimate:</strong> Calculated from IQVIA distribution data through 30 June 2026 (latest available); 14-day adjustment factor applied for Q3 2026 final 14 days using historical seasonal patterns; exposure assumes 13.0 doses per patient-year per the recommended Q8W dosing schedule from Week 4. Methodology consistent with ICH E2C(R2) §5.2.</p>
+<p><strong>Cumulative Clinical Trial Exposure (separate from post-marketing):</strong> 1,847 patients across all sponsor trials; cumulative patient-years 2,940. Reported separately to avoid mixing controlled and uncontrolled exposure.</p>`
+      },
+      {
+        ref: 'Section 14',
+        title: 'Section 14 — Signal & Risk Evaluation',
+        ctx: 'Heart of the PBRER. Reviews each known risk, missing information, and any new signals.',
+        content: `<p><strong>14.1 Summary of Safety Concerns (per current Safety Specification / RMP):</strong></p>
+<table>
+<tr><th>Category</th><th>Identified Risks</th><th>Potential Risks</th><th>Missing Information</th></tr>
+<tr><td>From RMP v1.0</td><td>Hypersensitivity reactions; Serious infections; Tuberculosis reactivation; Injection site reactions</td><td>Malignancy (long-term); Major adverse cardiovascular events; Posterior reversible encephalopathy syndrome (class effect)</td><td>Long-term safety beyond 5 years; Pregnancy outcomes; Pediatric safety; Use in immunocompromised non-HIV populations</td></tr>
+</table>
+<p><strong>14.2 Signal Evaluation During Interval:</strong></p>
+<table>
+<tr><th>Signal</th><th>Source</th><th>MAH Conclusion</th><th>Action</th></tr>
+<tr><td>Anaphylaxis (specifically vs. broader hypersensitivity)</td><td>Internal database review (n=8 cases at DLP); 1 case (HX-2026-US-08823) included in this PBRER as worked example</td><td>Anaphylaxis is a clinically meaningful subset of the existing "Hypersensitivity reactions" identified risk and warrants explicit labeling</td><td>Labeling supplement (CBE-30) submitted 12 July 2026 to add "anaphylaxis" specifically to USPI Section 5.2</td></tr>
+<tr><td>Hematologic events (cytopenias)</td><td>Disproportionality analysis in FAERS (PRR 1.4, ROR 1.5, both with lower CI bounds &lt;1)</td><td>Below SDR threshold; no signal at this time. Will continue monitoring.</td><td>Continued routine monitoring; flagged for next PBRER review</td></tr>
+<tr><td>Suicidal ideation (clinical trial)</td><td>One Phase 4 PASS observation</td><td>No disproportionality vs. background population; class effect for chronic disease therapies overall</td><td>Continue Phase 4 PASS through Year 3</td></tr>
+<tr><td>Mucocutaneous candidiasis</td><td>5 cases in interval (3 oral, 2 esophageal)</td><td>Known class effect of IL-23 inhibitors; no signal change</td><td>Continue routine monitoring</td></tr>
+</table>
+<p><strong>14.4 Disproportionality Analysis Summary (FAERS DLP):</strong></p>
+<table>
+<tr><th>AE</th><th>Cases (a)</th><th>PRR</th><th>ROR (95% CI)</th><th>SDR Status</th></tr>
+<tr><td>Anaphylactic reaction</td><td>8</td><td>3.42</td><td>3.43 (1.71 – 6.88)</td><td><strong>SDR met</strong> — leads to label update</td></tr>
+<tr><td>Pancytopenia</td><td>4</td><td>1.40</td><td>1.43 (0.51 – 4.05)</td><td>Not met (CI lower bound &lt; 1)</td></tr>
+<tr><td>Suicidal ideation</td><td>3</td><td>0.92</td><td>0.93 (0.30 – 2.91)</td><td>Not met</td></tr>
+<tr><td>Tuberculosis reactivation</td><td>2</td><td>2.84</td><td>2.85 (0.71 – 11.39)</td><td>Below cell-count threshold (a=2 &lt; 3)</td></tr>
+</table>`
+      },
+      {
+        ref: 'Section 18',
+        title: 'Section 18 — Benefit-Risk Integration',
+        ctx: 'The integrated benefit-risk evaluation is the conclusion read most carefully by regulators.',
+        content: `<p><strong>18.1 Benefit Evaluation:</strong></p>
+<p>The clinical efficacy of AVENITRA® established in PSORIA-1 and PSORIA-2 (PASI 90 ~74% at Week 16 vs 2.6% placebo; sustained through Week 52) remains the basis for the favorable benefit. Real-world effectiveness from the early post-marketing experience is consistent with trial efficacy: the EHR-linked safety follow-up (Helix-supported pharmacy program) shows treatment continuation rates of 89% at 6 months, suggesting practitioner and patient satisfaction.</p>
+<p><strong>18.2 Risk Evaluation:</strong></p>
+<p>The risk profile observed during the interval is consistent with the pre-approval safety database. Common adverse events are predictable, mild-to-moderate, and self-limited. The newly characterized anaphylaxis signal will be addressed through labeling. Class-effect risks (TB reactivation, serious infections) remain manageable through screening and monitoring per RMP. No new important risks were identified.</p>
+<p><strong>18.3 Integrated Benefit-Risk Assessment:</strong></p>
+<p>"For the indicated population (adults with moderate-to-severe plaque psoriasis), the substantial efficacy benefit of AVENITRA® (skin clearance, quality of life) continues to outweigh the identified and potential risks. Risks are well-characterized, monitored, and addressable through labeling, screening, and post-market surveillance. <strong>The benefit-risk profile is favorable</strong> and supports continued marketing without restriction beyond the existing label and RMP."</p>
+<p><strong>Recommended Actions:</strong></p>
+<ul>
+<li>CBE-30 labeling supplement filed for explicit anaphylaxis language (in progress)</li>
+<li>RMP v1.1 update planned to formalize anaphylaxis as a separately listed identified risk (currently grouped under "hypersensitivity reactions")</li>
+<li>Continue Phase 4 PASS for long-term safety</li>
+<li>Continue monitoring of cytopenias, TB reactivation, mucocutaneous candidiasis</li>
+<li>Next PBRER: 6-month interval ending 14 January 2027 (DLP); due by 22 March 2027</li>
+</ul>`
+      }
+    ]
+  },
+
+  /* ============================================================
+     CASE 18 — REMS
+     ============================================================ */
+  {
+    id: 'cs-pv-rems',
+    pathway: 'PV-REMS',
+    pathwayLabel: 'REMS',
+    pathwayFull: 'Risk Evaluation and Mitigation Strategy',
+    title: 'REMS for SOMNIVA™ (sodium oxybate-based sleep medication, Schedule III)',
+    api: 'Sodium oxybate (gamma-hydroxybutyrate) — controlled substance',
+    sponsor: 'Vesalius Therapeutics, Inc.',
+    indication: 'Treatment of cataplexy and excessive daytime sleepiness in adults with narcolepsy',
+    classDose: 'Oral solution, 0.5 g/mL — twice-nightly dosing',
+    cfr: 'FFDCA §505-1; FDAAA 2007 §901',
+    summary: 'A worked Risk Evaluation and Mitigation Strategy (REMS) for a Schedule III GHB product with a substantial abuse and serious-harm potential. Includes Elements to Assure Safe Use (ETASU): prescriber/patient/pharmacy enrollment, restricted distribution, and assessment plan.',
+    sections: [
+      {
+        ref: 'Goals',
+        title: 'REMS Goals & Required Elements',
+        ctx: 'The REMS must articulate specific health-outcome goals and the elements designed to achieve them.',
+        content: `<p><strong>REMS Goals:</strong></p>
+<ol>
+<li>To mitigate the risks of <strong>serious adverse outcomes</strong> resulting from inappropriate prescribing, misuse, abuse, and diversion of SOMNIVA®</li>
+<li>To inform prescribers and patients about the serious risks associated with SOMNIVA® and the safe-use conditions, including: (a) avoidance of concomitant CNS depressants and alcohol; (b) abuse/dependence/diversion; (c) respiratory depression and risk of unconsciousness/death</li>
+<li>To restrict access to SOMNIVA® only to enrolled prescribers, patients, and a single, certified central pharmacy</li>
+</ol>
+<p><strong>REMS Elements:</strong></p>
+<table>
+<tr><th>Element</th><th>Description</th></tr>
+<tr><td>Medication Guide (FDAAA §901)</td><td>FDA-approved patient-directed information dispensed with each prescription; addresses risks, safe storage, abuse potential, and instructions</td></tr>
+<tr><td>Communication Plan</td><td>Provider letters; targeted education to anesthesiologists, surgeons, ED physicians who may encounter patients</td></tr>
+<tr><td>Elements to Assure Safe Use (ETASU)</td><td>(See ETASU section below) — Yes, required given the seriousness of risks</td></tr>
+<tr><td>Implementation System</td><td>Vesalius operates the REMS via the SOMNIVA REMS Program (third-party administrator: McKesson REMS Operations); database of enrolled prescribers, patients, dispensing records</td></tr>
+<tr><td>Timetable for Submission of Assessments</td><td>18 months and 3 years post-approval; thereafter every 7 years (or per FDA request)</td></tr>
+</table>`
+      },
+      {
+        ref: 'ETASU',
+        title: 'Elements to Assure Safe Use (ETASU)',
+        ctx: 'ETASU is the most restrictive REMS element and is reserved for products where less-restrictive measures cannot mitigate the risk.',
+        content: `<table>
+<tr><th>ETASU Component</th><th>Implementation</th></tr>
+<tr><td><strong>(A) Prescriber Certification</strong></td><td>Prescribers must complete the SOMNIVA REMS Prescriber Education Module (~30 min CME-eligible online module) and pass a knowledge assessment (≥80%); enroll via REMS portal; agree to (i) educate patients on safe use, (ii) prescribe only for FDA-approved indications, (iii) report serious AEs to Vesalius PV. Certification must be renewed every 2 years.</td></tr>
+<tr><td><strong>(B) Pharmacy Certification</strong></td><td>SOMNIVA® may be dispensed <strong>only</strong> by the SOMNIVA Central Pharmacy (a single, certified specialty pharmacy: SoluraSpecialty, located in St. Petersburg FL). Retail pharmacy dispensing is prohibited.</td></tr>
+<tr><td><strong>(C) Patient Enrollment</strong></td><td>Patients must enroll in the SOMNIVA REMS Program before first dispense; receive an enrollment ID; review and acknowledge the Medication Guide and Patient Counseling document; provide a single shipping address (no PO boxes); agree to one of the following: (i) cannot also be receiving another sedative without prescriber approval; (ii) DEA Schedule III rules apply.</td></tr>
+<tr><td><strong>(D) Restricted Distribution</strong></td><td>Distribution chain: Vesalius → Central Pharmacy → Patient (direct ship). No wholesale distribution. No retail pharmacy involvement. Limit one bottle (160 mL, ~25-day supply) per shipment; maximum 30-day supply.</td></tr>
+<tr><td><strong>(E) Patient Documentation Before Dispensing</strong></td><td>Prescriber's Patient Authorization Form must be received by Central Pharmacy before each dispensing; faxed or e-portal submission; matched to enrollment record; verified valid prescription.</td></tr>
+<tr><td><strong>(F) Monitoring of Patient Safety</strong></td><td>Central Pharmacy verifies a Pharmacy Safety Verification call to the patient at every refill (audio-recorded for QA): confirms identity, address, that the patient is taking as prescribed, and inquires about any AE. Significant findings escalated to prescriber.</td></tr>
+<tr><td><strong>(G) Implementation System</strong></td><td>Vesalius (with McKesson REMS Operations) maintains a central database; tracks prescriber and patient enrollment, certification status, dispensing records (no PII outside required scope); generates compliance reports.</td></tr>
+</table>`
+      },
+      {
+        ref: 'Assessments',
+        title: 'REMS Assessment Plan & Reporting',
+        ctx: 'Periodic FDA-required assessments measure whether the REMS is achieving its goals.',
+        content: `<p><strong>Assessment Schedule:</strong> 18 months · 3 years · 7 years post-approval (typical; varies by REMS).</p>
+<p><strong>Assessment Metrics & Targets:</strong></p>
+<table>
+<tr><th>Metric</th><th>Goal</th><th>Method</th></tr>
+<tr><td>Prescriber knowledge of safe-use conditions</td><td>≥80% correct on knowledge survey</td><td>Targeted online survey of certified prescribers; sample n=200</td></tr>
+<tr><td>Patient understanding of risks</td><td>≥80% correct on patient survey post-enrollment</td><td>Patient-directed survey at 90 days post first dispense; sample n=300</td></tr>
+<tr><td>Compliance with restricted distribution</td><td>100%</td><td>Audit of dispensing records</td></tr>
+<tr><td>Identification of serious AEs and signal detection</td><td>Target reduction in misuse-related serious AEs vs. pre-REMS baseline</td><td>FAERS analysis; controlled substance Drug Diversion data</td></tr>
+<tr><td>Diversion / abuse signals</td><td>No increase vs. baseline</td><td>DEA ARCOS data; FAERS abuse-related PT analysis</td></tr>
+<tr><td>Off-label prescribing</td><td>&lt;5% of dispensings</td><td>Sampling of prescriber records via certified prescriber audit</td></tr>
+</table>
+<p><strong>Reporting:</strong> Each Assessment Report submitted to FDA per timetable (18 mo, 3 yr, 7 yr). Includes (i) data on whether each goal is being met, (ii) operational metrics, (iii) issues encountered, (iv) proposed modifications. Vesalius's first 18-month assessment (due Q3 2027) will report on the program's launch effectiveness.</p>
+<p><strong>Modification Process:</strong> Vesalius may propose REMS modifications to FDA at any time (typically with the assessment report); FDA can also require modifications. Modifications go through FDA review and approval before implementation.</p>`
+      }
+    ]
+  },
+
+  /* ============================================================
+     CASE 19 — DEVICE FSCA / FIELD ACTION
+     ============================================================ */
+  {
+    id: 'cs-pv-fsca',
+    pathway: 'PV-FSCA',
+    pathwayLabel: 'Field Safety Corrective Action',
+    pathwayFull: 'EU MDR Field Safety Corrective Action + US Recall',
+    title: 'FSCA & Class II Recall — VIVERA™ Insulin Pump Firmware Defect',
+    api: 'VIVERA Insulin Pump (Class II) — firmware-controlled subcutaneous insulin delivery',
+    sponsor: 'Vivera Therapeutics, Inc.',
+    indication: 'Continuous subcutaneous insulin delivery for diabetes management',
+    classDose: 'Reusable pump; OTA firmware updates; 510(k) cleared (K231044)',
+    cfr: '21 CFR 803 · 21 CFR 806 · EU MDR Articles 87 & 89 · MvPI · ANVISA RDC 67/2009',
+    summary: 'Worked example of a global field action triggered by a firmware defect causing failed occlusion alarms. Walks through the FDA 30-day MDR, US Class II recall under 21 CFR 806, EU FSCA under MDR Article 89, and parallel notifications to Health Canada, PMDA, ANVISA, and India MvPI.',
+    sections: [
+      {
+        ref: 'Trigger Event',
+        title: 'Trigger Event & Investigation',
+        ctx: 'Single ICSR triggers a broader investigation revealing a firmware regression affecting many units.',
+        content: `<p><strong>Initial Report:</strong> On 12 January 2026, a 42-year-old male user of VIVERA Insulin Pump experienced a 4-hour cannula occlusion that the pump failed to alarm. He developed diabetic ketoacidosis (DKA) requiring ED visit and 36-hour hospitalization. Reported by user facility ED on 15 January 2026 to Vivera Medical Affairs.</p>
+<p><strong>Investigation:</strong> Pump returned to Vivera engineering on 19 January 2026.</p>
+<table>
+<tr><th>Finding</th><th>Detail</th></tr>
+<tr><td>Hardware</td><td>No defect — occlusion sensor functioning per spec</td></tr>
+<tr><td>Software</td><td>Firmware version <strong>FW v3.2.4</strong> (deployed via OTA update on 03 January 2026) contained a regression in occlusion-detection threshold logic</td></tr>
+<tr><td>Defect</td><td>Under specific occlusion patterns (slow-onset, partial occlusion lasting 30+ min), threshold algorithm failed to trigger alarm sequence; pump continued attempting delivery without alerting user</td></tr>
+<tr><td>Affected Units</td><td>~4,200 pumps received the affected firmware OTA between 03–18 January 2026 — global distribution across US, EU, Canada, Japan, India, Brazil</td></tr>
+<tr><td>Root Cause</td><td>Firmware regression test suite did not include occlusion-detection edge cases; v3.2.4 was an OTA security patch that touched shared code paths</td></tr>
+<tr><td>CAPA</td><td>CAPA-2026-018 opened — corrective: firmware rollback, validation enhancement, enhanced test coverage; preventive: regression test framework redesign</td></tr>
+</table>`
+      },
+      {
+        ref: 'US Field Action',
+        title: 'United States — FDA MDR + 21 CFR 806 Recall',
+        ctx: 'US has two parallel pathways: MDR for individual events (21 CFR 803) and corrections/removals (21 CFR 806).',
+        content: `<table>
+<tr><th>Action</th><th>Reg.</th><th>Form</th><th>Timeline</th><th>Submitted</th></tr>
+<tr><td>Initial 30-day MDR for the index DKA case</td><td>21 CFR 803.50 (manufacturer)</td><td>Form FDA 3500A via eMDR</td><td>Within 30 days of awareness (15 Jan 2026 → due 14 Feb 2026)</td><td>01 February 2026</td></tr>
+<tr><td>Reports of Corrections and Removals (Recall)</td><td>21 CFR 806</td><td>FDA Form 356h is N/A; 806 report has its own format with Section A–G</td><td>Within 10 working days of initiation of the action</td><td>05 February 2026 (action initiated 03 Feb)</td></tr>
+<tr><td>Recall Classification by FDA</td><td>21 CFR 7</td><td>—</td><td>FDA classification typically within 30 days of receipt</td><td>Class II recall classified by FDA Office of Recall Management on 18 Feb 2026</td></tr>
+<tr><td>FDA Public Recall Listing</td><td>21 CFR 7</td><td>FDA Enforcement Report</td><td>Weekly publication once classified</td><td>Listed 25 Feb 2026</td></tr>
+</table>
+<p><strong>Recall Strategy (per 21 CFR 806):</strong></p>
+<ul>
+<li><strong>Action:</strong> Emergency OTA firmware rollback to v3.2.3 (the prior validated version); affected units automatically downgraded</li>
+<li><strong>Communication:</strong> Direct in-app notification to all 4,200 affected users; email; SMS; Dear Healthcare Professional letter to ~600 prescribers</li>
+<li><strong>Class II Recall:</strong> Action classified as Class II — "may cause temporary or medically reversible adverse health consequences" — given DKA risk if occlusion goes undetected</li>
+<li><strong>Effectiveness Check:</strong> Within 30 days, ≥99.5% of affected units confirmed downgraded; remaining handled via individual outreach</li>
+<li><strong>Recall closure:</strong> FDA-monitored; closure expected Q2 2026 after final effectiveness verification</li>
+</ul>`
+      },
+      {
+        ref: 'EU Field Action',
+        title: 'European Union — MDR Article 89 FSCA + Article 87 Serious Incident Report',
+        ctx: 'EU framework requires both incident reporting and Field Safety Corrective Action.',
+        content: `<table>
+<tr><th>Action</th><th>Reg.</th><th>Submission Path</th><th>Timeline</th><th>Submitted</th></tr>
+<tr><td>Serious Incident Report — Index DKA case</td><td>EU MDR Art. 87</td><td>EUDAMED Vigilance module → EU Coordinating Competent Authority (Germany BfArM = lead based on EU MAH affiliate location)</td><td>15 days from awareness (10 days for serious deterioration); index case: due 25 Jan 2026 (within 10-day, deemed serious deterioration)</td><td>22 January 2026</td></tr>
+<tr><td>FSCA Notification</td><td>EU MDR Art. 89</td><td>Field Safety Notice (FSN) to all affected economic operators and end-users; FSCA reported via EUDAMED to all affected member states' Competent Authorities</td><td>Without undue delay after causal link established (typically interpreted as ≤10 calendar days)</td><td>03 February 2026 (with US action)</td></tr>
+<tr><td>Trend Reporting</td><td>EU MDR Art. 88</td><td>Per manufacturer's PMS plan</td><td>Statistically significant trend observed → reported within sponsor's PMS plan timeline; this case was managed as FSCA so trend not separately reported</td><td>—</td></tr>
+<tr><td>Field Safety Notice</td><td>EU MDR Art. 89(8)</td><td>Templated FSN per MDCG 2017-9 Rev.1</td><td>Issued at FSCA initiation</td><td>03 February 2026</td></tr>
+</table>
+<p><strong>Field Safety Notice Content (per MDCG 2017-9):</strong> Manufacturer details · Device identification (UDI-DI) · Affected device types/lots/serial numbers · Reason for FSCA (firmware regression) · Action by user (no manual action — automatic OTA rollback) · Type of FSCA (modification) · Timeline for completion · Contact details · Confirmation of FSN to authorities.</p>`
+      },
+      {
+        ref: 'Other Regions',
+        title: 'Other Regions — Coordinated Global Field Action',
+        ctx: 'Each authority requires its own notification on its own timeline.',
+        content: `<table>
+<tr><th>Region</th><th>Authority</th><th>Action Taken</th><th>Timeline</th><th>Date</th></tr>
+<tr><td>Canada</td><td>Health Canada — Marketed Health Products Directorate</td><td>Mandatory Problem Report; Form HC-FRM-3010; Type II recall</td><td>Within 10 calendar days of decision</td><td>06 February 2026</td></tr>
+<tr><td>Japan</td><td>PMDA / MHLW</td><td>Class II recall notification; field action notice in Japanese to all distributors and prescribers</td><td>Within 30 days for serious malfunction; Vivera elected immediate notification</td><td>05 February 2026</td></tr>
+<tr><td>Australia</td><td>TGA — Therapeutic Goods Administration</td><td>Recall Action Notice (RAN); Recall Strategy submitted; SARA database listing</td><td>2 working days for serious risk; submitted concurrently</td><td>04 February 2026</td></tr>
+<tr><td>Brazil</td><td>ANVISA — Agência Nacional de Vigilância Sanitária</td><td>Notivisa SNVS report; Field Action notice in Portuguese</td><td>72 hours for events causing or with potential to cause serious harm; full FA notice within 30 days</td><td>05 February 2026 (initial) / 25 Feb (full)</td></tr>
+<tr><td>India</td><td>CDSCO + MvPI (Materiovigilance Programme of India)</td><td>MvPI Form 1 — Manufacturer Field Action Report; CDSCO state licensee notification</td><td>14 days for FSCA</td><td>10 February 2026</td></tr>
+<tr><td>South Korea</td><td>MFDS — Ministry of Food and Drug Safety</td><td>Recall report through KAERS device module; voluntary recall classified by MFDS</td><td>15 days from classification decision</td><td>15 February 2026</td></tr>
+<tr><td>WHO-UMC (drugs only — not applicable to devices)</td><td>—</td><td>N/A — devices use national authorities, not WHO PIDM</td><td>—</td><td>—</td></tr>
+</table>
+<p><strong>Coordination Approach:</strong></p>
+<ul>
+<li>Vivera's Global Quality &amp; Regulatory Affairs office serves as central coordination point</li>
+<li>Single global FSCA Project ID (FSCA-2026-001) tracked across all regions</li>
+<li>Translated Field Safety Notices in 9 languages prepared concurrently</li>
+<li>Distinct local timelines met independently; overall global completion within 15 calendar days of decision</li>
+<li>Coordinated end-user communication via in-app notifications (region-aware language detection)</li>
+</ul>`
+      },
+      {
+        ref: 'Closeout',
+        title: 'CAPA Closeout & Lessons Learned',
+        ctx: 'A field action is not closed until corrective and preventive actions are verified effective.',
+        content: `<p><strong>CAPA-2026-018 — Verification of Effectiveness:</strong></p>
+<table>
+<tr><th>Action</th><th>Status</th><th>Evidence</th></tr>
+<tr><td>Firmware rollback to v3.2.3 deployed to all affected units</td><td>Complete (99.7% verified within 30 days; remaining via individual contact)</td><td>OTA telemetry; user confirmation; in-app delivery receipts</td></tr>
+<tr><td>Firmware v3.2.5 released with both the security patch (original v3.2.4 intent) and corrected occlusion-detection logic</td><td>Released 28 Mar 2026</td><td>Validation report VAL-FW-3.2.5-2026; 100% test pass</td></tr>
+<tr><td>Regression test framework expanded to include 47 new occlusion-detection edge cases</td><td>Complete</td><td>Test suite v2.4 documentation; coverage analysis showing &gt;95% on safety-critical paths</td></tr>
+<tr><td>Independent design review of all safety-critical OTA updates added to release process</td><td>Implemented</td><td>SOP-DEV-014 v3.0 effective 01 Apr 2026</td></tr>
+<tr><td>No additional related events through Q2 2026</td><td>Confirmed</td><td>FAERS / EUDAMED / MAUDE searches; complaint database review</td></tr>
+<tr><td>FDA Recall Closeout</td><td>Closed 14 May 2026</td><td>FDA Office of Recall Management formal closure letter</td></tr>
+<tr><td>EU FSCA Closure</td><td>Closed 22 May 2026</td><td>EUDAMED FSCA closure record</td></tr>
+</table>
+<p><strong>Lessons Learned (incorporated into Vivera global Quality system):</strong></p>
+<ul>
+<li>OTA security patches must trigger full safety-critical regression suite, even when ostensibly unrelated to safety code paths</li>
+<li>Field action coordination playbook updated: parallel global filings reduce regulatory exposure and speed corrective action</li>
+<li>Customer communication via in-app notification proved highly effective (≥99% read rate within 24 hours) — adopted as primary channel for future actions</li>
+<li>Recall classification ambiguity (FDA Class II vs. Class I) for connected devices: working with FDA on classification framework guidance</li>
+</ul>`
+      }
+    ]
+  }
+];
+
+CASE_STUDIES.push(...PV_CASE_STUDIES);
+
 
 let currentCaseId = null;
 
