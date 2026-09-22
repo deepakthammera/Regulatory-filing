@@ -13832,7 +13832,9 @@ function renderNewsPreview(){
   const el = document.getElementById('dash-news-preview');
   if(!el) return;
   const SRC = {
-    BioSpace:{c:'var(--burgundy)'}, RAPS:{c:'var(--teal)'}, ICH:{c:'var(--purple)'}, CIOMS:{c:'var(--forest)'}
+  const SOURCE_META = {
+    'BioSpace':{color:'var(--burgundy)'}, 'RAPS':{color:'var(--teal)'},
+    'ICH':{color:'var(--purple)'}, 'CIOMS':{color:'var(--forest)'}
   };
   function esc(s){ return String(s==null?'':s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
   function fmt(d){ if(!d) return ''; const t=new Date(d); return isNaN(t)?esc(d):t.toLocaleDateString(undefined,{month:'short',day:'numeric'}); }
