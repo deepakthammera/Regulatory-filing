@@ -13962,8 +13962,8 @@ function renderNews(){
     // category pills
     html += '<div style="display:flex;gap:0.35rem;flex-wrap:wrap;margin-bottom:0.5rem" id="news-cat">';
     html += '<span class="filter-pill active" data-news-cat="ALL">All categories</span>';
-    ['Safety alert','Pharmacovigilance','Shortage','Approval','Guidance / Policy','General'].forEach(cat=>{
-      if(presentCats.includes(cat)) html += '<span class="filter-pill" data-news-cat="'+esc(cat)+'">'+esc(cat)+'</span>';
+    ['Safety / PV','Approval','Clinical trial','Regulatory / Policy','Deals / Business','General'].forEach(cat=>{
+      html += '<span class="filter-pill" data-news-cat="'+esc(cat)+'">'+esc(cat)+'</span>';
     });
     html += '</div>';
 
