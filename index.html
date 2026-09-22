@@ -13881,9 +13881,9 @@ function renderNews(){
     'BioSpace':{color:'var(--burgundy)'}, 'RAPS':{color:'var(--teal)'},
     'ICH':{color:'var(--purple)'}, 'CIOMS':{color:'var(--forest)'}
   };
-  const CAT_COLOR = {
-    'Safety alert':'var(--pink)', 'Pharmacovigilance':'var(--purple)', 'Shortage':'#b45309',
-    'Approval':'var(--forest)', 'Guidance / Policy':'var(--teal)', 'General':'var(--muted)'
+   const CAT_COLOR = {
+    'Safety / PV':'var(--pink)', 'Approval':'var(--forest)', 'Clinical trial':'var(--teal)',
+    'Regulatory / Policy':'var(--purple)', 'Deals / Business':'#b45309', 'General':'var(--muted)'
   };
   function srcColor(s){ return (SOURCE_META[s]||{color:'var(--muted)'}).color; }
   function esc(s){ return String(s==null?'':s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
