@@ -1,13 +1,128 @@
 {
-  "generated": "2026-01-01T00:00:00Z",
-  "note": "Starter file. Overwritten automatically each week by .github/workflows/update-news.yml. Items show headline, source, date, category, priority flag, and a link to the original article.",
-  "sources": ["BioSpace","RAPS","ICH","CIOMS"],
-  "categories": ["Safety alert","Pharmacovigilance","Shortage","Approval","Guidance / Policy","General"],
+  "generated": "2026-09-22T01:48:04.613Z",
+  "sources": [
+    "BioSpace",
+    "RAPS",
+    "ICH",
+    "CIOMS"
+  ],
+  "categories": [
+    "Safety alert",
+    "Pharmacovigilance",
+    "Shortage",
+    "Approval",
+    "Guidance / Policy",
+    "General"
+  ],
+  "count": 12,
   "items": [
-    { "source": "BioSpace", "tier": "industry", "title": "BioSpace — biotech, pharma and clinical research news (live feed)", "link": "https://www.biospace.com/news", "date": "2026-01-01T00:00:00Z", "category": "General", "priority": false },
-    { "source": "BioSpace", "tier": "industry", "title": "BioSpace Policy — FDA actions, regulation and policy news (live feed)", "link": "https://www.biospace.com/policy", "date": "2026-01-01T00:00:00Z", "category": "Guidance / Policy", "priority": false },
-    { "source": "RAPS", "tier": "industry", "title": "RAPS Regulatory Focus — regulatory affairs news and analysis (live feed)", "link": "https://www.raps.org/news-and-articles", "date": "2026-01-01T00:00:00Z", "category": "Guidance / Policy", "priority": false },
-    { "source": "ICH", "tier": "regulator", "title": "ICH — guideline and announcement updates (live feed)", "link": "https://www.ich.org/news", "date": "2026-01-01T00:00:00Z", "category": "Guidance / Policy", "priority": false },
-    { "source": "CIOMS", "tier": "regulator", "title": "CIOMS — pharmacovigilance working group updates (live feed)", "link": "https://cioms.ch/news/", "date": "2026-01-01T00:00:00Z", "category": "Pharmacovigilance", "priority": true }
+    {
+      "source": "BioSpace",
+      "tier": "industry",
+      "title": "Western licensing deals for Chinese radioligand therapies to jump in 2027, Sleuth forecasts",
+      "link": "https://www.biospace.com/deals/western-licensing-deals-for-chinese-radioligand-therapies-to-jump-in-2027-sleuth-forecasts",
+      "date": "2026-09-21T16:21:08.000Z",
+      "category": "General",
+      "priority": false
+    },
+    {
+      "source": "BioSpace",
+      "tier": "industry",
+      "title": "Novo’s plan to hit $23B in revenue by 2035 leaves investors wanting",
+      "link": "https://www.biospace.com/business/novos-plan-to-hit-23b-in-revenue-by-2035-leaves-investors-wanting",
+      "date": "2026-09-21T14:36:41.000Z",
+      "category": "General",
+      "priority": false
+    },
+    {
+      "source": "BioSpace",
+      "tier": "industry",
+      "title": "J&J again cuts New Jersey workforce, letting 87 go",
+      "link": "https://www.biospace.com/biospace-layoff-tracker",
+      "date": "2026-09-21T14:11:00.000Z",
+      "category": "General",
+      "priority": false
+    },
+    {
+      "source": "BioSpace",
+      "tier": "industry",
+      "title": "Telix buys ITM for $1.65B in ‘supercritical’ radiopharma M&A",
+      "link": "https://www.biospace.com/business/telix-buys-itm-for-1-65b-in-supercritical-radiopharma-m-a",
+      "date": "2026-09-21T13:13:52.000Z",
+      "category": "General",
+      "priority": false
+    },
+    {
+      "source": "BioSpace",
+      "tier": "industry",
+      "title": "Novo buys three early-stage obesity assets from Kallyope as investor pressure mounts",
+      "link": "https://www.biospace.com/deals/novo-buys-three-early-stage-obesity-assets-from-kallyope-as-investor-pressure-mounts",
+      "date": "2026-09-21T12:11:12.000Z",
+      "category": "General",
+      "priority": false
+    },
+    {
+      "source": "BioSpace",
+      "tier": "industry",
+      "title": "Citing Replimune approval, experts say localized cancer meds could redefine care",
+      "link": "https://www.biospace.com/drug-development/citing-replimune-approval-experts-say-localized-cancer-meds-could-redefine-care",
+      "date": "2026-09-21T04:05:00.000Z",
+      "category": "Approval",
+      "priority": false
+    },
+    {
+      "source": "BioSpace",
+      "tier": "industry",
+      "title": "Mikhail, Davis on board with regulatory framework tailored to rare disease therapies",
+      "link": "https://www.biospace.com/fda/mikhail-davis-on-board-with-regulatory-framework-tailored-to-rare-disease-therapies",
+      "date": "2026-09-21T04:02:00.000Z",
+      "category": "Guidance / Policy",
+      "priority": false
+    },
+    {
+      "source": "BioSpace",
+      "tier": "industry",
+      "title": "Beyond Random Integration: Transposase cell line development shortening timeline & boosting titers",
+      "link": "https://www.biospace.com/drug-development/beyond-random-integration-transposase-cell-line-development-shortening-timeline-boosting-titers",
+      "date": "2026-09-21T04:00:00.000Z",
+      "category": "General",
+      "priority": false
+    },
+    {
+      "source": "BioSpace",
+      "tier": "industry",
+      "title": "China plans to transform biotech sector into $522B powerhouse by 2030",
+      "link": "https://www.biospace.com/business/china-plans-to-transform-3m-biotech-sector-into-522b-powerhouse-by-2030",
+      "date": "2026-09-18T18:36:37.000Z",
+      "category": "General",
+      "priority": false
+    },
+    {
+      "source": "BioSpace",
+      "tier": "industry",
+      "title": "Electra lights up with $350M IPO for pivotal immune-disease drug development",
+      "link": "https://www.biospace.com/drug-development/electra-lights-up-with-350m-ipo-for-pivotal-immune-disease-drug-development",
+      "date": "2026-09-18T15:23:48.000Z",
+      "category": "General",
+      "priority": false
+    },
+    {
+      "source": "BioSpace",
+      "tier": "industry",
+      "title": "Xenon tumbles on voluntary psychiatry hold, but analysts confident in $2B epilepsy opportunity",
+      "link": "https://www.biospace.com/drug-development/xenon-tumbles-on-voluntary-psychiatry-hold-but-analysts-confident-in-2b-epilepsy-opportunity",
+      "date": "2026-09-18T13:59:04.000Z",
+      "category": "General",
+      "priority": false
+    },
+    {
+      "source": "BioSpace",
+      "tier": "industry",
+      "title": "Ultragenyx wins FDA greenlight for first Sanfilippo therapy, priced at nearly $4M",
+      "link": "https://www.biospace.com/fda/ultragenyx-wins-fda-greenlight-for-first-sanfilippo-therapy-priced-at-nearly-4m",
+      "date": "2026-09-18T12:32:03.000Z",
+      "category": "General",
+      "priority": false
+    }
   ]
 }
