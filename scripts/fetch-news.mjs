@@ -1,5 +1,5 @@
 // scripts/fetch-news.mjs
-// Fetches official + reputable regulatory / pharmacovigilance feeds and writes news.json.
+// Fetches reputable regulatory / pharmacovigilance / biopharma feeds and writes news.json.
 // Stores ONLY: source, headline (title), publication date, link, plus derived tags
 // (category, priority flag). It deliberately does NOT store article body text — links
 // point back to the original source, which is the intended use of RSS/Atom feeds.
@@ -10,52 +10,88 @@ import { writeFileSync } from "node:fs";
 
 // --- Sources -------------------------------------------------------------
 // Each source lists one or more feed URLs. If one URL fails, the others still run.
-// GOV.UK pages expose an Atom feed by appending `.atom` to the page URL.
-// tier: "regulator" (primary authority) or "industry" (trade/news).
+// NOTE: RAPS retired its native RSS and now publishes via FetchRSS (URL taken from the
+// live "RSS Feed" link on raps.org/news-insights/regulatory-focus.html). CIOMS is a
+// WordPress site, so /feed/ is the standard feed. ICH has no reliable public RSS, so we
+// try a couple of candidates; it may return nothing on a given week.
 const SOURCES = [
   { source: "BioSpace", tier: "industry", feeds: [
-    "https://www.biospace.com/policy.rss",
+    "https://www.biospace.com/all-news.rss",
     "https://www.biospace.com/fda.rss",
-    "https://www.biospace.com/all-news.rss"
+    "https://www.biospace.com/policy.rss",
+    "https://www.biospace.com/deals.rss",
+    "https://www.biospace.com/drug-delivery.rss"
   ]},
-  { source: "RAPS",  tier: "industry", feeds: [
-    "https://www.raps.org/rss",
-    "https://www.raps.org/news-and-articles/news-articles.rss"
+  { source: "RAPS", tier: "industry", feeds: [
+    "https://fetchrss.com/feed/1w2Af33Ym6mQ1wCHDT7rBDVj.rss",
+    "https://fetchrss.com/feed/1w2Af33Ym6mQ1w2Ah02uB5hb.rss"
   ]},
-  { source: "ICH",   tier: "regulator", feeds: [
+  { source: "ICH", tier: "regulator", feeds: [
     "https://www.ich.org/feed",
-    "https://www.ich.org/rss.xml"
+    "https://www.ich.org/rss.xml",
+    "https://www.ich.org/feed.xml"
   ]},
   { source: "CIOMS", tier: "regulator", feeds: [
-    "https://cioms.ch/feed/"
+    "https://cioms.ch/feed/",
+    "https://cioms.ch/news/feed/"
   ]}
 ];
 
-const MAX_PER_SOURCE = 12;
+const MAX_PER_SOURCE = 15;
 const MAX_TOTAL = 120;
-const MAX_AGE_DAYS = 120;
+const MAX_AGE_DAYS = 150;
 const TIMEOUT_MS = 20000;
 
-// --- Prioritization & categorization -------------------------------------
+// --- Prioritization -------------------------------------------------------
+// Priority = genuine safety / urgent signals (kept deliberately narrow so it stays useful).
+// "Pharmacovigilance" is included per requirements.
 const PRIORITY_KEYWORDS = [
-  "pharmacovigilance", "recall", "safety alert", "safety warning", "boxed warning",
-  "black triangle", "withdrawal", "withdrawn", "suspension", "suspended", "contraindication",
-  "serious risk", "urgent", "field safety", "falsified", "contaminated", "substandard",
-  "shortage", "prac", "referral", "signal", "rems", "risk minimisation", "risk minimization",
-  "direct healthcare professional", "dhpc", "psusa", "adverse reaction", "adverse event",
-  "death", "fatal", "hepatotoxicity", "cardiotoxicity"
+  "pharmacovigilance", "recall", "recalled", "safety alert", "safety warning", "boxed warning",
+  "black box", "black triangle", "withdrawn", "withdrawal", "suspension", "suspended",
+  "contraindication", "serious risk", "urgent", "field safety", "falsified", "counterfeit",
+  "contaminated", "substandard", "shortage", "prac", "referral", "safety signal",
+  "rems", "risk minimisation", "risk minimization", "dhpc", "psusa", "adverse reaction",
+  "adverse event", "death", "deaths", "fatal", "hepatotox", "cardiotox", "toxicity"
 ];
 
+// --- Categorization -------------------------------------------------------
+// Canonical categories (must match the labels/colours used in index.html).
+// First matching group wins, so order matters (safety first, business last before General).
 const CATEGORY_RULES = [
-  { name: "Safety alert",      terms: ["recall", "safety alert", "safety warning", "boxed warning", "black triangle", "withdrawal", "withdrawn", "suspension", "suspended", "contraindication", "field safety", "falsified", "contaminated", "substandard", "dhpc", "direct healthcare professional", "adverse reaction", "adverse event", "hepatotox", "cardiotox", "death", "fatal"] },
-  { name: "Pharmacovigilance", terms: ["pharmacovigilance", "prac", "signal", "psusa", "rems", "risk minimisation", "risk minimization", "periodic safety", "pbrer", "psur", "dsur"] },
-  { name: "Shortage",          terms: ["shortage", "supply", "discontinuation", "out of stock"] },
-  { name: "Approval",          terms: ["approv", "authoris", "authoriz", "marketing authorisation", "recommended for approval", "chmp", "positive opinion", "cleared", "licence", "license"] },
-  { name: "Guidance / Policy", terms: ["guidance", "guideline", "consultation", "draft", "policy", "regulation", "rule", "notice", "framework", "reflection paper", "q&a"] }
+  { name: "Safety / PV", terms: [
+    "pharmacovigilance", "safety", "recall", "recalled", "withdrawn", "withdrawal", "warning",
+    "boxed warning", "black box", "adverse", "toxicity", "hepatotox", "cardiotox", "side effect",
+    "contraindication", "falsified", "counterfeit", "contaminated", "substandard", "death",
+    "deaths", "fatal", "prac", "signal", "rems", "risk minim", "dhpc", "psusa", "shortage"
+  ]},
+  { name: "Approval", terms: [
+    "approv", "cleared", "clearance", "authoris", "authoriz", "complete response", " crl",
+    "pdufa", "adcomm", "advisory committee", "accelerated approval", "priority review",
+    "breakthrough", "fast track", "orphan", "bla ", "nda ", "marketing authorisation",
+    "positive opinion", "chmp", "recommended for approval", "green light", "label expansion",
+    "indication"
+  ]},
+  { name: "Clinical trial", terms: [
+    "phase 1", "phase 2", "phase 3", "phase i", "phase ii", "phase iii", "clinical trial",
+    "topline", "readout", "enrol", "endpoint", "pivotal", "interim", "cohort", "study met",
+    "study results", "trial results", "first patient", "dosed"
+  ]},
+  { name: "Regulatory / Policy", terms: [
+    "fda", "ema", "mhra", "who", "ich", "cioms", "regulator", "regulatory", "guidance",
+    "guideline", "regulation", "policy", "draft", "consultation", "legislation", "law",
+    "framework", "rule", "notice", "reflection paper", "q&a", "inspection", "warning letter",
+    "483", "compliance", "gmp", "gcp", "gvp"
+  ]},
+  { name: "Deals / Business", terms: [
+    "acqui", "merger", "merge", "buyout", "licensing", "license deal", "deal", "funding",
+    "financing", "ipo", "layoff", "restructur", "partnership", "collaborat", "raise",
+    "series a", "series b", "series c", "million", "billion", "stock", "shares", "earnings",
+    "revenue", "q1", "q2", "q3", "q4"
+  ]}
 ];
 
 function classify(title) {
-  const t = (title || "").toLowerCase();
+  const t = (" " + (title || "").toLowerCase() + " ");
   const priority = PRIORITY_KEYWORDS.some((k) => t.includes(k));
   let category = "General";
   for (const rule of CATEGORY_RULES) {
@@ -70,7 +106,7 @@ function decodeEntities(s) {
   return s
     .replace(/&lt;/g, "<").replace(/&gt;/g, ">")
     .replace(/&quot;/g, '"').replace(/&#39;/g, "'").replace(/&apos;/g, "'")
-    .replace(/&amp;/g, "&");
+    .replace(/&#x27;/g, "'").replace(/&nbsp;/g, " ").replace(/&amp;/g, "&");
 }
 function clean(s) {
   if (!s) return "";
@@ -108,7 +144,11 @@ async function fetchText(url) {
   try {
     const res = await fetch(url, {
       signal: ctrl.signal,
-      headers: { "User-Agent": "reg-pv-training-newsbot/1.1 (+github actions; educational)" }
+      redirect: "follow",
+      headers: {
+        "User-Agent": "Mozilla/5.0 (compatible; reg-pv-training-newsbot/1.2; +github actions; educational)",
+        "Accept": "application/rss+xml, application/atom+xml, application/xml, text/xml, */*"
+      }
     });
     if (!res.ok) throw new Error("HTTP " + res.status);
     return await res.text();
@@ -127,6 +167,7 @@ function tooOld(iso) {
 
 async function run() {
   const all = [];
+  const summary = [];
   for (const src of SOURCES) {
     let collected = [];
     for (const url of src.feeds) {
@@ -152,6 +193,7 @@ async function run() {
       .filter((it) => !tooOld(it.date))
       .sort((a, b) => new Date(b.date || 0) - new Date(a.date || 0))
       .slice(0, MAX_PER_SOURCE);
+    summary.push(src.source + "=" + collected.length);
     all.push(...collected);
   }
 
@@ -164,10 +206,12 @@ async function run() {
   const payload = {
     generated: new Date().toISOString(),
     sources: SOURCES.map((s) => s.source),
-    categories: ["Safety alert", "Pharmacovigilance", "Shortage", "Approval", "Guidance / Policy", "General"],
+    categories: ["Safety / PV", "Approval", "Clinical trial", "Regulatory / Policy", "Deals / Business", "General"],
     count: items.length,
     items
   };
+
+  console.log("Per-source kept: " + summary.join(", "));
 
   if (items.length === 0) {
     console.error("No items fetched from any source. Leaving existing news.json unchanged.");
