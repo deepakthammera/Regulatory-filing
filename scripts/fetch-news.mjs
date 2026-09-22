@@ -22,18 +22,24 @@ const SOURCES = [
     "https://www.biospace.com/deals.rss",
     "https://www.biospace.com/drug-delivery.rss"
   ]},
+  { source: "Fierce Pharma", tier: "industry", feeds: [
+    "https://www.fiercepharma.com/rss/xml"
+  ]},
+  { source: "Endpoints", tier: "industry", feeds: [
+    "https://endpts.com/feed/",
+    "https://endpts.com/feed"
+  ]},
+  { source: "BioPharma Dive", tier: "industry", feeds: [
+    "https://www.biopharmadive.com/feeds/news/",
+    "https://www.biopharmadive.com/feeds/news"
+  ]},
   { source: "RAPS", tier: "industry", feeds: [
     "https://fetchrss.com/feed/1w2Af33Ym6mQ1wCHDT7rBDVj.rss",
     "https://fetchrss.com/feed/1w2Af33Ym6mQ1w2Ah02uB5hb.rss"
   ]},
-  { source: "ICH", tier: "regulator", feeds: [
-    "https://www.ich.org/feed",
-    "https://www.ich.org/rss.xml",
-    "https://www.ich.org/feed.xml"
-  ]},
-  { source: "CIOMS", tier: "regulator", feeds: [
-    "https://cioms.ch/feed/",
-    "https://cioms.ch/news/feed/"
+  { source: "Drug Safety", tier: "journal", feeds: [
+    "https://link.springer.com/search.rss?query=&facet-journal-id=40264",
+    "https://link.springer.com/search.rss?facet-journal-id=40264&channel-name=Drug+Safety"
   ]}
 ];
 
