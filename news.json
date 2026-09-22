@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-22T01:48:04.613Z",
+  "generated": "2026-09-22T02:12:13.677Z",
   "sources": [
     "BioSpace",
     "RAPS",
@@ -7,14 +7,14 @@
     "CIOMS"
   ],
   "categories": [
-    "Safety alert",
-    "Pharmacovigilance",
-    "Shortage",
+    "Safety / PV",
     "Approval",
-    "Guidance / Policy",
+    "Clinical trial",
+    "Regulatory / Policy",
+    "Deals / Business",
     "General"
   ],
-  "count": 12,
+  "count": 24,
   "items": [
     {
       "source": "BioSpace",
@@ -22,7 +22,7 @@
       "title": "Western licensing deals for Chinese radioligand therapies to jump in 2027, Sleuth forecasts",
       "link": "https://www.biospace.com/deals/western-licensing-deals-for-chinese-radioligand-therapies-to-jump-in-2027-sleuth-forecasts",
       "date": "2026-09-21T16:21:08.000Z",
-      "category": "General",
+      "category": "Deals / Business",
       "priority": false
     },
     {
@@ -31,7 +31,7 @@
       "title": "Novo’s plan to hit $23B in revenue by 2035 leaves investors wanting",
       "link": "https://www.biospace.com/business/novos-plan-to-hit-23b-in-revenue-by-2035-leaves-investors-wanting",
       "date": "2026-09-21T14:36:41.000Z",
-      "category": "General",
+      "category": "Deals / Business",
       "priority": false
     },
     {
@@ -76,7 +76,7 @@
       "title": "Mikhail, Davis on board with regulatory framework tailored to rare disease therapies",
       "link": "https://www.biospace.com/fda/mikhail-davis-on-board-with-regulatory-framework-tailored-to-rare-disease-therapies",
       "date": "2026-09-21T04:02:00.000Z",
-      "category": "Guidance / Policy",
+      "category": "Regulatory / Policy",
       "priority": false
     },
     {
@@ -86,6 +86,42 @@
       "link": "https://www.biospace.com/drug-development/beyond-random-integration-transposase-cell-line-development-shortening-timeline-boosting-titers",
       "date": "2026-09-21T04:00:00.000Z",
       "category": "General",
+      "priority": false
+    },
+    {
+      "source": "RAPS",
+      "tier": "industry",
+      "title": "Convergence: Regulators emphasize need for harmonized approach to AI",
+      "link": "https://www.raps.org/resource/convergence-regulators-emphasize-need-for-harmonized-approach-to-ai.html",
+      "date": "2026-09-21T00:00:00.000Z",
+      "category": "Regulatory / Policy",
+      "priority": false
+    },
+    {
+      "source": "RAPS",
+      "tier": "industry",
+      "title": "FDA to remove ‘animal testing’ terminology from its regulations",
+      "link": "https://www.raps.org/resource/fda-to-remove-animal-testing-terminology-from-its-regulations.html",
+      "date": "2026-09-21T00:00:00.000Z",
+      "category": "Regulatory / Policy",
+      "priority": false
+    },
+    {
+      "source": "RAPS",
+      "tier": "industry",
+      "title": "Asia-Pacific Roundup: Singapore’s HSA forges regulatory alliances across Africa, Asia, and Europe",
+      "link": "https://www.raps.org/resource/asia-pacific-roundup-singapore-s-hsa-forges-regulatory-alliances-across-africa-asia-and-europe.html",
+      "date": "2026-09-21T00:00:00.000Z",
+      "category": "Regulatory / Policy",
+      "priority": false
+    },
+    {
+      "source": "RAPS",
+      "tier": "industry",
+      "title": "Recon: FDA staff raise no major concerns for Grail multi-cancer test ahead of adcomm; Trump admin drafting order to exert contro...",
+      "link": "https://www.raps.org/resource/recon-fda-staff-raise-no-major-concerns-for-grail-multi-cancer-test-ahead-of-adcomm-trump-admin-drafting-order-to-exert-control-over-nih-grant-funding.html",
+      "date": "2026-09-21T00:00:00.000Z",
+      "category": "Approval",
       "priority": false
     },
     {
@@ -103,7 +139,7 @@
       "title": "Electra lights up with $350M IPO for pivotal immune-disease drug development",
       "link": "https://www.biospace.com/drug-development/electra-lights-up-with-350m-ipo-for-pivotal-immune-disease-drug-development",
       "date": "2026-09-18T15:23:48.000Z",
-      "category": "General",
+      "category": "Clinical trial",
       "priority": false
     },
     {
@@ -121,7 +157,79 @@
       "title": "Ultragenyx wins FDA greenlight for first Sanfilippo therapy, priced at nearly $4M",
       "link": "https://www.biospace.com/fda/ultragenyx-wins-fda-greenlight-for-first-sanfilippo-therapy-priced-at-nearly-4m",
       "date": "2026-09-18T12:32:03.000Z",
+      "category": "Regulatory / Policy",
+      "priority": false
+    },
+    {
+      "source": "BioSpace",
+      "tier": "industry",
+      "title": "BMS scraps Orum’s targeted degrader after reviewing Phase 1 data",
+      "link": "https://www.biospace.com/drug-development/bms-scraps-orums-targeted-degrader-after-reviewing-phase-1-data",
+      "date": "2026-09-18T12:19:39.000Z",
+      "category": "Clinical trial",
+      "priority": false
+    },
+    {
+      "source": "RAPS",
+      "tier": "industry",
+      "title": "This Week at FDA: Overton nomination hearing, FDA’s hiring challenges, and more",
+      "link": "https://www.raps.org/resource/this-week-at-fda-overton-nomination-hearing-fda-s-hiring-challenges-and-more.html",
+      "date": "2026-09-18T00:00:00.000Z",
+      "category": "Regulatory / Policy",
+      "priority": false
+    },
+    {
+      "source": "BioSpace",
+      "tier": "industry",
+      "title": "Novo notches up to $1.4B pact with Orbis to develop oral macrocycle cardiometabolic drugs",
+      "link": "https://www.biospace.com/deals/novo-notches-up-to-1-4b-pact-with-orbis-to-develop-oral-macrocycle-cardiometabolic-drugs",
+      "date": "2026-09-17T15:21:34.000Z",
       "category": "General",
+      "priority": false
+    },
+    {
+      "source": "BioSpace",
+      "tier": "industry",
+      "title": "Webinar: Manufacturing in Turbulent Times",
+      "link": "https://www.biospace.com/events/webinar-manufacturing-in-turbulent-times",
+      "date": "2026-09-17T14:01:44.000Z",
+      "category": "General",
+      "priority": false
+    },
+    {
+      "source": "RAPS",
+      "tier": "industry",
+      "title": "Graham: PDUFA VIII reflects ‘America First’ principles",
+      "link": "https://www.raps.org/resource/graham-pdufa-viii-reflects-america-first-principles.html",
+      "date": "2026-09-17T00:00:00.000Z",
+      "category": "Approval",
+      "priority": false
+    },
+    {
+      "source": "RAPS",
+      "tier": "industry",
+      "title": "Convergence: EU officials tout pending pharmaceutical reforms",
+      "link": "https://www.raps.org/resource/convergence-eu-officials-tout-pending-pharmaceutical-reforms.html",
+      "date": "2026-09-17T00:00:00.000Z",
+      "category": "General",
+      "priority": false
+    },
+    {
+      "source": "RAPS",
+      "tier": "industry",
+      "title": "Convergence: Califf says regulations ‘need an update,’ sees AI assistants in regulatory future",
+      "link": "https://www.raps.org/resource/convergence-califf-says-regulations-need-an-update-sees-ai-assistants-in-regulatory-future.html",
+      "date": "2026-09-17T00:00:00.000Z",
+      "category": "Regulatory / Policy",
+      "priority": false
+    },
+    {
+      "source": "RAPS",
+      "tier": "industry",
+      "title": "Euro Roundup: MHRA commission makes recommendations on AI regulatory framework in the UK",
+      "link": "https://www.raps.org/resource/euro-roundup-mhra-commission-makes-recommendations-on-ai-regulatory-framework-in-the-uk.html",
+      "date": "2026-09-17T00:00:00.000Z",
+      "category": "Regulatory / Policy",
       "priority": false
     }
   ]
