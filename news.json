@@ -1,0 +1,18 @@
+{
+  "generated": "2026-01-01T00:00:00Z",
+  "note": "Starter file. Overwritten automatically each week by .github/workflows/update-news.yml. Items show headline, source, date, category, priority flag, and a link to the original article.",
+  "sources": ["FDA","EMA","MHRA","WHO","Health Canada","TGA","Federal Register (FDA)","ICH","CIOMS","RAPS"],
+  "categories": ["Safety alert","Pharmacovigilance","Shortage","Approval","Guidance / Policy","General"],
+  "items": [
+    { "source": "FDA", "tier": "regulator", "title": "FDA MedWatch — safety alerts and adverse event information (live feed)", "link": "https://www.fda.gov/safety/medwatch-fda-safety-information-and-adverse-event-reporting-program", "date": "2026-01-01T00:00:00Z", "category": "Safety alert", "priority": true },
+    { "source": "EMA", "tier": "regulator", "title": "European Medicines Agency — latest news and PRAC updates (live feed)", "link": "https://www.ema.europa.eu/en/news", "date": "2026-01-01T00:00:00Z", "category": "Pharmacovigilance", "priority": true },
+    { "source": "MHRA", "tier": "regulator", "title": "MHRA Drug Safety Update (live feed)", "link": "https://www.gov.uk/drug-safety-update", "date": "2026-01-01T00:00:00Z", "category": "Safety alert", "priority": true },
+    { "source": "WHO", "tier": "regulator", "title": "WHO Medical Product Alerts and news (live feed)", "link": "https://www.who.int/news", "date": "2026-01-01T00:00:00Z", "category": "Safety alert", "priority": true },
+    { "source": "Health Canada", "tier": "regulator", "title": "Health Canada — Recalls & Safety Alerts (live feed)", "link": "https://recalls-rappels.canada.ca/en", "date": "2026-01-01T00:00:00Z", "category": "Safety alert", "priority": true },
+    { "source": "TGA", "tier": "regulator", "title": "TGA (Australia) — safety alerts (live feed)", "link": "https://www.tga.gov.au/safety/safety-alerts", "date": "2026-01-01T00:00:00Z", "category": "Safety alert", "priority": true },
+    { "source": "Federal Register (FDA)", "tier": "regulator", "title": "US Federal Register — FDA rules, notices and guidance (live feed)", "link": "https://www.federalregister.gov/agencies/food-and-drug-administration", "date": "2026-01-01T00:00:00Z", "category": "Guidance / Policy", "priority": false },
+    { "source": "ICH", "tier": "regulator", "title": "ICH — guideline and announcement updates (live feed)", "link": "https://www.ich.org/news", "date": "2026-01-01T00:00:00Z", "category": "Guidance / Policy", "priority": false },
+    { "source": "CIOMS", "tier": "regulator", "title": "CIOMS — pharmacovigilance working group updates (live feed)", "link": "https://cioms.ch/news/", "date": "2026-01-01T00:00:00Z", "category": "Pharmacovigilance", "priority": true },
+    { "source": "RAPS", "tier": "industry", "title": "RAPS Regulatory Focus — regulatory affairs news (live feed)", "link": "https://www.raps.org/news-and-articles", "date": "2026-01-01T00:00:00Z", "category": "General", "priority": false }
+  ]
+}
