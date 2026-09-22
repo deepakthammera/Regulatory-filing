@@ -1,10 +1,12 @@
 {
-  "generated": "2026-09-22T02:12:13.677Z",
+  "generated": "2026-09-22T02:35:24.293Z",
   "sources": [
     "BioSpace",
+    "Fierce Pharma",
+    "Endpoints",
+    "BioPharma Dive",
     "RAPS",
-    "ICH",
-    "CIOMS"
+    "Drug Safety"
   ],
   "categories": [
     "Safety / PV",
@@ -14,8 +16,26 @@
     "Deals / Business",
     "General"
   ],
-  "count": 24,
+  "count": 49,
   "items": [
+    {
+      "source": "BioPharma Dive",
+      "tier": "industry",
+      "title": "Beacon eye gene therapy hits mark in late-stage study",
+      "link": "https://www.biopharmadive.com/news/beacon-xlrp-laru-zova-phase-3-study-results/830918/",
+      "date": "2026-09-21T18:59:00.000Z",
+      "category": "General",
+      "priority": false
+    },
+    {
+      "source": "BioPharma Dive",
+      "tier": "industry",
+      "title": "Novo talks up drug launches in effort to win back investors",
+      "link": "https://www.biopharmadive.com/news/novo-capital-markets-day-obesity-sales-outlook/830882/",
+      "date": "2026-09-21T16:30:17.000Z",
+      "category": "General",
+      "priority": false
+    },
     {
       "source": "BioSpace",
       "tier": "industry",
@@ -59,6 +79,42 @@
       "link": "https://www.biospace.com/deals/novo-buys-three-early-stage-obesity-assets-from-kallyope-as-investor-pressure-mounts",
       "date": "2026-09-21T12:11:12.000Z",
       "category": "General",
+      "priority": false
+    },
+    {
+      "source": "BioPharma Dive",
+      "tier": "industry",
+      "title": "Telix buys ITM in bid to create a ‘radiopharmaceutical powerhouse’",
+      "link": "https://www.biopharmadive.com/news/telix-itm-radiopharmaceuticals-deal-acquire-lutetium-novartis/830859/",
+      "date": "2026-09-21T11:49:00.000Z",
+      "category": "General",
+      "priority": false
+    },
+    {
+      "source": "BioPharma Dive",
+      "tier": "industry",
+      "title": "How J&J paved the way for Compass’ coming psychedelic drug launch",
+      "link": "https://www.biopharmadive.com/news/compass-nath-psychedelics-comp360-drug-launch-spravato-depression/830694/",
+      "date": "2026-09-21T11:30:00.000Z",
+      "category": "General",
+      "priority": false
+    },
+    {
+      "source": "BioPharma Dive",
+      "tier": "industry",
+      "title": "Are healthcare systems really ready for GLP-1s?",
+      "link": "https://www.biopharmadive.com/spons/are-healthcare-systems-really-ready-for-glp-1s/829901/",
+      "date": "2026-09-21T09:00:00.000Z",
+      "category": "General",
+      "priority": false
+    },
+    {
+      "source": "BioPharma Dive",
+      "tier": "industry",
+      "title": "Behind the outcomes: How whole-patient support is reshaping oncology care",
+      "link": "https://www.biopharmadive.com/spons/behind-the-outcomes-how-whole-patient-support-is-reshaping-oncology-care/830455/",
+      "date": "2026-09-21T09:00:00.000Z",
+      "category": "Regulatory / Policy",
       "priority": false
     },
     {
@@ -134,12 +190,39 @@
       "priority": false
     },
     {
+      "source": "BioPharma Dive",
+      "tier": "industry",
+      "title": "Xenon shares fall following depression trial pause",
+      "link": "https://www.biopharmadive.com/news/xenon-azetukalner-depression-trial-halt-adverse-events/830756/",
+      "date": "2026-09-18T15:51:00.000Z",
+      "category": "Deals / Business",
+      "priority": false
+    },
+    {
       "source": "BioSpace",
       "tier": "industry",
       "title": "Electra lights up with $350M IPO for pivotal immune-disease drug development",
       "link": "https://www.biospace.com/drug-development/electra-lights-up-with-350m-ipo-for-pivotal-immune-disease-drug-development",
       "date": "2026-09-18T15:23:48.000Z",
       "category": "Clinical trial",
+      "priority": false
+    },
+    {
+      "source": "BioPharma Dive",
+      "tier": "industry",
+      "title": "This week in charts: GSK’s China deals, the $300M IPO club and selling the news",
+      "link": "https://www.biopharmadive.com/news/biotech-charts-gsk-china-electra-ipo-scholar-rock/830514/",
+      "date": "2026-09-18T14:43:50.000Z",
+      "category": "Deals / Business",
+      "priority": false
+    },
+    {
+      "source": "BioPharma Dive",
+      "tier": "industry",
+      "title": "Ultragenyx prices Sanfilippo gene therapy at $4M; Bristol Myers shelves Orum drug",
+      "link": "https://www.biopharmadive.com/news/ultragenyx-fayuvi-orum-bristol-lunsumio-longeveron-rocket-danon/830512/",
+      "date": "2026-09-18T14:24:00.000Z",
+      "category": "General",
       "priority": false
     },
     {
@@ -167,6 +250,15 @@
       "link": "https://www.biospace.com/drug-development/bms-scraps-orums-targeted-degrader-after-reviewing-phase-1-data",
       "date": "2026-09-18T12:19:39.000Z",
       "category": "Clinical trial",
+      "priority": false
+    },
+    {
+      "source": "BioPharma Dive",
+      "tier": "industry",
+      "title": "Electra amasses $350M in biotech’s latest big IPO",
+      "link": "https://www.biopharmadive.com/news/electra-biotech-ipo-price-secondary-hlh/830698/",
+      "date": "2026-09-18T00:42:00.000Z",
+      "category": "Deals / Business",
       "priority": false
     },
     {
@@ -230,6 +322,141 @@
       "link": "https://www.raps.org/resource/euro-roundup-mhra-commission-makes-recommendations-on-ai-regulatory-framework-in-the-uk.html",
       "date": "2026-09-17T00:00:00.000Z",
       "category": "Regulatory / Policy",
+      "priority": false
+    },
+    {
+      "source": "Fierce Pharma",
+      "tier": "industry",
+      "title": "Trump calls for some childhood vaccines be split into smaller doses",
+      "link": "https://www.fiercepharma.com/pharma/trump-calls-some-routine-immunizations-be-split-five-smaller-doses",
+      "date": "",
+      "category": "General",
+      "priority": false
+    },
+    {
+      "source": "Fierce Pharma",
+      "tier": "industry",
+      "title": "J&J firms up Caplyta's 1st phase 3 win in bipolar-associated manic episodes",
+      "link": "https://www.fiercepharma.com/pharma/jj-firms-caplytas-1st-phase-3-win-bipolar-associated-manic-episodes",
+      "date": "",
+      "category": "Clinical trial",
+      "priority": false
+    },
+    {
+      "source": "Fierce Pharma",
+      "tier": "industry",
+      "title": "All 50 states apply to participate in new Medicaid drug pricing model, White House says",
+      "link": "https://www.fiercepharma.com/regulatory/cms-unveils-new-model-aims-bring-most-favored-nation-pricing-medicaid",
+      "date": "",
+      "category": "General",
+      "priority": false
+    },
+    {
+      "source": "Fierce Pharma",
+      "tier": "industry",
+      "title": "IntraBio's Aqneursa scores expansion, now the first treatment for rare ataxia",
+      "link": "https://www.fiercepharma.com/pharma/intrabio-scores-aqneursa-expansion-now-first-treatment-globally-rare-ataxia",
+      "date": "",
+      "category": "General",
+      "priority": false
+    },
+    {
+      "source": "Fierce Pharma",
+      "tier": "industry",
+      "title": "Novo struggles to appease restive investors with consumer plans, blockbuster ambitions",
+      "link": "https://www.fiercepharma.com/pharma/novo-aims-appease-investors-direct-consumer-plans-blockbuster-ambitions",
+      "date": "",
+      "category": "General",
+      "priority": false
+    },
+    {
+      "source": "Fierce Pharma",
+      "tier": "industry",
+      "title": "Bayer offloads cancer drug Stivarga to Grünenthal for up to $431M as new competition looms",
+      "link": "https://www.fiercepharma.com/pharma/bayer-offloads-cancer-drug-stivarga-grunenthal-431m-new-competition-looms",
+      "date": "",
+      "category": "General",
+      "priority": false
+    },
+    {
+      "source": "Fierce Pharma",
+      "tier": "industry",
+      "title": "Changing expectations: How GRAM is strengthening CDMO partnerships",
+      "link": "https://www.fiercepharma.com/sponsored/changing-expectations-how-gram-strengthening-cdmo-partnerships",
+      "date": "",
+      "category": "Deals / Business",
+      "priority": false
+    },
+    {
+      "source": "Fierce Pharma",
+      "tier": "industry",
+      "title": "Clinical trials reach a new automation inflection point",
+      "link": "https://www.fiercepharma.com/sponsored/clinical-trials-reach-new-automation-inflection-point",
+      "date": "",
+      "category": "Clinical trial",
+      "priority": false
+    },
+    {
+      "source": "Fierce Pharma",
+      "tier": "industry",
+      "title": "How Learning Systems Move Pharma Marketing Beyond the Box Score",
+      "link": "https://www.fiercepharma.com/sponsored/how-learning-systems-move-pharma-marketing-beyond-box-score",
+      "date": "",
+      "category": "General",
+      "priority": false
+    },
+    {
+      "source": "Fierce Pharma",
+      "tier": "industry",
+      "title": "New MFN deal details reignite concerns that Trump's pricing policy favors pharma",
+      "link": "https://www.fiercepharma.com/pharma/new-mfn-deal-details-reignite-concerns-trumps-pricing-policy-favors-pharma",
+      "date": "",
+      "category": "Regulatory / Policy",
+      "priority": false
+    },
+    {
+      "source": "Fierce Pharma",
+      "tier": "industry",
+      "title": "Eli Lilly escalates oral SERD battle with FDA approval for Inluriyo, Verzenio combo",
+      "link": "https://www.fiercepharma.com/pharma/eli-lilly-escalates-oral-serd-battle-fda-approval-inluriyo-verzenio-combo",
+      "date": "",
+      "category": "Approval",
+      "priority": false
+    },
+    {
+      "source": "Fierce Pharma",
+      "tier": "industry",
+      "title": "Europe's CHMP endorses slew of new medicines, including new offerings from Novo and AZ",
+      "link": "https://www.fiercepharma.com/pharma/europes-chmp-endorses-slew-new-medicines-including-novo-and-az-new-offerings",
+      "date": "",
+      "category": "Approval",
+      "priority": false
+    },
+    {
+      "source": "Fierce Pharma",
+      "tier": "industry",
+      "title": "The Oral GLP-1 Tracker: Holiday takes toll on prescriptions",
+      "link": "https://www.fiercepharma.com/pharma/oral-glp-1-tracker-launch-trajectories-lilly-foundayo-novo-wegovy-pill",
+      "date": "",
+      "category": "General",
+      "priority": false
+    },
+    {
+      "source": "Fierce Pharma",
+      "tier": "industry",
+      "title": "Panthers and zebras and meerkats, oh my: A peek behind the curtain at Fierce Pharma Week 2026",
+      "link": "https://www.fiercepharma.com/pharma/panthers-and-zebras-and-meerkats-oh-my-peek-behind-curtain-fierce-pharma-week-2026",
+      "date": "",
+      "category": "General",
+      "priority": false
+    },
+    {
+      "source": "Fierce Pharma",
+      "tier": "industry",
+      "title": "Fierce Pharma Asia—China deals safe from COINS?; Key WCLC data; Legend’s new CEO",
+      "link": "https://www.fiercepharma.com/pharma/china-deals-safe-coins-act-key-wclc-data-legend-new-ceo",
+      "date": "",
+      "category": "Deals / Business",
       "priority": false
     }
   ]
