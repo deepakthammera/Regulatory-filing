@@ -1,0 +1,34 @@
+{
+  "generated": "2026-01-01T00:00:00Z",
+  "note": "Starter file. This is overwritten automatically each week by the GitHub Actions workflow (.github/workflows/update-news.yml). Items show headline, source, date, and a link to the original article.",
+  "items": [
+    {
+      "source": "FDA",
+      "title": "FDA MedWatch — safety alerts and adverse event information (live feed)",
+      "link": "https://www.fda.gov/safety/medwatch-fda-safety-information-and-adverse-event-reporting-program",
+      "date": "2026-01-01T00:00:00Z",
+      "category": "Placeholder — will be replaced by the weekly job"
+    },
+    {
+      "source": "EMA",
+      "title": "European Medicines Agency — latest news (live feed)",
+      "link": "https://www.ema.europa.eu/en/news",
+      "date": "2026-01-01T00:00:00Z",
+      "category": "Placeholder — will be replaced by the weekly job"
+    },
+    {
+      "source": "MHRA",
+      "title": "MHRA Drug Safety Update (live feed)",
+      "link": "https://www.gov.uk/drug-safety-update",
+      "date": "2026-01-01T00:00:00Z",
+      "category": "Placeholder — will be replaced by the weekly job"
+    },
+    {
+      "source": "WHO",
+      "title": "WHO Medical Product Alerts and news (live feed)",
+      "link": "https://www.who.int/news",
+      "date": "2026-01-01T00:00:00Z",
+      "category": "Placeholder — will be replaced by the weekly job"
+    }
+  ]
+}
