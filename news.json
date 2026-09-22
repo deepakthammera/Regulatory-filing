@@ -1,0 +1,13 @@
+{
+  "generated": "2026-01-01T00:00:00Z",
+  "note": "Starter file. Overwritten automatically each week by .github/workflows/update-news.yml. Items show headline, source, date, category, priority flag, and a link to the original article.",
+  "sources": ["BioSpace","RAPS","ICH","CIOMS"],
+  "categories": ["Safety alert","Pharmacovigilance","Shortage","Approval","Guidance / Policy","General"],
+  "items": [
+    { "source": "BioSpace", "tier": "industry", "title": "BioSpace — biotech, pharma and clinical research news (live feed)", "link": "https://www.biospace.com/news", "date": "2026-01-01T00:00:00Z", "category": "General", "priority": false },
+    { "source": "BioSpace", "tier": "industry", "title": "BioSpace Policy — FDA actions, regulation and policy news (live feed)", "link": "https://www.biospace.com/policy", "date": "2026-01-01T00:00:00Z", "category": "Guidance / Policy", "priority": false },
+    { "source": "RAPS", "tier": "industry", "title": "RAPS Regulatory Focus — regulatory affairs news and analysis (live feed)", "link": "https://www.raps.org/news-and-articles", "date": "2026-01-01T00:00:00Z", "category": "Guidance / Policy", "priority": false },
+    { "source": "ICH", "tier": "regulator", "title": "ICH — guideline and announcement updates (live feed)", "link": "https://www.ich.org/news", "date": "2026-01-01T00:00:00Z", "category": "Guidance / Policy", "priority": false },
+    { "source": "CIOMS", "tier": "regulator", "title": "CIOMS — pharmacovigilance working group updates (live feed)", "link": "https://cioms.ch/news/", "date": "2026-01-01T00:00:00Z", "category": "Pharmacovigilance", "priority": true }
+  ]
+}
