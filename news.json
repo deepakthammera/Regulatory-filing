@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-22T02:40:00.178Z",
+  "generated": "2026-09-28T12:14:48.909Z",
   "sources": [
     "BioSpace",
     "Fierce Pharma",
@@ -19,388 +19,316 @@
   "count": 49,
   "items": [
     {
+      "source": "BioSpace",
+      "tier": "industry",
+      "title": "Merck, Daiichi Sankyo retract accelerated approval request for lung cancer ADC",
+      "link": "https://www.biospace.com/drug-development/merck-daiichi-sankyo-retract-accelerated-approval-request-for-lung-cancer-adc",
+      "date": "2026-09-28T11:15:56.000Z",
+      "category": "Approval",
+      "priority": false
+    },
+    {
       "source": "BioPharma Dive",
       "tier": "industry",
-      "title": "Beacon eye gene therapy hits mark in late-stage study",
-      "link": "https://www.biopharmadive.com/news/beacon-xlrp-laru-zova-phase-3-study-results/830918/",
-      "date": "2026-09-21T18:59:00.000Z",
-      "category": "General",
-      "priority": false
-    },
-    {
-      "source": "BioPharma Dive",
-      "tier": "industry",
-      "title": "Novo talks up drug launches in effort to win back investors",
-      "link": "https://www.biopharmadive.com/news/novo-capital-markets-day-obesity-sales-outlook/830882/",
-      "date": "2026-09-21T16:30:17.000Z",
-      "category": "General",
-      "priority": false
-    },
-    {
-      "source": "BioSpace",
-      "tier": "industry",
-      "title": "Western licensing deals for Chinese radioligand therapies to jump in 2027, Sleuth forecasts",
-      "link": "https://www.biospace.com/deals/western-licensing-deals-for-chinese-radioligand-therapies-to-jump-in-2027-sleuth-forecasts",
-      "date": "2026-09-21T16:21:08.000Z",
-      "category": "Deals / Business",
-      "priority": false
-    },
-    {
-      "source": "BioSpace",
-      "tier": "industry",
-      "title": "Novo’s plan to hit $23B in revenue by 2035 leaves investors wanting",
-      "link": "https://www.biospace.com/business/novos-plan-to-hit-23b-in-revenue-by-2035-leaves-investors-wanting",
-      "date": "2026-09-21T14:36:41.000Z",
-      "category": "Deals / Business",
-      "priority": false
-    },
-    {
-      "source": "BioSpace",
-      "tier": "industry",
-      "title": "J&J again cuts New Jersey workforce, letting 87 go",
-      "link": "https://www.biospace.com/biospace-layoff-tracker",
-      "date": "2026-09-21T14:11:00.000Z",
-      "category": "General",
-      "priority": false
-    },
-    {
-      "source": "BioSpace",
-      "tier": "industry",
-      "title": "Telix buys ITM for $1.65B in ‘supercritical’ radiopharma M&A",
-      "link": "https://www.biospace.com/business/telix-buys-itm-for-1-65b-in-supercritical-radiopharma-m-a",
-      "date": "2026-09-21T13:13:52.000Z",
-      "category": "General",
-      "priority": false
-    },
-    {
-      "source": "BioSpace",
-      "tier": "industry",
-      "title": "Novo buys three early-stage obesity assets from Kallyope as investor pressure mounts",
-      "link": "https://www.biospace.com/deals/novo-buys-three-early-stage-obesity-assets-from-kallyope-as-investor-pressure-mounts",
-      "date": "2026-09-21T12:11:12.000Z",
+      "title": "Kids shouldn’t have to organize childhood around medicine",
+      "link": "https://www.biopharmadive.com/spons/kids-shouldnt-have-to-organize-childhood-around-medicine/831365/",
+      "date": "2026-09-28T09:00:00.000Z",
       "category": "General",
       "priority": false
     },
     {
       "source": "BioPharma Dive",
       "tier": "industry",
-      "title": "Telix buys ITM in bid to create a ‘radiopharmaceutical powerhouse’",
-      "link": "https://www.biopharmadive.com/news/telix-itm-radiopharmaceuticals-deal-acquire-lutetium-novartis/830859/",
-      "date": "2026-09-21T11:49:00.000Z",
-      "category": "General",
-      "priority": false
-    },
-    {
-      "source": "BioPharma Dive",
-      "tier": "industry",
-      "title": "How J&J paved the way for Compass’ coming psychedelic drug launch",
-      "link": "https://www.biopharmadive.com/news/compass-nath-psychedelics-comp360-drug-launch-spravato-depression/830694/",
-      "date": "2026-09-21T11:30:00.000Z",
-      "category": "General",
-      "priority": false
-    },
-    {
-      "source": "BioPharma Dive",
-      "tier": "industry",
-      "title": "Are healthcare systems really ready for GLP-1s?",
-      "link": "https://www.biopharmadive.com/spons/are-healthcare-systems-really-ready-for-glp-1s/829901/",
-      "date": "2026-09-21T09:00:00.000Z",
-      "category": "General",
-      "priority": false
-    },
-    {
-      "source": "BioPharma Dive",
-      "tier": "industry",
-      "title": "Behind the outcomes: How whole-patient support is reshaping oncology care",
-      "link": "https://www.biopharmadive.com/spons/behind-the-outcomes-how-whole-patient-support-is-reshaping-oncology-care/830455/",
-      "date": "2026-09-21T09:00:00.000Z",
-      "category": "Regulatory / Policy",
-      "priority": false
-    },
-    {
-      "source": "BioSpace",
-      "tier": "industry",
-      "title": "Citing Replimune approval, experts say localized cancer meds could redefine care",
-      "link": "https://www.biospace.com/drug-development/citing-replimune-approval-experts-say-localized-cancer-meds-could-redefine-care",
-      "date": "2026-09-21T04:05:00.000Z",
+      "title": "Breakthrough therapies still need builders",
+      "link": "https://www.biopharmadive.com/spons/breakthrough-therapies-still-need-builders/831034/",
+      "date": "2026-09-28T09:00:00.000Z",
       "category": "Approval",
       "priority": false
     },
     {
       "source": "BioSpace",
       "tier": "industry",
-      "title": "Mikhail, Davis on board with regulatory framework tailored to rare disease therapies",
-      "link": "https://www.biospace.com/fda/mikhail-davis-on-board-with-regulatory-framework-tailored-to-rare-disease-therapies",
-      "date": "2026-09-21T04:02:00.000Z",
-      "category": "Regulatory / Policy",
-      "priority": false
-    },
-    {
-      "source": "BioSpace",
-      "tier": "industry",
-      "title": "Beyond Random Integration: Transposase cell line development shortening timeline & boosting titers",
-      "link": "https://www.biospace.com/drug-development/beyond-random-integration-transposase-cell-line-development-shortening-timeline-boosting-titers",
-      "date": "2026-09-21T04:00:00.000Z",
+      "title": "Regenerative medicine needs more than stem cells",
+      "link": "https://www.biospace.com/drug-development/regenerative-medicine-needs-more-than-stem-cells",
+      "date": "2026-09-28T05:01:00.000Z",
       "category": "General",
       "priority": false
     },
     {
-      "source": "RAPS",
+      "source": "BioSpace",
       "tier": "industry",
-      "title": "Convergence: Regulators emphasize need for harmonized approach to AI",
-      "link": "https://www.raps.org/resource/convergence-regulators-emphasize-need-for-harmonized-approach-to-ai.html",
-      "date": "2026-09-21T00:00:00.000Z",
-      "category": "Regulatory / Policy",
-      "priority": false
-    },
-    {
-      "source": "RAPS",
-      "tier": "industry",
-      "title": "FDA to remove ‘animal testing’ terminology from its regulations",
-      "link": "https://www.raps.org/resource/fda-to-remove-animal-testing-terminology-from-its-regulations.html",
-      "date": "2026-09-21T00:00:00.000Z",
-      "category": "Regulatory / Policy",
-      "priority": false
-    },
-    {
-      "source": "RAPS",
-      "tier": "industry",
-      "title": "Asia-Pacific Roundup: Singapore’s HSA forges regulatory alliances across Africa, Asia, and Europe",
-      "link": "https://www.raps.org/resource/asia-pacific-roundup-singapore-s-hsa-forges-regulatory-alliances-across-africa-asia-and-europe.html",
-      "date": "2026-09-21T00:00:00.000Z",
-      "category": "Regulatory / Policy",
-      "priority": false
-    },
-    {
-      "source": "RAPS",
-      "tier": "industry",
-      "title": "Recon: FDA staff raise no major concerns for Grail multi-cancer test ahead of adcomm; Trump admin drafting order to exert contro...",
-      "link": "https://www.raps.org/resource/recon-fda-staff-raise-no-major-concerns-for-grail-multi-cancer-test-ahead-of-adcomm-trump-admin-drafting-order-to-exert-control-over-nih-grant-funding.html",
-      "date": "2026-09-21T00:00:00.000Z",
-      "category": "Approval",
+      "title": "Milestone Sanfilippo nod helps Ultragenyx regroup after tough Angelman defeat",
+      "link": "https://www.biospace.com/drug-development/milestone-sanfilippo-nod-helps-ultragenyx-regroup-after-tough-angelman-defeat",
+      "date": "2026-09-28T04:02:00.000Z",
+      "category": "General",
       "priority": false
     },
     {
       "source": "BioSpace",
       "tier": "industry",
-      "title": "China plans to transform biotech sector into $522B powerhouse by 2030",
-      "link": "https://www.biospace.com/business/china-plans-to-transform-3m-biotech-sector-into-522b-powerhouse-by-2030",
-      "date": "2026-09-18T18:36:37.000Z",
+      "title": "6 immunology targets to sustain a mammoth I&I market",
+      "link": "https://www.biospace.com/drug-development/6-immunology-targets-to-sustain-a-mammoth-i-i-market",
+      "date": "2026-09-28T04:01:00.000Z",
       "category": "General",
       "priority": false
     },
     {
       "source": "BioPharma Dive",
       "tier": "industry",
-      "title": "Xenon shares fall following depression trial pause",
-      "link": "https://www.biopharmadive.com/news/xenon-azetukalner-depression-trial-halt-adverse-events/830756/",
-      "date": "2026-09-18T15:51:00.000Z",
+      "title": "This week in charts: Novo’s rise and fall and AI biotechs’ big haul",
+      "link": "https://www.biopharmadive.com/news/novo-nordisk-share-price-ai-drug-discovery/831366/",
+      "date": "2026-09-25T16:08:00.000Z",
+      "category": "General",
+      "priority": false
+    },
+    {
+      "source": "BioSpace",
+      "tier": "industry",
+      "title": "After COVID, biomanufacturing tackles preparedness and commercialization challenges",
+      "link": "https://www.biospace.com/drug-development/after-covid-biomanufacturing-tackles-preparedness-and-commercialization-challenges",
+      "date": "2026-09-25T14:49:45.000Z",
+      "category": "General",
+      "priority": false
+    },
+    {
+      "source": "BioSpace",
+      "tier": "industry",
+      "title": "Nektar prevails in legal battle with Lilly over broken rezpeg partnership",
+      "link": "https://www.biospace.com/business/nektar-prevails-in-legal-battle-with-lilly-over-broken-rezpeg-partnership",
+      "date": "2026-09-25T14:04:34.000Z",
       "category": "Deals / Business",
       "priority": false
     },
     {
       "source": "BioSpace",
       "tier": "industry",
-      "title": "Electra lights up with $350M IPO for pivotal immune-disease drug development",
-      "link": "https://www.biospace.com/drug-development/electra-lights-up-with-350m-ipo-for-pivotal-immune-disease-drug-development",
-      "date": "2026-09-18T15:23:48.000Z",
+      "title": "ADARx raises $446M in biotech’s third largest IPO of 2026, City files to go public",
+      "link": "https://www.biospace.com/deals/adarx-raises-446m-in-biotechs-third-largest-ipo-of-2026-city-files-to-go-public",
+      "date": "2026-09-25T13:34:11.000Z",
+      "category": "Deals / Business",
+      "priority": false
+    },
+    {
+      "source": "BioSpace",
+      "tier": "industry",
+      "title": "J&J, Legend tout long-term survival benefits for Carvykti in multiple myeloma",
+      "link": "https://www.biospace.com/drug-development/j-j-legend-tout-long-term-survival-benefits-for-carvykti-in-multiple-myeloma",
+      "date": "2026-09-25T13:25:46.000Z",
+      "category": "General",
+      "priority": false
+    },
+    {
+      "source": "BioPharma Dive",
+      "tier": "industry",
+      "title": "Novo pursues long-acting obesity drugs; Acadia slumps on Alzheimer’s data",
+      "link": "https://www.biopharmadive.com/news/novo-nanexa-acadia-remlifanserin-nektar-lilly-onswik-welireg/831346/",
+      "date": "2026-09-25T13:21:00.000Z",
+      "category": "General",
+      "priority": false
+    },
+    {
+      "source": "BioSpace",
+      "tier": "industry",
+      "title": "Genentech makes $1.5B+ deal with AI heavyweight Earendil for cancer bispecifics",
+      "link": "https://www.biospace.com/deals/genentech-makes-1-5b-deal-with-ai-heavyweight-earendil-for-cancer-bispecifics",
+      "date": "2026-09-25T12:27:03.000Z",
+      "category": "Deals / Business",
+      "priority": false
+    },
+    {
+      "source": "BioPharma Dive",
+      "tier": "industry",
+      "title": "RNAi drug specialist ADARx raises $446M IPO",
+      "link": "https://www.biopharmadive.com/news/adarx-rnai-biotech-ipo-stock-pricing/831262/",
+      "date": "2026-09-25T00:36:00.000Z",
+      "category": "Deals / Business",
+      "priority": false
+    },
+    {
+      "source": "BioPharma Dive",
+      "tier": "industry",
+      "title": "Grail multicancer detection test wins FDA advisers’ backing",
+      "link": "https://www.biopharmadive.com/news/grail-multicancer-detection-test-wins-fda-advisers-backing/831286/",
+      "date": "2026-09-24T21:08:00.000Z",
+      "category": "Regulatory / Policy",
+      "priority": false
+    },
+    {
+      "source": "BioPharma Dive",
+      "tier": "industry",
+      "title": "FDA nominee Overton parries vaccine questions at Senate hearing",
+      "link": "https://www.biopharmadive.com/news/overton-senate-hearing-fda-vaccines-abortion-china/831285/",
+      "date": "2026-09-24T20:46:00.000Z",
+      "category": "Regulatory / Policy",
+      "priority": false
+    },
+    {
+      "source": "BioSpace",
+      "tier": "industry",
+      "title": "FDA slams GLP-1 compounder over risk of contaminating drugs ‘with filth’",
+      "link": "https://www.biospace.com/drug-delivery/fda-slams-glp-1-compounder-over-risk-of-contaminating-drugs-with-filth",
+      "date": "2026-09-24T18:53:03.000Z",
+      "category": "Regulatory / Policy",
+      "priority": false
+    },
+    {
+      "source": "BioSpace",
+      "tier": "industry",
+      "title": "US senators grill FDA nominee Overton on ability to ‘stand up’ to Trump",
+      "link": "https://www.biospace.com/fda/us-senators-grill-fda-nominee-overton-on-ability-to-stand-up-to-trump",
+      "date": "2026-09-24T18:20:18.000Z",
+      "category": "Regulatory / Policy",
+      "priority": false
+    },
+    {
+      "source": "BioPharma Dive",
+      "tier": "industry",
+      "title": "Merck reveals study success, and possible safety worries, for eye drug hopeful",
+      "link": "https://www.biopharmadive.com/news/merck-remigromig-dme-study-results-eyebio/831234/",
+      "date": "2026-09-24T15:34:00.000Z",
+      "category": "Safety / PV",
+      "priority": false
+    },
+    {
+      "source": "BioSpace",
+      "tier": "industry",
+      "title": "Acadia slides on Phase 2 miss in Alzheimer’s psychosis but keeps moving asset forward",
+      "link": "https://www.biospace.com/acadia-slides-on-phase-2-miss-in-alzheimers-psychosis-but-keeps-moving-asset-forward",
+      "date": "2026-09-24T14:25:32.000Z",
       "category": "Clinical trial",
       "priority": false
     },
     {
       "source": "BioPharma Dive",
       "tier": "industry",
-      "title": "This week in charts: GSK’s China deals, the $300M IPO club and selling the news",
-      "link": "https://www.biopharmadive.com/news/biotech-charts-gsk-china-electra-ipo-scholar-rock/830514/",
-      "date": "2026-09-18T14:43:50.000Z",
+      "title": "Lilly’s latest China drug deal; Immunovant’s setback in lupus",
+      "link": "https://www.biopharmadive.com/news/lilly-innocare-immunovant-vertex-inaxaplin-otsuka-ionis/831044/",
+      "date": "2026-09-24T14:14:00.000Z",
       "category": "Deals / Business",
+      "priority": false
+    },
+    {
+      "source": "BioSpace",
+      "tier": "industry",
+      "title": "Merck’s experimental eye drug matches Roche’s VEGF inhibitor but safety concerns emerge",
+      "link": "https://www.biospace.com/drug-development/mercks-experimental-eye-drug-matches-roches-vegf-inhibitor-but-safety-concerns-emerge",
+      "date": "2026-09-24T13:51:12.000Z",
+      "category": "Safety / PV",
+      "priority": false
+    },
+    {
+      "source": "BioSpace",
+      "tier": "industry",
+      "title": "Kyverna steps closer to FDA-first CAR T for an autoimmune condition with durability data",
+      "link": "https://www.biospace.com/drug-development/kyverna-steps-closer-to-fda-first-car-t-for-an-autoimmune-condition-with-durability-data",
+      "date": "2026-09-24T13:27:54.000Z",
+      "category": "Regulatory / Policy",
+      "priority": false
+    },
+    {
+      "source": "BioSpace",
+      "tier": "industry",
+      "title": "Eli Lilly’s weekly insulin shot cleared by FDA, setting up another front in Novo rivalry",
+      "link": "https://www.biospace.com/fda/eli-lillys-weekly-insulin-shot-cleared-by-fda-setting-up-another-front-in-novo-rivalry",
+      "date": "2026-09-24T13:20:58.000Z",
+      "category": "Approval",
+      "priority": false
+    },
+    {
+      "source": "RAPS",
+      "tier": "industry",
+      "title": "This Week at FDA: Overton confirmation hearing, animal testing rule, and more",
+      "link": "https://www.raps.org/resource/this-week-at-fda-overton-confirmation-hearing-animal-testing-rule-and-more.html",
+      "date": "2026-09-24T00:00:00.000Z",
+      "category": "Regulatory / Policy",
+      "priority": false
+    },
+    {
+      "source": "RAPS",
+      "tier": "industry",
+      "title": "Convergence: Thinking past GCP compliance for regulatory acceptability of foreign trial data",
+      "link": "https://www.raps.org/resource/convergence-thinking-past-gcp-compliance-for-regulatory-acceptability-of-foreign-trial-dat.html",
+      "date": "2026-09-24T00:00:00.000Z",
+      "category": "Regulatory / Policy",
+      "priority": false
+    },
+    {
+      "source": "RAPS",
+      "tier": "industry",
+      "title": "FDA nominee Overton faces grilling in Senate confirmation hearing",
+      "link": "https://www.raps.org/resource/fda-nominee-overton-faces-grilling-in-senate-confirmation-hearing.html",
+      "date": "2026-09-24T00:00:00.000Z",
+      "category": "Regulatory / Policy",
+      "priority": false
+    },
+    {
+      "source": "RAPS",
+      "tier": "industry",
+      "title": "Euro Roundup: EMA officials argue against making single pivotal trials the ‘rigid, default position’",
+      "link": "https://www.raps.org/resource/euro-roundup-ema-officials-argue-against-making-single-pivotal-trials-the-rigid-default-position.html",
+      "date": "2026-09-24T00:00:00.000Z",
+      "category": "Clinical trial",
+      "priority": false
+    },
+    {
+      "source": "RAPS",
+      "tier": "industry",
+      "title": "Recon: Adcomm backs Grail’s cancer test; Lilly, China’s InnoCare sign $3.35B deal",
+      "link": "https://www.raps.org/resource/recon-adcomm-backs-grail-s-cancer-test-lilly-china-s-innocare-sign-3-35b-deal.html",
+      "date": "2026-09-24T00:00:00.000Z",
+      "category": "Approval",
       "priority": false
     },
     {
       "source": "BioPharma Dive",
       "tier": "industry",
-      "title": "Ultragenyx prices Sanfilippo gene therapy at $4M; Bristol Myers shelves Orum drug",
-      "link": "https://www.biopharmadive.com/news/ultragenyx-fayuvi-orum-bristol-lunsumio-longeveron-rocket-danon/830512/",
-      "date": "2026-09-18T14:24:00.000Z",
-      "category": "General",
-      "priority": false
-    },
-    {
-      "source": "BioSpace",
-      "tier": "industry",
-      "title": "Xenon tumbles on voluntary psychiatry hold, but analysts confident in $2B epilepsy opportunity",
-      "link": "https://www.biospace.com/drug-development/xenon-tumbles-on-voluntary-psychiatry-hold-but-analysts-confident-in-2b-epilepsy-opportunity",
-      "date": "2026-09-18T13:59:04.000Z",
-      "category": "General",
-      "priority": false
-    },
-    {
-      "source": "BioSpace",
-      "tier": "industry",
-      "title": "Ultragenyx wins FDA greenlight for first Sanfilippo therapy, priced at nearly $4M",
-      "link": "https://www.biospace.com/fda/ultragenyx-wins-fda-greenlight-for-first-sanfilippo-therapy-priced-at-nearly-4m",
-      "date": "2026-09-18T12:32:03.000Z",
-      "category": "Regulatory / Policy",
-      "priority": false
-    },
-    {
-      "source": "BioSpace",
-      "tier": "industry",
-      "title": "BMS scraps Orum’s targeted degrader after reviewing Phase 1 data",
-      "link": "https://www.biospace.com/drug-development/bms-scraps-orums-targeted-degrader-after-reviewing-phase-1-data",
-      "date": "2026-09-18T12:19:39.000Z",
-      "category": "Clinical trial",
-      "priority": false
-    },
-    {
-      "source": "BioPharma Dive",
-      "tier": "industry",
-      "title": "Electra amasses $350M in biotech’s latest big IPO",
-      "link": "https://www.biopharmadive.com/news/electra-biotech-ipo-price-secondary-hlh/830698/",
-      "date": "2026-09-18T00:42:00.000Z",
+      "title": "Enveda, an AI drugmaker, banks $311M in venture funding",
+      "link": "https://www.biopharmadive.com/news/enveda-ai-drug-discovery-series-e/831161/",
+      "date": "2026-09-23T17:55:00.000Z",
       "category": "Deals / Business",
       "priority": false
     },
     {
       "source": "RAPS",
       "tier": "industry",
-      "title": "This Week at FDA: Overton nomination hearing, FDA’s hiring challenges, and more",
-      "link": "https://www.raps.org/resource/this-week-at-fda-overton-nomination-hearing-fda-s-hiring-challenges-and-more.html",
-      "date": "2026-09-18T00:00:00.000Z",
-      "category": "Regulatory / Policy",
-      "priority": false
-    },
-    {
-      "source": "BioSpace",
-      "tier": "industry",
-      "title": "Novo notches up to $1.4B pact with Orbis to develop oral macrocycle cardiometabolic drugs",
-      "link": "https://www.biospace.com/deals/novo-notches-up-to-1-4b-pact-with-orbis-to-develop-oral-macrocycle-cardiometabolic-drugs",
-      "date": "2026-09-17T15:21:34.000Z",
-      "category": "General",
-      "priority": false
-    },
-    {
-      "source": "BioSpace",
-      "tier": "industry",
-      "title": "Webinar: Manufacturing in Turbulent Times",
-      "link": "https://www.biospace.com/events/webinar-manufacturing-in-turbulent-times",
-      "date": "2026-09-17T14:01:44.000Z",
-      "category": "General",
-      "priority": false
-    },
-    {
-      "source": "RAPS",
-      "tier": "industry",
-      "title": "Graham: PDUFA VIII reflects ‘America First’ principles",
-      "link": "https://www.raps.org/resource/graham-pdufa-viii-reflects-america-first-principles.html",
-      "date": "2026-09-17T00:00:00.000Z",
-      "category": "Approval",
-      "priority": false
-    },
-    {
-      "source": "RAPS",
-      "tier": "industry",
-      "title": "Convergence: EU officials tout pending pharmaceutical reforms",
-      "link": "https://www.raps.org/resource/convergence-eu-officials-tout-pending-pharmaceutical-reforms.html",
-      "date": "2026-09-17T00:00:00.000Z",
-      "category": "General",
-      "priority": false
-    },
-    {
-      "source": "RAPS",
-      "tier": "industry",
-      "title": "Convergence: Califf says regulations ‘need an update,’ sees AI assistants in regulatory future",
-      "link": "https://www.raps.org/resource/convergence-califf-says-regulations-need-an-update-sees-ai-assistants-in-regulatory-future.html",
-      "date": "2026-09-17T00:00:00.000Z",
+      "title": "Distributed manufacturing: Industry groups weigh in on FDA’s proposed rule",
+      "link": "https://www.raps.org/resource/distributed-manufacturing-industry-groups-weigh-in-on-fda-s-proposed-rule.html",
+      "date": "2026-09-23T00:00:00.000Z",
       "category": "Regulatory / Policy",
       "priority": false
     },
     {
       "source": "RAPS",
       "tier": "industry",
-      "title": "Euro Roundup: MHRA commission makes recommendations on AI regulatory framework in the UK",
-      "link": "https://www.raps.org/resource/euro-roundup-mhra-commission-makes-recommendations-on-ai-regulatory-framework-in-the-uk.html",
-      "date": "2026-09-17T00:00:00.000Z",
+      "title": "Convergence: Global acceptance of NAMs concerns sponsors who want to use them",
+      "link": "https://www.raps.org/resource/convergence-global-acceptance-of-nams-concerns-sponsors-who-want-to-use-them.html",
+      "date": "2026-09-22T00:00:00.000Z",
       "category": "Regulatory / Policy",
       "priority": false
     },
     {
-      "source": "Fierce Pharma",
+      "source": "RAPS",
       "tier": "industry",
-      "title": "Trump calls for some childhood vaccines be split into smaller doses",
-      "link": "https://www.fiercepharma.com/pharma/trump-calls-some-routine-immunizations-be-split-five-smaller-doses",
-      "date": "",
-      "category": "General",
+      "title": "Convergence: Regulators offer tips for successful meetings",
+      "link": "https://www.raps.org/resource/convergence-regulators-offer-tips-for-successful-meetings.html",
+      "date": "2026-09-22T00:00:00.000Z",
+      "category": "Regulatory / Policy",
       "priority": false
     },
     {
-      "source": "Fierce Pharma",
+      "source": "RAPS",
       "tier": "industry",
-      "title": "J&J firms up Caplyta's 1st phase 3 win in bipolar-associated manic episodes",
-      "link": "https://www.fiercepharma.com/pharma/jj-firms-caplytas-1st-phase-3-win-bipolar-associated-manic-episodes",
-      "date": "",
-      "category": "Clinical trial",
-      "priority": false
-    },
-    {
-      "source": "Fierce Pharma",
-      "tier": "industry",
-      "title": "All 50 states apply to participate in new Medicaid drug pricing model, White House says",
-      "link": "https://www.fiercepharma.com/regulatory/cms-unveils-new-model-aims-bring-most-favored-nation-pricing-medicaid",
-      "date": "",
-      "category": "General",
-      "priority": false
-    },
-    {
-      "source": "Fierce Pharma",
-      "tier": "industry",
-      "title": "IntraBio's Aqneursa scores expansion, now the first treatment for rare ataxia",
-      "link": "https://www.fiercepharma.com/pharma/intrabio-scores-aqneursa-expansion-now-first-treatment-globally-rare-ataxia",
-      "date": "",
-      "category": "General",
-      "priority": false
-    },
-    {
-      "source": "Fierce Pharma",
-      "tier": "industry",
-      "title": "Novo struggles to appease restive investors with consumer plans, blockbuster ambitions",
-      "link": "https://www.fiercepharma.com/pharma/novo-aims-appease-investors-direct-consumer-plans-blockbuster-ambitions",
-      "date": "",
-      "category": "General",
-      "priority": false
-    },
-    {
-      "source": "Fierce Pharma",
-      "tier": "industry",
-      "title": "Bayer offloads cancer drug Stivarga to Grünenthal for up to $431M as new competition looms",
-      "link": "https://www.fiercepharma.com/pharma/bayer-offloads-cancer-drug-stivarga-grunenthal-431m-new-competition-looms",
-      "date": "",
-      "category": "General",
-      "priority": false
-    },
-    {
-      "source": "Fierce Pharma",
-      "tier": "industry",
-      "title": "Changing expectations: How GRAM is strengthening CDMO partnerships",
-      "link": "https://www.fiercepharma.com/sponsored/changing-expectations-how-gram-strengthening-cdmo-partnerships",
-      "date": "",
+      "title": "Recon: Pharma companies urge Trump administration to protect China deals; EU drugmakers seek faster trials, more spending to com...",
+      "link": "https://www.raps.org/resource/recon-pharma-companies-urge-trump-administration-to-protect-china-deals-eu-drugmakers-seek-faster-trials-more-spending-to-compete-with-us-china.html",
+      "date": "2026-09-22T00:00:00.000Z",
       "category": "Deals / Business",
       "priority": false
     },
     {
       "source": "Fierce Pharma",
       "tier": "industry",
-      "title": "Clinical trials reach a new automation inflection point",
-      "link": "https://www.fiercepharma.com/sponsored/clinical-trials-reach-new-automation-inflection-point",
-      "date": "",
-      "category": "Clinical trial",
-      "priority": false
-    },
-    {
-      "source": "Fierce Pharma",
-      "tier": "industry",
-      "title": "How Learning Systems Move Pharma Marketing Beyond the Box Score",
-      "link": "https://www.fiercepharma.com/sponsored/how-learning-systems-move-pharma-marketing-beyond-box-score",
+      "title": "Merck's holistic HIV health hive buzzes with the help of actress Debbie Allen",
+      "link": "https://www.fiercepharma.com/marketing/mercks-holistic-hiv-health-hive-buzzes-help-actress-debbie-allen",
       "date": "",
       "category": "General",
       "priority": false
@@ -408,17 +336,8 @@
     {
       "source": "Fierce Pharma",
       "tier": "industry",
-      "title": "New MFN deal details reignite concerns that Trump's pricing policy favors pharma",
-      "link": "https://www.fiercepharma.com/pharma/new-mfn-deal-details-reignite-concerns-trumps-pricing-policy-favors-pharma",
-      "date": "",
-      "category": "Regulatory / Policy",
-      "priority": false
-    },
-    {
-      "source": "Fierce Pharma",
-      "tier": "industry",
-      "title": "Eli Lilly escalates oral SERD battle with FDA approval for Inluriyo, Verzenio combo",
-      "link": "https://www.fiercepharma.com/pharma/eli-lilly-escalates-oral-serd-battle-fda-approval-inluriyo-verzenio-combo",
+      "title": "Mirum bags FDA approval for ultra-rare bone lesion disorder, heating up rivalry with Regeneron",
+      "link": "https://www.fiercepharma.com/pharma/mirum-bags-fda-approval-ultra-rare-bone-lesion-disorder-heating-rivalry-regeneronns-pasatru",
       "date": "",
       "category": "Approval",
       "priority": false
@@ -426,16 +345,7 @@
     {
       "source": "Fierce Pharma",
       "tier": "industry",
-      "title": "Europe's CHMP endorses slew of new medicines, including new offerings from Novo and AZ",
-      "link": "https://www.fiercepharma.com/pharma/europes-chmp-endorses-slew-new-medicines-including-novo-and-az-new-offerings",
-      "date": "",
-      "category": "Approval",
-      "priority": false
-    },
-    {
-      "source": "Fierce Pharma",
-      "tier": "industry",
-      "title": "The Oral GLP-1 Tracker: Holiday takes toll on prescriptions",
+      "title": "The Oral GLP-1 Tracker: Prescriptions bounce back from holiday lull",
       "link": "https://www.fiercepharma.com/pharma/oral-glp-1-tracker-launch-trajectories-lilly-foundayo-novo-wegovy-pill",
       "date": "",
       "category": "General",
@@ -444,8 +354,17 @@
     {
       "source": "Fierce Pharma",
       "tier": "industry",
-      "title": "Panthers and zebras and meerkats, oh my: A peek behind the curtain at Fierce Pharma Week 2026",
-      "link": "https://www.fiercepharma.com/pharma/panthers-and-zebras-and-meerkats-oh-my-peek-behind-curtain-fierce-pharma-week-2026",
+      "title": "Merck, Eisai’s Welireg-Lenvima combo lands FDA nod to jump the kidney cancer queue",
+      "link": "https://www.fiercepharma.com/pharma/merck-eisai-welireg-lenvima-combo-lands-fda-nod-jump-kidney-cancer-queue",
+      "date": "",
+      "category": "Regulatory / Policy",
+      "priority": false
+    },
+    {
+      "source": "Fierce Pharma",
+      "tier": "industry",
+      "title": "Lundbeck to move US digs to Boston as it eyes bigger innovation frontiers",
+      "link": "https://www.fiercepharma.com/pharma/lundbeck-move-us-digs-boston-it-eyes-bigger-innovation-frontiers",
       "date": "",
       "category": "General",
       "priority": false
@@ -453,10 +372,91 @@
     {
       "source": "Fierce Pharma",
       "tier": "industry",
-      "title": "Fierce Pharma Asia—China deals safe from COINS?; Key WCLC data; Legend’s new CEO",
-      "link": "https://www.fiercepharma.com/pharma/china-deals-safe-coins-act-key-wclc-data-legend-new-ceo",
+      "title": "Fierce Pharma Week: A look at the biggest trends, campaigns and conversations",
+      "link": "https://www.fiercepharma.com/pharma/fierce-pharma-week-look-biggest-trends-campaigns-and-conversations",
       "date": "",
-      "category": "Deals / Business",
+      "category": "General",
+      "priority": false
+    },
+    {
+      "source": "Fierce Pharma",
+      "tier": "industry",
+      "title": "Fierce Pharma Asia—Lilly’s $3.35B InnoCare deal; Korea’s breakthrough; China’s 5-year biotech plan",
+      "link": "https://www.fiercepharma.com/pharma/lilly-335b-innocare-deal-korea-breakthrough-china-5-year-biotech-plan",
+      "date": "",
+      "category": "Approval",
+      "priority": false
+    },
+    {
+      "source": "Fierce Pharma",
+      "tier": "industry",
+      "title": "Eli Lilly blasted for ‘promotional and emotive’ language in GLP-1 press release",
+      "link": "https://www.fiercepharma.com/marketing/eli-lilly-blasted-promotional-and-emotive-language-glp-1-press-release",
+      "date": "",
+      "category": "General",
+      "priority": false
+    },
+    {
+      "source": "Fierce Pharma",
+      "tier": "industry",
+      "title": "Lilly brings more heat to Novo with FDA nod for once-weekly insulin Onswik",
+      "link": "https://www.fiercepharma.com/pharma/lilly-brings-more-heat-novo-fda-nod-once-weekly-insulin-onswik",
+      "date": "",
+      "category": "Regulatory / Policy",
+      "priority": false
+    },
+    {
+      "source": "Fierce Pharma",
+      "tier": "industry",
+      "title": "Former 'Real Housewives' star Jenn Fessler and CineHealth’s Tracey Yaw break down authentic healthcare storytelling",
+      "link": "https://www.fiercepharma.com/marketing/bravos-jenn-fessler-and-cinehealths-tracey-yaw-break-down-authentic-healthcare",
+      "date": "",
+      "category": "General",
+      "priority": false
+    },
+    {
+      "source": "Fierce Pharma",
+      "tier": "industry",
+      "title": "Trump's FDA pick Heidi Overton calls vaccines, mifepristone safe and effective in confirmation hearing",
+      "link": "https://www.fiercepharma.com/biotech/fda-nominee-overton-calls-vaccines-mifepristone-safe-and-effective-confirmation-hearing",
+      "date": "",
+      "category": "Regulatory / Policy",
+      "priority": false
+    },
+    {
+      "source": "Fierce Pharma",
+      "tier": "industry",
+      "title": "Boehringer Ingelheim offloads Shanghai CDMO to local antibody developer",
+      "link": "https://www.fiercepharma.com/pharma/boehringer-ingelheim-offloads-shanghai-cdmo-local-antibody-developer",
+      "date": "",
+      "category": "General",
+      "priority": false
+    },
+    {
+      "source": "Fierce Pharma",
+      "tier": "industry",
+      "title": "GSK slammed for ‘grossly misleading’ and ‘totally unacceptable’ behavior",
+      "link": "https://www.fiercepharma.com/marketing/gsk-slammed-grossly-misleading-and-totally-unacceptable-behavior",
+      "date": "",
+      "category": "General",
+      "priority": false
+    },
+    {
+      "source": "Fierce Pharma",
+      "tier": "industry",
+      "title": "Elevar wins FDA nod for bile duct cancer drug Lyrfigtu, a first for a Korean firm",
+      "link": "https://www.fiercepharma.com/pharma/elevar-wins-fda-nod-bile-duct-cancer-drug-lyrfigtu-first-korean-company",
+      "date": "",
+      "category": "Regulatory / Policy",
+      "priority": false
+    },
+    {
+      "source": "Fierce Pharma",
+      "tier": "industry",
+      "title": "Regulatory tracker: EC win marks 3rd asthma approval for AZ's Breztri",
+      "link": "https://www.fiercepharma.com/pharma/fierce-pharma-regulatory-tracker-2026-h2",
+      "date": "",
+      "category": "Approval",
       "priority": false
     }
   ]
