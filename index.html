@@ -189,7 +189,7 @@
   .login-hint strong{color:var(--ink-soft);font-weight:600}
 
   /* APP SHELL */
-  #app{display:none;min-height:100vh;grid-template-columns:280px 1fr}
+  #app{display:none;min-height:100vh;grid-template-columns:280px minmax(0,1fr)}
   #app.show{display:grid}
   .sidebar{background:var(--paper);border-right:1px solid var(--rule);padding:1.6rem 1.4rem;display:flex;flex-direction:column;gap:1rem;position:sticky;top:0;height:100vh;overflow-y:auto}
   .sidebar-brand{padding-bottom:1rem;border-bottom:1px solid var(--rule)}
@@ -207,7 +207,7 @@
   .user-avatar{width:30px;height:30px;border-radius:50%;background:var(--ink);color:var(--paper);display:grid;place-items:center;font-family:"Cormorant Garamond",serif;font-weight:600;font-size:0.85rem}
   .logout{color:var(--burgundy);text-decoration:underline;text-underline-offset:2px;font-style:italic;font-size:0.78rem;background:none;border:none;padding:0;cursor:pointer}
 
-  .main{padding:2.4rem 3rem;max-width:1300px}
+  .main{padding:2.4rem 3rem;max-width:1300px;min-width:0}
   .view{display:none}
   .view.show{display:block;animation:fadeIn 0.3s ease}
   @keyframes fadeIn{from{opacity:0;transform:translateY(4px)}to{opacity:1;transform:translateY(0)}}
@@ -759,18 +759,18 @@
   .pv-case .meta>div:last-child{border-right:none}
   .pv-case .meta .lbl{font-family:"Cormorant Garamond",serif;text-transform:uppercase;letter-spacing:0.13em;font-size:0.66rem;color:var(--muted);font-weight:600}
   .pv-case .meta .val{font-family:"Cormorant Garamond",serif;font-size:1rem;font-weight:500;margin-top:0.18rem}
-  .pv-flow{display:grid;grid-template-columns:repeat(6,1fr);gap:0.5rem;margin:1rem 0}
+  .pv-flow{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:0.5rem;margin:1rem 0}
   .pv-flow .step{background:var(--paper);border:1px solid var(--rule);padding:0.8rem 0.9rem;position:relative}
   .pv-flow .step .n{font-family:"JetBrains Mono",monospace;font-size:0.7rem;color:var(--gold);font-weight:600}
   .pv-flow .step .t{font-family:"Cormorant Garamond",serif;font-size:1.05rem;font-weight:500;margin-top:0.2rem;line-height:1.15}
   .pv-flow .step .d{font-size:0.78rem;color:var(--muted);margin-top:0.3rem;line-height:1.4}
 
   @media(max-width:1024px){
-    .pv-flow{grid-template-columns:1fr 1fr}
+    .pv-flow{grid-template-columns:repeat(2,minmax(0,1fr))}
     .pv-case .meta{grid-template-columns:1fr 1fr}
   }
   @media(max-width:640px){
-    .pv-flow{grid-template-columns:1fr}
+    .pv-flow{grid-template-columns:minmax(0,1fr)}
     .pv-case .meta{grid-template-columns:1fr}
   }
 
@@ -892,8 +892,8 @@
   }
 
     /* QUIZ */
-  .qz-shell{display:grid;grid-template-columns:1fr;gap:1.4rem}
-  .qz-section-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}
+  .qz-shell{display:grid;grid-template-columns:minmax(0,1fr);gap:1.4rem}
+  .qz-section-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1rem}
   .qz-section-card{background:var(--paper);border:1px solid var(--rule);padding:1.2rem 1.3rem;cursor:pointer;transition:all 0.2s;display:flex;flex-direction:column;gap:0.6rem;border-top:3px solid var(--purple)}
   .qz-section-card:hover{transform:translateY(-3px);box-shadow:0 12px 24px -12px rgba(94,45,142,0.25);border-color:var(--purple)}
   .qz-section-card .head{display:flex;justify-content:space-between;align-items:baseline;gap:0.6rem}
@@ -981,7 +981,7 @@
   .qz-history-item .time{font-family:"JetBrains Mono",monospace;font-size:0.72rem;color:var(--muted)}
 
   @media(max-width:1024px){
-    .qz-section-grid{grid-template-columns:1fr}
+    .qz-section-grid{grid-template-columns:minmax(0,1fr)}
     .qz-results .stats{grid-template-columns:1fr}
     .qz-results .stats .stat{border-right:none;border-bottom:1px solid var(--rule)}
   }
@@ -1020,7 +1020,7 @@
   }
 
   /* CASE STUDIES */
-  .case-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1rem}
+  .case-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem}
   .case-card{background:var(--paper);border:1px solid var(--rule);padding:1.4rem 1.6rem;cursor:pointer;transition:all 0.2s;display:flex;flex-direction:column;gap:0.5rem}
   .case-card:hover{border-color:var(--ink);transform:translateY(-2px);box-shadow:0 8px 16px -8px rgba(20,30,50,0.15)}
   .case-card .head{display:flex;justify-content:space-between;align-items:baseline;gap:0.8rem}
@@ -1068,7 +1068,7 @@
   .case-toc a:hover{text-decoration:underline}
 
   @media(max-width:1024px){
-    .case-grid{grid-template-columns:1fr}
+    .case-grid{grid-template-columns:minmax(0,1fr)}
     .case-detail .case-head .factbox{grid-template-columns:1fr 1fr}
     .case-toc ol{column-count:1}
   }
@@ -1112,12 +1112,21 @@
     #login-screen{grid-template-columns:1fr}
     .login-left{padding:2rem;min-height:30vh}
     .login-right{padding:2rem}
-    #app.show{grid-template-columns:1fr}
+    #app.show{grid-template-columns:minmax(0,1fr)}
     .sidebar{position:relative;height:auto;border-right:none;border-bottom:1px solid var(--rule)}
     .main{padding:1.5rem}
-    .stat-grid,.quick-actions,.type-grid,.form-grid,.card-grid,.glossary-grid,.wizard-options,.timeline-summary{grid-template-columns:1fr}
-    .ectd-layout{grid-template-columns:1fr}
-    .meeting-card,.designation-card .grid{grid-template-columns:1fr}
+    .stat-grid,.quick-actions,.type-grid,.form-grid,.card-grid,.glossary-grid,.wizard-options,.timeline-summary{grid-template-columns:minmax(0,1fr)}
+    .ectd-layout{grid-template-columns:minmax(0,1fr)}
+    .meeting-card,.designation-card .grid{grid-template-columns:minmax(0,1fr)}
+  }
+  /* Card headers: let long reference/citation labels wrap instead of pushing past the edge. */
+  .card .head,.case-card .head,.qz-section-card .head{flex-wrap:wrap}
+  .card .ref,.case-card .pathway,.designation-card .head .timing,.qz-section-card .cite,.guidance-doc .ref{flex-shrink:1;min-width:0;white-space:normal;overflow-wrap:anywhere}
+  /* Phones: keep every view within the screen width. Long unbroken strings may wrap,
+     and wide tables scroll sideways inside their own box instead of widening the page. */
+  @media(max-width:760px){
+    .main{overflow-wrap:anywhere}
+    .main table{display:block;max-width:100%;overflow-x:auto;overflow-wrap:normal}
   }
 
 /* ============================================================
