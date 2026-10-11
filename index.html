@@ -1754,7 +1754,7 @@
       <div class="page-head">
         <div class="eyebrow accent-teal">News &amp; Updates · Weekly Feed</div>
         <h1>Regulatory &amp; Pharmacovigilance News</h1>
-        <p class="sub">Latest headlines from BioSpace, Fierce Pharma, Endpoints, BioPharma Dive, RAPS (Regulatory Focus), and the journal <em>Drug Safety</em> — refreshed automatically each week. For explained guideline and regulator safety updates, see <strong>PV Updates &amp; News</strong>. Each item links to the original source; only headlines, dates, and links are shown, in line with the publishers' feeds.</p>
+        <p class="sub">Latest headlines from regulators (FDA, EMA, MHRA), industry news (BioSpace, Fierce Pharma, BioPharma Dive, RAPS Regulatory Focus), and new articles in the journal <em>Drug Safety</em> — refreshed automatically each week. For explained guideline and regulator safety updates, see <strong>PV Updates &amp; News</strong>. Each item links to the original source; only headlines, dates, and links are shown, in line with the publishers' feeds.</p>
       </div>
       <div class="wl-banner">
         <strong>How this stays current:</strong> a scheduled job fetches the official RSS/Atom feeds every week and writes <code>news.json</code> to the repository; this page then displays it. If items look stale, the weekly job may not have run yet, or you are viewing a cached copy — hard-refresh with Ctrl/Cmd+Shift+R. Headlines and links are the property of their respective sources; follow each link for the full article.
@@ -14053,9 +14053,9 @@ function renderNews(){
   el.innerHTML = '<div class="pv-block"><p class="lede">Loading the latest headlines…</p></div>';
 
     const SOURCE_META = {
+    'FDA':{color:'#1d4ed8'}, 'EMA':{color:'#0369a1'}, 'MHRA':{color:'#be123c'},
     'BioSpace':{color:'var(--burgundy)'}, 'Fierce Pharma':{color:'#c2410c'},
-    'Endpoints':{color:'#0369a1'}, 'BioPharma Dive':{color:'#0f766e'},
-    'RAPS':{color:'var(--teal)'}, 'Drug Safety':{color:'#6d28d9'}
+    'BioPharma Dive':{color:'#0f766e'}, 'RAPS':{color:'var(--teal)'}, 'Drug Safety':{color:'#6d28d9'}
   };
   const CAT_COLOR = {
     'Safety / PV':'var(--pink)', 'Approval':'var(--forest)', 'Clinical trial':'var(--teal)',

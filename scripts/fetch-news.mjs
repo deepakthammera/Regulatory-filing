@@ -10,11 +10,31 @@ import { writeFileSync } from "node:fs";
 
 // --- Sources -------------------------------------------------------------
 // Each source lists one or more feed URLs. If one URL fails, the others still run.
-// NOTE: RAPS retired its native RSS and now publishes via FetchRSS (URL taken from the
-// live "RSS Feed" link on raps.org/news-insights/regulatory-focus.html). CIOMS is a
-// WordPress site, so /feed/ is the standard feed. ICH has no reliable public RSS, so we
-// try a couple of candidates; it may return nothing on a given week.
+// Optional fields:
+//   type: "crossref"   -> feeds are Crossref REST API URLs (JSON), used for journals
+//   defaultCategory    -> category to use when no keyword rule matches (instead of "General")
+//   category           -> fixed category for every item (skips keyword rules; used for journals)
+// NOTES (check the "[Source] ..." lines in the Actions log when a source goes quiet):
+// - Regulator feed URLs below have returned items from GitHub Actions runners.
+//   FDA's "drugs" page feed is deliberately not used: it mostly lists page edits with
+//   misleading dates. WHO, Health Canada and TGA feeds returned nothing from Actions runners.
+// - RAPS retired its native RSS and publishes via FetchRSS (URL from the "RSS Feed" link
+//   on raps.org/news-insights/regulatory-focus.html).
+// - Endpoints News was removed: its feed returns HTTP 403 to automated requests.
+// - Springer's search.rss for Drug Safety returns no items, so the journal is read from
+//   Crossref instead (Drug Safety eISSN 1179-1942).
 const SOURCES = [
+  { source: "FDA", tier: "regulator", defaultCategory: "Regulatory / Policy", feeds: [
+    "https://www.fda.gov/about-fda/contact-fda/stay-informed/rss-feeds/medwatch/rss.xml",
+    "https://www.fda.gov/about-fda/contact-fda/stay-informed/rss-feeds/press-releases/rss.xml"
+  ]},
+  { source: "EMA", tier: "regulator", defaultCategory: "Regulatory / Policy", feeds: [
+    "https://www.ema.europa.eu/en/news.xml"
+  ]},
+  { source: "MHRA", tier: "regulator", defaultCategory: "Safety / PV", feeds: [
+    "https://www.gov.uk/drug-safety-update.atom",
+    "https://www.gov.uk/drug-device-alerts.atom"
+  ]},
   { source: "BioSpace", tier: "industry", feeds: [
     "https://www.biospace.com/all-news.rss",
     "https://www.biospace.com/fda.rss",
@@ -25,26 +45,20 @@ const SOURCES = [
   { source: "Fierce Pharma", tier: "industry", feeds: [
     "https://www.fiercepharma.com/rss/xml"
   ]},
-  { source: "Endpoints", tier: "industry", feeds: [
-    "https://endpts.com/feed/",
-    "https://endpts.com/feed"
-  ]},
   { source: "BioPharma Dive", tier: "industry", feeds: [
     "https://www.biopharmadive.com/feeds/news/",
     "https://www.biopharmadive.com/feeds/news"
   ]},
   { source: "RAPS", tier: "industry", feeds: [
-    "https://fetchrss.com/feed/1w2Af33Ym6mQ1wCHDT7rBDVj.rss",
-    "https://fetchrss.com/feed/1w2Af33Ym6mQ1w2Ah02uB5hb.rss"
+    "https://fetchrss.com/feed/1w2Af33Ym6mQ1wCHDT7rBDVj.rss"
   ]},
-  { source: "Drug Safety", tier: "journal", feeds: [
-    "https://link.springer.com/search.rss?query=&facet-journal-id=40264",
-    "https://link.springer.com/search.rss?facet-journal-id=40264&channel-name=Drug+Safety"
+  { source: "Drug Safety", tier: "journal", type: "crossref", category: "Safety / PV", feeds: [
+    "https://api.crossref.org/journals/1179-1942/works?sort=published&order=desc&rows=30&filter=type:journal-article&select=title,URL,published,published-online,created"
   ]}
 ];
 
 const MAX_PER_SOURCE = 15;
-const MAX_TOTAL = 120;
+const MAX_TOTAL = 160;
 const MAX_AGE_DAYS = 150;
 const TIMEOUT_MS = 20000;
 
@@ -96,10 +110,13 @@ const CATEGORY_RULES = [
   ]}
 ];
 
-function classify(title) {
+function classify(title, src) {
   const t = (" " + (title || "").toLowerCase() + " ");
-  const priority = PRIORITY_KEYWORDS.some((k) => t.includes(k));
-  let category = "General";
+  // Journal article titles routinely mention "adverse events", "deaths", etc.; the priority
+  // flag is reserved for actionable safety news, so it is not applied to journals.
+  const priority = src.tier !== "journal" && PRIORITY_KEYWORDS.some((k) => t.includes(k));
+  if (src.category) return { priority, category: src.category };
+  let category = src.defaultCategory || "General";
   for (const rule of CATEGORY_RULES) {
     if (rule.terms.some((term) => t.includes(term))) { category = rule.name; break; }
   }
@@ -129,8 +146,14 @@ function parseItems(xml) {
   for (const block of rssItems) {
     const title = clean(firstMatch(block, [/<title[^>]*>([\s\S]*?)<\/title>/i]));
     const link = clean(firstMatch(block, [/<link[^>]*>([\s\S]*?)<\/link>/i, /<guid[^>]*>([\s\S]*?)<\/guid>/i]));
-    const date = clean(firstMatch(block, [/<pubDate[^>]*>([\s\S]*?)<\/pubDate>/i, /<dc:date[^>]*>([\s\S]*?)<\/dc:date>/i]));
-    if (title && link) out.push({ title, link, date });
+    const date = clean(firstMatch(block, [
+      /<pubDate[^>]*>([\s\S]*?)<\/pubDate>/i, /<dc:date[^>]*>([\s\S]*?)<\/dc:date>/i,
+      /<(?:\w+:)?published[^>]*>([\s\S]*?)<\/(?:\w+:)?published>/i,
+      /<(?:\w+:)?issued[^>]*>([\s\S]*?)<\/(?:\w+:)?issued>/i,
+      /<(?:\w+:)?updated[^>]*>([\s\S]*?)<\/(?:\w+:)?updated>/i,
+      /<(?:\w+:)?modified[^>]*>([\s\S]*?)<\/(?:\w+:)?modified>/i
+    ]));
+    if (title && link) out.push({ title, link, date, block });
   }
   const atomEntries = xml.match(/<entry[\s\S]*?<\/entry>/gi) || [];
   for (const block of atomEntries) {
@@ -138,10 +161,24 @@ function parseItems(xml) {
     const linkAlt = block.match(/<link[^>]*rel=["']alternate["'][^>]*href=["']([^"']+)["']/i);
     const linkAny = block.match(/<link[^>]*href=["']([^"']+)["']/i);
     const link = clean((linkAlt && linkAlt[1]) || (linkAny && linkAny[1]) || "");
-    const date = clean(firstMatch(block, [/<updated[^>]*>([\s\S]*?)<\/updated>/i, /<published[^>]*>([\s\S]*?)<\/published>/i]));
-    if (title && link) out.push({ title, link, date });
+    // Prefer <published>: <updated> changes whenever a page is edited (e.g., GOV.UK alerts).
+    const date = clean(firstMatch(block, [/<published[^>]*>([\s\S]*?)<\/published>/i, /<updated[^>]*>([\s\S]*?)<\/updated>/i]));
+    if (title && link) out.push({ title, link, date, block });
   }
   return out;
+}
+
+// Crossref REST API (JSON) -> same {title, link, date} shape as parseItems().
+function parseCrossref(text) {
+  const items = (JSON.parse(text).message || {}).items || [];
+  return items.map((w) => {
+    const pub = w["published-online"] || w.published || {};
+    const parts = (pub["date-parts"] && pub["date-parts"][0]) || [];
+    const date = parts[0]
+      ? new Date(Date.UTC(parts[0], (parts[1] || 1) - 1, parts[2] || 1)).toISOString()
+      : ((w.created && w.created["date-time"]) || "");
+    return { title: clean((w.title || [])[0] || ""), link: w.URL || "", date };
+  }).filter((it) => it.title && it.link);
 }
 
 async function fetchText(url) {
@@ -153,7 +190,7 @@ async function fetchText(url) {
       redirect: "follow",
       headers: {
         "User-Agent": "Mozilla/5.0 (compatible; reg-pv-training-newsbot/1.2; +github actions; educational)",
-        "Accept": "application/rss+xml, application/atom+xml, application/xml, text/xml, */*"
+        "Accept": "application/rss+xml, application/atom+xml, application/xml, text/xml, application/json, */*"
       }
     });
     if (!res.ok) throw new Error("HTTP " + res.status);
@@ -161,10 +198,24 @@ async function fetchText(url) {
   } finally { clearTimeout(t); }
 }
 
+// Parse non-RFC dates some feeds use, e.g. Drupal's "Fri, 10/09/2026 - 14:30" or
+// "October 9, 2026 10:30am". Returns a Date or null. Time zone is not known, so UTC is
+// assumed; only the day is shown in the app.
+function parseLooseDate(d) {
+  let m = d.match(/(\d{1,2})\/(\d{1,2})\/(\d{4})(?:\D+(\d{1,2}):(\d{2}))?/);
+  if (m) return new Date(Date.UTC(+m[3], +m[1] - 1, +m[2], +(m[4] || 0), +(m[5] || 0)));
+  m = d.match(/([A-Za-z]{3,9})\.? (\d{1,2}),? (\d{4})/);
+  if (m) { const t = new Date(m[1] + " " + m[2] + ", " + m[3] + " UTC"); if (!isNaN(t)) return t; }
+  return null;
+}
+
 function isoOrEmpty(d) {
   if (!d) return "";
-  const t = new Date(d);
-  return isNaN(t) ? "" : t.toISOString();
+  let t = new Date(d);
+  if (isNaN(t)) t = parseLooseDate(d);
+  if (!t || isNaN(t)) return "";
+  // Some feeds stamp items with future dates; never show a date later than now.
+  return (t.getTime() > Date.now() ? new Date() : t).toISOString();
 }
 function tooOld(iso) {
   if (!iso) return false;
@@ -178,9 +229,10 @@ async function run() {
     let collected = [];
     for (const url of src.feeds) {
       try {
-        const xml = await fetchText(url);
-        const items = parseItems(xml).map((it) => {
-          const { priority, category } = classify(it.title);
+        const text = await fetchText(url);
+        const parsed = src.type === "crossref" ? parseCrossref(text) : parseItems(text);
+        const items = parsed.map((it) => {
+          const { priority, category } = classify(it.title, src);
           return {
             source: src.source, tier: src.tier,
             title: it.title, link: it.link, date: isoOrEmpty(it.date),
@@ -189,6 +241,14 @@ async function run() {
         });
         collected = collected.concat(items);
         console.log("[" + src.source + "] " + items.length + " items from " + url);
+        const undated = parsed.filter((it) => !isoOrEmpty(it.date));
+        if (undated.length) {
+          // Help diagnose feeds that use an unexpected date element.
+          const tags = undated[0].block ? [...new Set((undated[0].block.match(/<([\w:]+)[\s>]/g) || []).map((t) => t.slice(1, -1)))] : [];
+          console.warn("[" + src.source + "] " + undated.length + " items without a usable date"
+            + (undated[0].date ? "; sample raw date: \"" + undated[0].date + "\"" : "")
+            + (tags.length ? "; item tags: " + tags.join(", ") : ""));
+        }
       } catch (e) {
         console.warn("[" + src.source + "] FAILED " + url + ": " + e.message);
       }
