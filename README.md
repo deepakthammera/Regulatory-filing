@@ -9,6 +9,7 @@ A single-file, self-contained web application for learning **drug regulatory aff
 ## Table of Contents
 
 - [What this is](#what-this-is)
+- [What's new](#whats-new)
 - [Live demo / deployment](#live-demo--deployment)
 - [Features](#features)
 - [Content map](#content-map)
@@ -27,12 +28,36 @@ A single-file, self-contained web application for learning **drug regulatory aff
 
 The platform is delivered as one file — **`index.html`** — that contains all HTML, CSS, and JavaScript inline (fonts are loaded from a public CDN). There is no build step, no server, and no external dependencies to install. Open the file in a browser and it runs.
 
-It is organised into two domains:
+It is organised into three areas:
 
+- **News & Updates**: a weekly, automatically refreshed headline feed plus a curated **PV Updates & News** page that explains new guidelines and regulator safety actions.
 - **Regulatory** — the drug development and submission lifecycle (US FDA-centric, with international context).
 - **Pharmacovigilance** — post-approval and development-stage drug safety, aggregate reporting, MedDRA coding, signal management, and the EU/US regulatory frameworks.
 
 Each area combines reference content, worked examples, interactive decision helpers, and self-check quizzes.
+
+---
+
+## What's new
+
+### October 2026
+- **New sidebar folder: News & Updates → Latest → ★ PV Updates & News.** A curated page of explained PV updates, newest first:
+  - **ICH E2D(R1)** (Post-Approval Safety Data). In the EU it came into effect on 18 Mar 2026, and the transition period ended on 18 Sep 2026. The page covers:
+    - the timeline and why the guideline was revised
+    - a table of section-by-section changes
+    - the new definitions: organised data collection system (ODCS), solicited vs spontaneous, patient support programme, digital platforms
+    - a table for classifying a case by source
+    - the documentation required for an ODCS without a protocol
+    - the planned E2B(R3) C.5.4 change, a compliance checklist, and links to official sources
+  - **MedDRA 29.1**: release dates, the replacement English package (v2), and the reported content changes.
+  - **Regulator safety highlights, Aug – Oct 2026** from FDA, EMA PRAC and MHRA.
+- **App content updated to ICH E2D(R1):**
+  - **Post-Marketing Guide → Case Handling (E2D(R1))**: new callouts for other observations and for spontaneous vs solicited, the R1 expectedness rules, and a rewritten sources table (PSP/MRP, non-interventional studies, digital platforms, duplicates).
+  - **Regulatory Guidelines library**: the final E2D(R1) guideline replaces an incorrect "E2D(R1) Q&A" entry, and the 2003 E2D is kept and marked superseded.
+  - **PV Deep Dive**: corrected the solicited-report wording. Solicited reports need a causality assessment and are not treated as spontaneous.
+  - Guideline lists and the quiz citation now reference E2D(R1).
+- **Weekly news feed** (`news.json`, refreshed every Monday by a GitHub Action) now pulls from BioSpace, Fierce Pharma, Endpoints, BioPharma Dive, RAPS and the journal *Drug Safety*. See [`NEWS_SETUP.md`](NEWS_SETUP.md).
+- **Fix:** removed a call to an undefined `setupFilters()` function. It threw an error on every sign-in and stopped the dashboard news preview from loading.
 
 ---
 
@@ -56,7 +81,8 @@ Because it is a single static file, it deploys anywhere that serves static pages
 
 ## Features
 
-- **Two-domain navigation** — Regulatory and Pharmacovigilance, with a persistent sidebar.
+- **Sidebar navigation** across News & Updates, Regulatory, and Pharmacovigilance.
+- **News & Updates**: a weekly auto-refreshed headline feed (`news.json`, built by a GitHub Action) and a curated **PV Updates & News** page explaining new guidelines (e.g., ICH E2D(R1), MedDRA releases) and regulator safety actions.
 - **Interactive tools** — a pathway decision helper, development-lifecycle views, submission checklists, and document templates.
 - **Deep-dive guides** — long-form, tabbed reference sections for the major PV aggregate reports and coding standards.
 - **Live worked examples** — fully populated, section-by-section walk-throughs (illustrative data) that mirror the *actual* report structures.
@@ -64,11 +90,17 @@ Because it is a single static file, it deploys anywhere that serves static pages
 - **Self-check quizzes** — interactive, scored questions with explanations, embedded in each major guide plus standalone Regulatory and PV quizzes.
 - **Global search** — searches across sections and tabs.
 - **Consistent design system** — shared CSS classes, tab patterns, callouts, and tables throughout.
-- **Fully offline-capable** — everything runs client-side; no data leaves the browser.
+- **Fully offline-capable** — everything runs client-side and no data leaves the browser. The only exception is the weekly news feed, which needs the site served over http(s) to load `news.json`.
 
 ---
 
 ## Content map
+
+### News & Updates
+| Icon | Section | What it covers |
+|---|---------|----------------|
+| ★ | **PV Updates & News** (Latest) | Curated, explained PV updates: ICH E2D(R1) section-by-section, MedDRA 29.1, and recent FDA / EMA PRAC / MHRA safety actions |
+| ◆ | Regulatory & PV News (Weekly Feed) | Auto-refreshed headlines from industry and journal feeds, filterable by source and category |
 
 ### Regulatory domain
 | # | Section | What it covers |
@@ -98,7 +130,7 @@ Because it is a single static file, it deploys anywhere that serves static pages
 | 19 | **MedDRA Coding Guide** | Term-selection principles, worked examples, and a coding self-check |
 | 20 | **PBRER Guide** | ICH E2C(R2) Periodic Benefit-Risk Evaluation Report — concepts, 20-section anatomy, a live section-by-section worked example, teaching scenarios, and a quiz |
 | 21 | **DSUR Guide** | ICH E2F Development Safety Update Report — concepts, 20-section anatomy, a live worked example, teaching scenarios, and a quiz |
-| 22 | **Post-Marketing Guide** | Post-marketing surveillance — case handling (ICH E2D), expedited/periodic reporting, signal & risk management, global frameworks, a live ICSR-to-signal-to-action case file, teaching scenarios, and a quiz |
+| 22 | **Post-Marketing Guide** | Post-marketing surveillance — case handling (ICH E2D(R1)), expedited/periodic reporting, signal & risk management, global frameworks, a live ICSR-to-signal-to-action case file, teaching scenarios, and a quiz |
 | 23 | PV Quiz | Interactive self-assessment |
 
 ### PV Deep Dive tabs (Section 18)
@@ -114,7 +146,7 @@ Highlights:
 
 - **HTML + CSS + vanilla JavaScript**, all inline in one file. No frameworks, no bundler.
 - **Fonts** loaded from a public CDN (Google Fonts).
-- **Client-side only.** No backend, no database, no analytics.
+- **Client-side only.** No backend, no database, no analytics. The weekly news feed is a static `news.json` file that a scheduled GitHub Action (`.github/workflows/update-news.yml` → `scripts/fetch-news.mjs`) regenerates and commits.
 - **Rendering model:** each section/tab is produced by a JavaScript render function or a content object; a lightweight router shows/hides views and updates the active tab. A shared design system (CSS classes such as tables, callouts, tab bars) keeps everything visually consistent.
 - **State:** interactive elements (quizzes, filters) hold state in memory during the session. Nothing is persisted, so refreshing resets interactive state.
 
@@ -125,7 +157,7 @@ Highlights:
 ## Running locally
 
 **Option 1 — open directly**
-Double-click `index.html`, or drag it into any modern browser. Everything works offline (an internet connection only improves font loading).
+Double-click `index.html`, or drag it into any modern browser. Everything works offline (an internet connection only improves font loading), except the weekly news feed: browsers often block loading `news.json` from `file://`, so use Option 2 to see it.
 
 **Option 2 — local web server** (recommended for a production-like check)
 ```bash
@@ -145,11 +177,18 @@ npx serve .
 
 ```
 .
-├── index.html        # The entire application (HTML + CSS + JS inline)
-└── README.md         # This file
+├── index.html                       # The entire application (HTML + CSS + JS inline)
+├── news.json                        # Weekly news feed data (auto-generated; do not edit by hand)
+├── scripts/
+│   └── fetch-news.mjs               # Builds news.json from RSS/Atom feeds (no npm dependencies)
+├── .github/
+│   └── workflows/
+│       └── update-news.yml          # Runs fetch-news.mjs every Monday 06:00 UTC and commits news.json
+├── NEWS_SETUP.md                    # How the weekly news feed works and how to change sources
+└── README.md                        # This file
 ```
 
-That is intentional: keeping everything in one file makes the app trivial to host, share, and archive.
+The app itself is still one file, which makes it trivial to host, share and archive. The other files only support the weekly news feed. The curated **PV Updates & News** page is static content inside `index.html`, so update it there (the `view-pvupdates` section).
 
 ---
 
@@ -177,12 +216,14 @@ Conventions used throughout:
 
 Content is written in original wording and summarises publicly available regulatory frameworks and standards. Primary sources referenced across the app include:
 
-- **ICH** guidelines — e.g., E2A, E2B(R3), E2C(R2) (PBRER), E2D, E2E, E2F (DSUR), and M1 (MedDRA).
+- **ICH** guidelines — e.g., E2A, E2B(R3), E2C(R2) (PBRER), E2D(R1), E2E, E2F (DSUR), and M1 (MedDRA).
 - **MedDRA** term-selection principles (ICH-endorsed *Points to Consider*), summarised and reorganised for study. *MedDRA® is a registered trademark of ICH.*
 - **EU** pharmaceutical legislation and **Good Pharmacovigilance Practices (GVP)** modules.
 - **US FDA** — Title 21 CFR pharmacovigilance provisions, the FD&C Act/PHS Act, FDAAA, and relevant FDA guidances.
 - **CIOMS Working Group XIV** — guiding principles for AI in pharmacovigilance (open-access source, summarised with citation).
 - **WHO-UMC** — global pharmacovigilance and VigiBase context.
+- **Regulator safety communications** (PV Updates & News page): FDA Drug Safety Communications, EMA PRAC meeting highlights, MHRA Drug Safety Update, and MedDRA MSSO release notes, each linked from the relevant update.
+- **Weekly news feed**: headlines, dates and links only (no article text) from BioSpace, Fierce Pharma, Endpoints, BioPharma Dive, RAPS and *Drug Safety*.
 
 Where a section draws on a specific publication, the citation is shown inline within that section. Trademarks and guideline names belong to their respective owners. This project claims no endorsement by any of these bodies.
 
