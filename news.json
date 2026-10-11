@@ -1,9 +1,8 @@
 {
-  "generated": "2026-10-11T19:05:05.211Z",
+  "generated": "2026-10-11T19:42:32.101Z",
   "sources": [
     "FDA",
     "EMA",
-    "MHRA",
     "BioSpace",
     "Fierce Pharma",
     "BioPharma Dive",
@@ -18,35 +17,8 @@
     "Deals / Business",
     "General"
   ],
-  "count": 104,
+  "count": 89,
   "items": [
-    {
-      "source": "MHRA",
-      "tier": "regulator",
-      "title": "Field Safety Notices for October 2026",
-      "link": "https://www.gov.uk/drug-device-alerts/field-safety-notices-for-october-2026",
-      "date": "2026-10-09T15:34:40.000Z",
-      "category": "Safety / PV",
-      "priority": true
-    },
-    {
-      "source": "MHRA",
-      "tier": "regulator",
-      "title": "Field Safety Notices: 8 -12 June 2026",
-      "link": "https://www.gov.uk/drug-device-alerts/field-safety-notices-8-12-june-2026",
-      "date": "2026-10-09T14:38:29.000Z",
-      "category": "Safety / PV",
-      "priority": true
-    },
-    {
-      "source": "MHRA",
-      "tier": "regulator",
-      "title": "Field Safety Notices: 28 September 2026 to 2 October 2026",
-      "link": "https://www.gov.uk/drug-device-alerts/field-safety-notices-28-september-2026-to-2-october-2026",
-      "date": "2026-10-09T10:36:22.000Z",
-      "category": "Safety / PV",
-      "priority": true
-    },
     {
       "source": "FDA",
       "tier": "regulator",
@@ -80,15 +52,6 @@
       "title": "Recon: FDA identifies four deaths in Newron schizophrenia drug trials; Dutch court blocks subcutaneous Keytruda in eight Europea...",
       "link": "https://www.raps.org/resource/recon-fda-identifies-four-deaths-in-newron-schizophrenia-drug-trials-dutch-court-blocks-subcutaneous-keytruda-in-eight-european-countries.html",
       "date": "2026-10-08T00:00:00.000Z",
-      "category": "Safety / PV",
-      "priority": true
-    },
-    {
-      "source": "MHRA",
-      "tier": "regulator",
-      "title": "Class 3 Medicines Recall: Norgine Limited, MOVICOL Plain 13.7g powder for oral solution, EL(26)A/41",
-      "link": "https://www.gov.uk/drug-device-alerts/class-3-medicines-recall-norgine-limited-movicol-plain-13-dot-7g-powder-for-oral-solution-el-26-a-slash-41",
-      "date": "2026-10-05T10:07:50.000Z",
       "category": "Safety / PV",
       "priority": true
     },
@@ -138,15 +101,6 @@
       "priority": true
     },
     {
-      "source": "MHRA",
-      "tier": "regulator",
-      "title": "Field Safety Notices: 21 to 25 September 2026",
-      "link": "https://www.gov.uk/drug-device-alerts/field-safety-notices-21-to-25-september-2026",
-      "date": "2026-09-29T14:49:41.000Z",
-      "category": "Safety / PV",
-      "priority": true
-    },
-    {
       "source": "FDA",
       "tier": "regulator",
       "title": "Angiographic Catheter Recall: Boston Scientific Removes Imager II Angiographic Catheters",
@@ -165,65 +119,11 @@
       "priority": true
     },
     {
-      "source": "MHRA",
-      "tier": "regulator",
-      "title": "Field Safety Notices: 14 to 18 September 2026",
-      "link": "https://www.gov.uk/drug-device-alerts/field-safety-notices-14-to-18-september-2026",
-      "date": "2026-09-23T09:03:48.000Z",
-      "category": "Safety / PV",
-      "priority": true
-    },
-    {
-      "source": "MHRA",
-      "tier": "regulator",
-      "title": "Class 4 Medicines Defect Notification: Martindale Pharmaceuticals Ltd, Clobazam Martindale Pharma 5 mg/5 mL and 10 mg/5 mL Oral Suspension 150ml, EL(26)A/38",
-      "link": "https://www.gov.uk/drug-device-alerts/class-4-medicines-defect-notification-martindale-pharmaceuticals-ltd-clobazam-martindale-pharma-5-mg-slash-5-ml-and-10-mg-slash-5-ml-oral-suspension-150ml-el-26-a-slash-38",
-      "date": "2026-09-17T11:59:22.000Z",
-      "category": "Safety / PV",
-      "priority": true
-    },
-    {
-      "source": "MHRA",
-      "tier": "regulator",
-      "title": "National Patient Safety Alert: Patient hoists and slings (all types): risk of death and serious harm from falls (NatPSA/2026/005/MHRA)",
-      "link": "https://www.gov.uk/drug-device-alerts/national-patient-safety-alert-patient-hoists-and-slings-all-types-risk-of-death-and-serious-harm-from-falls-natpsa-slash-2026-slash-005-slash-mhra",
-      "date": "2026-09-16T11:01:57.000Z",
-      "category": "Safety / PV",
-      "priority": true
-    },
-    {
-      "source": "MHRA",
-      "tier": "regulator",
-      "title": "Field Safety Notices: 7 September to 11 September 2026",
-      "link": "https://www.gov.uk/drug-device-alerts/field-safety-notices-7-september-to-11-september-2026",
-      "date": "2026-09-14T11:25:18.000Z",
-      "category": "Safety / PV",
-      "priority": true
-    },
-    {
-      "source": "MHRA",
-      "tier": "regulator",
-      "title": "Field Safety Notices: 31 August to 4 September 2026",
-      "link": "https://www.gov.uk/drug-device-alerts/field-safety-notices-31-august-to-4-september-2026",
-      "date": "2026-09-09T13:41:45.000Z",
-      "category": "Safety / PV",
-      "priority": true
-    },
-    {
       "source": "Drug Safety",
       "tier": "journal",
       "title": "Disproportionality Analysis of FAERS Data Divergence and a Systematic Review of Comparative Safety Studies: Lessons Learned from the Example of Ranitidine and Cancer Risk",
       "link": "https://doi.org/10.1007/s40264-026-01730-1",
       "date": "2026-10-10T00:00:00.000Z",
-      "category": "Safety / PV",
-      "priority": false
-    },
-    {
-      "source": "MHRA",
-      "tier": "regulator",
-      "title": "Nova Biomedical StatStrip ketone test strips: risk of disruption to blood ketone testing due to quality-control failures and supply interruption DSI/2026/013",
-      "link": "https://www.gov.uk/drug-device-alerts/nova-biomedical-statstrip-ketone-test-strips-risk-of-disruption-to-blood-ketone-testing-due-to-quality-control-failures-and-supply-interruption-dsi-slash-2026-slash-013",
-      "date": "2026-10-09T15:44:11.000Z",
       "category": "Safety / PV",
       "priority": false
     },
@@ -759,15 +659,6 @@
       "priority": false
     },
     {
-      "source": "MHRA",
-      "tier": "regulator",
-      "title": "Class 4 Medicines Defect Notification: Neuraxpharm UK Limited, Levetiracetam Neuraxpharm granules for oral solution in sachet, EL(26)A/40",
-      "link": "https://www.gov.uk/drug-device-alerts/class-4-medicines-defect-notification-neuraxpharm-uk-limited-levetiracetam-neuraxpharm-granules-for-oral-solution-in-sachet-el-26-a-slash-40",
-      "date": "2026-10-01T12:00:58.000Z",
-      "category": "Safety / PV",
-      "priority": false
-    },
-    {
       "source": "EMA",
       "tier": "regulator",
       "title": "Global regulators call for advancing alternatives to animal testing across the medicine lifecycle",
@@ -822,15 +713,6 @@
       "priority": false
     },
     {
-      "source": "MHRA",
-      "tier": "regulator",
-      "title": "MHRA Safety Roundup: September 2026",
-      "link": "https://www.gov.uk/drug-device-alerts/mhra-safety-roundup-september-2026",
-      "date": "2026-09-29T13:12:24.000Z",
-      "category": "Safety / PV",
-      "priority": false
-    },
-    {
       "source": "FDA",
       "tier": "regulator",
       "title": "FDA Approves First Treatment for MCT8 Deficiency",
@@ -846,15 +728,6 @@
       "link": "http://www.fda.gov/news-events/press-announcements/fda-intends-evaluate-changes-pmta-regulatory-framework",
       "date": "2026-09-28T21:00:01.000Z",
       "category": "Regulatory / Policy",
-      "priority": false
-    },
-    {
-      "source": "MHRA",
-      "tier": "regulator",
-      "title": "Class 4 Medicines Defect Notification: B. Braun Melsungen AG, Meropenem 1000 mg powder and solvent for solution for infusion, EL(26)A/39",
-      "link": "https://www.gov.uk/drug-device-alerts/class-4-medicines-defect-notification-b-braun-melsungen-ag-meropenem-1000-mg-powder-and-solvent-for-solution-for-infusion-el-26-a-slash-39",
-      "date": "2026-09-23T13:00:26.000Z",
-      "category": "Safety / PV",
       "priority": false
     },
     {
@@ -891,15 +764,6 @@
       "link": "https://www.ema.europa.eu/en/news/meeting-highlights-committee-medicinal-products-human-use-chmp-14-17-september-2026",
       "date": "2026-09-18T10:00:00.000Z",
       "category": "Approval",
-      "priority": false
-    },
-    {
-      "source": "MHRA",
-      "tier": "regulator",
-      "title": "Radiofrequency (RF) Safety Considerations for Wireless Cardiotocography (CTG) Monitoring Systems (DSI/2026/012)",
-      "link": "https://www.gov.uk/drug-device-alerts/radiofrequency-rf-safety-considerations-for-wireless-cardiotocography-ctg-monitoring-systems-dsi-slash-2026-slash-012",
-      "date": "2026-09-17T12:59:57.000Z",
-      "category": "Safety / PV",
       "priority": false
     },
     {
