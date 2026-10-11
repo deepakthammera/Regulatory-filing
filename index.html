@@ -1472,6 +1472,10 @@
     </div>
     <div class="nav-domain-header">News &amp; Updates</div>
     <div class="nav-group">
+      <div class="label">Latest</div>
+      <div class="nav-item" data-nav="pvupdates"><span class="ico">★</span><span>PV Updates &amp; News</span></div>
+    </div>
+    <div class="nav-group">
       <div class="label">Weekly Feed</div>
       <div class="nav-item" data-nav="news"><span class="ico">◆</span><span>Regulatory &amp; PV News</span></div>
     </div>
@@ -1750,13 +1754,176 @@
       <div class="page-head">
         <div class="eyebrow accent-teal">News &amp; Updates · Weekly Feed</div>
         <h1>Regulatory &amp; Pharmacovigilance News</h1>
-        <p class="sub">Latest headlines from BioSpace, RAPS (Regulatory Focus), ICH, and CIOMS — refreshed automatically each week. Each item links to the original source; only headlines, dates, and links are shown, in line with the publishers' feeds.</p>
+        <p class="sub">Latest headlines from BioSpace, Fierce Pharma, Endpoints, BioPharma Dive, RAPS (Regulatory Focus), and the journal <em>Drug Safety</em> — refreshed automatically each week. For explained guideline and regulator safety updates, see <strong>PV Updates &amp; News</strong>. Each item links to the original source; only headlines, dates, and links are shown, in line with the publishers' feeds.</p>
       </div>
       <div class="wl-banner">
         <strong>How this stays current:</strong> a scheduled job fetches the official RSS/Atom feeds every week and writes <code>news.json</code> to the repository; this page then displays it. If items look stale, the weekly job may not have run yet, or you are viewing a cached copy — hard-refresh with Ctrl/Cmd+Shift+R. Headlines and links are the property of their respective sources; follow each link for the full article.
       </div>
       <div id="news-content"></div>
     </section>
+
+    <section class="view" id="view-pvupdates">
+      <div class="page-head">
+        <div class="eyebrow accent-teal">News &amp; Updates · Latest</div>
+        <h1>PV Updates &amp; News</h1>
+        <p class="sub">Curated, explained pharmacovigilance updates: new and revised guidelines, dictionary releases, and notable regulator safety actions, with what each change means in practice. Newest first.</p>
+        <div class="meta">
+          <span>Last reviewed <span class="mono">11 Oct 2026</span></span>
+        </div>
+      </div>
+      <div class="wl-banner">
+        <strong>Educational summary.</strong> These notes paraphrase public material from ICH, EMA, FDA, MHRA and the MedDRA MSSO. Section numbers and wording should be confirmed against the official documents linked under each update before you cite them in SOPs or regulatory submissions. Regional requirements (EU GVP, US CFR, etc.) take precedence where they differ.
+      </div>
+
+      <!-- ===== UPDATE 1: ICH E2D(R1) ===== -->
+      <div class="pv-block">
+        <div class="pv-block-head"><span class="num">№ 01</span><h2>ICH E2D(R1) — Post-Approval Safety Data: now fully in force in the EU</h2><span class="cite">ICH E2D(R1) · Step 4 · 2025</span></div>
+        <p class="lede">The first revision of ICH E2D since 2003 modernises how marketing authorisation holders (MAHs) define, collect, classify, and report post-approval individual case safety reports (ICSRs), especially from patient support programmes, market research, digital platforms and social media, and non-interventional studies. In the EU it came into effect on <strong>18 March 2026</strong>; the 6-month transition period ended on <strong>18 September 2026</strong>, so full compliance is now expected.</p>
+        <div class="body">
+
+          <h3 style="font-family:'Cormorant Garamond',serif;font-size:1.2rem;font-weight:500;margin:1rem 0 0.4rem">Timeline</h3>
+          <table class="pv-table">
+            <tr><th>Milestone</th><th>Date</th></tr>
+            <tr><td>Original ICH E2D adopted</td><td>2003</td></tr>
+            <tr><td>Step 2 draft released for public consultation</td><td>Feb 2024</td></tr>
+            <tr><td>ICH Step 4: final guideline adopted</td><td>15 Sep 2025</td></tr>
+            <tr><td>Adopted by CHMP (EU)</td><td>Sep 2025</td></tr>
+            <tr><td>FDA final guidance for industry published</td><td>Mar 2026</td></tr>
+            <tr><td><strong>EU: came into effect</strong></td><td><strong>18 Mar 2026</strong></td></tr>
+            <tr><td><strong>EU: end of transition period. Full compliance expected, and the new PSP definition applies to all new programmes</strong></td><td><strong>18 Sep 2026</strong></td></tr>
+            <tr><td>EU GVP Module VI revision to integrate E2D(R1)</td><td>Starting under PRAC 2026 work plan. Until then, follow E2D(R1) plus the EU implementation strategy</td></tr>
+          </table>
+
+          <h3 style="font-family:'Cormorant Garamond',serif;font-size:1.2rem;font-weight:500;margin:1rem 0 0.4rem">Why it was revised</h3>
+          <p>The 2003 guideline predates social media, mobile health apps, large patient support and market research programmes, and routine use of real-world data. These sources vary widely in quality and in how much they add to safety knowledge, and companies had been handling them inconsistently. E2D(R1) clarifies the line between <strong>spontaneous</strong> and <strong>solicited</strong> reports, adds a formal ICSR definition with minimum criteria, and adds new guidance on digital platforms, non-interventional studies and duplicate management. The final text differs only slightly from the February 2024 consultation draft. The main additions are the non-interventional study section and qualifier wording on the minimum criteria.</p>
+
+          <h3 style="font-family:'Cormorant Garamond',serif;font-size:1.2rem;font-weight:500;margin:1rem 0 0.4rem">Section-by-section changes</h3>
+          <table class="pv-table">
+            <tr><th style="width:22%">Section</th><th>What changed</th><th style="width:12%">Status</th></tr>
+            <tr><td><strong>1. Introduction &amp; scope</strong></td><td>The scope is still post-approval ICSR definitions, reporting standards and good case management, building on ICH E2A for pre-approval. It now explicitly covers digital platforms and social media, mobile health, patient support programmes (PSPs), market research programmes (MRPs), non-interventional studies (NIS) and literature.</td><td>Updated</td></tr>
+            <tr><td><strong>2.1 Basic terms</strong><br>2.1.1 AE · 2.1.2 ADR · 2.1.3 Serious · 2.1.4 Unexpected</td><td>The core definitions keep the same meaning. An AE needs no causal link. An ADR means causality is at least a reasonable possibility. Expectedness is judged against the regional labelling. A labelled ADR reported with a <em>fatal</em> outcome is unexpected unless the label says it can be fatal. Class effects are <em>not</em> automatically expected.</td><td>Carried over</td></tr>
+            <tr><td><strong>2.1.5 Other observations</strong></td><td>New term grouping <strong>lack of efficacy, overdose, abuse, misuse, medication error and occupational exposure</strong>. These can occur with or without an AE/ADR. Without an AE they are reported as ICSRs only under specific conditions or regional requirements.</td><td><span style="color:var(--forest);font-weight:600">New</span></td></tr>
+            <tr><td><strong>2.1.6 Reporting</strong></td><td>New definition that standardises what "reporting" means throughout the guideline.</td><td><span style="color:var(--forest);font-weight:600">New</span></td></tr>
+            <tr><td><strong>2.2 ICSR &amp; minimum criteria</strong></td><td>Formal ICSR definition. A valid case needs an <strong>identifiable patient, an identifiable reporter, a suspect product and an AE/ADR</strong>. The final text adds qualifier wording on how to apply these criteria. Reports should be authentic, accurate, as complete as possible and free of duplicates.</td><td><span style="color:var(--forest);font-weight:600">New</span></td></tr>
+            <tr><td><strong>Source definitions</strong></td><td>New definitions for <strong>organised data collection system (ODCS)</strong>, <strong>solicited</strong> and <strong>spontaneous</strong> reports, <strong>patient support programme</strong>, <strong>market research programme</strong> and <strong>digital platforms</strong> (see the definitions below).</td><td><span style="color:var(--forest);font-weight:600">New</span></td></tr>
+            <tr><td><strong>4.1 HCP &amp; consumer communications</strong></td><td>Unprompted communications are still spontaneous reports.</td><td>Updated</td></tr>
+            <tr><td><strong>4.2 Literature</strong></td><td>Screen regularly. Handle articles that name only the active substance. Record the citation in the ICSR so recipients can spot duplicates from several MAHs. If an article describes a case already on file, add the citation to that case and send a follow-up. English translation is the accepted standard.</td><td>Updated</td></tr>
+            <tr><td><strong>4.3 Digital platforms</strong> (replaces 2003 §3.1.3 "Internet")</td><td>Responsibility depends on who owns, controls or operates the platform. <strong>4.3.1</strong> covers platforms under the MAH's responsibility, which must be screened regularly. Third-party platforms do not need screening unless the MAH uses their data in a planned way (e.g., social listening), which makes the activity an ODCS.</td><td><span style="color:var(--forest);font-weight:600">New</span></td></tr>
+            <tr><td><strong>4.4 Non-interventional studies</strong></td><td>New guidance that separates NIS with <strong>primary data collection</strong> (a solicited source: report AEs where causality is suspected) from NIS with <strong>secondary use of data</strong> (e.g., EHR or claims databases), which is handled differently.</td><td><span style="color:var(--forest);font-weight:600">New</span></td></tr>
+            <tr><td><strong>4.5 Patient support programmes · 4.6 Market research programmes</strong></td><td>Numbered 4.4 and 4.5 in the draft. Cases from them that meet reporting criteria are managed as <strong>solicited</strong>, with a causality assessment.</td><td><span style="color:var(--forest);font-weight:600">New</span></td></tr>
+            <tr><td><strong>5. Expedited reporting standards</strong></td><td>The 15-calendar-day framework for serious ADRs is unchanged. <strong>Day zero</strong> is when the MAH has enough information to decide the case meets reporting criteria. If follow-up is needed to reach that point, day zero is the date it arrives. <strong>5.1.3</strong> covers other observations, including lack of efficacy without an AE (report only if local or regional rules require it).</td><td>Updated</td></tr>
+            <tr><td><strong>6.1–6.4 Good case management</strong></td><td>6.1 assessing patient and reporter identifiability · 6.2 the role of narratives · 6.3 clinical case evaluation · 6.4 follow-up. Document every follow-up request and attempt and ask targeted questions. 6.4.1.1 covers follow-up for overdose, abuse, misuse, medication error and occupational exposure.</td><td>Updated</td></tr>
+            <tr><td><strong>6.6 Duplicate management</strong></td><td>New section on detecting and handling duplicate ICSRs, including literature cases reported by more than one MAH. In the EU it complements GVP Module VI Addendum I.</td><td><span style="color:var(--forest);font-weight:600">New</span></td></tr>
+          </table>
+
+          <h3 style="font-family:'Cormorant Garamond',serif;font-size:1.2rem;font-weight:500;margin:1rem 0 0.4rem">Key new definitions</h3>
+          <div class="pv-callout"><div class="lbl">Organised data collection system (ODCS)</div>
+          An activity that gathers data about the MAH's medicinal product or a disease area <strong>in a planned manner</strong>, so that the data can be reviewed. Examples include studies, registries, PSPs, MRPs, and planned social listening.</div>
+          <div class="pv-callout"><div class="lbl">Solicited vs spontaneous</div>
+          <strong>Solicited</strong> reports come from an ODCS. They are classified as "report from study" in E2B and <strong>need a causality assessment</strong>, and are reported as expedited ICSRs only when a causal relationship is suspected. <strong>Spontaneous</strong> reports are direct communications from an HCP or consumer that were <em>not</em> collected through an ODCS, and causality is implied.</div>
+          <div class="pv-callout"><div class="lbl">Patient support programme (PSP)</div>
+          An ODCS started by the MAH, in which patients enrol to get support using the MAH's product or managing their condition. It requires <strong>two-way communication</strong> between the MAH (or its third party) and patients or HCPs. Examples are adherence support, disease management, reimbursement support and educational programmes. In the EU this definition must be applied to all new programmes by 18 Sep 2026.</div>
+          <div class="pv-callout"><div class="lbl">Digital platforms under the MAH's responsibility</div>
+          Platforms that are owned, controlled or operated by, or on behalf of, the MAH. Having a relationship with a third-party platform owner does not make the MAH responsible for its content, as long as the MAH controls no content or communications.</div>
+
+          <h3 style="font-family:'Cormorant Garamond',serif;font-size:1.2rem;font-weight:500;margin:1rem 0 0.4rem">How to classify a case by source</h3>
+          <table class="pv-table">
+            <tr><th>Source / scenario</th><th>Classification</th><th>Causality assessment needed?</th></tr>
+            <tr><td>HCP or consumer contacts the MAH unprompted (call, email, letter)</td><td>Spontaneous</td><td>No (implied)</td></tr>
+            <tr><td>Patient posts an AE unprompted on the MAH's own product website or social page</td><td>Spontaneous</td><td>No (implied)</td></tr>
+            <tr><td>AE identified during an ODCS run on an MAH-controlled digital platform</td><td>Solicited</td><td>Yes</td></tr>
+            <tr><td>Planned social listening on third-party platforms</td><td>ODCS, so solicited</td><td>Yes</td></tr>
+            <tr><td>Third-party platforms with no planned MAH activity</td><td>No screening obligation</td><td>n/a</td></tr>
+            <tr><td>Patient support programme (two-way contact)</td><td>Solicited (E2B study type: PSP)</td><td>Yes</td></tr>
+            <tr><td>Market research programme</td><td>Solicited (E2B study type: MRP)</td><td>Yes</td></tr>
+            <tr><td>NIS with primary data collection</td><td>Solicited (report from study)</td><td>Yes</td></tr>
+            <tr><td>NIS with secondary use of data (EHR, claims)</td><td>Generally no individual case reporting; check the guideline text</td><td>n/a</td></tr>
+            <tr><td>Literature article describing a case</td><td>Literature ICSR (validity per minimum criteria)</td><td>Per source of the original case</td></tr>
+          </table>
+          <p style="font-size:0.85rem;color:var(--ink-soft)"><strong>EU nuance:</strong> the EU implementation strategy allows ADRs from one-way MAH activities that are not an ODCS to be reclassified from solicited to spontaneous, provided the MAH records this clearly in its ODCS documentation.</p>
+
+          <h3 style="font-family:'Cormorant Garamond',serif;font-size:1.2rem;font-weight:500;margin:1rem 0 0.4rem">New documentation for ODCSs without a protocol</h3>
+          <p>For each ODCS that is not run under a protocol, the MAH should have documentation describing at least:</p>
+          <div class="pv-flow">
+            <div class="step"><div class="n">01</div><div class="t">Objectives</div><div class="d">Purpose of the activity</div></div>
+            <div class="step"><div class="n">02</div><div class="t">Data sources</div><div class="d">Where the data comes from</div></div>
+            <div class="step"><div class="n">03</div><div class="t">Dataset</div><div class="d">What is collected or received, and the look-back period</div></div>
+            <div class="step"><div class="n">04</div><div class="t">Review method</div><div class="d">How and how often the data is reviewed</div></div>
+            <div class="step"><div class="n">05</div><div class="t">AE handling</div><div class="d">Recording, causality, reporting</div></div>
+            <div class="step"><div class="n">06</div><div class="t">Boundaries</div><div class="d">No obligation to search beyond the planned review</div></div>
+          </div>
+          <p>AEs/ADRs found during the planned review must be recorded, managed, assessed for causality and reported. The MAH is not expected to look for AEs beyond the review set out in the documentation.</p>
+
+          <h3 style="font-family:'Cormorant Garamond',serif;font-size:1.2rem;font-weight:500;margin:1rem 0 0.4rem">Linked change: E2B(R3) data element C.5.4 "Study type"</h3>
+          <p>Three new values will be added to <strong>C.5.4 — Study Type Where Reaction(s)/Event(s) Were Observed</strong>, so cases can be separated by source during signal detection. The draft explanatory note named <strong>4 = Patient Support Programme</strong> and <strong>5 = Market Research Programme</strong>, with a third value for ODCS activities on digital platforms. Until the new values are available, solicited cases use the existing <strong>2 = Report from study</strong>. In the EU, moving to the new values is <em>separate</em> from the E2D(R1) effective date and will be scheduled later through EudraVigilance.</p>
+
+          <h3 style="font-family:'Cormorant Garamond',serif;font-size:1.2rem;font-weight:500;margin:1rem 0 0.4rem">Compliance checklist</h3>
+          <table class="pv-table">
+            <tr><th>#</th><th>Action</th></tr>
+            <tr><td>1</td><td>Update SOPs and work instructions for case intake, spontaneous/solicited classification, and causality assessment of solicited cases.</td></tr>
+            <tr><td>2</td><td>List every PSP, MRP, social listening project and digital channel. Decide which are ODCSs and write the required documentation for any without a protocol.</td></tr>
+            <tr><td>3</td><td>Review vendor contracts and SDEAs/PVAs for PSPs and MRPs (AE reconciliation, two-way communication, timelines).</td></tr>
+            <tr><td>4</td><td>List every digital platform under the MAH's responsibility and set a screening frequency that meets reporting timelines.</td></tr>
+            <tr><td>5</td><td>Set out NIS safety reporting rules in protocols, separating primary data collection from secondary use of data.</td></tr>
+            <tr><td>6</td><td>Prepare the safety database for the new C.5.4 values. Until then, solicited cases go as "report from study".</td></tr>
+            <tr><td>7</td><td>Train staff on the new definitions, other-observations rules, day zero and duplicate management.</td></tr>
+            <tr><td>8</td><td>Watch for the revised EU GVP Module VI and the EudraVigilance E2B(R3) implementation timeline.</td></tr>
+          </table>
+
+          <div class="pv-callout" style="border-left-color:var(--purple)"><div class="lbl" style="color:var(--purple)">One-line summary</div>
+          E2D(R1) keeps the core definitions and 15-day clock. The real change is <em>how a case is classified by source</em>: anything gathered through a planned ODCS (PSPs, MRPs, social listening, primary-data NIS) is solicited and needs causality, MAH-controlled digital platforms must be screened, and each ODCS needs documentation.</div>
+
+          <p style="font-size:0.82rem;color:var(--muted);margin-top:1rem"><strong>Official sources:</strong>
+            <a href="https://database.ich.org/sites/default/files/ICH_E2D(R1)_Step4_FinalGuideline_2025_0819.pdf" target="_blank" rel="noopener" style="color:var(--burgundy)">ICH E2D(R1) Step 4 guideline</a> ·
+            <a href="https://database.ich.org/sites/default/files/ICH_E2D(R1)_TrainingMaterial_2025_1211.pdf" target="_blank" rel="noopener" style="color:var(--burgundy)">ICH training material</a> ·
+            <a href="https://www.ema.europa.eu/en/ich-e2d-post-approval-safety-data-management-scientific-guideline" target="_blank" rel="noopener" style="color:var(--burgundy)">EMA guideline page</a> ·
+            <a href="https://www.ema.europa.eu/en/documents/scientific-guideline/eu-implementation-strategy-ich-e2dr1-guideline-post-approval-safety-data-definitions-standards-management-reporting-individual-case-safety-reports_en.pdf" target="_blank" rel="noopener" style="color:var(--burgundy)">EU implementation strategy</a> ·
+            <a href="https://www.federalregister.gov/documents/2026/03/04/2026-04252/e2dr1-postapproval-safety-data-definitions-and-standards-for-management-and-reporting-of-individual" target="_blank" rel="noopener" style="color:var(--burgundy)">FDA guidance (Federal Register)</a>
+          </p>
+        </div>
+      </div>
+
+      <!-- ===== UPDATE 2: MedDRA 29.1 ===== -->
+      <div class="pv-block">
+        <div class="pv-block-head"><span class="num">№ 02</span><h2>MedDRA Version 29.1 released (September 2026)</h2><span class="cite">ICH M1 · MSSO</span></div>
+        <p class="lede">The September "simple change" release of MedDRA: changes only at PT and LLT level, with no changes to the HLT, HLGT or SOC structure.</p>
+        <div class="body">
+          <table class="pv-table">
+            <tr><th>Date</th><th>Update</th></tr>
+            <tr><td>1 Sep 2026</td><td>English MedDRA 29.1 released by the MSSO.</td></tr>
+            <tr><td>14 Sep 2026</td><td>All 29.1 language versions available to download.</td></tr>
+            <tr><td>18 Sep 2026</td><td>Corrected English package re-released as <code>MedDRA_29_1_English_v2.zip</code>. Some users couldn't load the first package because of three LLT pairs that differed only in capital letters. If you loaded the original package, replace it with v2.</td></tr>
+            <tr><td>25 Sep 2026</td><td>Comment period closed for proposed complex changes in MedDRA 30.0 (due March 2027).</td></tr>
+          </table>
+          <p><strong>Content (reported):</strong> about 1,065 change requests processed (753 approved), about 143 new PTs and 417 new LLTs, no new SMQs, and about 177 PT changes to existing SMQs. Re-run saved SMQ searches after upgrading. Confirm figures in the MSSO "What's New in MedDRA 29.1" document.</p>
+          <p><strong>Points to Consider:</strong> Term Selection PtC Release 4.26 (March 2026) is still current. The MSSO also posted Release 4.0 of the PtC Companion Document.</p>
+          <p style="font-size:0.82rem;color:var(--muted)"><strong>Source:</strong> <a href="https://www.meddra.org/news-and-events/news" target="_blank" rel="noopener" style="color:var(--burgundy)">MedDRA MSSO news</a></p>
+        </div>
+      </div>
+
+      <!-- ===== UPDATE 3: Regulator safety actions ===== -->
+      <div class="pv-block">
+        <div class="pv-block-head"><span class="num">№ 03</span><h2>Regulator safety highlights, Aug – Oct 2026</h2><span class="cite">FDA · EMA PRAC · MHRA</span></div>
+        <div class="body">
+          <table class="pv-table">
+            <tr><th style="width:14%">Date</th><th style="width:16%">Authority</th><th>Update</th></tr>
+            <tr><td>31 Aug – 3 Sep</td><td>EMA PRAC</td><td>Review started of <strong>injectable iron medicines</strong> for hypophosphataemia and related bone problems (osteomalacia), prompted by concerns that current risk-reduction measures for ferric carboxymaltose aren't working. New signals discussed included erectile dysfunction with acitretin, fulminant hepatitis with anakinra, and pemphigoid with deucravacitinib.</td></tr>
+            <tr><td>1 Sep</td><td>FDA</td><td><strong>Boxed warning</strong> added to Injectafer (ferric carboxymaltose) for symptomatic hypophosphataemia. Phosphate monitoring recommended for at-risk patients and for repeat courses within 3 months.</td></tr>
+            <tr><td>2 Sep</td><td>MHRA</td><td>Drug Safety Update: use a filter (≤1.2 µm) when giving <strong>parenteral nutrition</strong> in all care settings. Unfiltered administration has been linked to incidents including fatal embolism.</td></tr>
+            <tr><td>15 Sep</td><td>FDA</td><td>New warning labelling for <strong>Kybella (deoxycholic acid)</strong>: serious neuromuscular and other AEs when used outside the submental area. FDA recommends against that use.</td></tr>
+            <tr><td>28 Sep – 1 Oct</td><td>EMA PRAC</td><td>Routine meeting: 49 RMPs and 16 PASS protocols or results reviewed. No referrals started or concluded.</td></tr>
+            <tr><td>29 Sep</td><td>MHRA</td><td>September Safety Roundup published (medicines recalls including ramipril, paliperidone and baclofen products, plus device alerts).</td></tr>
+          </table>
+          <p style="font-size:0.82rem;color:var(--muted)"><strong>Sources:</strong>
+            <a href="https://www.fda.gov/drugs/drug-safety-and-availability/drug-safety-communications" target="_blank" rel="noopener" style="color:var(--burgundy)">FDA Drug Safety Communications</a> ·
+            <a href="https://www.ema.europa.eu/en/committees/pharmacovigilance-risk-assessment-committee-prac" target="_blank" rel="noopener" style="color:var(--burgundy)">EMA PRAC</a> ·
+            <a href="https://www.gov.uk/drug-safety-update" target="_blank" rel="noopener" style="color:var(--burgundy)">MHRA Drug Safety Update</a>
+          </p>
+          <div class="pv-callout"><div class="lbl">Weekly headlines</div>For the automatically refreshed headline feed, see <a href="#" onclick="navigate('news');return false;" style="color:var(--burgundy);text-decoration:underline">Regulatory &amp; PV News</a>.</div>
+        </div>
+      </div>
+    </section>
+
 
     <section class="view" id="view-pathway">
       <div class="page-head">
@@ -1997,14 +2164,14 @@
       <div class="page-head">
         <div class="eyebrow accent-teal">Pharmacovigilance · Post-Market Safety</div>
         <h1>Post-Marketing Surveillance Guide</h1>
-        <p class="sub">A detailed reference on post-marketing pharmacovigilance: why surveillance continues after approval, the ICH E2D definitions and case-handling rules, expedited and periodic reporting, signal management and risk minimisation (RMP/REMS), and the major global reporting frameworks (FDA, EU, WHO).</p>
+        <p class="sub">A detailed reference on post-marketing pharmacovigilance: why surveillance continues after approval, the ICH E2D(R1) definitions and case-handling rules, expedited and periodic reporting, signal management and risk minimisation (RMP/REMS), and the major global reporting frameworks (FDA, EU, WHO).</p>
       </div>
       <div class="wl-banner">
-        <strong>Educational reference.</strong> This guide summarises post-marketing pharmacovigilance concepts drawn from public regulatory frameworks — <em>ICH E2D</em> (post-approval safety data management), <em>ICH E2A</em> (definitions), US <em>21 CFR 314.80 / 600.80</em>, EU <em>Good Pharmacovigilance Practices (GVP)</em>, and WHO-UMC. It is educational only and not a substitute for the current guidelines or your organisation's SOPs. Always confirm timelines and obligations against current regional requirements.
+        <strong>Educational reference.</strong> This guide summarises post-marketing pharmacovigilance concepts drawn from public regulatory frameworks — <em>ICH E2D(R1)</em> (post-approval safety data management), <em>ICH E2A</em> (definitions), US <em>21 CFR 314.80 / 600.80</em>, EU <em>Good Pharmacovigilance Practices (GVP)</em>, and WHO-UMC. It is educational only and not a substitute for the current guidelines or your organisation's SOPs. Always confirm timelines and obligations against current regional requirements.
       </div>
       <div class="pv-tabs" id="pm-tabs">
         <button class="pv-tab active" data-pmtab="overview">Overview &amp; Rationale</button>
-        <button class="pv-tab" data-pmtab="e2d">Case Handling (E2D)</button>
+        <button class="pv-tab" data-pmtab="e2d">Case Handling (E2D(R1))</button>
         <button class="pv-tab" data-pmtab="icsr">ICSR Processing</button>
         <button class="pv-tab" data-pmtab="ae">AE &amp; Causality</button>
         <button class="pv-tab" data-pmtab="reporting">Expedited &amp; Periodic Reporting</button>
@@ -2637,6 +2804,7 @@ function navigate(view){
 // Registry of all searchable areas: where, how to navigate, and how to retrieve text
 const SEARCH_INDEX_MAP = [
   { view: 'dashboard',          label: 'Dashboard',                       contentId: 'view-dashboard' },
+  { view: 'pvupdates',          label: 'PV Updates & News',               contentId: 'view-pvupdates' },
   { view: 'news',               label: 'Regulatory & PV News',            contentId: 'view-news' },
   { view: 'pathway',            label: 'Pathway Decision Helper',         contentId: 'view-pathway' },
   { view: 'timeline',           label: 'Development Lifecycle',           contentId: 'view-timeline' },
@@ -2713,7 +2881,7 @@ const SEARCH_INDEX_MAP = [
     ], tabRenderFn: (tabId) => (typeof renderDsur === 'function') && renderDsur(tabId), contentTargetId: 'dsur-content', stateField: () => (typeof DSUR_state !== 'undefined' && DSUR_state.tab) },
   { view: 'postmarketing',      label: 'Post-Marketing Guide',            contentId: 'view-postmarketing', tabbed: true, tabs: [
       { id: 'overview', label: 'Overview & Rationale' },
-      { id: 'e2d', label: 'Case Handling E2D' },
+      { id: 'e2d', label: 'Case Handling E2D(R1)' },
       { id: 'icsr', label: 'ICSR Processing' },
       { id: 'ae', label: 'AE & Causality' },
       { id: 'reporting', label: 'Expedited & Periodic Reporting' },
@@ -3591,8 +3759,8 @@ const PV_GUIDANCE_LIBRARY = [
     { id:'ICH E2A', title:'Clinical Safety Data Management: Definitions and Standards for Expedited Reporting', desc:'Foundational pre-marketing PV guideline. Defines AE, ADR, SAE, SUSAR; sets 7/15-day expedited reporting timelines. Applies during IND/clinical development.' },
     { id:'ICH E2B(R3)', title:'Electronic Transmission of Individual Case Safety Reports (ICSRs)', desc:'Current XML-based ICSR transmission standard. R3 finalized 2013; supersedes R2. All E2B reports must follow this structure for E2B-compliant regulatory transmission.' },
     { id:'ICH E2C(R2)', title:'Periodic Benefit-Risk Evaluation Report (PBRER)', desc:'Modern format for periodic post-marketing aggregate safety/benefit-risk reports. Replaces PSUR format (R1). Anchored to IBD; 12 sections required; submission 70 days from DLP (≤12mo interval).' },
-    { id:'ICH E2D', title:'Post-Approval Safety Data Management: Definitions and Standards for Expedited Reporting', desc:'The post-marketing companion to E2A. Handles solicited vs. spontaneous reports; pregnancy cases; literature reports; consumer reports. Critical for marketed-product PV operations.' },
-    { id:'ICH E2D(R1)', title:'Q&A on Post-Approval Safety Data Management', desc:'Practical guidance on E2D implementation — pregnancy follow-up, off-label use cases, study-derived cases, late-onset events.' },
+    { id:'ICH E2D(R1)', title:'Post-Approval Safety Data: Definitions and Standards for Management and Reporting of Individual Case Safety Reports', desc:'Current version (Step 4, Sep 2025; EU effective 18 Mar 2026, transition ended 18 Sep 2026; FDA final guidance Mar 2026). The post-marketing companion to E2A. Defines ICSR minimum criteria, other observations, spontaneous vs. solicited reports and organised data collection systems (ODCS), and covers patient support and market research programmes, digital platforms/social media, non-interventional studies, literature, follow-up, and duplicate management. See News & Updates → PV Updates & News for a section-by-section summary.' },
+    { id:'ICH E2D (2003)', title:'Post-Approval Safety Data Management: Definitions and Standards for Expedited Reporting', desc:'Original 2003 guideline, now superseded by E2D(R1). Kept for reference when reading older SOPs and literature.' },
     { id:'ICH E2E', title:'Pharmacovigilance Planning', desc:'Framework for the Pharmacovigilance Plan (PVP) — part of the Risk Management Plan (RMP). Identified risks, potential risks, missing information.' },
     { id:'ICH E2F', title:'Development Safety Update Report (DSUR)', desc:'Annual safety report for products in clinical development. Anchored to DIBD; 20 sections; submission within 60 days of DLP. Replaces IND Annual Report under FDA acceptance.' },
     { id:'ICH E19', title:'Optimisation of Safety Data Collection', desc:'2022 ICH guideline allowing reduced safety data collection in late-stage trials where the safety profile is well-characterized. Permits sponsors to focus data collection on important new safety questions.' }
@@ -5943,7 +6111,7 @@ const PV_CONTENT = {
           <tr><th>Jurisdiction</th><th>Authority</th><th>Key Regulations &amp; Guidance</th></tr>
           <tr><td><strong>United States</strong></td><td>FDA — CDER/CBER/CDRH</td><td>21 CFR 314.80 (post-marketing reporting for drugs); 21 CFR 314.81 (PADER, NDA periodic reports); 21 CFR 600.80 (biologics); 21 CFR 803 (devices, MDR); 21 CFR 4 Subpart B (combination products); FDAAA 2007 §901 (REMS)</td></tr>
           <tr><td><strong>European Union</strong></td><td>EMA + National Competent Authorities</td><td>Regulation (EC) 726/2004; Directive 2001/83/EC; Good Pharmacovigilance Practices (GVP) Modules I–XVI; Regulation (EU) 2017/745 (MDR) Articles 87–92 vigilance; Regulation (EU) 2017/746 (IVDR)</td></tr>
-          <tr><td><strong>ICH</strong></td><td>International Council for Harmonisation</td><td>E2A Definitions/Reporting · E2B(R3) Electronic Transmission · E2C(R2) PBRER · E2D Post-Approval Safety · E2E Pharmacovigilance Planning · E2F DSUR · M1 MedDRA</td></tr>
+          <tr><td><strong>ICH</strong></td><td>International Council for Harmonisation</td><td>E2A Definitions/Reporting · E2B(R3) Electronic Transmission · E2C(R2) PBRER · E2D(R1) Post-Approval Safety · E2E Pharmacovigilance Planning · E2F DSUR · M1 MedDRA</td></tr>
           <tr><td><strong>WHO</strong></td><td>WHO-UMC (Uppsala Monitoring Centre)</td><td>VigiBase global database; WHO-UMC causality categories; ATC classification</td></tr>
           <tr><td><strong>UK</strong></td><td>MHRA</td><td>Yellow Card scheme; UK Statutory Instruments</td></tr>
           <tr><td><strong>India</strong></td><td>CDSCO + IPC (PvPI)</td><td>Pharmacovigilance Programme of India; Materiovigilance Programme of India (MvPI)</td></tr>
@@ -5964,7 +6132,7 @@ const PV_CONTENT = {
         <ul>
           <li><strong>Spontaneous reports</strong> — patients, HCPs, MedWatch (US), Yellow Card (UK), EudraVigilance (EU), PvPI (India)</li>
           <li><strong>Clinical trials</strong> — IND safety reports (21 CFR 312.32) for SUSARs; aggregate via DSUR</li>
-          <li><strong>Solicited reports</strong> — patient support programs, post-marketing studies, registries (treated like spontaneous unless designated otherwise per ICH E2D)</li>
+          <li><strong>Solicited reports</strong> — from organised data collection systems (ODCS): patient support programs, market research, post-marketing studies, registries, planned social listening. Per ICH E2D(R1) these need a causality assessment and are not treated as spontaneous</li>
           <li><strong>Scientific literature</strong> — Embase + MEDLINE searches at minimum weekly; EMA Medical Literature Monitoring service for selected substances</li>
           <li><strong>Regulatory authorities</strong> — direct reports forwarded by FDA, EMA, MHRA, etc.</li>
           <li><strong>Real-world data</strong> — FDA Sentinel, EMA DARWIN EU, Optum, claims databases, EHR-linked registries</li>
@@ -6062,7 +6230,7 @@ const PV_CONTENT = {
 
         <div class="pv-callout"><div class="lbl">Solicited vs. Spontaneous Reports</div>
           <ul style="margin:0">
-            <li><strong>Solicited reports</strong> — collected through organized data-collection systems (clinical trials, registries, patient support programs, market research, post-marketing surveys). Causality must be assessed by a qualified HCP at the source. ICH E2D treats solicited reports as if they had implied causality unless explicitly assessed otherwise.</li>
+            <li><strong>Solicited reports</strong> — collected through organized data-collection systems (clinical trials, registries, patient support programs, market research, post-marketing surveys). Under ICH E2D(R1), solicited reports come from an organised data collection system (ODCS), are classified as "report from study" in E2B, and need a causality assessment. Only cases with a suspected causal relationship are reported as expedited ADRs.</li>
             <li><strong>Spontaneous reports</strong> — voluntary, unsolicited communications by HCPs, consumers, or others to a company or regulatory authority describing one or more ADRs in a patient given one or more medicinal products. Implied causality (the reporter is communicating because they suspect a link).</li>
           </ul>
         </div>
@@ -6227,7 +6395,7 @@ const PV_CONTENT = {
             <li><strong>EU SmPC Section 4.6</strong> — Fertility, pregnancy, and lactation</li>
             <li><strong>LactMed</strong> (NLM) — peer-reviewed database of drugs in breast milk</li>
             <li><strong>OTIS / MotherToBaby</strong> — North American teratogen information service</li>
-            <li><strong>ICH E2D Q&amp;A</strong> — pregnancy reporting harmonization</li>
+            <li><strong>ICH E2D(R1)</strong> — post-approval case management, including follow-up of exposure cases</li>
           </ul>
         </div>
 
@@ -8344,7 +8512,7 @@ const PV_CONTENT = {
         <p style="font-size:0.85rem;line-height:1.7">
           <strong>EU:</strong> Regulation (EC) No 726/2004 · Directive 2001/83/EC · Regulation (EU) No 1235/2010 · Directive 2010/84/EU · Commission Implementing Regulation (EU) No 520/2012 · EMA Good Pharmacovigilance Practices (GVP) Modules I–XVI and Product-/Population-Specific Considerations P.I–P.IV (EMA/European Commission).<br>
           <strong>US:</strong> Federal Food, Drug, and Cosmetic Act (21 U.S.C., incl. §505(k), §505(o)(3), §505(o)(4), §505-1) · Public Health Service Act §351 · FDA Amendments Act 2007 · FDA Reauthorization Act 2017 · 21 CFR 314.80, 314.81, 314.98, 600.80, 312.32, 312.33, Part 4, Part 803, Part 11 · FDA Guidances for Industry (as titled above).<br>
-          <strong>ICH/WHO:</strong> ICH E2A, E2B(R3), E2C(R2), E2D, E2E, E2F, M1 · WHO Programme for International Drug Monitoring (see the Guidelines &amp; References tab for the full catalogued list).
+          <strong>ICH/WHO:</strong> ICH E2A, E2B(R3), E2C(R2), E2D(R1), E2E, E2F, M1 · WHO Programme for International Drug Monitoring (see the Guidelines &amp; References tab for the full catalogued list).
         </p>
         <p style="font-size:0.8rem;color:var(--muted);margin-top:0.4rem"><em>Educational reference written in original wording from public regulatory frameworks. Not an official EMA/FDA publication and not legal advice. Verify every obligation against the current consolidated legislation and guidance before acting.</em></p>
       </div>
@@ -12166,7 +12334,7 @@ function setupDsurTabs(){
 /* ============================================================
    POST-MARKETING SURVEILLANCE GUIDE  (PV domain, sidebar #22)
    Educational reference based on public regulatory frameworks:
-   ICH E2D, ICH E2A, US 21 CFR 314.80/600.80, EU GVP, WHO-UMC.
+   ICH E2D(R1), ICH E2A, US 21 CFR 314.80/600.80, EU GVP, WHO-UMC.
    Original explanatory content.
    ============================================================ */
 let PM_state = { tab: 'overview',
@@ -12198,7 +12366,7 @@ const PM_CONTENT = {
           <tr><th>Type</th><th>How it works</th><th>Strength / limitation</th></tr>
           <tr><td><strong>Passive (spontaneous)</strong></td><td>Unsolicited reports from HCPs, patients, others (MedWatch, Yellow Card, etc.)</td><td>Broad, cheap, catches the unexpected — but under-reporting and no denominator.</td></tr>
           <tr><td><strong>Active (proactive)</strong></td><td>Systematic follow-up — sentinel sites, registries, cohort event monitoring, EHR/claims databases</td><td>More complete data and denominators — but costlier and narrower in scope.</td></tr>
-          <tr><td><strong>Stimulated / solicited</strong></td><td>Patient support programmes, post-authorisation studies, market research</td><td>Structured collection; treated as solicited (causality expected) per ICH E2D.</td></tr>
+          <tr><td><strong>Stimulated / solicited</strong></td><td>Patient support programmes, post-authorisation studies, market research</td><td>Gathered through an organised data collection system (ODCS); solicited, so causality must be assessed, per ICH E2D(R1).</td></tr>
         </table>
 
         <div class="pv-callout" style="border-left-color:var(--purple)"><div class="lbl" style="color:var(--purple)">One-line summary</div>
@@ -12209,12 +12377,14 @@ const PM_CONTENT = {
 
   e2d: `
     <div class="pv-block">
-      <div class="pv-block-head"><span class="num">№ ii</span><h2>Case Handling — ICH E2D Fundamentals</h2><span class="cite">ICH E2D · E2A</span></div>
-      <p class="lede">Every post-marketing signal is built from individual case safety reports (ICSRs). ICH E2D sets the shared vocabulary and rules for handling them: what counts as a valid case, how to classify seriousness and expectedness, and how sources shape reporting duties.</p>
+      <div class="pv-block-head"><span class="num">№ ii</span><h2>Case Handling — ICH E2D(R1) Fundamentals</h2><span class="cite">ICH E2D(R1) · E2A</span></div>
+      <p class="lede">Every post-marketing signal is built from individual case safety reports (ICSRs). ICH E2D(R1) sets the shared vocabulary and rules for handling them: what counts as a valid case, how to classify seriousness and expectedness, and how the source of a report (spontaneous or solicited) shapes reporting duties.</p>
       <div class="body">
+        <div class="pv-callout" style="border-left-color:var(--teal)"><div class="lbl" style="color:var(--teal)">Updated guideline — ICH E2D(R1)</div>
+        The 2003 E2D was revised as <strong>E2D(R1)</strong> (ICH Step 4, Sep 2025). In the EU it came into effect on 18 Mar 2026, and the transition period ended on 18 Sep 2026. FDA published it as final guidance in Mar 2026. The main changes are a formal ICSR definition, "other observations", organised data collection systems (ODCS), patient support and market research programmes, digital platforms, non-interventional studies and duplicate management. See <a href="#" onclick="navigate('pvupdates');return false;" style="color:var(--burgundy);text-decoration:underline">PV Updates &amp; News</a> for the section-by-section summary.</div>
 
         <h3 style="font-family:'Cormorant Garamond',serif;font-size:1.2rem;font-weight:500;margin:1rem 0 0.4rem">The Four Minimum Criteria for a Valid Case</h3>
-        <p>An ICSR is only reportable if it contains all four of these elements. Missing any one means it is not yet a valid case (though follow-up should be attempted).</p>
+        <p>E2D(R1) §2.2 formally defines the ICSR and its minimum criteria. An ICSR is only reportable if it contains all four of these elements. Missing any one means it is not yet a valid case (though follow-up should be attempted).</p>
         <table class="pv-table">
           <tr><th>#</th><th>Element</th></tr>
           <tr><td>1</td><td>An identifiable <strong>reporter</strong> (source)</td></tr>
@@ -12223,22 +12393,27 @@ const PM_CONTENT = {
           <tr><td>4</td><td>An <strong>adverse event/reaction</strong></td></tr>
         </table>
 
-        <h3 style="font-family:'Cormorant Garamond',serif;font-size:1.2rem;font-weight:500;margin:1rem 0 0.4rem">Key Definitions (E2A / E2D)</h3>
+        <h3 style="font-family:'Cormorant Garamond',serif;font-size:1.2rem;font-weight:500;margin:1rem 0 0.4rem">Key Definitions (E2A / E2D(R1))</h3>
         <div class="pv-callout"><div class="lbl">Adverse Event (AE) vs Adverse Reaction (AR)</div>
         An <strong>AE</strong> is any untoward medical occurrence in a patient given a medicine, whether or not caused by it. An <strong>AR</strong> is an AE for which a causal relationship is at least a reasonable possibility. Post-marketing spontaneous reports generally imply suspicion of causality by the reporter.</div>
         <div class="pv-callout"><div class="lbl">Serious (ICH definition)</div>
         An event is serious if it results in death, is life-threatening, requires or prolongs hospitalisation, causes persistent/significant disability or incapacity, is a congenital anomaly/birth defect, or is another medically important event (an "important medical event" that may jeopardise the patient or require intervention to prevent one of the above).</div>
         <div class="pv-callout"><div class="lbl">Expectedness / Listedness</div>
-        An event is <strong>expected</strong> (listed) if its nature, severity, specificity or outcome is consistent with the reference safety information; otherwise it is <strong>unexpected</strong> (unlisted). Unexpected serious reactions typically trigger the fastest reporting.</div>
+        An event is <strong>expected</strong> (listed) if its nature, severity, specificity or outcome is consistent with the reference safety information; otherwise it is <strong>unexpected</strong> (unlisted). Unexpected serious reactions typically trigger the fastest reporting. Under E2D(R1), expectedness is judged against the regional labelling. A labelled reaction reported with a fatal outcome is unexpected unless the label says it can be fatal, and class effects are not automatically expected.</div>
+        <div class="pv-callout"><div class="lbl">Other observations (E2D(R1) §2.1.5, new)</div>
+        Lack of efficacy, overdose, abuse, misuse, medication error and occupational exposure. These may occur with or without an AE. Without an AE they are reported as ICSRs only under specific conditions or local/regional requirements.</div>
+        <div class="pv-callout"><div class="lbl">Spontaneous vs solicited (E2D(R1))</div>
+        A <strong>solicited</strong> report comes from an <strong>organised data collection system (ODCS)</strong>, an activity that gathers data in a planned way so it can be reviewed (studies, registries, patient support programmes, market research, planned social listening). Solicited cases need a causality assessment. A <strong>spontaneous</strong> report is a direct communication from an HCP or consumer that was not collected through an ODCS. Causality is implied.</div>
 
         <h3 style="font-family:'Cormorant Garamond',serif;font-size:1.2rem;font-weight:500;margin:1rem 0 0.4rem">Sources &amp; How They Are Treated</h3>
         <table class="pv-table">
-          <tr><th>Source</th><th>Treatment under E2D</th></tr>
-          <tr><td>Spontaneous reports</td><td>Implied causality; report per expedited rules if serious &amp; (often) unexpected.</td></tr>
-          <tr><td>Solicited (PSPs, studies, registries)</td><td>Treated as study reports; causality should be assessed; may follow study-report rules.</td></tr>
-          <tr><td>Literature</td><td>Screen the scientific literature (typically at least weekly); valid cases become ICSRs.</td></tr>
-          <tr><td>Internet / digital media</td><td>Company-sponsored digital media are monitored; valid cases (four criteria) are handled as spontaneous.</td></tr>
-          <tr><td>Regulatory authorities &amp; partners</td><td>Cases received are processed; contracts (SDEA/PVA) define partner exchange.</td></tr>
+          <tr><th>Source</th><th>Treatment under E2D(R1)</th></tr>
+          <tr><td>Spontaneous reports (HCPs, consumers)</td><td>Implied causality. Report per expedited rules if serious and (often) unexpected.</td></tr>
+          <tr><td>Patient support &amp; market research programmes (§4.5–4.6)</td><td>ODCS, so solicited. Causality must be assessed. Classified as "report from study" in E2B; new C.5.4 study-type values for PSP/MRP are planned.</td></tr>
+          <tr><td>Non-interventional studies (§4.4, new)</td><td>Primary data collection is solicited (report AEs with suspected causality). Secondary use of data (EHR, claims) is handled differently, and individual case reporting is generally not expected.</td></tr>
+          <tr><td>Literature (§4.2)</td><td>Screen regularly. Valid cases become ICSRs. Record the citation to support duplicate detection, and add new articles about an existing case to that case.</td></tr>
+          <tr><td>Digital platforms (§4.3)</td><td>Platforms under the MAH's responsibility (owned, controlled or operated by or for the MAH) must be screened regularly. Unprompted posts there are spontaneous, and cases from an ODCS run there are solicited. There is no obligation to screen third-party platforms unless the MAH runs a planned activity (e.g., social listening), which is then an ODCS.</td></tr>
+          <tr><td>Regulatory authorities &amp; partners</td><td>Cases received are processed. Contracts (SDEA/PVA) define partner exchange. Duplicate management (§6.6) applies.</td></tr>
         </table>
 
         <h3 style="font-family:'Cormorant Garamond',serif;font-size:1.2rem;font-weight:500;margin:1rem 0 0.4rem">Causality Assessment</h3>
@@ -12348,7 +12523,7 @@ const PM_CONTENT = {
           <tr><th>Region / body</th><th>Authority</th><th>Key instruments</th></tr>
           <tr><td><strong>United States</strong></td><td>FDA (CDER / CBER / CDRH)</td><td>21 CFR 314.80 (drugs), 600.80 (biologics), 803 (device MDR); 15-day Alert Reports; PADER; REMS (FDAAA 2007); FAERS / MedWatch.</td></tr>
           <tr><td><strong>European Union</strong></td><td>EMA + National Competent Authorities</td><td>Regulation (EC) 726/2004; Directive 2001/83/EC; Good Pharmacovigilance Practices (GVP) Modules I–XVI; EudraVigilance; PRAC (risk assessment committee).</td></tr>
-          <tr><td><strong>ICH</strong></td><td>International Council for Harmonisation</td><td>E2A (definitions), E2B(R3) (electronic ICSR), E2C(R2) (PBRER), E2D (post-approval), E2E (PV planning), E2F (DSUR), M1 (MedDRA).</td></tr>
+          <tr><td><strong>ICH</strong></td><td>International Council for Harmonisation</td><td>E2A (definitions), E2B(R3) (electronic ICSR), E2C(R2) (PBRER), E2D(R1) (post-approval), E2E (PV planning), E2F (DSUR), M1 (MedDRA).</td></tr>
           <tr><td><strong>WHO</strong></td><td>WHO-UMC (Uppsala Monitoring Centre)</td><td>VigiBase global database; WHO-UMC causality categories; global signal detection.</td></tr>
           <tr><td><strong>UK</strong></td><td>MHRA</td><td>Yellow Card scheme; UK PV legislation post-Brexit.</td></tr>
           <tr><td><strong>India</strong></td><td>CDSCO + IPC (PvPI)</td><td>Pharmacovigilance Programme of India; contributes to VigiBase.</td></tr>
@@ -12517,7 +12692,7 @@ function renderPmCaseFile(){
           <p style="margin:0.4rem 0 0"><strong>Day 0</strong> = the date this report reached any Meridian employee (here, a medical-information call on <strong>3 March</strong>). The regulatory clock starts now.</p>
         </div>
 
-        <div class="pv-callout"><div class="lbl">Stage 2 — Validity: is this a reportable ICSR? (relates to: Case Handling E2D)</div>
+        <div class="pv-callout"><div class="lbl">Stage 2 — Validity: is this a reportable ICSR? (relates to: Case Handling E2D(R1))</div>
           <p style="${P}">All four minimum criteria must be present.</p>
           <table class="pv-table" style="margin:0.2rem 0 0">
             <tr><th>Criterion</th><th>Present?</th></tr>
@@ -14136,7 +14311,7 @@ const PV_QUIZ_BANK = {
   icsr: {
     E: [
       {q:'What is "Day 0" in ICSR reporting?', c:['The day the patient took the drug','The day the MAH first becomes aware of all four ICSR validity criteria','The day the regulator receives the report','The day the AE first occurred'], a:1, e:'Day 0 starts the reporting clock the moment the MAH becomes aware that all four validity criteria are met (identifiable patient, identifiable reporter, suspect drug, suspect reaction).', r:'ICH E2D §3.2'},
-      {q:'How many validity criteria must be met for a case to be a reportable ICSR?', c:['2','3','4','5'], a:2, e:'Four criteria: identifiable patient, identifiable reporter, suspect product, and suspect adverse reaction.', r:'ICH E2D §3.1'},
+      {q:'How many validity criteria must be met for a case to be a reportable ICSR?', c:['2','3','4','5'], a:2, e:'Four criteria: identifiable patient, identifiable reporter, suspect product, and suspect adverse reaction.', r:'ICH E2D(R1) §2.2'},
       {q:'What is the FDA expedited reporting timeline for serious unexpected ADRs (post-approval)?', c:['7 calendar days','10 working days','15 calendar days','30 calendar days'], a:2, e:'Serious + unexpected events are reported as 15-day expedited reports per 21 CFR 314.80(c)(1).', r:'21 CFR 314.80(c)(1)'},
       {q:'Which form is used for ICSR submission to FDA on paper?', c:['Form FDA 1571','Form FDA 3500A','Form FDA 356h','Form FDA 483'], a:1, e:'MedWatch Form 3500A is the manufacturer ICSR form. Form 3500 is for voluntary HCP/consumer reports.', r:'21 CFR 314.80'},
       {q:'In which database does FDA store ICSRs for drugs and biologics?', c:['MAUDE','FAERS','VAERS','EudraVigilance'], a:1, e:'FAERS = FDA Adverse Event Reporting System for drugs/biologics. MAUDE is for devices.', r:'FDA FAERS public dashboard'},
