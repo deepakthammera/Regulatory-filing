@@ -21,6 +21,10 @@ import { writeFileSync } from "node:fs";
 // - RAPS retired its native RSS and publishes via FetchRSS (URL from the "RSS Feed" link
 //   on raps.org/news-insights/regulatory-focus.html).
 // - Endpoints News was removed: its feed returns HTTP 403 to automated requests.
+// - MHRA was removed by choice (mostly device field-safety notices). To restore it, add:
+//   { source: "MHRA", tier: "regulator", defaultCategory: "Safety / PV", feeds: [
+//     "https://www.gov.uk/drug-safety-update.atom", "https://www.gov.uk/drug-device-alerts.atom" ]}
+//   and a matching 'MHRA' colour in SOURCE_META in index.html.
 // - Springer's search.rss for Drug Safety returns no items, so the journal is read from
 //   Crossref instead (Drug Safety eISSN 1179-1942).
 const SOURCES = [
@@ -30,10 +34,6 @@ const SOURCES = [
   ]},
   { source: "EMA", tier: "regulator", defaultCategory: "Regulatory / Policy", feeds: [
     "https://www.ema.europa.eu/en/news.xml"
-  ]},
-  { source: "MHRA", tier: "regulator", defaultCategory: "Safety / PV", feeds: [
-    "https://www.gov.uk/drug-safety-update.atom",
-    "https://www.gov.uk/drug-device-alerts.atom"
   ]},
   { source: "BioSpace", tier: "industry", feeds: [
     "https://www.biospace.com/all-news.rss",
