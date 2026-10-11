@@ -45,6 +45,8 @@ That's it. After the run finishes, open your site's **Regulatory & PV News** sec
 
 - **GitHub pauses scheduled workflows after ~60 days of no repo activity.** Any commit re-enables them; for an active project this rarely matters. You can also just click **Run workflow** anytime.
 - **Feed URLs can change.** If a source stops updating (check the `[Source] …` and `Per-source kept:` lines in the Actions log), open `scripts/fetch-news.mjs` and adjust that source's URL(s) in the `SOURCES` list. Each source has more than one URL as a fallback.
+- **MHRA dates:** GOV.UK feeds only give an "updated" time, so an older MHRA alert that GOV.UK edits shows up with the edit date.
+- **Undated items:** if a feed's dates can't be parsed, the Actions log prints `items without a usable date` with a sample raw date and the item's tags, so you can adjust `parseLooseDate()` in the script.
 - **Copyright:** the feature intentionally stores and shows only headlines, dates, and links — never article text — which is the intended use of RSS/Atom. Each item links back to the publisher.
 - **Opening `index.html` directly from your hard drive** (file://) may block the `news.json` fetch in some browsers; it works correctly when served over http/https (GitHub Pages, Netlify, or a local server such as `python3 -m http.server`).
 
