@@ -56,7 +56,7 @@ Each area combines reference content, worked examples, interactive decision help
   - **Regulatory Guidelines library**: the final E2D(R1) guideline replaces an incorrect "E2D(R1) Q&A" entry, and the 2003 E2D is kept and marked superseded.
   - **PV Deep Dive**: corrected the solicited-report wording. Solicited reports need a causality assessment and are not treated as spontaneous.
   - Guideline lists and the quiz citation now reference E2D(R1).
-- **Weekly news feed** (`news.json`, refreshed every Monday by a GitHub Action) now includes **regulator sources**: FDA (MedWatch safety alerts, press releases), EMA news, and MHRA (Drug Safety Update, drug & device alerts). It also pulls BioSpace, Fierce Pharma, BioPharma Dive, RAPS, and new *Drug Safety* journal articles (via Crossref). The broken Endpoints feed (HTTP 403) was removed. See [`NEWS_SETUP.md`](NEWS_SETUP.md).
+- **Weekly news feed** (`news.json`, refreshed every Monday by a GitHub Action) now includes **regulator sources**: FDA (MedWatch safety alerts, press releases) and EMA news. It also pulls BioSpace, Fierce Pharma, BioPharma Dive, RAPS, and new *Drug Safety* journal articles (via Crossref). The broken Endpoints feed (HTTP 403) was removed. See [`NEWS_SETUP.md`](NEWS_SETUP.md).
 - **Fix:** removed a call to an undefined `setupFilters()` function. It threw an error on every sign-in and stopped the dashboard news preview from loading.
 
 ---
@@ -100,7 +100,7 @@ Because it is a single static file, it deploys anywhere that serves static pages
 | Icon | Section | What it covers |
 |---|---------|----------------|
 | ★ | **PV Updates & News** (Latest) | Curated, explained PV updates: ICH E2D(R1) section-by-section, MedDRA 29.1, and recent FDA / EMA PRAC / MHRA safety actions |
-| ◆ | Regulatory & PV News (Weekly Feed) | Auto-refreshed headlines from regulators (FDA, EMA, MHRA), industry news and the *Drug Safety* journal, filterable by source, category and ⚑ priority |
+| ◆ | Regulatory & PV News (Weekly Feed) | Auto-refreshed headlines from regulators (FDA, EMA), industry news and the *Drug Safety* journal, filterable by source, category and ⚑ priority |
 
 ### Regulatory domain
 | # | Section | What it covers |
@@ -223,7 +223,7 @@ Content is written in original wording and summarises publicly available regulat
 - **CIOMS Working Group XIV** — guiding principles for AI in pharmacovigilance (open-access source, summarised with citation).
 - **WHO-UMC** — global pharmacovigilance and VigiBase context.
 - **Regulator safety communications** (PV Updates & News page): FDA Drug Safety Communications, EMA PRAC meeting highlights, MHRA Drug Safety Update, and MedDRA MSSO release notes, each linked from the relevant update.
-- **Weekly news feed**: headlines, dates and links only (no article text) from FDA, EMA, MHRA, BioSpace, Fierce Pharma, BioPharma Dive, RAPS, and *Drug Safety* (article metadata via the Crossref API).
+- **Weekly news feed**: headlines, dates and links only (no article text) from FDA, EMA, BioSpace, Fierce Pharma, BioPharma Dive, RAPS, and *Drug Safety* (article metadata via the Crossref API).
 
 Where a section draws on a specific publication, the citation is shown inline within that section. Trademarks and guideline names belong to their respective owners. This project claims no endorsement by any of these bodies.
 
