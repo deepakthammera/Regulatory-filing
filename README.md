@@ -50,7 +50,7 @@ Each area combines reference content, worked examples, interactive decision help
     - the documentation required for an ODCS without a protocol
     - the planned E2B(R3) C.5.4 change, a compliance checklist, and links to official sources
   - **MedDRA 29.1**: release dates, the replacement English package (v2), and the reported content changes.
-  - **Regulator safety highlights, Aug – Oct 2026** from FDA, EMA PRAC and MHRA.
+  - **Regulator safety highlights, Aug – Oct 2026** from FDA and EMA PRAC.
 - **App content updated to ICH E2D(R1):**
   - **Post-Marketing Guide → Case Handling (E2D(R1))**: new callouts for other observations and for spontaneous vs solicited, the R1 expectedness rules, and a rewritten sources table (PSP/MRP, non-interventional studies, digital platforms, duplicates).
   - **Regulatory Guidelines library**: the final E2D(R1) guideline replaces an incorrect "E2D(R1) Q&A" entry, and the 2003 E2D is kept and marked superseded.
@@ -99,7 +99,7 @@ Because it is a single static file, it deploys anywhere that serves static pages
 ### News & Updates
 | Icon | Section | What it covers |
 |---|---------|----------------|
-| ★ | **PV Updates & News** (Latest) | Curated, explained PV updates: ICH E2D(R1) section-by-section, MedDRA 29.1, and recent FDA / EMA PRAC / MHRA safety actions |
+| ★ | **PV Updates & News** (Latest) | Curated, explained PV updates: ICH E2D(R1) section-by-section, MedDRA 29.1, and recent FDA / EMA PRAC safety actions |
 | ◆ | Regulatory & PV News (Weekly Feed) | Auto-refreshed headlines from regulators (FDA, EMA), industry news and the *Drug Safety* journal, filterable by source, category and ⚑ priority |
 
 ### Regulatory domain
@@ -222,7 +222,7 @@ Content is written in original wording and summarises publicly available regulat
 - **US FDA** — Title 21 CFR pharmacovigilance provisions, the FD&C Act/PHS Act, FDAAA, and relevant FDA guidances.
 - **CIOMS Working Group XIV** — guiding principles for AI in pharmacovigilance (open-access source, summarised with citation).
 - **WHO-UMC** — global pharmacovigilance and VigiBase context.
-- **Regulator safety communications** (PV Updates & News page): FDA Drug Safety Communications, EMA PRAC meeting highlights, MHRA Drug Safety Update, and MedDRA MSSO release notes, each linked from the relevant update.
+- **Regulator safety communications** (PV Updates & News page): FDA Drug Safety Communications, EMA PRAC meeting highlights, and MedDRA MSSO release notes, each linked from the relevant update.
 - **Weekly news feed**: headlines, dates and links only (no article text) from FDA, EMA, BioSpace, Fierce Pharma, BioPharma Dive, RAPS, and *Drug Safety* (article metadata via the Crossref API).
 
 Where a section draws on a specific publication, the citation is shown inline within that section. Trademarks and guideline names belong to their respective owners. This project claims no endorsement by any of these bodies.
