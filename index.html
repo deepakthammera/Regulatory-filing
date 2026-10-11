@@ -2604,7 +2604,7 @@ async function initApp(){
   setupPbrerTabs();
   setupDsurTabs();
   setupPmTabs();
-  setupTabs(); setupFilters(); if(typeof setupSearch === 'function') setupSearch();
+  setupTabs(); if(typeof setupSearch === 'function') setupSearch();
   setupGlobalSearch();
   if(typeof renderNewsPreview==='function') renderNewsPreview();
 }

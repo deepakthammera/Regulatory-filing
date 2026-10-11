@@ -1,7 +1,7 @@
 name: Update news feed
 
 # Runs weekly (Mondays 06:00 UTC) and can be triggered manually.
-# Fetches official regulator feeds (FDA, EMA, MHRA, WHO) and commits an updated news.json.
+# Fetches industry/regulatory/journal feeds (see scripts/fetch-news.mjs) and commits an updated news.json.
 on:
   schedule:
     - cron: "0 6 * * 1"   # every Monday at 06:00 UTC

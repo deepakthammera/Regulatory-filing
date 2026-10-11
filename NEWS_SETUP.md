@@ -1,6 +1,11 @@
 # Weekly News Feature — Setup
 
-Your app now has a **News & Updates** section (top of the sidebar) that shows the latest headlines from **FDA, EMA (EU), MHRA (UK), and WHO**, refreshed automatically every week. It shows only headlines, source, date, and a link to each original article.
+Your app has a **News & Updates** section (top of the sidebar) with two entries:
+
+- **★ PV Updates & News** (Latest): a curated, hand-written page explaining new guidelines (e.g., ICH E2D(R1), MedDRA releases) and regulator safety actions. It is static content in `index.html` (the `view-pvupdates` section) and is **not** touched by the weekly job.
+- **◆ Regulatory & PV News** (Weekly Feed): headlines from **BioSpace, Fierce Pharma, Endpoints, BioPharma Dive, RAPS (Regulatory Focus), and the journal *Drug Safety***, refreshed automatically every week. It shows only headlines, source, date, and a link to each original article.
+
+This document covers the weekly feed.
 
 ## What the pieces are
 
@@ -33,20 +38,20 @@ That's it. After the run finishes, open your site's **Regulatory & PV News** sec
 ## How it stays current
 
 - The workflow runs **every Monday at 06:00 UTC** (`cron: "0 6 * * 1"`). Change that line in the workflow if you want a different day/time.
-- It fetches each source's feed, keeps the newest items (headline + date + link only), de-duplicates, drops items older than ~120 days, and writes `news.json`.
+- It fetches each source's feed, keeps the newest items (headline + date + link only; up to 15 per source and 120 in total), de-duplicates, drops items older than ~150 days, tags each item with a category (e.g., Safety / PV, Approval), and writes `news.json`.
 - If **every** source fails on a given run, the script exits without overwriting your existing `news.json`, so the page never goes blank.
 
 ## Good to know
 
 - **GitHub pauses scheduled workflows after ~60 days of no repo activity.** Any commit re-enables them; for an active project this rarely matters. You can also just click **Run workflow** anytime.
-- **Feed URLs can change.** If a source stops updating, open `scripts/fetch-news.mjs` and adjust that source's URL(s) in the `SOURCES` list. Each source has more than one URL as a fallback.
+- **Feed URLs can change.** If a source stops updating (check the `Per-source kept:` line in the Actions log; at the time of writing, Endpoints and *Drug Safety* were returning no items), open `scripts/fetch-news.mjs` and adjust that source's URL(s) in the `SOURCES` list. Each source has more than one URL as a fallback.
 - **Copyright:** the feature intentionally stores and shows only headlines, dates, and links — never article text — which is the intended use of RSS/Atom. Each item links back to the publisher.
 - **Opening `index.html` directly from your hard drive** (file://) may block the `news.json` fetch in some browsers; it works correctly when served over http/https (GitHub Pages, Netlify, or a local server such as `python3 -m http.server`).
 
 ## Adding or removing a source
 
-Edit the `SOURCES` array in `scripts/fetch-news.mjs`. To add, e.g., Health Canada, add a new block:
+Edit the `SOURCES` array in `scripts/fetch-news.mjs`. To add, e.g., Health Canada, add a new block (`tier` is one of `regulator`, `industry`, `journal`):
 ```js
-{ source: "HC", feeds: ["https://<official-feed-url>"] }
+{ source: "Health Canada", tier: "regulator", feeds: ["https://<official-feed-url>"] }
 ```
 Then add a matching entry to `SOURCE_META` inside the `renderNews()` function in `index.html` (label + colour) so it gets its own filter pill and colour.
