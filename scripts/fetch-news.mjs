@@ -198,10 +198,22 @@ async function fetchText(url) {
   } finally { clearTimeout(t); }
 }
 
+// Parse non-RFC dates some feeds use, e.g. Drupal's "Fri, 10/09/2026 - 14:30" or
+// "October 9, 2026 10:30am". Returns a Date or null. Time zone is not known, so UTC is
+// assumed; only the day is shown in the app.
+function parseLooseDate(d) {
+  let m = d.match(/(\d{1,2})\/(\d{1,2})\/(\d{4})(?:\D+(\d{1,2}):(\d{2}))?/);
+  if (m) return new Date(Date.UTC(+m[3], +m[1] - 1, +m[2], +(m[4] || 0), +(m[5] || 0)));
+  m = d.match(/([A-Za-z]{3,9})\.? (\d{1,2}),? (\d{4})/);
+  if (m) { const t = new Date(m[1] + " " + m[2] + ", " + m[3] + " UTC"); if (!isNaN(t)) return t; }
+  return null;
+}
+
 function isoOrEmpty(d) {
   if (!d) return "";
-  const t = new Date(d);
-  if (isNaN(t)) return "";
+  let t = new Date(d);
+  if (isNaN(t)) t = parseLooseDate(d);
+  if (!t || isNaN(t)) return "";
   // Some feeds stamp items with future dates; never show a date later than now.
   return (t.getTime() > Date.now() ? new Date() : t).toISOString();
 }
@@ -233,7 +245,9 @@ async function run() {
         if (undated.length) {
           // Help diagnose feeds that use an unexpected date element.
           const tags = undated[0].block ? [...new Set((undated[0].block.match(/<([\w:]+)[\s>]/g) || []).map((t) => t.slice(1, -1)))] : [];
-          console.warn("[" + src.source + "] " + undated.length + " items without a usable date" + (tags.length ? "; item tags: " + tags.join(", ") : ""));
+          console.warn("[" + src.source + "] " + undated.length + " items without a usable date"
+            + (undated[0].date ? "; sample raw date: \"" + undated[0].date + "\"" : "")
+            + (tags.length ? "; item tags: " + tags.join(", ") : ""));
         }
       } catch (e) {
         console.warn("[" + src.source + "] FAILED " + url + ": " + e.message);
