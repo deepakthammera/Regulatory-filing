@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-11T19:03:54.728Z",
+  "generated": "2026-10-11T19:05:05.211Z",
   "sources": [
     "FDA",
     "EMA",
@@ -309,6 +309,78 @@
       "priority": false
     },
     {
+      "source": "Fierce Pharma",
+      "tier": "industry",
+      "title": "Arcutis' Zoryve sticks the landing with gymnast Simone Biles in new awareness campaign",
+      "link": "https://www.fiercepharma.com/pharma/arcutis-zoryve-sticks-landing-gymnast-simone-biles-joining-new-awareness-campaign",
+      "date": "2026-10-09T00:00:00.000Z",
+      "category": "General",
+      "priority": false
+    },
+    {
+      "source": "Fierce Pharma",
+      "tier": "industry",
+      "title": "GSK commits $800M to R&D, manufacturing hub, as Pennsylvania bonds deepen",
+      "link": "https://www.fiercepharma.com/pharma/gsk-commits-800m-rd-manufacturing-hub-pennsylvania-bonds-deepen",
+      "date": "2026-10-09T00:00:00.000Z",
+      "category": "General",
+      "priority": false
+    },
+    {
+      "source": "Fierce Pharma",
+      "tier": "industry",
+      "title": "FDA’s Rasonque review documents pressure RevMed as investors jitter over KRAS subgroup data",
+      "link": "https://www.fiercepharma.com/pharma/fda-rasonque-review-documents-pressure-revmed-investors-jitter-over-kras-subgroup-data",
+      "date": "2026-10-09T00:00:00.000Z",
+      "category": "Regulatory / Policy",
+      "priority": false
+    },
+    {
+      "source": "Fierce Pharma",
+      "tier": "industry",
+      "title": "Hospital industry sues to block HHS' 340B rebate pilot (again)",
+      "link": "https://www.fiercepharma.com/providers/hospital-industry-files-lawsuit-block-hhs-340b-rebate-pilot-again",
+      "date": "2026-10-09T00:00:00.000Z",
+      "category": "General",
+      "priority": false
+    },
+    {
+      "source": "Fierce Pharma",
+      "tier": "industry",
+      "title": "Quince relaunches as IRulya, going all in on lung disease after Hail Mary merger",
+      "link": "https://www.fiercepharma.com/pharma/quince-relaunches-irulya-going-all-lung-disease-after-hail-mary-merger",
+      "date": "2026-10-09T00:00:00.000Z",
+      "category": "Deals / Business",
+      "priority": false
+    },
+    {
+      "source": "Fierce Pharma",
+      "tier": "industry",
+      "title": "Teva debuts Weltruza in schizophrenia as much-hyped FDA nod for long-acting olanzapine arrives",
+      "link": "https://www.fiercepharma.com/pharma/teva-debuts-weltruza-schizophrenia-much-hyped-fda-nod-long-acting-olanzapine-arrives",
+      "date": "2026-10-09T00:00:00.000Z",
+      "category": "Regulatory / Policy",
+      "priority": false
+    },
+    {
+      "source": "Fierce Pharma",
+      "tier": "industry",
+      "title": "Fierce Pharma Asia—Novartis’ $7.8B mRNA deal; Shionogi’s $2B buy; ArriVent’s phase 3 flop",
+      "link": "https://www.fiercepharma.com/pharma/novartis-78b-mrna-deal-shionogi-2b-buy-arrivent-phase-3-flop",
+      "date": "2026-10-09T00:00:00.000Z",
+      "category": "Clinical trial",
+      "priority": false
+    },
+    {
+      "source": "Fierce Pharma",
+      "tier": "industry",
+      "title": "Pharma’s free lunches for clinicians bloat prescription bills: Cochrane review",
+      "link": "https://www.fiercepharma.com/marketing/pharmas-free-lunches-clinicians-bloat-prescription-bills-cochrane-review",
+      "date": "2026-10-09T00:00:00.000Z",
+      "category": "General",
+      "priority": false
+    },
+    {
       "source": "RAPS",
       "tier": "industry",
       "title": "This Week at FDA: HHS vaccine injury initiative, midterms could reshape congressional committees overseeing FDA, and more",
@@ -450,6 +522,69 @@
       "link": "https://www.biospace.com/job-trends/q3-layoffs-down-yoy-with-90-fewer-biopharma-employees-affected",
       "date": "2026-10-08T04:01:00.000Z",
       "category": "Deals / Business",
+      "priority": false
+    },
+    {
+      "source": "Fierce Pharma",
+      "tier": "industry",
+      "title": "HHS launches 4 new vaccine injury research, reporting initiatives",
+      "link": "https://www.fiercepharma.com/regulatory/hhs-launches-4-new-vaccine-injury-research-reporting-initiatives",
+      "date": "2026-10-08T00:00:00.000Z",
+      "category": "General",
+      "priority": false
+    },
+    {
+      "source": "Fierce Pharma",
+      "tier": "industry",
+      "title": "BMS fills out Zenbexus picture with post-approval PFS victory in multiple myeloma",
+      "link": "https://www.fiercepharma.com/pharma/bms-fills-out-zenbexus-picture-post-approval-pfs-victory-multiple-myeloma",
+      "date": "2026-10-08T00:00:00.000Z",
+      "category": "Approval",
+      "priority": false
+    },
+    {
+      "source": "Fierce Pharma",
+      "tier": "industry",
+      "title": "Pfizer's Tukysa snags first-line approval in HER2+ breast cancer maintenance",
+      "link": "https://www.fiercepharma.com/pharma/pfizers-tukysa-snags-first-line-approval-her2-breast-cancer",
+      "date": "2026-10-08T00:00:00.000Z",
+      "category": "Approval",
+      "priority": false
+    },
+    {
+      "source": "Fierce Pharma",
+      "tier": "industry",
+      "title": "Viatris to snap up Pacira's non-opioid pain pipeline for $1.65B",
+      "link": "https://www.fiercepharma.com/pharma/viatris-buyout-paciras-pain-pipeline-165b",
+      "date": "2026-10-08T00:00:00.000Z",
+      "category": "General",
+      "priority": false
+    },
+    {
+      "source": "Fierce Pharma",
+      "tier": "industry",
+      "title": "Argenx walks away from Vyvgart Sjögren's disease trial after futility flag",
+      "link": "https://www.fiercepharma.com/pharma/argenx-walks-away-vyvgart-sjogrens-disease-trial-after-futility-flag",
+      "date": "2026-10-08T00:00:00.000Z",
+      "category": "General",
+      "priority": false
+    },
+    {
+      "source": "Fierce Pharma",
+      "tier": "industry",
+      "title": "CSL Seqirus blasted for ‘multiple and prolonged deficiencies’",
+      "link": "https://www.fiercepharma.com/marketing/csl-seqirus-blasted-multiple-and-prolonged-deficiencies",
+      "date": "2026-10-08T00:00:00.000Z",
+      "category": "General",
+      "priority": false
+    },
+    {
+      "source": "Fierce Pharma",
+      "tier": "industry",
+      "title": "Melissa explains it all in menopause team up with Bayer",
+      "link": "https://www.fiercepharma.com/marketing/melissa-explains-it-all-menopause-team-bayer",
+      "date": "2026-10-08T00:00:00.000Z",
+      "category": "General",
       "priority": false
     },
     {
@@ -819,141 +954,6 @@
       "link": "https://www.ema.europa.eu/en/news/meeting-highlights-committee-veterinary-medicinal-products-cvmp-8-10-september-2026",
       "date": "2026-09-11T11:00:00.000Z",
       "category": "Regulatory / Policy",
-      "priority": false
-    },
-    {
-      "source": "Fierce Pharma",
-      "tier": "industry",
-      "title": "Arcutis' Zoryve sticks the landing with gymnast Simone Biles in new awareness campaign",
-      "link": "https://www.fiercepharma.com/pharma/arcutis-zoryve-sticks-landing-gymnast-simone-biles-joining-new-awareness-campaign",
-      "date": "",
-      "category": "General",
-      "priority": false
-    },
-    {
-      "source": "Fierce Pharma",
-      "tier": "industry",
-      "title": "GSK commits $800M to R&D, manufacturing hub, as Pennsylvania bonds deepen",
-      "link": "https://www.fiercepharma.com/pharma/gsk-commits-800m-rd-manufacturing-hub-pennsylvania-bonds-deepen",
-      "date": "",
-      "category": "General",
-      "priority": false
-    },
-    {
-      "source": "Fierce Pharma",
-      "tier": "industry",
-      "title": "Regulatory tracker: FDA clears Tecentriq in colon cancer; Ixchiq axed in UK",
-      "link": "https://www.fiercepharma.com/pharma/fierce-pharma-regulatory-tracker-2026-h2",
-      "date": "",
-      "category": "Regulatory / Policy",
-      "priority": false
-    },
-    {
-      "source": "Fierce Pharma",
-      "tier": "industry",
-      "title": "The Oral GLP-1 Tracker: Prescriptions edge down for Novo, Lilly",
-      "link": "https://www.fiercepharma.com/pharma/oral-glp-1-tracker-launch-trajectories-lilly-foundayo-novo-wegovy-pill",
-      "date": "",
-      "category": "General",
-      "priority": false
-    },
-    {
-      "source": "Fierce Pharma",
-      "tier": "industry",
-      "title": "FDA’s Rasonque review documents pressure RevMed as investors jitter over KRAS subgroup data",
-      "link": "https://www.fiercepharma.com/pharma/fda-rasonque-review-documents-pressure-revmed-investors-jitter-over-kras-subgroup-data",
-      "date": "",
-      "category": "Regulatory / Policy",
-      "priority": false
-    },
-    {
-      "source": "Fierce Pharma",
-      "tier": "industry",
-      "title": "Hospital industry sues to block HHS' 340B rebate pilot (again)",
-      "link": "https://www.fiercepharma.com/providers/hospital-industry-files-lawsuit-block-hhs-340b-rebate-pilot-again",
-      "date": "",
-      "category": "General",
-      "priority": false
-    },
-    {
-      "source": "Fierce Pharma",
-      "tier": "industry",
-      "title": "Quince relaunches as IRulya, going all in on lung disease after Hail Mary merger",
-      "link": "https://www.fiercepharma.com/pharma/quince-relaunches-irulya-going-all-lung-disease-after-hail-mary-merger",
-      "date": "",
-      "category": "Deals / Business",
-      "priority": false
-    },
-    {
-      "source": "Fierce Pharma",
-      "tier": "industry",
-      "title": "Teva debuts Weltruza in schizophrenia as much-hyped FDA nod for long-acting olanzapine arrives",
-      "link": "https://www.fiercepharma.com/pharma/teva-debuts-weltruza-schizophrenia-much-hyped-fda-nod-long-acting-olanzapine-arrives",
-      "date": "",
-      "category": "Regulatory / Policy",
-      "priority": false
-    },
-    {
-      "source": "Fierce Pharma",
-      "tier": "industry",
-      "title": "Fierce Pharma Asia—Novartis’ $7.8B mRNA deal; Shionogi’s $2B buy; ArriVent’s phase 3 flop",
-      "link": "https://www.fiercepharma.com/pharma/novartis-78b-mrna-deal-shionogi-2b-buy-arrivent-phase-3-flop",
-      "date": "",
-      "category": "Clinical trial",
-      "priority": false
-    },
-    {
-      "source": "Fierce Pharma",
-      "tier": "industry",
-      "title": "Pharma’s free lunches for clinicians bloat prescription bills: Cochrane review",
-      "link": "https://www.fiercepharma.com/marketing/pharmas-free-lunches-clinicians-bloat-prescription-bills-cochrane-review",
-      "date": "",
-      "category": "General",
-      "priority": false
-    },
-    {
-      "source": "Fierce Pharma",
-      "tier": "industry",
-      "title": "HHS launches 4 new vaccine injury research, reporting initiatives",
-      "link": "https://www.fiercepharma.com/regulatory/hhs-launches-4-new-vaccine-injury-research-reporting-initiatives",
-      "date": "",
-      "category": "General",
-      "priority": false
-    },
-    {
-      "source": "Fierce Pharma",
-      "tier": "industry",
-      "title": "BMS fills out Zenbexus picture with post-approval PFS victory in multiple myeloma",
-      "link": "https://www.fiercepharma.com/pharma/bms-fills-out-zenbexus-picture-post-approval-pfs-victory-multiple-myeloma",
-      "date": "",
-      "category": "Approval",
-      "priority": false
-    },
-    {
-      "source": "Fierce Pharma",
-      "tier": "industry",
-      "title": "Pfizer's Tukysa snags first-line approval in HER2+ breast cancer maintenance",
-      "link": "https://www.fiercepharma.com/pharma/pfizers-tukysa-snags-first-line-approval-her2-breast-cancer",
-      "date": "",
-      "category": "Approval",
-      "priority": false
-    },
-    {
-      "source": "Fierce Pharma",
-      "tier": "industry",
-      "title": "Viatris to snap up Pacira's non-opioid pain pipeline for $1.65B",
-      "link": "https://www.fiercepharma.com/pharma/viatris-buyout-paciras-pain-pipeline-165b",
-      "date": "",
-      "category": "General",
-      "priority": false
-    },
-    {
-      "source": "Fierce Pharma",
-      "tier": "industry",
-      "title": "Argenx walks away from Vyvgart Sjögren's disease trial after futility flag",
-      "link": "https://www.fiercepharma.com/pharma/argenx-walks-away-vyvgart-sjogrens-disease-trial-after-futility-flag",
-      "date": "",
-      "category": "General",
       "priority": false
     }
   ]
