@@ -11,6 +11,7 @@ A single-file, self-contained web application for learning **drug regulatory aff
 - [What this is](#what-this-is)
 - [What's new](#whats-new)
 - [Live demo / deployment](#live-demo--deployment)
+- [Install as an app (iPhone, Android, desktop)](#install-as-an-app-iphone-android-desktop)
 - [Features](#features)
 - [Content map](#content-map)
 - [Tech stack & architecture](#tech-stack--architecture)
@@ -41,6 +42,7 @@ Each area combines reference content, worked examples, interactive decision help
 ## What's new
 
 ### October 2026
+- **Installable app (PWA).** Add the site to your iPhone/iPad home screen (or install it on Android/desktop) and it opens full-screen like an app, with its own icon, and keeps working offline after the first visit. See [Install as an app](#install-as-an-app-iphone-android-desktop).
 - **New sidebar folder: News & Updates → Latest → ★ PV Updates & News.** A curated page of explained PV updates, newest first:
   - **ICH E2D(R1)** (Post-Approval Safety Data). In the EU it came into effect on 18 Mar 2026, and the transition period ended on 18 Sep 2026. The page covers:
     - the timeline and why the guideline was revised
@@ -79,6 +81,23 @@ Because it is a single static file, it deploys anywhere that serves static pages
 
 ---
 
+## Install as an app (iPhone, Android, desktop)
+
+The site is an installable web app (PWA). Open the live site (`https://<your-username>.github.io/<repo-name>/`), then:
+
+- **iPhone / iPad (Safari):** tap **Share** → **Add to Home Screen** → **Add**. (In other iOS browsers, use their *Add to Home Screen* option.)
+- **Android (Chrome):** tap **⋮** → **Install app** (or **Add to Home screen**).
+- **Desktop (Chrome / Edge):** click the install icon in the address bar, or look for **Install** in the browser menu (wording varies by browser).
+
+What you get:
+- **Its own icon and a full-screen window**, with no browser bars.
+- **Offline use after the first visit.** All guides, quizzes, the PV Updates page and the last downloaded news feed are cached on the device. If you have signed in on that device before, the app opens offline; saved data then uses the copy on the device.
+- **Automatic updates.** When online, the app loads the latest version of the site; the cached copy is only used when there is no connection.
+
+How it works: `manifest.webmanifest` (name, colours, icons), `icons/` (home-screen icons), and `sw.js` (a service worker that caches the app for offline use). Installation and offline use need the site served over **https** (GitHub Pages is fine); they do not work when `index.html` is opened directly from disk. If you change the caching rules or the list of pre-cached files in `sw.js`, bump `CACHE_VERSION` there.
+
+---
+
 ## Features
 
 - **Sidebar navigation** across News & Updates, Regulatory, and Pharmacovigilance.
@@ -90,7 +109,7 @@ Because it is a single static file, it deploys anywhere that serves static pages
 - **Self-check quizzes** — interactive, scored questions with explanations, embedded in each major guide plus standalone Regulatory and PV quizzes.
 - **Global search** — searches across sections and tabs.
 - **Consistent design system** — shared CSS classes, tab patterns, callouts, and tables throughout.
-- **Fully offline-capable** — everything runs client-side and no data leaves the browser. The only exception is the weekly news feed, which needs the site served over http(s) to load `news.json`.
+- **Installable & offline-capable** — install it on a phone or computer like an app; after the first visit the content works without a connection (see [Install as an app](#install-as-an-app-iphone-android-desktop)). Everything runs client-side; signed-in users' saved data syncs to their account when online.
 
 ---
 
@@ -185,10 +204,13 @@ npx serve .
 │   └── workflows/
 │       └── update-news.yml          # Runs fetch-news.mjs every Monday 06:00 UTC and commits news.json
 ├── NEWS_SETUP.md                    # How the weekly news feed works and how to change sources
+├── manifest.webmanifest             # Installable-app settings (name, colours, icons)
+├── sw.js                            # Service worker: offline caching for the installed app
+├── icons/                           # Home-screen / app icons (192, 512, maskable 512, Apple 180)
 └── README.md                        # This file
 ```
 
-The app itself is still one file, which makes it trivial to host, share and archive. The other files only support the weekly news feed. The curated **PV Updates & News** page is static content inside `index.html`, so update it there (the `view-pvupdates` section).
+The app itself is still one file, which makes it trivial to host, share and archive. The other files support the weekly news feed and installing the app. The curated **PV Updates & News** page is static content inside `index.html`, so update it there (the `view-pvupdates` section).
 
 ---
 
@@ -237,7 +259,7 @@ Possible future additions (contributions welcome):
 - Instructor answer keys and discussion prompts for the teaching scenarios.
 - An ICH & WHO framework tab to sit beside the EMA & FDA Framework tab.
 - Optional persistence (local storage) for quiz progress if used in a classroom.
-- Packaging as an installable Progressive Web App (PWA) for offline mobile use.
+- A native iOS/Android app (e.g., Capacitor) for App Store / Google Play distribution, building on the installable web app.
 
 ---
 
