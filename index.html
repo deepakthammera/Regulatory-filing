@@ -4,6 +4,15 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Regulatory Terminator — Personal Training Platform</title>
+<!-- Installable web app (PWA): manifest, icons and iOS home-screen settings -->
+<link rel="manifest" href="manifest.webmanifest">
+<meta name="theme-color" content="#5e2d8e">
+<link rel="icon" type="image/png" sizes="192x192" href="icons/icon-192.png">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Reg Terminator">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Newsreader:ital,wght@0,300;0,400;0,500;0,600;1,400&family=JetBrains+Mono:wght@400;500&family=Outfit:wght@400;500;600;700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -2455,20 +2464,47 @@ document.getElementById('logout-btn').addEventListener('click', async () => {
   showLogin();
 });
 
+// Offline support: the user saved by the last successful sign-in on this device.
+// Supabase keeps the session in localStorage under "sb-<project-ref>-auth-token".
+function storedSessionUser(){
+  try {
+    const ref = new URL(SUPABASE_URL).hostname.split('.')[0];
+    const s = JSON.parse(localStorage.getItem('sb-' + ref + '-auth-token') || 'null');
+    return (s && (s.user || (s.currentSession && s.currentSession.user))) || null;
+  } catch(e) { return null; }
+}
+// When offline, Supabase cannot refresh an expired session, so let a user who has
+// signed in on this device before open the app; saved data falls back to localStorage.
+function openOfflineIfSignedInBefore(){
+  const user = storedSessionUser();
+  if (!user) return false;
+  console.warn('[Auth] Offline: opening with the session saved on this device');
+  CURRENT_USER = user;
+  showApp();
+  return true;
+}
+
 // On page load, check for existing session
 (async function checkExistingSession(){
+  // Let the rest of this script finish initialising before showApp() can run.
+  await new Promise(r => setTimeout(r, 0));
   if (!SB) {
-    // No Supabase — show login screen, user can't proceed without it
+    // No Supabase SDK (e.g., offline before it was ever cached): only a previously
+    // signed-in user can continue, offline.
+    if (!navigator.onLine) openOfflineIfSignedInBefore();
     return;
   }
   try {
-    const { data: { session } } = await SB.auth.getSession();
+    const { data: { session }, error } = await SB.auth.getSession();
     if (session && session.user) {
       CURRENT_USER = session.user;
       showApp();
+    } else if (!navigator.onLine || (error && /fetch|network/i.test(String(error.message || error.name)))) {
+      openOfflineIfSignedInBefore();
     }
   } catch(e) {
     console.error('[Auth] Session check failed:', e);
+    if (!navigator.onLine) openOfflineIfSignedInBefore();
   }
 })();
 
@@ -16374,6 +16410,15 @@ function mbResultHTML(e) {
 
 
 
+</script>
+<script>
+// Register the service worker (installable app + offline use). Needs http(s);
+// it is skipped when index.html is opened directly from disk (file://).
+if ('serviceWorker' in navigator && /^https?:$/.test(location.protocol)) {
+  window.addEventListener('load', function(){
+    navigator.serviceWorker.register('sw.js').catch(function(e){ console.warn('[PWA] Service worker registration failed:', e); });
+  });
+}
 </script>
 </body>
 </html>
