@@ -43,6 +43,7 @@ Each area combines reference content, worked examples, interactive decision help
 
 ### October 2026
 - **News feed now updates daily** (06:17 UTC) instead of weekly. The sidebar folder is now **Daily Feed**.
+- **PV regulatory radar** added to the top of **PV Updates & News**: recent and upcoming ICH, EMA and FDA pharmacovigilance changes (status as of 27 Oct 2026). Examples: E2B(R3) now mandatory for FDA postmarketing ICSRs, AEMS replacing FAERS, the GVP Module VI revision, the EU pharma package, and the ICH Assembly in November.
 - **Installable app (PWA).** Add the site to your iPhone/iPad home screen (or install it on Android/desktop) and it opens full-screen like an app, with its own icon, and keeps working offline after the first visit. See [Install as an app](#install-as-an-app-iphone-android-desktop).
 - **New sidebar folder: News & Updates → Latest → ★ PV Updates & News.** A curated page of explained PV updates, newest first:
   - **ICH E2D(R1)** (Post-Approval Safety Data). In the EU it came into effect on 18 Mar 2026, and the transition period ended on 18 Sep 2026. The page covers:
@@ -119,7 +120,7 @@ How it works: `manifest.webmanifest` (name, colours, icons), `icons/` (home-scre
 ### News & Updates
 | Icon | Section | What it covers |
 |---|---------|----------------|
-| ★ | **PV Updates & News** (Latest) | Curated, explained PV updates: ICH E2D(R1) section-by-section, MedDRA 29.1, and recent FDA / EMA PRAC safety actions |
+| ★ | **PV Updates & News** (Latest) | Curated, explained PV updates: a recent & upcoming ICH / EMA / FDA radar, ICH E2D(R1) section-by-section, MedDRA 29.1, and recent FDA / EMA PRAC safety actions |
 | ◆ | Regulatory & PV News (Daily Feed) | Auto-refreshed headlines from regulators (FDA, EMA), industry news and the *Drug Safety* journal, filterable by source, category and ⚑ priority |
 
 ### Regulatory domain
