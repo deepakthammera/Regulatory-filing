@@ -1,7 +1,7 @@
 {
   "name": "Regulatory Terminator — Regulatory Affairs & PV",
   "short_name": "Reg Terminator",
-  "description": "Study app for drug regulatory affairs and pharmacovigilance: submission pathways, PV guides, MedDRA, PBRER/DSUR, quizzes and weekly regulatory news.",
+  "description": "Study app for drug regulatory affairs and pharmacovigilance: submission pathways, PV guides, MedDRA, PBRER/DSUR, quizzes and daily regulatory news.",
   "id": "./",
   "start_url": "./",
   "scope": "./",

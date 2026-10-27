@@ -1,20 +1,20 @@
-# Weekly News Feature — Setup
+# Daily News Feed — Setup
 
 Your app has a **News & Updates** section (top of the sidebar) with two entries:
 
-- **★ PV Updates & News** (Latest): a curated, hand-written page explaining new guidelines (e.g., ICH E2D(R1), MedDRA releases) and regulator safety actions. It is static content in `index.html` (the `view-pvupdates` section) and is **not** touched by the weekly job.
-- **◆ Regulatory & PV News** (Weekly Feed): headlines from **regulators** (FDA MedWatch safety alerts and press releases, EMA news), **industry news** (BioSpace, Fierce Pharma, BioPharma Dive, RAPS Regulatory Focus) and new articles in the journal ***Drug Safety*** (via the Crossref API), refreshed automatically every week. It shows only headlines, source, date, and a link to each original article.
+- **★ PV Updates & News** (Latest): a curated, hand-written page explaining new guidelines (e.g., ICH E2D(R1), MedDRA releases) and regulator safety actions. It is static content in `index.html` (the `view-pvupdates` section) and is **not** touched by the daily job.
+- **◆ Regulatory & PV News** (Daily Feed): headlines from **regulators** (FDA MedWatch safety alerts and press releases, EMA news), **industry news** (BioSpace, Fierce Pharma, BioPharma Dive, RAPS Regulatory Focus) and new articles in the journal ***Drug Safety*** (via the Crossref API), refreshed automatically every day. It shows only headlines, source, date, and a link to each original article.
 
-This document covers the weekly feed.
+This document covers the daily feed.
 
 ## What the pieces are
 
 | File | Purpose |
 |------|---------|
 | `index.html` | The app, now with a **News** view that loads `news.json`. |
-| `news.json` | The data the News view displays. A **starter** version is included; it is overwritten automatically each week. |
+| `news.json` | The data the News view displays. A **starter** version is included; it is overwritten automatically each day (when headlines have changed). |
 | `scripts/fetch-news.mjs` | Node script that fetches the official RSS/Atom feeds and rebuilds `news.json`. No npm dependencies. |
-| `.github/workflows/update-news.yml` | GitHub Actions workflow that runs the script **every Monday** (and on demand) and commits the updated `news.json`. |
+| `.github/workflows/update-news.yml` | GitHub Actions workflow that runs the script **every day** (and on demand) and commits the updated `news.json`. |
 
 ## Install (one time)
 
@@ -31,19 +31,20 @@ This document covers the weekly feed.
    ```
 2. Commit and push.
 3. In your repo: **Settings → Actions → General → Workflow permissions** → select **“Read and write permissions”** → **Save**. (This lets the workflow commit `news.json` back.)
-4. Go to the **Actions** tab → select **“Update news feed”** → **Run workflow** to do the first run now (instead of waiting for Monday).
+4. Go to the **Actions** tab → select **“Update news feed”** → **Run workflow** to do the first run now (instead of waiting for the next scheduled run).
 
 That's it. After the run finishes, open your site's **Regulatory & PV News** section and you'll see live headlines. On GitHub Pages, the page redeploys automatically after each commit.
 
 ## How it stays current
 
-- The workflow runs **every Monday at 06:00 UTC** (`cron: "0 6 * * 1"`). Change that line in the workflow if you want a different day/time.
+- The workflow runs **every day at 06:17 UTC** (`cron: "17 6 * * *"`). Change that line in the workflow if you want a different time; GitHub may start scheduled runs some minutes late, and runs at the top of the hour are delayed most.
+- A commit (`chore: daily news update (YYYY-MM-DD)`) is made only when `news.json` actually changed, so there is at most one commit per day.
 - It fetches each source's feed, keeps the newest items (headline + date + link only; up to 15 per source and 160 in total), de-duplicates, drops items older than ~150 days, tags each item with a category (e.g., Safety / PV, Approval) and a ⚑ priority flag for urgent safety news (not applied to journal articles), and writes `news.json`. Items with a future date are shown with the run date instead.
 - If **every** source fails on a given run, the script exits without overwriting your existing `news.json`, so the page never goes blank.
 
 ## Good to know
 
-- **GitHub pauses scheduled workflows after ~60 days of no repo activity.** Any commit re-enables them; for an active project this rarely matters. You can also just click **Run workflow** anytime.
+- **GitHub pauses scheduled workflows after ~60 days of no repo activity.** Any commit re-enables them, and the daily feed commits usually keep the repo active. You can also just click **Run workflow** anytime.
 - **Feed URLs can change.** If a source stops updating (check the `[Source] …` and `Per-source kept:` lines in the Actions log), open `scripts/fetch-news.mjs` and adjust that source's URL(s) in the `SOURCES` list. Each source has more than one URL as a fallback.
 - **Undated items:** if a feed's dates can't be parsed, the Actions log prints `items without a usable date` with a sample raw date and the item's tags, so you can adjust `parseLooseDate()` in the script.
 - **Copyright:** the feature intentionally stores and shows only headlines, dates, and links — never article text — which is the intended use of RSS/Atom. Each item links back to the publisher.

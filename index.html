@@ -1494,7 +1494,7 @@
       <div class="nav-item" data-nav="pvupdates"><span class="ico">★</span><span>PV Updates &amp; News</span></div>
     </div>
     <div class="nav-group">
-      <div class="label">Weekly Feed</div>
+      <div class="label">Daily Feed</div>
       <div class="nav-item" data-nav="news"><span class="ico">◆</span><span>Regulatory &amp; PV News</span></div>
     </div>
     <div class="nav-domain-header">Regulatory</div>
@@ -1770,12 +1770,12 @@
 
     <section class="view" id="view-news">
       <div class="page-head">
-        <div class="eyebrow accent-teal">News &amp; Updates · Weekly Feed</div>
+        <div class="eyebrow accent-teal">News &amp; Updates · Daily Feed</div>
         <h1>Regulatory &amp; Pharmacovigilance News</h1>
-        <p class="sub">Latest headlines from regulators (FDA, EMA), industry news (BioSpace, Fierce Pharma, BioPharma Dive, RAPS Regulatory Focus), and new articles in the journal <em>Drug Safety</em> — refreshed automatically each week. For explained guideline and regulator safety updates, see <strong>PV Updates &amp; News</strong>. Each item links to the original source; only headlines, dates, and links are shown, in line with the publishers' feeds.</p>
+        <p class="sub">Latest headlines from regulators (FDA, EMA), industry news (BioSpace, Fierce Pharma, BioPharma Dive, RAPS Regulatory Focus), and new articles in the journal <em>Drug Safety</em> — refreshed automatically every day. For explained guideline and regulator safety updates, see <strong>PV Updates &amp; News</strong>. Each item links to the original source; only headlines, dates, and links are shown, in line with the publishers' feeds.</p>
       </div>
       <div class="wl-banner">
-        <strong>How this stays current:</strong> a scheduled job fetches the official RSS/Atom feeds every week and writes <code>news.json</code> to the repository; this page then displays it. If items look stale, the weekly job may not have run yet, or you are viewing a cached copy — hard-refresh with Ctrl/Cmd+Shift+R. Headlines and links are the property of their respective sources; follow each link for the full article.
+        <strong>How this stays current:</strong> a scheduled job fetches the RSS/Atom feeds every day and writes <code>news.json</code> to the repository; this page then displays it. If items look stale, today's run may not have happened yet, or you are viewing a cached copy — hard-refresh with Ctrl/Cmd+Shift+R. Headlines and links are the property of their respective sources; follow each link for the full article.
       </div>
       <div id="news-content"></div>
     </section>
@@ -1784,18 +1784,71 @@
       <div class="page-head">
         <div class="eyebrow accent-teal">News &amp; Updates · Latest</div>
         <h1>PV Updates &amp; News</h1>
-        <p class="sub">Curated, explained pharmacovigilance updates: new and revised guidelines, dictionary releases, and notable regulator safety actions, with what each change means in practice. Newest first.</p>
+        <p class="sub">Curated, explained pharmacovigilance updates: a radar of recent and upcoming ICH, EMA and FDA changes, new and revised guidelines, dictionary releases, and notable regulator safety actions, with what each change means in practice.</p>
         <div class="meta">
-          <span>Last reviewed <span class="mono">11 Oct 2026</span></span>
+          <span>Last reviewed <span class="mono">27 Oct 2026</span></span>
         </div>
       </div>
       <div class="wl-banner">
         <strong>Educational summary.</strong> These notes paraphrase public material from ICH, EMA, FDA and the MedDRA MSSO. Section numbers and wording should be confirmed against the official documents linked under each update before you cite them in SOPs or regulatory submissions. Regional requirements (EU GVP, US CFR, etc.) take precedence where they differ.
       </div>
 
-      <!-- ===== UPDATE 1: ICH E2D(R1) ===== -->
+      <!-- ===== UPDATE: Regulatory radar (ICH / EMA / FDA) ===== -->
       <div class="pv-block">
-        <div class="pv-block-head"><span class="num">№ 01</span><h2>ICH E2D(R1) — Post-Approval Safety Data: now fully in force in the EU</h2><span class="cite">ICH E2D(R1) · Step 4 · 2025</span></div>
+        <div class="pv-block-head"><span class="num">№ 01</span><h2>PV regulatory radar — recent &amp; upcoming (ICH · EMA · FDA)</h2><span class="cite">Status as of 27 Oct 2026</span></div>
+        <p class="lede">What has recently come into force, and what is coming next, across the three bodies that drive most pharmacovigilance requirements. <span style="color:var(--forest);font-weight:600">In force</span> means it already applies; <span style="color:#b45309;font-weight:600">Coming</span> means a date is set or the work is in progress. Only items confirmed by an official ICH, EMA, EU or FDA source are listed.</p>
+        <div class="body">
+
+          <h3 style="font-family:'Cormorant Garamond',serif;font-size:1.2rem;font-weight:500;margin:1rem 0 0.4rem">ICH</h3>
+          <table class="pv-table">
+            <tr><th style="width:16%">Date</th><th style="width:13%">Status</th><th>Item &amp; why it matters</th></tr>
+            <tr><td>18 Sep 2026 (EU)</td><td><span style="color:var(--forest);font-weight:600">In force</span></td><td><strong>E2D(R1)</strong> post-approval safety data. The EU transition period has ended. See the section-by-section summary below.</td></tr>
+            <tr><td>15 Jan 2027 (EU)</td><td><span style="color:#b45309;font-weight:600">Coming</span></td><td><strong>E6(R3) Annex 2</strong>: GCP for decentralised and other non-traditional trials (ICH Step 4: 3 Jun 2026). Until then, the E6(R3) Principles and Annex 1 apply.</td></tr>
+            <tr><td>Mid-Nov 2026</td><td><span style="color:#b45309;font-weight:600">Coming</span></td><td><strong>ICH Assembly, Prague</strong>. Expected milestones: <strong>Q1</strong> (stability) finalised; <strong>E22</strong> (patient preference studies) by Dec 2026; <strong>E21</strong> (inclusion of pregnant and breastfeeding individuals, relevant to pregnancy safety data) by Nov 2027. Selection of new topics is paused for 2026.</td></tr>
+            <tr><td>Date not set</td><td><span style="color:#b45309;font-weight:600">Coming</span></td><td><strong>E2B(R3) values for E2D(R1) sources</strong>: new values to flag cases from patient support programmes, market research programmes and organised data collection on digital platforms. Sources differ on the data element (ICH material: C.5.4; an EMA report: C.1.3). Check the final implementation guide before configuring your safety database.</td></tr>
+          </table>
+
+          <h3 style="font-family:'Cormorant Garamond',serif;font-size:1.2rem;font-weight:500;margin:1rem 0 0.4rem">EMA / EU</h3>
+          <table class="pv-table">
+            <tr><th style="width:16%">Date</th><th style="width:13%">Status</th><th>Item &amp; why it matters</th></tr>
+            <tr><td>20 Jul 2026</td><td><span style="color:var(--forest);font-weight:600">In force</span></td><td><strong>EudraVigilance Signal and Safety Analytics (SSA)</strong> launched as the future replacement for EVDAS.</td></tr>
+            <tr><td>6 Oct 2026</td><td><span style="color:#b45309;font-weight:600">Coming</span></td><td><strong>Revised GVP Annex I (Definitions)</strong> endorsed by PRAC. Publication pending.</td></tr>
+            <tr><td>26–29 Oct 2026</td><td><span style="color:#b45309;font-weight:600">Coming</span></td><td><strong>PRAC meeting</strong>. Highlights are usually published at the end of the meeting week. The review of <strong>injectable iron medicines</strong> (hypophosphataemia), started in September, is ongoing.</td></tr>
+            <tr><td>Work starting 2026</td><td><span style="color:#b45309;font-weight:600">Coming</span></td><td><strong>GVP Module VI revision</strong> and the EU ICSR Implementation Guide, to integrate E2D(R1). No public consultation draft yet; until then, follow E2D(R1) and the EU implementation strategy.</td></tr>
+            <tr><td>Autumn 2026 → ~2028</td><td><span style="color:#b45309;font-weight:600">Coming</span></td><td><strong>EU pharmaceutical package</strong> (new Directive and Regulation): adopted by the Council on 28 Sep 2026; the European Parliament's final vote is expected this autumn. It enters into force 20 days after publication, and most provisions apply about 24 months later.</td></tr>
+            <tr><td>1 Dec 2026</td><td><span style="color:#b45309;font-weight:600">Coming</span></td><td><strong>HMA/EMA multi-stakeholder forum</strong> on EudraVigilance and signal detection (EudraVigilance's 25th anniversary).</td></tr>
+          </table>
+
+          <h3 style="font-family:'Cormorant Garamond',serif;font-size:1.2rem;font-weight:500;margin:1rem 0 0.4rem">FDA / US</h3>
+          <table class="pv-table">
+            <tr><th style="width:16%">Date</th><th style="width:13%">Status</th><th>Item &amp; why it matters</th></tr>
+            <tr><td>11 Mar 2026</td><td><span style="color:var(--forest);font-weight:600">In force</span></td><td><strong>AEMS replaced FAERS</strong>. FAERS data moved to the new FDA Adverse Event Monitoring System; quarterly "potential signals" postings now sit under AEMS. Reporting obligations themselves are unchanged.</td></tr>
+            <tr><td>Mar 2026</td><td><span style="color:var(--forest);font-weight:600">In force</span></td><td><strong>E2D(R1)</strong> published as final FDA guidance.</td></tr>
+            <tr><td>1 Apr 2026</td><td><span style="color:var(--forest);font-weight:600">In force</span></td><td><strong>E2B(R3) required for IND safety reports</strong> (premarket ICSRs).</td></tr>
+            <tr><td>1 Oct 2026</td><td><span style="color:var(--forest);font-weight:600">In force</span></td><td><strong>E2B(R3) required for postmarketing ICSRs</strong> sent through ESG NextGen. E2B(R2) is no longer accepted after 30 Sep 2026. Safety Reporting Portal users need no change.</td></tr>
+            <tr><td>Sep 2026</td><td><span style="color:var(--forest);font-weight:600">In force</span></td><td><strong>Drug Safety Communications</strong>: Injectafer boxed warning (1 Sep) and Kybella labelling (15 Sep); none so far in October. CBER announced immune globulin lot withdrawals (7 Oct) after increased hypersensitivity reports.</td></tr>
+            <tr><td>Not yet published</td><td><span style="color:#b45309;font-weight:600">Coming</span></td><td><strong>Proposed rule RIN 0910-AI61</strong>: postmarketing safety reporting, pharmacovigilance plans, and a required <strong>pharmacovigilance quality system</strong> for drug and biologic application holders. On FDA's regulatory agenda; it has slipped repeatedly.</td></tr>
+            <tr><td>Still draft</td><td><span style="color:#b45309;font-weight:600">Coming</span></td><td><strong>AI guidance</strong>: the Jan 2025 draft "Considerations for the Use of AI to Support Regulatory Decision-Making" is not yet final. FDA and EMA issued joint good-AI-practice principles for drug development in Jan 2026.</td></tr>
+          </table>
+
+          <p style="font-size:0.82rem;color:var(--muted);margin-top:0.6rem"><strong>Sources:</strong>
+            <a href="https://www.ich.org/news/key-outcomes-biannual-ich-assembly-meeting" target="_blank" rel="noopener" style="color:var(--burgundy)">ICH Assembly outcomes</a> ·
+            <a href="https://www.ema.europa.eu/en/ich-e6-good-clinical-practice-scientific-guideline" target="_blank" rel="noopener" style="color:var(--burgundy)">EMA – ICH E6</a> ·
+            <a href="https://database.ich.org/sites/default/files/ICH_E2D(R1)_Explanatory_Document_2024_0205.pdf" target="_blank" rel="noopener" style="color:var(--burgundy)">ICH E2D(R1) E2B note</a> ·
+            <a href="https://www.ema.europa.eu/en/news/meeting-highlights-pharmacovigilance-risk-assessment-committee-prac-28-september-1-october" target="_blank" rel="noopener" style="color:var(--burgundy)">EMA PRAC highlights</a> ·
+            <a href="https://www.ema.europa.eu/en/human-regulatory-overview/research-development/pharmacovigilance-research-development/eudravigilance/eudravigilance-electronic-reporting" target="_blank" rel="noopener" style="color:var(--burgundy)">EudraVigilance reporting</a> ·
+            <a href="https://www.consilium.europa.eu/en/press/press-releases/2026/09/28/pharma-package-council-adopts-new-rules-for-a-fairer-and-more-competitive-eu-pharmaceutical-sector/" target="_blank" rel="noopener" style="color:var(--burgundy)">Council – pharma package</a> ·
+            <a href="https://www.federalregister.gov/documents/2026/04/06/2026-06660/electronic-submission-of-postmarketing-individual-case-safety-reports-to-the-food-and-drug" target="_blank" rel="noopener" style="color:var(--burgundy)">Federal Register – E2B(R3)</a> ·
+            <a href="https://www.fda.gov/drugs/fda-adverse-event-monitoring-system-aems/fda-adverse-event-monitoring-system-aems-electronic-submissions" target="_blank" rel="noopener" style="color:var(--burgundy)">FDA AEMS</a> ·
+            <a href="https://www.fda.gov/drugs/drug-safety-and-availability/drug-safety-communications" target="_blank" rel="noopener" style="color:var(--burgundy)">FDA Drug Safety Communications</a> ·
+            <a href="https://www.reginfo.gov/public/do/eAgendaViewRule?pubId=202510&amp;RIN=0910-AI61" target="_blank" rel="noopener" style="color:var(--burgundy)">RIN 0910-AI61</a>
+          </p>
+        </div>
+      </div>
+
+      <!-- ===== UPDATE 2: ICH E2D(R1) ===== -->
+      <div class="pv-block">
+        <div class="pv-block-head"><span class="num">№ 02</span><h2>ICH E2D(R1) — Post-Approval Safety Data: now fully in force in the EU</h2><span class="cite">ICH E2D(R1) · Step 4 · 2025</span></div>
         <p class="lede">The first revision of ICH E2D since 2003 modernises how marketing authorisation holders (MAHs) define, collect, classify, and report post-approval individual case safety reports (ICSRs), especially from patient support programmes, market research, digital platforms and social media, and non-interventional studies. In the EU it came into effect on <strong>18 March 2026</strong>; the 6-month transition period ended on <strong>18 September 2026</strong>, so full compliance is now expected.</p>
         <div class="body">
 
@@ -1872,8 +1925,8 @@
           </div>
           <p>AEs/ADRs found during the planned review must be recorded, managed, assessed for causality and reported. The MAH is not expected to look for AEs beyond the review set out in the documentation.</p>
 
-          <h3 style="font-family:'Cormorant Garamond',serif;font-size:1.2rem;font-weight:500;margin:1rem 0 0.4rem">Linked change: E2B(R3) data element C.5.4 "Study type"</h3>
-          <p>Three new values will be added to <strong>C.5.4 — Study Type Where Reaction(s)/Event(s) Were Observed</strong>, so cases can be separated by source during signal detection. The draft explanatory note named <strong>4 = Patient Support Programme</strong> and <strong>5 = Market Research Programme</strong>, with a third value for ODCS activities on digital platforms. Until the new values are available, solicited cases use the existing <strong>2 = Report from study</strong>. In the EU, moving to the new values is <em>separate</em> from the E2D(R1) effective date and will be scheduled later through EudraVigilance.</p>
+          <h3 style="font-family:'Cormorant Garamond',serif;font-size:1.2rem;font-weight:500;margin:1rem 0 0.4rem">Linked change: new E2B(R3) values for these sources</h3>
+          <p>Three new E2B(R3) values will flag cases from <strong>patient support programmes</strong>, <strong>market research programmes</strong> and <strong>organised data collection on digital platforms</strong>, so cases can be separated by source during signal detection. ICH training material places them in <strong>C.5.4 — Study Type Where Reaction(s)/Event(s) Were Observed</strong> (draft: <strong>4 = Patient Support Programme</strong>, <strong>5 = Market Research Programme</strong>), while EMA's 2025 EudraVigilance report refers to data element <strong>C.1.3</strong>; confirm against the final implementation guide. Until the new values are available, solicited cases are submitted with <strong>C.1.3 Type of report = 2 (Report from study)</strong>. In the EU, moving to the new values is <em>separate</em> from the E2D(R1) effective date and will be scheduled later through EudraVigilance.</p>
 
           <h3 style="font-family:'Cormorant Garamond',serif;font-size:1.2rem;font-weight:500;margin:1rem 0 0.4rem">Compliance checklist</h3>
           <table class="pv-table">
@@ -1883,7 +1936,7 @@
             <tr><td>3</td><td>Review vendor contracts and SDEAs/PVAs for PSPs and MRPs (AE reconciliation, two-way communication, timelines).</td></tr>
             <tr><td>4</td><td>List every digital platform under the MAH's responsibility and set a screening frequency that meets reporting timelines.</td></tr>
             <tr><td>5</td><td>Set out NIS safety reporting rules in protocols, separating primary data collection from secondary use of data.</td></tr>
-            <tr><td>6</td><td>Prepare the safety database for the new C.5.4 values. Until then, solicited cases go as "report from study".</td></tr>
+            <tr><td>6</td><td>Prepare the safety database for the new E2B(R3) source values (data element to be confirmed). Until then, solicited cases go as C.1.3 = "report from study".</td></tr>
             <tr><td>7</td><td>Train staff on the new definitions, other-observations rules, day zero and duplicate management.</td></tr>
             <tr><td>8</td><td>Watch for the revised EU GVP Module VI and the EudraVigilance E2B(R3) implementation timeline.</td></tr>
           </table>
@@ -1901,9 +1954,9 @@
         </div>
       </div>
 
-      <!-- ===== UPDATE 2: MedDRA 29.1 ===== -->
+      <!-- ===== UPDATE 3: MedDRA 29.1 ===== -->
       <div class="pv-block">
-        <div class="pv-block-head"><span class="num">№ 02</span><h2>MedDRA Version 29.1 released (September 2026)</h2><span class="cite">ICH M1 · MSSO</span></div>
+        <div class="pv-block-head"><span class="num">№ 03</span><h2>MedDRA Version 29.1 released (September 2026)</h2><span class="cite">ICH M1 · MSSO</span></div>
         <p class="lede">The September "simple change" release of MedDRA: changes only at PT and LLT level, with no changes to the HLT, HLGT or SOC structure.</p>
         <div class="body">
           <table class="pv-table">
@@ -1919,9 +1972,9 @@
         </div>
       </div>
 
-      <!-- ===== UPDATE 3: Regulator safety actions ===== -->
+      <!-- ===== UPDATE 4: Regulator safety actions ===== -->
       <div class="pv-block">
-        <div class="pv-block-head"><span class="num">№ 03</span><h2>Regulator safety highlights, Aug – Oct 2026</h2><span class="cite">FDA · EMA PRAC</span></div>
+        <div class="pv-block-head"><span class="num">№ 04</span><h2>Regulator safety highlights, Aug – Oct 2026</h2><span class="cite">FDA · EMA PRAC</span></div>
         <div class="body">
           <table class="pv-table">
             <tr><th style="width:14%">Date</th><th style="width:16%">Authority</th><th>Update</th></tr>
@@ -1934,7 +1987,7 @@
             <a href="https://www.fda.gov/drugs/drug-safety-and-availability/drug-safety-communications" target="_blank" rel="noopener" style="color:var(--burgundy)">FDA Drug Safety Communications</a> ·
             <a href="https://www.ema.europa.eu/en/committees/pharmacovigilance-risk-assessment-committee-prac" target="_blank" rel="noopener" style="color:var(--burgundy)">EMA PRAC</a>
           </p>
-          <div class="pv-callout"><div class="lbl">Weekly headlines</div>For the automatically refreshed headline feed, see <a href="#" onclick="navigate('news');return false;" style="color:var(--burgundy);text-decoration:underline">Regulatory &amp; PV News</a>.</div>
+          <div class="pv-callout"><div class="lbl">Daily headlines</div>For the automatically refreshed headline feed, see <a href="#" onclick="navigate('news');return false;" style="color:var(--burgundy);text-decoration:underline">Regulatory &amp; PV News</a>.</div>
         </div>
       </div>
     </section>
@@ -12451,7 +12504,7 @@ const PM_CONTENT = {
         <table class="pv-table">
           <tr><th>Source</th><th>Treatment under E2D(R1)</th></tr>
           <tr><td>Spontaneous reports (HCPs, consumers)</td><td>Implied causality. Report per expedited rules if serious and (often) unexpected.</td></tr>
-          <tr><td>Patient support &amp; market research programmes (§4.5–4.6)</td><td>ODCS, so solicited. Causality must be assessed. Classified as "report from study" in E2B; new C.5.4 study-type values for PSP/MRP are planned.</td></tr>
+          <tr><td>Patient support &amp; market research programmes (§4.5–4.6)</td><td>ODCS, so solicited. Causality must be assessed. Submitted with E2B C.1.3 = "report from study"; new E2B(R3) values to flag PSP/MRP cases are planned.</td></tr>
           <tr><td>Non-interventional studies (§4.4, new)</td><td>Primary data collection is solicited (report AEs with suspected causality). Secondary use of data (EHR, claims) is handled differently, and individual case reporting is generally not expected.</td></tr>
           <tr><td>Literature (§4.2)</td><td>Screen regularly. Valid cases become ICSRs. Record the citation to support duplicate detection, and add new articles about an existing case to that case.</td></tr>
           <tr><td>Digital platforms (§4.3)</td><td>Platforms under the MAH's responsibility (owned, controlled or operated by or for the MAH) must be screened regularly. Unprompted posts there are spontaneous, and cases from an ODCS run there are solicited. There is no obligation to screen third-party platforms unless the MAH runs a planned activity (e.g., social listening), which is then an ODCS.</td></tr>
@@ -14073,7 +14126,7 @@ function renderNewsPreview(){
       let items=(data&&Array.isArray(data.items))?data.items.slice():[];
       items.sort((a,b)=>{ if(!!a.priority!==!!b.priority) return a.priority?-1:1; return new Date(b.date||0)-new Date(a.date||0); });
       items=items.slice(0,3);
-      if(items.length===0){ el.innerHTML=shell('<p style="font-size:0.85rem;color:var(--muted);margin:0">No headlines yet — the weekly job will populate them.</p>'); wireAll(); return; }
+      if(items.length===0){ el.innerHTML=shell('<p style="font-size:0.85rem;color:var(--muted);margin:0">No headlines yet — the daily job will populate them.</p>'); wireAll(); return; }
       let rows='';
       items.forEach(it=>{
         const c=(SRC[it.source]||{c:'var(--muted)'}).c;
@@ -14161,10 +14214,10 @@ function renderNews(){
     const prioCount = ALL.filter(i=>i.priority).length;
 
     let html = '<div class="pv-block">';
-    html += '<div class="pv-block-head"><span class="num">◆</span><h2>Latest Headlines</h2><span class="cite">'+(generated?('updated '+esc(generated)):'weekly feed')+'</span></div>';
+    html += '<div class="pv-block-head"><span class="num">◆</span><h2>Latest Headlines</h2><span class="cite">'+(generated?('updated '+esc(generated)):'daily feed')+'</span></div>';
 
     if(ALL.length === 0){
-      html += '<div class="pv-callout"><div class="lbl">No items yet</div>The weekly job has not populated <code>news.json</code> yet, or no feed items were returned. Once the GitHub Action runs, headlines will appear here automatically.</div></div>';
+      html += '<div class="pv-callout"><div class="lbl">No items yet</div>The daily job has not populated <code>news.json</code> yet, or no feed items were returned. Once the GitHub Action runs, headlines will appear here automatically.</div></div>';
       return html;
     }
 
@@ -14228,7 +14281,7 @@ function renderNews(){
     .catch(() => {
       el.innerHTML = build(null) +
         '<div class="pv-callout" style="border-left-color:var(--muted)"><div class="lbl">news.json not found</div>'
-        + 'This page expects a <code>news.json</code> file alongside <code>index.html</code>. When deployed on GitHub Pages with the weekly workflow, that file is created and updated automatically. Opening the raw HTML by itself (without <code>news.json</code>) will show this message.</div>';
+        + 'This page expects a <code>news.json</code> file alongside <code>index.html</code>. When deployed on GitHub Pages with the daily workflow, that file is created and updated automatically. Opening the raw HTML by itself (without <code>news.json</code>) will show this message.</div>';
       wire();
     });
 }

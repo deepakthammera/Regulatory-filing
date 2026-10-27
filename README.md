@@ -31,7 +31,7 @@ The platform is delivered as one file — **`index.html`** — that contains all
 
 It is organised into three areas:
 
-- **News & Updates**: a weekly, automatically refreshed headline feed plus a curated **PV Updates & News** page that explains new guidelines and regulator safety actions.
+- **News & Updates**: a daily, automatically refreshed headline feed plus a curated **PV Updates & News** page that explains new guidelines and regulator safety actions.
 - **Regulatory** — the drug development and submission lifecycle (US FDA-centric, with international context).
 - **Pharmacovigilance** — post-approval and development-stage drug safety, aggregate reporting, MedDRA coding, signal management, and the EU/US regulatory frameworks.
 
@@ -42,6 +42,8 @@ Each area combines reference content, worked examples, interactive decision help
 ## What's new
 
 ### October 2026
+- **News feed now updates daily** (06:17 UTC) instead of weekly. The sidebar folder is now **Daily Feed**.
+- **PV regulatory radar** added to the top of **PV Updates & News**: recent and upcoming ICH, EMA and FDA pharmacovigilance changes (status as of 27 Oct 2026). Examples: E2B(R3) now mandatory for FDA postmarketing ICSRs, AEMS replacing FAERS, the GVP Module VI revision, the EU pharma package, and the ICH Assembly in November.
 - **Installable app (PWA).** Add the site to your iPhone/iPad home screen (or install it on Android/desktop) and it opens full-screen like an app, with its own icon, and keeps working offline after the first visit. See [Install as an app](#install-as-an-app-iphone-android-desktop).
 - **New sidebar folder: News & Updates → Latest → ★ PV Updates & News.** A curated page of explained PV updates, newest first:
   - **ICH E2D(R1)** (Post-Approval Safety Data). In the EU it came into effect on 18 Mar 2026, and the transition period ended on 18 Sep 2026. The page covers:
@@ -58,7 +60,7 @@ Each area combines reference content, worked examples, interactive decision help
   - **Regulatory Guidelines library**: the final E2D(R1) guideline replaces an incorrect "E2D(R1) Q&A" entry, and the 2003 E2D is kept and marked superseded.
   - **PV Deep Dive**: corrected the solicited-report wording. Solicited reports need a causality assessment and are not treated as spontaneous.
   - Guideline lists and the quiz citation now reference E2D(R1).
-- **Weekly news feed** (`news.json`, refreshed every Monday by a GitHub Action) now includes **regulator sources**: FDA (MedWatch safety alerts, press releases) and EMA news. It also pulls BioSpace, Fierce Pharma, BioPharma Dive, RAPS, and new *Drug Safety* journal articles (via Crossref). The broken Endpoints feed (HTTP 403) was removed. See [`NEWS_SETUP.md`](NEWS_SETUP.md).
+- **News feed** (`news.json`, refreshed by a GitHub Action, now daily) now includes **regulator sources**: FDA (MedWatch safety alerts, press releases) and EMA news. It also pulls BioSpace, Fierce Pharma, BioPharma Dive, RAPS, and new *Drug Safety* journal articles (via Crossref). The broken Endpoints feed (HTTP 403) was removed. See [`NEWS_SETUP.md`](NEWS_SETUP.md).
 - **Fix:** removed a call to an undefined `setupFilters()` function. It threw an error on every sign-in and stopped the dashboard news preview from loading.
 
 ---
@@ -101,7 +103,7 @@ How it works: `manifest.webmanifest` (name, colours, icons), `icons/` (home-scre
 ## Features
 
 - **Sidebar navigation** across News & Updates, Regulatory, and Pharmacovigilance.
-- **News & Updates**: a weekly auto-refreshed headline feed (`news.json`, built by a GitHub Action) and a curated **PV Updates & News** page explaining new guidelines (e.g., ICH E2D(R1), MedDRA releases) and regulator safety actions.
+- **News & Updates**: a daily auto-refreshed headline feed (`news.json`, built by a GitHub Action) and a curated **PV Updates & News** page explaining new guidelines (e.g., ICH E2D(R1), MedDRA releases) and regulator safety actions.
 - **Interactive tools** — a pathway decision helper, development-lifecycle views, submission checklists, and document templates.
 - **Deep-dive guides** — long-form, tabbed reference sections for the major PV aggregate reports and coding standards.
 - **Live worked examples** — fully populated, section-by-section walk-throughs (illustrative data) that mirror the *actual* report structures.
@@ -118,8 +120,8 @@ How it works: `manifest.webmanifest` (name, colours, icons), `icons/` (home-scre
 ### News & Updates
 | Icon | Section | What it covers |
 |---|---------|----------------|
-| ★ | **PV Updates & News** (Latest) | Curated, explained PV updates: ICH E2D(R1) section-by-section, MedDRA 29.1, and recent FDA / EMA PRAC safety actions |
-| ◆ | Regulatory & PV News (Weekly Feed) | Auto-refreshed headlines from regulators (FDA, EMA), industry news and the *Drug Safety* journal, filterable by source, category and ⚑ priority |
+| ★ | **PV Updates & News** (Latest) | Curated, explained PV updates: a recent & upcoming ICH / EMA / FDA radar, ICH E2D(R1) section-by-section, MedDRA 29.1, and recent FDA / EMA PRAC safety actions |
+| ◆ | Regulatory & PV News (Daily Feed) | Auto-refreshed headlines from regulators (FDA, EMA), industry news and the *Drug Safety* journal, filterable by source, category and ⚑ priority |
 
 ### Regulatory domain
 | # | Section | What it covers |
@@ -165,7 +167,7 @@ Highlights:
 
 - **HTML + CSS + vanilla JavaScript**, all inline in one file. No frameworks, no bundler.
 - **Fonts** loaded from a public CDN (Google Fonts).
-- **Client-side only.** No backend, no database, no analytics. The weekly news feed is a static `news.json` file that a scheduled GitHub Action (`.github/workflows/update-news.yml` → `scripts/fetch-news.mjs`) regenerates and commits.
+- **Client-side only.** No backend, no database, no analytics. The daily news feed is a static `news.json` file that a scheduled GitHub Action (`.github/workflows/update-news.yml` → `scripts/fetch-news.mjs`) regenerates and commits.
 - **Rendering model:** each section/tab is produced by a JavaScript render function or a content object; a lightweight router shows/hides views and updates the active tab. A shared design system (CSS classes such as tables, callouts, tab bars) keeps everything visually consistent.
 - **State:** interactive elements (quizzes, filters) hold state in memory during the session. Nothing is persisted, so refreshing resets interactive state.
 
@@ -176,7 +178,7 @@ Highlights:
 ## Running locally
 
 **Option 1 — open directly**
-Double-click `index.html`, or drag it into any modern browser. Everything works offline (an internet connection only improves font loading), except the weekly news feed: browsers often block loading `news.json` from `file://`, so use Option 2 to see it.
+Double-click `index.html`, or drag it into any modern browser. Everything works offline (an internet connection only improves font loading), except the daily news feed: browsers often block loading `news.json` from `file://`, so use Option 2 to see it.
 
 **Option 2 — local web server** (recommended for a production-like check)
 ```bash
@@ -197,20 +199,20 @@ npx serve .
 ```
 .
 ├── index.html                       # The entire application (HTML + CSS + JS inline)
-├── news.json                        # Weekly news feed data (auto-generated; do not edit by hand)
+├── news.json                        # Daily news feed data (auto-generated; do not edit by hand)
 ├── scripts/
 │   └── fetch-news.mjs               # Builds news.json from RSS/Atom feeds + Crossref (no npm dependencies)
 ├── .github/
 │   └── workflows/
-│       └── update-news.yml          # Runs fetch-news.mjs every Monday 06:00 UTC and commits news.json
-├── NEWS_SETUP.md                    # How the weekly news feed works and how to change sources
+│       └── update-news.yml          # Runs fetch-news.mjs daily at 06:17 UTC and commits news.json
+├── NEWS_SETUP.md                    # How the daily news feed works and how to change sources
 ├── manifest.webmanifest             # Installable-app settings (name, colours, icons)
 ├── sw.js                            # Service worker: offline caching for the installed app
 ├── icons/                           # Home-screen / app icons (192, 512, maskable 512, Apple 180)
 └── README.md                        # This file
 ```
 
-The app itself is still one file, which makes it trivial to host, share and archive. The other files support the weekly news feed and installing the app. The curated **PV Updates & News** page is static content inside `index.html`, so update it there (the `view-pvupdates` section).
+The app itself is still one file, which makes it trivial to host, share and archive. The other files support the daily news feed and installing the app. The curated **PV Updates & News** page is static content inside `index.html`, so update it there (the `view-pvupdates` section).
 
 ---
 
@@ -245,7 +247,7 @@ Content is written in original wording and summarises publicly available regulat
 - **CIOMS Working Group XIV** — guiding principles for AI in pharmacovigilance (open-access source, summarised with citation).
 - **WHO-UMC** — global pharmacovigilance and VigiBase context.
 - **Regulator safety communications** (PV Updates & News page): FDA Drug Safety Communications, EMA PRAC meeting highlights, and MedDRA MSSO release notes, each linked from the relevant update.
-- **Weekly news feed**: headlines, dates and links only (no article text) from FDA, EMA, BioSpace, Fierce Pharma, BioPharma Dive, RAPS, and *Drug Safety* (article metadata via the Crossref API).
+- **Daily news feed**: headlines, dates and links only (no article text) from FDA, EMA, BioSpace, Fierce Pharma, BioPharma Dive, RAPS, and *Drug Safety* (article metadata via the Crossref API).
 
 Where a section draws on a specific publication, the citation is shown inline within that section. Trademarks and guideline names belong to their respective owners. This project claims no endorsement by any of these bodies.
 
