@@ -1494,7 +1494,7 @@
       <div class="nav-item" data-nav="pvupdates"><span class="ico">★</span><span>PV Updates &amp; News</span></div>
     </div>
     <div class="nav-group">
-      <div class="label">Weekly Feed</div>
+      <div class="label">Daily Feed</div>
       <div class="nav-item" data-nav="news"><span class="ico">◆</span><span>Regulatory &amp; PV News</span></div>
     </div>
     <div class="nav-domain-header">Regulatory</div>
@@ -1770,12 +1770,12 @@
 
     <section class="view" id="view-news">
       <div class="page-head">
-        <div class="eyebrow accent-teal">News &amp; Updates · Weekly Feed</div>
+        <div class="eyebrow accent-teal">News &amp; Updates · Daily Feed</div>
         <h1>Regulatory &amp; Pharmacovigilance News</h1>
-        <p class="sub">Latest headlines from regulators (FDA, EMA), industry news (BioSpace, Fierce Pharma, BioPharma Dive, RAPS Regulatory Focus), and new articles in the journal <em>Drug Safety</em> — refreshed automatically each week. For explained guideline and regulator safety updates, see <strong>PV Updates &amp; News</strong>. Each item links to the original source; only headlines, dates, and links are shown, in line with the publishers' feeds.</p>
+        <p class="sub">Latest headlines from regulators (FDA, EMA), industry news (BioSpace, Fierce Pharma, BioPharma Dive, RAPS Regulatory Focus), and new articles in the journal <em>Drug Safety</em> — refreshed automatically every day. For explained guideline and regulator safety updates, see <strong>PV Updates &amp; News</strong>. Each item links to the original source; only headlines, dates, and links are shown, in line with the publishers' feeds.</p>
       </div>
       <div class="wl-banner">
-        <strong>How this stays current:</strong> a scheduled job fetches the official RSS/Atom feeds every week and writes <code>news.json</code> to the repository; this page then displays it. If items look stale, the weekly job may not have run yet, or you are viewing a cached copy — hard-refresh with Ctrl/Cmd+Shift+R. Headlines and links are the property of their respective sources; follow each link for the full article.
+        <strong>How this stays current:</strong> a scheduled job fetches the RSS/Atom feeds every day and writes <code>news.json</code> to the repository; this page then displays it. If items look stale, today's run may not have happened yet, or you are viewing a cached copy — hard-refresh with Ctrl/Cmd+Shift+R. Headlines and links are the property of their respective sources; follow each link for the full article.
       </div>
       <div id="news-content"></div>
     </section>
@@ -1934,7 +1934,7 @@
             <a href="https://www.fda.gov/drugs/drug-safety-and-availability/drug-safety-communications" target="_blank" rel="noopener" style="color:var(--burgundy)">FDA Drug Safety Communications</a> ·
             <a href="https://www.ema.europa.eu/en/committees/pharmacovigilance-risk-assessment-committee-prac" target="_blank" rel="noopener" style="color:var(--burgundy)">EMA PRAC</a>
           </p>
-          <div class="pv-callout"><div class="lbl">Weekly headlines</div>For the automatically refreshed headline feed, see <a href="#" onclick="navigate('news');return false;" style="color:var(--burgundy);text-decoration:underline">Regulatory &amp; PV News</a>.</div>
+          <div class="pv-callout"><div class="lbl">Daily headlines</div>For the automatically refreshed headline feed, see <a href="#" onclick="navigate('news');return false;" style="color:var(--burgundy);text-decoration:underline">Regulatory &amp; PV News</a>.</div>
         </div>
       </div>
     </section>
@@ -14073,7 +14073,7 @@ function renderNewsPreview(){
       let items=(data&&Array.isArray(data.items))?data.items.slice():[];
       items.sort((a,b)=>{ if(!!a.priority!==!!b.priority) return a.priority?-1:1; return new Date(b.date||0)-new Date(a.date||0); });
       items=items.slice(0,3);
-      if(items.length===0){ el.innerHTML=shell('<p style="font-size:0.85rem;color:var(--muted);margin:0">No headlines yet — the weekly job will populate them.</p>'); wireAll(); return; }
+      if(items.length===0){ el.innerHTML=shell('<p style="font-size:0.85rem;color:var(--muted);margin:0">No headlines yet — the daily job will populate them.</p>'); wireAll(); return; }
       let rows='';
       items.forEach(it=>{
         const c=(SRC[it.source]||{c:'var(--muted)'}).c;
@@ -14161,10 +14161,10 @@ function renderNews(){
     const prioCount = ALL.filter(i=>i.priority).length;
 
     let html = '<div class="pv-block">';
-    html += '<div class="pv-block-head"><span class="num">◆</span><h2>Latest Headlines</h2><span class="cite">'+(generated?('updated '+esc(generated)):'weekly feed')+'</span></div>';
+    html += '<div class="pv-block-head"><span class="num">◆</span><h2>Latest Headlines</h2><span class="cite">'+(generated?('updated '+esc(generated)):'daily feed')+'</span></div>';
 
     if(ALL.length === 0){
-      html += '<div class="pv-callout"><div class="lbl">No items yet</div>The weekly job has not populated <code>news.json</code> yet, or no feed items were returned. Once the GitHub Action runs, headlines will appear here automatically.</div></div>';
+      html += '<div class="pv-callout"><div class="lbl">No items yet</div>The daily job has not populated <code>news.json</code> yet, or no feed items were returned. Once the GitHub Action runs, headlines will appear here automatically.</div></div>';
       return html;
     }
 
@@ -14228,7 +14228,7 @@ function renderNews(){
     .catch(() => {
       el.innerHTML = build(null) +
         '<div class="pv-callout" style="border-left-color:var(--muted)"><div class="lbl">news.json not found</div>'
-        + 'This page expects a <code>news.json</code> file alongside <code>index.html</code>. When deployed on GitHub Pages with the weekly workflow, that file is created and updated automatically. Opening the raw HTML by itself (without <code>news.json</code>) will show this message.</div>';
+        + 'This page expects a <code>news.json</code> file alongside <code>index.html</code>. When deployed on GitHub Pages with the daily workflow, that file is created and updated automatically. Opening the raw HTML by itself (without <code>news.json</code>) will show this message.</div>';
       wire();
     });
 }
