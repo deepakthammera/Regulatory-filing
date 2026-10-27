@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-26T11:46:11.055Z",
+  "generated": "2026-10-27T12:10:22.144Z",
   "sources": [
     "FDA",
     "EMA",
@@ -22,18 +22,36 @@
     {
       "source": "BioSpace",
       "tier": "industry",
-      "title": "BMS reveals death from septic pneumonia of multiple sclerosis patient in CAR T trial",
-      "link": "https://www.biospace.com/drug-development/bms-reveals-death-from-septic-pneumonia-of-multiple-sclerosis-patient-in-car-t-trial",
-      "date": "2026-10-23T17:00:09.000Z",
+      "title": "ESMO 2026: Merck’s Kelun-partnered ADC cuts death risk by over 30% in endometrial cancer",
+      "link": "https://www.biospace.com/drug-development/esmo-2026-mercks-kelun-partnered-adc-cuts-death-risk-by-over-30-in-endometrial-cancer",
+      "date": "2026-10-26T15:31:00.000Z",
+      "category": "Safety / PV",
+      "priority": true
+    },
+    {
+      "source": "BioSpace",
+      "tier": "industry",
+      "title": "ESMO 2026: Amgen’s Imdelltra slashes death risk by nearly 60% in small cell lung cancer",
+      "link": "https://www.biospace.com/drug-development/esmo-2026-amgens-imdelltra-slashes-death-risk-by-nearly-60-in-small-cell-lung-cancer",
+      "date": "2026-10-26T14:29:08.000Z",
       "category": "Safety / PV",
       "priority": true
     },
     {
       "source": "BioPharma Dive",
       "tier": "industry",
-      "title": "GLP-1 compounder issues recall for copycat Zepbound",
-      "link": "https://www.biopharmadive.com/news/glp1-obesity-drug-recall-apothecary-tirzepatide-zepbound/833712/",
-      "date": "2026-10-22T15:50:00.000Z",
+      "title": "Another autoimmune CAR-T death; Treasury zeroes in on China deals",
+      "link": "https://www.biopharmadive.com/news/autoimmune-bristol-death-treasury-china-gilead-pepstar-zymeworks/833901/",
+      "date": "2026-10-26T13:59:35.000Z",
+      "category": "Safety / PV",
+      "priority": true
+    },
+    {
+      "source": "BioSpace",
+      "tier": "industry",
+      "title": "BMS reveals death from septic pneumonia of multiple sclerosis patient in CAR T trial",
+      "link": "https://www.biospace.com/drug-development/bms-reveals-death-from-septic-pneumonia-of-multiple-sclerosis-patient-in-car-t-trial",
+      "date": "2026-10-23T17:00:09.000Z",
       "category": "Safety / PV",
       "priority": true
     },
@@ -63,6 +81,87 @@
       "date": "2026-10-02T11:00:00.000Z",
       "category": "Safety / PV",
       "priority": true
+    },
+    {
+      "source": "BioSpace",
+      "tier": "industry",
+      "title": "US biotechs take lion’s share of $54.5B VC money raised since 2025",
+      "link": "https://www.biospace.com/business/us-biotechs-take-lions-share-of-54-5b-vc-money-raised-since-2025",
+      "date": "2026-10-26T19:50:59.000Z",
+      "category": "Deals / Business",
+      "priority": false
+    },
+    {
+      "source": "BioPharma Dive",
+      "tier": "industry",
+      "title": "Corxel, an obesity drugmaker, to go public via SPAC deal",
+      "link": "https://www.biopharmadive.com/news/corxel-pharmaceuticals-spac-public-obesity-drugs/872772/",
+      "date": "2026-10-26T19:17:00.000Z",
+      "category": "Deals / Business",
+      "priority": false
+    },
+    {
+      "source": "BioPharma Dive",
+      "tier": "industry",
+      "title": "BioNTech, DualityBio say ADC had ‘modest’ benefit in breast cancer study",
+      "link": "https://www.biopharmadive.com/news/biontech-dualitybio-modest-results-adc-breast-cancer/839574/",
+      "date": "2026-10-26T16:06:00.000Z",
+      "category": "General",
+      "priority": false
+    },
+    {
+      "source": "BioPharma Dive",
+      "tier": "industry",
+      "title": "ESMO ‘26: A cancer vaccine debate, Roche’s KRAS progress and Amgen’s ‘unprecedented’ data",
+      "link": "https://www.biopharmadive.com/news/esmo-2026-intismeran-melanoma-imdelltra-divarasib-kras-g12c/833921/",
+      "date": "2026-10-26T15:58:00.000Z",
+      "category": "General",
+      "priority": false
+    },
+    {
+      "source": "BioSpace",
+      "tier": "industry",
+      "title": "ESMO 2026: J&J delivers ‘immaculate’ early data for prostate cancer drug from Halda",
+      "link": "https://www.biospace.com/drug-development/esmo-2026-j-j-delivers-immaculate-early-data-for-prostate-cancer-drug-from-halda",
+      "date": "2026-10-26T15:01:29.000Z",
+      "category": "General",
+      "priority": false
+    },
+    {
+      "source": "BioSpace",
+      "tier": "industry",
+      "title": "Biotech IPOs raise $7.5B as sector’s performance rally flattens",
+      "link": "https://www.biospace.com/business/biotech-ipos-raise-7-5b-as-sectors-performance-rally-flattens",
+      "date": "2026-10-26T14:40:40.000Z",
+      "category": "Deals / Business",
+      "priority": false
+    },
+    {
+      "source": "BioSpace",
+      "tier": "industry",
+      "title": "ESMO 2026: Analysts warm to Merck, Moderna’s cancer vaccine after frustrating data leak",
+      "link": "https://www.biospace.com/drug-development/esmo-2026-analysts-warm-to-merck-modernas-cancer-vaccine-after-frustrating-data-leak",
+      "date": "2026-10-26T14:33:05.000Z",
+      "category": "General",
+      "priority": false
+    },
+    {
+      "source": "BioSpace",
+      "tier": "industry",
+      "title": "Tango plans 14% workforce cut, mainly of research staff",
+      "link": "https://www.biospace.com/biospace-layoff-tracker",
+      "date": "2026-10-26T14:16:00.000Z",
+      "category": "General",
+      "priority": false
+    },
+    {
+      "source": "BioSpace",
+      "tier": "industry",
+      "title": "Genmab’s ADC beats survival expectations in Phase 3 ovarian cancer trial",
+      "link": "https://www.biospace.com/drug-development/genmabs-adc-beats-survival-expectations-in-phase-3-ovarian-cancer-trial",
+      "date": "2026-10-26T12:08:31.000Z",
+      "category": "Clinical trial",
+      "priority": false
     },
     {
       "source": "BioPharma Dive",
@@ -97,6 +196,60 @@
       "title": "Australia's clinical trial advantage gains ground amid U.S. uncertainty",
       "link": "https://www.biospace.com/drug-development/australias-clinical-trial-advantage-gains-ground-amid-u-s-uncertainty",
       "date": "2026-10-26T04:01:00.000Z",
+      "category": "Clinical trial",
+      "priority": false
+    },
+    {
+      "source": "Fierce Pharma",
+      "tier": "industry",
+      "title": "Pfizer’s Talzenna combo moves up treatment line with new FDA nod in prostate cancer",
+      "link": "https://www.fiercepharma.com/pharma/pfizers-talzenna-climbs-treatment-line-new-fda-okay-prostate-cancer",
+      "date": "2026-10-26T00:00:00.000Z",
+      "category": "Regulatory / Policy",
+      "priority": false
+    },
+    {
+      "source": "Fierce Pharma",
+      "tier": "industry",
+      "title": "Novartis' Rhapsido touts solid efficacy with industry-best safety data in RMS phase 3 reveal",
+      "link": "https://www.fiercepharma.com/pharma/novartis-rhapsido-touts-solid-efficacy-industry-best-safety-data-rms-phase-3-reveal",
+      "date": "2026-10-26T00:00:00.000Z",
+      "category": "Safety / PV",
+      "priority": false
+    },
+    {
+      "source": "RAPS",
+      "tier": "industry",
+      "title": "Diamantas touts new rare disease framework, greater emphasis on patient voice",
+      "link": "https://www.raps.org/resource/diamantas-touts-new-rare-disease-framework-greater-emphasis-on-patient-voice.html",
+      "date": "2026-10-26T00:00:00.000Z",
+      "category": "Regulatory / Policy",
+      "priority": false
+    },
+    {
+      "source": "RAPS",
+      "tier": "industry",
+      "title": "Asia-Pacific Roundup: TGA seeks feedback on temporary increase to Australia’s annual device charges",
+      "link": "https://www.raps.org/resource/asia-pacific-roundup-tga-seeks-feedback-on-temporary-increase-to-australia-s-annual-device-charges.html",
+      "date": "2026-10-26T00:00:00.000Z",
+      "category": "General",
+      "priority": false
+    },
+    {
+      "source": "RAPS",
+      "tier": "industry",
+      "title": "Recon: FDA approves Edwards’ tricuspid valve repair device; Bayer wins Chinese approval for blood thinner asundexian",
+      "link": "https://www.raps.org/resource/recon-fda-approves-edwards-tricuspid-valve-repair-device-bayer-wins-chinese-approval-for-blood-thinner-asundexian.html",
+      "date": "2026-10-26T00:00:00.000Z",
+      "category": "Approval",
+      "priority": false
+    },
+    {
+      "source": "Fierce Pharma",
+      "tier": "industry",
+      "title": "ESMO: In sac-TMT’s first global phase 3 win, Merck sees ‘pretty consistent’ data with China",
+      "link": "https://www.fiercepharma.com/pharma/sac-tmt-first-global-phase-3-win-merck-sees-pretty-consistent-data-china",
+      "date": "2026-10-25T00:00:00.000Z",
       "category": "Clinical trial",
       "priority": false
     },
@@ -157,15 +310,6 @@
     {
       "source": "BioSpace",
       "tier": "industry",
-      "title": "Tango plans 14% workforce cut, mainly of research staff",
-      "link": "https://www.biospace.com/biospace-layoff-tracker",
-      "date": "2026-10-23T14:55:00.000Z",
-      "category": "General",
-      "priority": false
-    },
-    {
-      "source": "BioSpace",
-      "tier": "industry",
       "title": "Roche flags ‘final opportunity’ for Germany to reestablish as a reliable investment location",
       "link": "https://www.biospace.com/drug-development/roche-flags-final-opportunity-for-germany-to-reestablish-as-a-reliable-investment-location",
       "date": "2026-10-23T14:52:20.000Z",
@@ -179,42 +323,6 @@
       "link": "https://www.biospace.com/business/gilead-shops-in-il-23-inking-1-3b-upfront-i-i-deal-with-chinas-pepstar",
       "date": "2026-10-23T14:28:00.000Z",
       "category": "Deals / Business",
-      "priority": false
-    },
-    {
-      "source": "BioSpace",
-      "tier": "industry",
-      "title": "ESMO 2026: Marengo's bispecific antibody shrinks 8 tumor types in Phase 2",
-      "link": "https://www.biospace.com/drug-development/esmo-2026-marengos-bispecific-antibody-shrinks-8-tumor-types-in-phase-2",
-      "date": "2026-10-23T13:54:57.000Z",
-      "category": "Clinical trial",
-      "priority": false
-    },
-    {
-      "source": "BioSpace",
-      "tier": "industry",
-      "title": "US explores China biotech restrictions, exempts licensing deals",
-      "link": "https://www.biospace.com/business/us-explores-china-biotech-restrictions-exempts-licensing-deals",
-      "date": "2026-10-23T13:54:40.000Z",
-      "category": "Deals / Business",
-      "priority": false
-    },
-    {
-      "source": "BioSpace",
-      "tier": "industry",
-      "title": "FDA uncages Aardvark’s Prader-Willi study after new data cleared safety concerns",
-      "link": "https://www.biospace.com/fda/fda-uncages-aardvarks-prader-willi-study-after-new-data-cleared-safety-concerns",
-      "date": "2026-10-23T13:40:08.000Z",
-      "category": "Safety / PV",
-      "priority": false
-    },
-    {
-      "source": "BioSpace",
-      "tier": "industry",
-      "title": "Roche bets up to $813M on Zymeworks’ lung cancer trispecific T cell engager",
-      "link": "https://www.biospace.com/deals/roche-bets-up-to-813m-on-zymeworks-lung-cancer-trispecific-t-cell-engager",
-      "date": "2026-10-23T11:58:39.000Z",
-      "category": "General",
       "priority": false
     },
     {
@@ -335,24 +443,6 @@
       "priority": false
     },
     {
-      "source": "BioSpace",
-      "tier": "industry",
-      "title": "ESMO 2026: Merck, Moderna shares fall as cancer vaccine disappoints after data leak",
-      "link": "https://www.biospace.com/drug-development/esmo-2026-merck-moderna-shares-fall-as-cancer-vaccine-disappoints-after-data-leak",
-      "date": "2026-10-22T21:04:40.000Z",
-      "category": "Deals / Business",
-      "priority": false
-    },
-    {
-      "source": "BioSpace",
-      "tier": "industry",
-      "title": "AbbVie’s skin disease drug lessens abscess burden in Phase 3 but falls below expectations",
-      "link": "https://www.biospace.com/drug-development/abbvies-skin-disease-drug-lessens-abscess-burden-in-phase-3-but-falls-below-expectations",
-      "date": "2026-10-22T19:48:07.000Z",
-      "category": "Clinical trial",
-      "priority": false
-    },
-    {
       "source": "BioPharma Dive",
       "tier": "industry",
       "title": "Moderna, Merck shares fall on eagerly anticipated cancer vaccine results",
@@ -368,33 +458,6 @@
       "link": "http://www.fda.gov/news-events/press-announcements/fda-launches-new-program-advance-neuroscience-medical-product-development",
       "date": "2026-10-22T16:58:19.000Z",
       "category": "Regulatory / Policy",
-      "priority": false
-    },
-    {
-      "source": "BioPharma Dive",
-      "tier": "industry",
-      "title": "Biohaven’s previously rejected rare disease drug to get fresh FDA review",
-      "link": "https://www.biopharmadive.com/news/biohaven-troriluzole-vyglxia-sca-fda-accept-application/833703/",
-      "date": "2026-10-22T16:24:00.000Z",
-      "category": "Regulatory / Policy",
-      "priority": false
-    },
-    {
-      "source": "BioSpace",
-      "tier": "industry",
-      "title": "Biohaven shares pop as FDA accepts resubmission for ataxia drug with adcomm expected",
-      "link": "https://www.biospace.com/drug-development/biohaven-shares-pop-as-fda-accepts-resubmission-for-ataxia-drug-with-adcomm-expected",
-      "date": "2026-10-22T15:35:18.000Z",
-      "category": "Approval",
-      "priority": false
-    },
-    {
-      "source": "BioPharma Dive",
-      "tier": "industry",
-      "title": "Roche affirms sales outlook amid doubts about its future",
-      "link": "https://www.biopharmadive.com/news/roche-3q-2026-earnings-sales-outlook/833684/",
-      "date": "2026-10-22T15:20:26.000Z",
-      "category": "General",
       "priority": false
     },
     {
@@ -420,33 +483,6 @@
       "tier": "industry",
       "title": "Real Chemistry spotlights health dignity as key trust, engagement indicator in new research initiative",
       "link": "https://www.fiercepharma.com/marketing/real-chemistry-presents-health-dignity-key-trust-engagement-indicator-new-research",
-      "date": "2026-10-22T00:00:00.000Z",
-      "category": "General",
-      "priority": false
-    },
-    {
-      "source": "Fierce Pharma",
-      "tier": "industry",
-      "title": "Vabysmo shows signs of reacceleration as Roche gears up for busy 2027",
-      "link": "https://www.fiercepharma.com/pharma/vabysmo-shows-signs-reacceleration-roche-gears-busy-2027",
-      "date": "2026-10-22T00:00:00.000Z",
-      "category": "General",
-      "priority": false
-    },
-    {
-      "source": "Fierce Pharma",
-      "tier": "industry",
-      "title": "AZ's Ultomiris adds 5th rare disease feather to cap with FDA IgAN nod",
-      "link": "https://www.fiercepharma.com/pharma/azs-ultomiris-adds-5th-rare-disease-feather-cap-accelerated-igan-fda-nod",
-      "date": "2026-10-22T00:00:00.000Z",
-      "category": "Regulatory / Policy",
-      "priority": false
-    },
-    {
-      "source": "Fierce Pharma",
-      "tier": "industry",
-      "title": "Esteve earmarks $80M to revamp CDMO operations in China",
-      "link": "https://www.fiercepharma.com/pharma/esteve-earmarks-80m-revamp-china-operations",
       "date": "2026-10-22T00:00:00.000Z",
       "category": "General",
       "priority": false
@@ -479,30 +515,12 @@
       "priority": false
     },
     {
-      "source": "BioPharma Dive",
-      "tier": "industry",
-      "title": "GSK, Ionis win US approval for first-of-its-kind hepatitis B drug",
-      "link": "https://www.biopharmadive.com/news/gsk-ionis-fda-approve-hibsago-chronic-hepatitis-b-bepirovirsen/833541/",
-      "date": "2026-10-21T16:03:00.000Z",
-      "category": "Approval",
-      "priority": false
-    },
-    {
       "source": "RAPS",
       "tier": "industry",
       "title": "Drugmakers urge FDA take more flexible approach to container closure testing",
       "link": "https://www.raps.org/resource/drugmakers-urge-fda-take-more-flexible-approach-to-container-closure-testing.html",
       "date": "2026-10-21T00:00:00.000Z",
       "category": "Regulatory / Policy",
-      "priority": false
-    },
-    {
-      "source": "RAPS",
-      "tier": "industry",
-      "title": "Tarver: CDRH on a ‘recruiting tear,’ looking ahead to MDUFA VI",
-      "link": "https://www.raps.org/resource/tarver-cdrh-on-a-recruiting-tear-looking-ahead-to-mdufa-vi.html",
-      "date": "2026-10-21T00:00:00.000Z",
-      "category": "General",
       "priority": false
     },
     {
@@ -544,15 +562,6 @@
     {
       "source": "FDA",
       "tier": "regulator",
-      "title": "Update: Import Alert for Certain Olympus Medical Devices Manufactured in Japan - Letter to Health Care Providers",
-      "link": "http://www.fda.gov/medical-devices/letters-health-care-providers/update-import-alert-certain-olympus-medical-devices-manufactured-japan-letter-health-care-providers",
-      "date": "2026-10-20T04:00:00.000Z",
-      "category": "Regulatory / Policy",
-      "priority": false
-    },
-    {
-      "source": "FDA",
-      "tier": "regulator",
       "title": "Early Alert: Cardinal Health Updates Use Instructions for Presource Packs Containing BD Alaris Pump Infusion Sets",
       "link": "http://www.fda.gov/medical-devices/medical-device-recalls-and-early-alerts/early-alert-cardinal-health-updates-use-instructions-presource-packs-containing-bd-alaris-pump",
       "date": "2026-10-20T04:00:00.000Z",
@@ -578,20 +587,11 @@
       "priority": false
     },
     {
-      "source": "RAPS",
-      "tier": "industry",
-      "title": "FDA, MHRA officials eye streamlined frameworks for regulating genAI",
-      "link": "https://www.raps.org/resource/fda-mhra-officials-eye-streamlined-frameworks-for-regulating-genai.html",
-      "date": "2026-10-20T00:00:00.000Z",
-      "category": "Regulatory / Policy",
-      "priority": false
-    },
-    {
-      "source": "RAPS",
-      "tier": "industry",
-      "title": "FDA finalizes guidance on prescription drug apps",
-      "link": "https://www.raps.org/resource/fda-finalizes-guidance-on-prescription-drug-apps.html",
-      "date": "2026-10-20T00:00:00.000Z",
+      "source": "FDA",
+      "tier": "regulator",
+      "title": "Update: Import Alert for Certain Olympus Medical Devices Manufactured in Japan - Letter to Health Care Providers",
+      "link": "http://www.fda.gov/medical-devices/letters-health-care-providers/update-import-alert-certain-olympus-medical-devices-manufactured-japan-letter-health-care-providers",
+      "date": "2026-10-20T04:00:00.000Z",
       "category": "Regulatory / Policy",
       "priority": false
     },
