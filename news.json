@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-30T12:53:46.003Z",
+  "generated": "2026-10-31T12:26:45.581Z",
   "sources": [
     "FDA",
     "EMA",
@@ -17,7 +17,7 @@
     "Deals / Business",
     "General"
   ],
-  "count": 92,
+  "count": 91,
   "items": [
     {
       "source": "EMA",
@@ -25,6 +25,15 @@
       "title": "Meeting highlights from the Pharmacovigilance Risk Assessment Committee (PRAC) 26 - 29 October 2026",
       "link": "https://www.ema.europa.eu/en/news/meeting-highlights-pharmacovigilance-risk-assessment-committee-prac-26-29-october-2026",
       "date": "2026-10-30T11:11:00.000Z",
+      "category": "Safety / PV",
+      "priority": true
+    },
+    {
+      "source": "FDA",
+      "tier": "regulator",
+      "title": "Platelet Factor 4 (PF4) Radioimmunoassay Recall: Instrumentation Laboratories Removes HemosIL AcuStar HIT-IgG(PF4-H)",
+      "link": "http://www.fda.gov/medical-devices/medical-device-recalls-and-early-alerts/platelet-factor-4-pf4-radioimmunoassay-recall-instrumentation-laboratories-removes-hemosil-acustar",
+      "date": "2026-10-30T04:00:00.000Z",
       "category": "Safety / PV",
       "priority": true
     },
@@ -45,6 +54,78 @@
       "date": "2026-10-02T11:00:00.000Z",
       "category": "Safety / PV",
       "priority": true
+    },
+    {
+      "source": "FDA",
+      "tier": "regulator",
+      "title": "FDA Approves First Plasmid DNA-based Immunotherapy for Adults with Recurrent Respiratory Papillomatosis",
+      "link": "http://www.fda.gov/news-events/press-announcements/fda-approves-first-plasmid-dna-based-immunotherapy-adults-recurrent-respiratory-papillomatosis",
+      "date": "2026-10-30T20:32:08.000Z",
+      "category": "Approval",
+      "priority": false
+    },
+    {
+      "source": "BioPharma Dive",
+      "tier": "industry",
+      "title": "This week in charts: ESMO’s winners and losers",
+      "link": "https://www.biopharmadive.com/news/biotech-charts-esmo-2026-winners-losers/873281/",
+      "date": "2026-10-30T16:00:00.000Z",
+      "category": "General",
+      "priority": false
+    },
+    {
+      "source": "BioSpace",
+      "tier": "industry",
+      "title": "AbbVie’s Q3 beat should keep ‘train rolling’ as company eyes bolt-on deals",
+      "link": "https://www.biospace.com/business/abbvies-q3-beat-should-keep-train-rolling-as-company-eyes-bolt-on-deals",
+      "date": "2026-10-30T15:42:22.000Z",
+      "category": "Deals / Business",
+      "priority": false
+    },
+    {
+      "source": "BioSpace",
+      "tier": "industry",
+      "title": "Immutep, Molecular cut workforces",
+      "link": "https://www.biospace.com/biospace-layoff-tracker",
+      "date": "2026-10-30T15:30:00.000Z",
+      "category": "General",
+      "priority": false
+    },
+    {
+      "source": "BioSpace",
+      "tier": "industry",
+      "title": "AstraZeneca employs $1.5B cost savings to reinvest back into growth",
+      "link": "https://www.biospace.com/business/astrazeneca-employs-1-5b-cost-savings-to-reinvest-back-into-growth",
+      "date": "2026-10-30T15:23:41.000Z",
+      "category": "General",
+      "priority": false
+    },
+    {
+      "source": "BioSpace",
+      "tier": "industry",
+      "title": "Regeneron achieves ‘clean sweep’ in Q3 with myriad pipeline catalysts on deck",
+      "link": "https://www.biospace.com/business/regeneron-achieves-clean-sweep-in-q3-with-myriad-pipeline-catalysts-on-deck",
+      "date": "2026-10-30T15:07:04.000Z",
+      "category": "Deals / Business",
+      "priority": false
+    },
+    {
+      "source": "BioSpace",
+      "tier": "industry",
+      "title": "Sanofi targets late-phase and commercial M&A to offset looming Dupixent decline",
+      "link": "https://www.biospace.com/business/sanofi-targets-late-phase-and-commercial-m-a-to-offset-looming-dupixent-decline",
+      "date": "2026-10-30T15:03:13.000Z",
+      "category": "General",
+      "priority": false
+    },
+    {
+      "source": "BioSpace",
+      "tier": "industry",
+      "title": "Acumen scraps sole asset after Alzheimer’s fail, plunging stock 80%",
+      "link": "https://www.biospace.com/drug-development/acumen-scraps-sole-asset-after-alzheimers-fail-plunging-stock-80",
+      "date": "2026-10-30T13:13:04.000Z",
+      "category": "Deals / Business",
+      "priority": false
     },
     {
       "source": "BioSpace",
@@ -85,6 +166,24 @@
     {
       "source": "BioPharma Dive",
       "tier": "industry",
+      "title": "With Setara, the team behind Actio opens its second act",
+      "link": "https://www.biopharmadive.com/news/setara-actio-charcot-marie-tooth-ion-channel-drugs/873227/",
+      "date": "2026-10-30T10:30:00.000Z",
+      "category": "General",
+      "priority": false
+    },
+    {
+      "source": "FDA",
+      "tier": "regulator",
+      "title": "Hospital Glucose Meter Correction: Nova Biomedical Updates Use Instructions for StatStrip Glucose Hospital Meter Systems",
+      "link": "http://www.fda.gov/medical-devices/medical-device-recalls-and-early-alerts/hospital-glucose-meter-correction-nova-biomedical-updates-use-instructions-statstrip-glucose",
+      "date": "2026-10-30T04:00:00.000Z",
+      "category": "Regulatory / Policy",
+      "priority": false
+    },
+    {
+      "source": "BioPharma Dive",
+      "tier": "industry",
       "title": "Aspen raises a $141M IPO in pursuit of a cell therapy for Parkinson’s",
       "link": "https://www.biopharmadive.com/news/aspen-neuroscience-parkinsons-ipo-pricing/873050/",
       "date": "2026-10-30T02:38:00.000Z",
@@ -94,10 +193,64 @@
     {
       "source": "Fierce Pharma",
       "tier": "industry",
+      "title": "As Skyrizi and Rinvoq dominate AbbVie's Q3, analysts ask what's next",
+      "link": "https://www.fiercepharma.com/pharma/skyrizi-and-rinvoq-dominate-abbvie-q3-investors-question-whats-next",
+      "date": "2026-10-30T00:00:00.000Z",
+      "category": "Deals / Business",
+      "priority": false
+    },
+    {
+      "source": "Fierce Pharma",
+      "tier": "industry",
+      "title": "As Dupixent keeps sales churning, Sanofi doubles down on R&D re-work",
+      "link": "https://www.fiercepharma.com/pharma/dupixent-keeps-sales-churning-sanofi-doubles-down-rd-re-work",
+      "date": "2026-10-30T00:00:00.000Z",
+      "category": "General",
+      "priority": false
+    },
+    {
+      "source": "Fierce Pharma",
+      "tier": "industry",
+      "title": "AstraZeneca launches $1.5B savings plan to fuel pipeline growth, says workforce won't shrink",
+      "link": "https://www.fiercepharma.com/pharma/astrazeneca-launches-15b-restructuring-fuel-pipeline-growth-promises-no-net-reduction-jobs",
+      "date": "2026-10-30T00:00:00.000Z",
+      "category": "General",
+      "priority": false
+    },
+    {
+      "source": "Fierce Pharma",
+      "tier": "industry",
+      "title": "Pfizer looks to reroute supply after flooding sidelined India injectables plant",
+      "link": "https://www.fiercepharma.com/pharma/pfizer-eyes-multi-year-repairs-after-flooding-sidelined-india-injectables-plant",
+      "date": "2026-10-30T00:00:00.000Z",
+      "category": "General",
+      "priority": false
+    },
+    {
+      "source": "Fierce Pharma",
+      "tier": "industry",
       "title": "Fierce Pharma Asia—The hunt for Enhertu’s successor; ESMO data from Merck, BMS, Takeda and more",
       "link": "https://www.fiercepharma.com/pharma/hunt-enhertu-successor-esmo-data-merck-bms-takeda-and-more",
       "date": "2026-10-30T00:00:00.000Z",
       "category": "General",
+      "priority": false
+    },
+    {
+      "source": "RAPS",
+      "tier": "industry",
+      "title": "This Week at FDA: New ConOps for drug inspections, AI policy proposal, and more",
+      "link": "https://www.raps.org/resource/this-week-at-fda-new-conops-for-drug-inspections-ai-policy-proposal-and-more.html",
+      "date": "2026-10-30T00:00:00.000Z",
+      "category": "Regulatory / Policy",
+      "priority": false
+    },
+    {
+      "source": "Drug Safety",
+      "tier": "journal",
+      "title": "Understanding the Relationship between Causality Assessment and Drug Labeling Practices: An Evaluation of US Regulations and FDA Policy Documents",
+      "link": "https://doi.org/10.1007/s40264-026-01710-5",
+      "date": "2026-10-30T00:00:00.000Z",
+      "category": "Safety / PV",
       "priority": false
     },
     {
@@ -166,15 +319,6 @@
     {
       "source": "BioSpace",
       "tier": "industry",
-      "title": "LENZ cuts 75% of staff as third quarter earnings disappoint",
-      "link": "https://www.biospace.com/biospace-layoff-tracker",
-      "date": "2026-10-29T13:44:00.000Z",
-      "category": "Deals / Business",
-      "priority": false
-    },
-    {
-      "source": "BioSpace",
-      "tier": "industry",
       "title": "Ono cans 2 endocannabinoid drug studies after quintuple Phase 2 failure",
       "link": "https://www.biospace.com/drug-development/ono-cans-2-endocannabinoid-drug-studies-after-quintuple-phase-2-failure",
       "date": "2026-10-29T13:38:58.000Z",
@@ -200,47 +344,11 @@
       "priority": false
     },
     {
-      "source": "BioSpace",
-      "tier": "industry",
-      "title": "HHS clears compounding pharmacies to manufacture 6 unapproved peptides",
-      "link": "https://www.biospace.com/drug-delivery/hhs-clears-compounding-pharmacies-to-manufacture-6-unapproved-peptides",
-      "date": "2026-10-29T11:17:00.000Z",
-      "category": "Approval",
-      "priority": false
-    },
-    {
       "source": "BioPharma Dive",
       "tier": "industry",
       "title": "Flagship blends three biotech startups to form Etcelera",
       "link": "https://www.biopharmadive.com/news/flagship-etcelera-etiome-empress-cellarity-launch/872947/",
       "date": "2026-10-29T10:30:00.000Z",
-      "category": "General",
-      "priority": false
-    },
-    {
-      "source": "BioSpace",
-      "tier": "industry",
-      "title": "Stability, speed and strategy: Inside Australia’s early‑stage edge",
-      "link": "https://www.biospace.com/drug-development/stability-speed-and-strategy-inside-australias-early-stage-edge",
-      "date": "2026-10-29T09:48:00.000Z",
-      "category": "General",
-      "priority": false
-    },
-    {
-      "source": "BioSpace",
-      "tier": "industry",
-      "title": "8 companies hiring in New York",
-      "link": "https://www.biospace.com/job-trends/8-companies-hiring-in-new-york",
-      "date": "2026-10-29T04:01:00.000Z",
-      "category": "General",
-      "priority": false
-    },
-    {
-      "source": "BioSpace",
-      "tier": "industry",
-      "title": "Biopharma cuts at manufacturing plants expected to affect 4,000+",
-      "link": "https://www.biospace.com/job-trends/biopharma-cuts-at-manufacturing-plants-expected-to-affect-4-000",
-      "date": "2026-10-29T04:01:00.000Z",
       "category": "General",
       "priority": false
     },
@@ -362,15 +470,6 @@
       "priority": false
     },
     {
-      "source": "BioSpace",
-      "tier": "industry",
-      "title": "Genmab’s cancer bispecific delivers early survival win in ‘exceedingly positive’ Phase 3 readout",
-      "link": "https://www.biospace.com/drug-development/genmabs-cancer-bispecific-delivers-early-survival-win-in-exceedingly-positive-phase-3-readout",
-      "date": "2026-10-28T17:07:47.000Z",
-      "category": "Clinical trial",
-      "priority": false
-    },
-    {
       "source": "BioPharma Dive",
       "tier": "industry",
       "title": "Lilly’s ‘triple-G’ drug tops Novo’s Ozempic in diabetes trial",
@@ -386,15 +485,6 @@
       "link": "https://www.biopharmadive.com/news/fda-personalized-gene-therapy-rare-disease-guidance/873004/",
       "date": "2026-10-28T15:15:00.000Z",
       "category": "Regulatory / Policy",
-      "priority": false
-    },
-    {
-      "source": "BioPharma Dive",
-      "tier": "industry",
-      "title": "Lilly shuffles business structure; Novartis writes off part of Avidity deal",
-      "link": "https://www.biopharmadive.com/news/lilly-global-markets-novartis-avidity-astellas-talzenna-prana/872857/",
-      "date": "2026-10-28T13:27:00.000Z",
-      "category": "Deals / Business",
       "priority": false
     },
     {
@@ -434,57 +524,12 @@
       "priority": false
     },
     {
-      "source": "Fierce Pharma",
-      "tier": "industry",
-      "title": "After GSK's Q3 approval spate, Hibsago preps for 'concentrated' US hep B launch",
-      "link": "https://www.fiercepharma.com/pharma/after-gsks-q3-approval-spate-hibsago-preps-concentrated-us-hep-b-launch",
-      "date": "2026-10-28T00:00:00.000Z",
-      "category": "Approval",
-      "priority": false
-    },
-    {
-      "source": "Fierce Pharma",
-      "tier": "industry",
-      "title": "Lilly combines global markets under new leadership role as 36-year veteran retires",
-      "link": "https://www.fiercepharma.com/pharma/lilly-combines-global-markets-under-new-leadership-role-36-year-veteran-retires",
-      "date": "2026-10-28T00:00:00.000Z",
-      "category": "General",
-      "priority": false
-    },
-    {
-      "source": "Fierce Pharma",
-      "tier": "industry",
-      "title": "GSK vows not to ‘park crap on Page 41’ in transparency push",
-      "link": "https://www.fiercepharma.com/marketing/gsk-vows-not-park-crap-page-41-transparency-push",
-      "date": "2026-10-28T00:00:00.000Z",
-      "category": "General",
-      "priority": false
-    },
-    {
-      "source": "Fierce Pharma",
-      "tier": "industry",
-      "title": "Blue Matter ‘turbocharges’ global reach of comms agency Cognite with acquisition",
-      "link": "https://www.fiercepharma.com/marketing/blue-matter-turbocharges-global-reach-comms-agency-cognite-acquistion",
-      "date": "2026-10-28T00:00:00.000Z",
-      "category": "Deals / Business",
-      "priority": false
-    },
-    {
       "source": "RAPS",
       "tier": "industry",
       "title": "FDA drafts guidance on submitting IDEs via eSTAR ahead of transition",
       "link": "https://www.raps.org/resource/fda-drafts-guidance-on-submitting-ides-via-estar-ahead-of-transition.html",
       "date": "2026-10-28T00:00:00.000Z",
       "category": "Regulatory / Policy",
-      "priority": false
-    },
-    {
-      "source": "BioPharma Dive",
-      "tier": "industry",
-      "title": "Ferring to acquire next-gen IVF startup Gameto for up to $1.4B",
-      "link": "https://www.biopharmadive.com/news/ferring-gameto-acquire-ivf-fertilo-womens-health/872904/",
-      "date": "2026-10-27T20:53:00.000Z",
-      "category": "Deals / Business",
       "priority": false
     },
     {
@@ -521,15 +566,6 @@
       "link": "https://www.raps.org/resource/recon-fda-approves-treatments-for-prostate-cancer-crohn-s-disease-us-judge-refuses-to-halt-lilly-weight-loss-drug-ads.html",
       "date": "2026-10-27T00:00:00.000Z",
       "category": "Approval",
-      "priority": false
-    },
-    {
-      "source": "RAPS",
-      "tier": "industry",
-      "title": "Diamantas touts new rare disease framework, greater emphasis on patient voice",
-      "link": "https://www.raps.org/resource/diamantas-touts-new-rare-disease-framework-greater-emphasis-on-patient-voice.html",
-      "date": "2026-10-26T00:00:00.000Z",
-      "category": "Regulatory / Policy",
       "priority": false
     },
     {
@@ -607,6 +643,15 @@
     {
       "source": "FDA",
       "tier": "regulator",
+      "title": "Update: Import Alert for Certain Olympus Medical Devices Manufactured in Japan - Letter to Health Care Providers",
+      "link": "http://www.fda.gov/medical-devices/letters-health-care-providers/update-import-alert-certain-olympus-medical-devices-manufactured-japan-letter-health-care-providers",
+      "date": "2026-10-20T04:00:00.000Z",
+      "category": "Regulatory / Policy",
+      "priority": false
+    },
+    {
+      "source": "FDA",
+      "tier": "regulator",
       "title": "Early Alert: Cardinal Health Updates Use Instructions for Presource Packs Containing BD Alaris Pump Infusion Sets",
       "link": "http://www.fda.gov/medical-devices/medical-device-recalls-and-early-alerts/early-alert-cardinal-health-updates-use-instructions-presource-packs-containing-bd-alaris-pump",
       "date": "2026-10-20T04:00:00.000Z",
@@ -618,24 +663,6 @@
       "tier": "regulator",
       "title": "Early Alert: Cardinal Health Issues Correction for Presource Packs Containing BD Alaris Pump Infusion Sets",
       "link": "http://www.fda.gov/medical-devices/medical-device-recalls-and-early-alerts/early-alert-cardinal-health-issues-correction-presource-packs-containing-bd-alaris-pump-infusion",
-      "date": "2026-10-20T04:00:00.000Z",
-      "category": "Regulatory / Policy",
-      "priority": false
-    },
-    {
-      "source": "FDA",
-      "tier": "regulator",
-      "title": "Update: Import Alert for Certain Olympus Medical Devices Manufactured in Japan - Letter to Health Care Providers",
-      "link": "http://www.fda.gov/medical-devices/letters-health-care-providers/update-import-alert-certain-olympus-medical-devices-manufactured-japan-letter-health-care-providers",
-      "date": "2026-10-20T04:00:00.000Z",
-      "category": "Regulatory / Policy",
-      "priority": false
-    },
-    {
-      "source": "FDA",
-      "tier": "regulator",
-      "title": "Hospital Glucose Meter Removal: Nova Biomedical Removes StatStrip Glucose Hospital Meter Systems",
-      "link": "http://www.fda.gov/medical-devices/medical-device-recalls-and-early-alerts/hospital-glucose-meter-removal-nova-biomedical-removes-statstrip-glucose-hospital-meter-systems",
       "date": "2026-10-20T04:00:00.000Z",
       "category": "Regulatory / Policy",
       "priority": false
@@ -683,24 +710,6 @@
       "link": "https://www.ema.europa.eu/en/news/ema-recommends-authorisation-rasonque-metastatic-pancreatic-cancer",
       "date": "2026-10-15T13:30:00.000Z",
       "category": "Approval",
-      "priority": false
-    },
-    {
-      "source": "FDA",
-      "tier": "regulator",
-      "title": "Early Alert: Transcatheter Mitral Valve Delivery System Issue from Edwards Lifesciences",
-      "link": "http://www.fda.gov/medical-devices/medical-device-recalls-and-early-alerts/early-alert-transcatheter-mitral-valve-delivery-system-issue-edwards-lifesciences",
-      "date": "2026-10-15T04:00:00.000Z",
-      "category": "Regulatory / Policy",
-      "priority": false
-    },
-    {
-      "source": "FDA",
-      "tier": "regulator",
-      "title": "FDA Launches the Rare Disease Framework Initiative to Develop a Holistic, Fit-For-Purpose Framework for Rare Disease Drug Development",
-      "link": "http://www.fda.gov/news-events/press-announcements/fda-launches-rare-disease-framework-initiative-develop-holistic-fit-purpose-framework-rare-disease",
-      "date": "2026-10-14T15:50:52.000Z",
-      "category": "Regulatory / Policy",
       "priority": false
     },
     {
@@ -827,24 +836,6 @@
       "link": "https://doi.org/10.1007/s40264-026-01712-3",
       "date": "2026-10-01T00:00:00.000Z",
       "category": "Safety / PV",
-      "priority": false
-    },
-    {
-      "source": "Drug Safety",
-      "tier": "journal",
-      "title": "The Value of Time-to-Onset for Signal Validation: Experience from the Reporting of COVID-19 Vaccines and Glomerular Diseases in VigiBase",
-      "link": "https://doi.org/10.1007/s40264-026-01711-4",
-      "date": "2026-10-01T00:00:00.000Z",
-      "category": "Safety / PV",
-      "priority": false
-    },
-    {
-      "source": "EMA",
-      "tier": "regulator",
-      "title": "Women are missing from medicines development: EMA’s roadmap for change",
-      "link": "https://www.ema.europa.eu/en/news/women-are-missing-medicines-development-emas-roadmap-change",
-      "date": "2026-09-30T09:32:50.000Z",
-      "category": "Regulatory / Policy",
       "priority": false
     }
   ]
