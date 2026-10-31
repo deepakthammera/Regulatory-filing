@@ -42,6 +42,7 @@ Each area combines reference content, worked examples, interactive decision help
 ## What's new
 
 ### October 2026
+- **My Space: news bookmarks and personal notes.** Tap ☆ on any headline in the news feed to bookmark it; bookmarks are listed under **My Space → Saved News** (kept even after a headline leaves the feed) with search, remove and "Add note". **My Space → My Notes** lets you create, search, edit and delete notes that save automatically, can link to a bookmarked article, and can be downloaded as a Markdown file. Both sync to your account when signed in and online, and work offline.
 - **News feed now updates daily** (06:17 UTC) instead of weekly. The sidebar folder is now **Daily Feed**.
 - **PV regulatory radar** added to the top of **PV Updates & News**: recent and upcoming ICH, EMA and FDA pharmacovigilance changes (status as of 27 Oct 2026). Examples: E2B(R3) now mandatory for FDA postmarketing ICSRs, AEMS replacing FAERS, the GVP Module VI revision, the EU pharma package, and the ICH Assembly in November.
 - **Installable app (PWA).** Add the site to your iPhone/iPad home screen (or install it on Android/desktop) and it opens full-screen like an app, with its own icon, and keeps working offline after the first visit. See [Install as an app](#install-as-an-app-iphone-android-desktop).
@@ -102,7 +103,8 @@ How it works: `manifest.webmanifest` (name, colours, icons), `icons/` (home-scre
 
 ## Features
 
-- **Sidebar navigation** across News & Updates, Regulatory, and Pharmacovigilance.
+- **Sidebar navigation** across News & Updates, My Space, Regulatory, and Pharmacovigilance.
+- **My Space**: bookmark news headlines and keep personal notes, synced to your account and available offline.
 - **News & Updates**: a daily auto-refreshed headline feed (`news.json`, built by a GitHub Action) and a curated **PV Updates & News** page explaining new guidelines (e.g., ICH E2D(R1), MedDRA releases) and regulator safety actions.
 - **Interactive tools** — a pathway decision helper, development-lifecycle views, submission checklists, and document templates.
 - **Deep-dive guides** — long-form, tabbed reference sections for the major PV aggregate reports and coding standards.
@@ -116,6 +118,14 @@ How it works: `manifest.webmanifest` (name, colours, icons), `icons/` (home-scre
 ---
 
 ## Content map
+
+### My Space
+| Icon | Section | What it covers |
+|---|---------|----------------|
+| ☆ | **Saved News** | Your bookmarked headlines from the news feed, with search, remove and "Add note" |
+| ✎ | **My Notes** | Personal notes: create, search, edit, delete, autosave, link to an article, download as Markdown |
+
+Bookmarks and notes are stored with your account (Supabase `user_data.meta`, field `ws`) and on the device (localStorage `reg_myspace_v1`, tagged with your user ID). When the two differ, the newer copy wins, so edits made offline are uploaded the next time you are online.
 
 ### News & Updates
 | Icon | Section | What it covers |

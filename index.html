@@ -1442,6 +1442,35 @@
   .ectd-mod-block-title { font-size: 1.4rem; }
   .ectd-sec-row { grid-template-columns: 70px 1fr; gap: 0.6rem; }
 }
+
+/* ============================================================
+   MY SPACE — news bookmarks and notes
+   ============================================================ */
+.news-item{position:relative}
+.news-bm{position:absolute;top:0.55rem;right:0.6rem;width:2rem;height:2rem;display:inline-flex;align-items:center;justify-content:center;border:1px solid var(--rule);border-radius:999px;background:var(--paper);color:var(--muted);font-size:1rem;line-height:1;cursor:pointer;padding:0}
+.news-bm:hover{border-color:var(--burgundy);color:var(--burgundy)}
+.news-bm[aria-pressed="true"]{background:var(--burgundy);border-color:var(--burgundy);color:#fff}
+.ws-card{border:1px solid var(--rule);border-left:3px solid var(--purple);border-radius:8px;padding:0.75rem 0.9rem;margin-bottom:0.6rem;background:var(--paper)}
+.ws-actions{display:flex;gap:0.4rem;flex-wrap:wrap;margin-top:0.55rem}
+.notes-shell{display:grid;grid-template-columns:280px minmax(0,1fr);gap:1.4rem;align-items:start}
+.notes-list{display:flex;flex-direction:column;gap:0.4rem;max-height:62vh;overflow-y:auto}
+.note-row{border:1px solid var(--rule);border-radius:8px;padding:0.55rem 0.7rem;cursor:pointer;background:var(--paper)}
+.note-row:hover{border-color:var(--purple)}
+.note-row.active{border-color:var(--purple);background:var(--paper-2);box-shadow:inset 3px 0 0 var(--purple)}
+.note-row .t{font-weight:600;color:var(--ink);font-size:0.92rem;line-height:1.3}
+.note-row .p{font-size:0.8rem;color:var(--muted);margin-top:0.15rem;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.note-row .d{font-size:0.7rem;color:var(--muted-soft);margin-top:0.2rem}
+.notes-editor .note-title{width:100%;font-size:1.35rem;font-weight:600;color:var(--ink);border:none;border-bottom:1px solid var(--rule);padding:0.35rem 0;background:transparent;outline:none;font-family:inherit}
+.notes-editor .note-title:focus{border-bottom-color:var(--purple)}
+.notes-editor .note-meta{font-size:0.75rem;color:var(--muted);margin:0.4rem 0 0.6rem}
+.notes-editor .note-ref{font-size:0.82rem;margin:0 0 0.6rem;padding:0.45rem 0.7rem;background:var(--paper-2);border-left:3px solid var(--burgundy)}
+.notes-editor .note-ref a{color:var(--burgundy)}
+.notes-editor textarea{width:100%;min-height:46vh;border:1px solid var(--rule);border-radius:8px;padding:0.8rem 0.9rem;font:inherit;font-size:0.95rem;line-height:1.6;color:var(--ink);background:var(--paper);resize:vertical;outline:none}
+.notes-editor textarea:focus{border-color:var(--purple)}
+@media(max-width:760px){
+  .notes-shell{grid-template-columns:minmax(0,1fr)}
+  .notes-list{max-height:40vh}
+}
 </style>
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.39.0/dist/umd/supabase.min.js"></script>
 </head>
@@ -1496,6 +1525,12 @@
     <div class="nav-group">
       <div class="label">Daily Feed</div>
       <div class="nav-item" data-nav="news"><span class="ico">◆</span><span>Regulatory &amp; PV News</span></div>
+    </div>
+    <div class="nav-domain-header">My Space</div>
+    <div class="nav-group">
+      <div class="label">Personal</div>
+      <div class="nav-item" data-nav="bookmarks"><span class="ico">☆</span><span>Saved News</span></div>
+      <div class="nav-item" data-nav="notes"><span class="ico">✎</span><span>My Notes</span></div>
     </div>
     <div class="nav-domain-header">Regulatory</div>
     <div class="nav-group">
@@ -1778,6 +1813,24 @@
         <strong>How this stays current:</strong> a scheduled job fetches the RSS/Atom feeds every day and writes <code>news.json</code> to the repository; this page then displays it. If items look stale, today's run may not have happened yet, or you are viewing a cached copy — hard-refresh with Ctrl/Cmd+Shift+R. Headlines and links are the property of their respective sources; follow each link for the full article.
       </div>
       <div id="news-content"></div>
+    </section>
+
+    <section class="view" id="view-bookmarks">
+      <div class="page-head">
+        <div class="eyebrow accent-teal">My Space · Personal</div>
+        <h1>Saved News</h1>
+        <p class="sub">Headlines you have bookmarked from the daily news feed. They stay here after they drop out of the feed, and sync to your account when you are signed in and online.</p>
+      </div>
+      <div id="bookmarks-content"></div>
+    </section>
+
+    <section class="view" id="view-notes">
+      <div class="page-head">
+        <div class="eyebrow accent-teal">My Space · Personal</div>
+        <h1>My Notes</h1>
+        <p class="sub">Your own study and work notes. They save automatically as you type, work offline, and sync to your account when you are signed in and online. Use <strong>Download all</strong> to keep a copy as a Markdown file.</p>
+      </div>
+      <div id="notes-content"></div>
     </section>
 
     <section class="view" id="view-pvupdates">
@@ -2875,6 +2928,8 @@ function navigate(view){
   
   if(view==='dashboard' && typeof renderNewsPreview==='function') renderNewsPreview();
   if(view==='news')safeRender('news-content', ()=>renderNews(), 'News');
+  if(view==='bookmarks')safeRender('bookmarks-content', ()=>renderBookmarks(), 'Saved News');
+  if(view==='notes')safeRender('notes-content', ()=>renderNotes(), 'My Notes');
   if(view==='casestudies')safeRender('casestudy-list', ()=>renderCaseStudies(), 'Case Studies');
   if(view==='devices')safeRender('devices-content', ()=>renderDevices(), 'Medical Devices');
   if(view==='gcp')safeRender('gcp-content', ()=>renderGCP(gcpState.tab), 'GCP');
@@ -2901,6 +2956,8 @@ const SEARCH_INDEX_MAP = [
   { view: 'dashboard',          label: 'Dashboard',                       contentId: 'view-dashboard' },
   { view: 'pvupdates',          label: 'PV Updates & News',               contentId: 'view-pvupdates' },
   { view: 'news',               label: 'Regulatory & PV News',            contentId: 'view-news' },
+  { view: 'bookmarks',          label: 'Saved News',                      contentId: 'view-bookmarks' },
+  { view: 'notes',              label: 'My Notes',                        contentId: 'view-notes' },
   { view: 'pathway',            label: 'Pathway Decision Helper',         contentId: 'view-pathway' },
   { view: 'timeline',           label: 'Development Lifecycle',           contentId: 'view-timeline' },
   { view: 'devconsiderations',  label: 'Development Considerations',      contentId: 'view-devconsiderations', dynamic: 'devconsid-content', renderFn: () => (typeof renderDrugDevelopmentConsiderations === 'function') && renderDrugDevelopmentConsiderations() },
@@ -14161,17 +14218,19 @@ function renderNews(){
   function fmtDate(d){ if(!d) return ''; const t=new Date(d); return isNaN(t)?esc(d):t.toLocaleDateString(undefined,{year:'numeric',month:'short',day:'numeric'}); }
 
   // UI state (persists while the tab is open)
-  const state = { src:'ALL', cat:'ALL', priorityOnly:false, q:'' };
+  const state = { src:'ALL', cat:'ALL', priorityOnly:false, savedOnly:false, q:'' };
   let ALL = [];
 
   function itemCard(it){
     const c = srcColor(it.source);
     const catC = CAT_COLOR[it.category] || 'var(--muted)';
     const hay = ((it.title||'')+' '+(it.source||'')+' '+(it.category||'')).toLowerCase();
-    return '<a class="news-item" '
-      + 'data-src="'+esc(it.source||'')+'" data-cat="'+esc(it.category||'General')+'" data-prio="'+(it.priority?'1':'0')+'" data-hay="'+esc(hay)+'" '
-      + 'href="'+esc(it.link||'#')+'" target="_blank" rel="noopener noreferrer" '
-      + 'style="display:block;border:1px solid var(--line);border-left:3px solid '+c+';border-radius:8px;padding:0.75rem 0.9rem;margin-bottom:0.6rem;text-decoration:none">'
+    const saved = isBookmarked(it.link);
+    return '<div class="news-item" '
+      + 'data-src="'+esc(it.source||'')+'" data-cat="'+esc(it.category||'General')+'" data-prio="'+(it.priority?'1':'0')+'" data-hay="'+esc(hay)+'" data-link="'+esc(it.link||'')+'" '
+      + 'style="border:1px solid var(--line);border-left:3px solid '+c+';border-radius:8px;padding:0.75rem 3.1rem 0.75rem 0.9rem;margin-bottom:0.6rem">'
+      + '<button type="button" class="news-bm" aria-pressed="'+(saved?'true':'false')+'" title="'+(saved?'Remove bookmark':'Bookmark this headline')+'" aria-label="'+(saved?'Remove bookmark':'Bookmark this headline')+'">'+(saved?'★':'☆')+'</button>'
+      + '<a href="'+esc(it.link||'#')+'" target="_blank" rel="noopener noreferrer" style="display:block;text-decoration:none;color:inherit">'
       + '<div style="display:flex;justify-content:space-between;gap:0.8rem;align-items:baseline;flex-wrap:wrap">'
       + '<span style="display:flex;gap:0.5rem;align-items:center;flex-wrap:wrap">'
       +   '<span style="font-size:0.68rem;font-weight:700;letter-spacing:0.05em;text-transform:uppercase;color:'+c+'">'+esc(it.source||'')+'</span>'
@@ -14181,7 +14240,7 @@ function renderNews(){
       + '<span style="font-size:0.76rem;color:var(--muted);white-space:nowrap">'+fmtDate(it.date)+'</span>'
       + '</div>'
       + '<div style="font-family:\'Cormorant Garamond\',serif;font-size:1.12rem;font-weight:500;color:var(--ink);margin-top:0.2rem;line-height:1.3">'+esc(it.title||'(untitled)')+'</div>'
-      + '</a>';
+      + '</a></div>';
   }
 
   function applyFilters(){
@@ -14193,8 +14252,9 @@ function renderNews(){
       const okSrc = (state.src==='ALL') || node.dataset.src===state.src;
       const okCat = (state.cat==='ALL') || node.dataset.cat===state.cat;
       const okPrio = !state.priorityOnly || node.dataset.prio==='1';
+      const okSaved = !state.savedOnly || isBookmarked(node.dataset.link);
       const okQ = !q || (node.dataset.hay||'').includes(q);
-      const visible = okSrc && okCat && okPrio && okQ;
+      const visible = okSrc && okCat && okPrio && okSaved && okQ;
       node.style.display = visible ? 'block' : 'none';
       if(visible) shown++;
     });
@@ -14226,7 +14286,10 @@ function renderNews(){
 
     // priority toggle + count
     html += '<div style="display:flex;justify-content:space-between;align-items:center;gap:1rem;flex-wrap:wrap;margin-bottom:0.5rem">';
+    html += '<span style="display:flex;gap:1.1rem;flex-wrap:wrap">';
     html += '<label style="display:flex;gap:0.45rem;align-items:center;font-size:0.85rem;color:var(--ink);cursor:pointer"><input type="checkbox" id="news-prio-only" style="cursor:pointer"> Show priority only ('+prioCount+')</label>';
+    html += '<label style="display:flex;gap:0.45rem;align-items:center;font-size:0.85rem;color:var(--ink);cursor:pointer"><input type="checkbox" id="news-saved-only" style="cursor:pointer"> Show bookmarked only (<span id="news-saved-count">'+ALL.filter(i=>isBookmarked(i.link)).length+'</span>)</label>';
+    html += '</span>';
     html += '<span id="news-count" style="font-size:0.8rem;color:var(--muted)">'+ALL.length+' of '+ALL.length+' headlines shown</span>';
     html += '</div>';
 
@@ -14249,7 +14312,7 @@ function renderNews(){
     ALL.forEach(it=>{ html += itemCard(it); });
     html += '</div>';
     html += '<div id="news-empty" style="display:none;color:var(--muted);font-style:italic;padding:1rem 0">No headlines match your filters.</div>';
-    html += '<p style="font-size:0.8rem;color:var(--muted);margin-top:0.8rem">Sources: BioSpace, RAPS (Regulatory Focus), ICH, and CIOMS. Priority items (⚑) contain high-signal terms such as recall, safety warning, or pharmacovigilance. Headlines and links belong to their respective publishers — select an item to read the full article at the source.</p>';
+    html += '<p style="font-size:0.8rem;color:var(--muted);margin-top:0.8rem">Tap ☆ to bookmark a headline; all bookmarks are listed under <strong>My Space → Saved News</strong>. Priority items (⚑) contain high-signal terms such as recall, safety warning, or pharmacovigilance. Headlines and links belong to their respective publishers — select an item to read the full article at the source.</p>';
     html += '</div>';
     return html;
   }
@@ -14259,6 +14322,25 @@ function renderNews(){
     if(s){ s.addEventListener('input', ()=>{ state.q = s.value; applyFilters(); }); }
     const p = document.getElementById('news-prio-only');
     if(p){ p.addEventListener('change', ()=>{ state.priorityOnly = p.checked; applyFilters(); }); }
+    const sv = document.getElementById('news-saved-only');
+    if(sv){ sv.addEventListener('change', ()=>{ state.savedOnly = sv.checked; applyFilters(); }); }
+    const list = document.getElementById('news-list');
+    if(list){ list.addEventListener('click', async (e)=>{
+      const btn = e.target.closest('.news-bm');
+      if(!btn) return;
+      e.preventDefault(); e.stopPropagation();
+      const card = btn.closest('.news-item');
+      const item = ALL.find(i=>i.link===card.dataset.link);
+      if(!item) return;
+      const saved = await toggleBookmark(item);
+      btn.setAttribute('aria-pressed', saved?'true':'false');
+      btn.textContent = saved ? '★' : '☆';
+      btn.title = saved ? 'Remove bookmark' : 'Bookmark this headline';
+      btn.setAttribute('aria-label', btn.title);
+      const cnt = document.getElementById('news-saved-count');
+      if(cnt) cnt.textContent = ALL.filter(i=>isBookmarked(i.link)).length;
+      applyFilters();
+    }); }
     document.querySelectorAll('[data-news-cat]').forEach(pill=>{
       pill.addEventListener('click', ()=>{
         state.cat = pill.dataset.newsCat;
@@ -14277,7 +14359,7 @@ function renderNews(){
 
   fetch('news.json', { cache: 'no-store' })
     .then(r => { if(!r.ok) throw new Error('not found'); return r.json(); })
-    .then(data => { el.innerHTML = build(data); wire(); })
+    .then(data => wsLoad().catch(()=>null).then(() => { el.innerHTML = build(data); wire(); }))
     .catch(() => {
       el.innerHTML = build(null) +
         '<div class="pv-callout" style="border-left-color:var(--muted)"><div class="lbl">news.json not found</div>'
@@ -14285,6 +14367,250 @@ function renderNews(){
       wire();
     });
 }
+
+/* ============================================================
+   MY SPACE — news bookmarks and personal notes
+   Account copy: the synced "meta" object (Supabase user_data.meta) as
+   meta.ws = { savedAt, bookmarks: [...], notes: [...] }.
+   Device copy: localStorage WS_LOCAL_KEY (its own key, so other code that re-saves
+   "meta" cannot overwrite it). On load the newer copy wins; if the device copy is
+   newer (e.g., edits made offline) it is uploaded straight away.
+   ============================================================ */
+const WS_LOCAL_KEY = 'reg_myspace_v1';
+let WS = null;
+let wsSaveTimer = null;
+
+function wsNormalize(ws){
+  ws = (ws && typeof ws === 'object') ? ws : {};
+  return {
+    owner: typeof ws.owner === 'string' ? ws.owner : null,
+    savedAt: typeof ws.savedAt === 'string' ? ws.savedAt : '',
+    bookmarks: Array.isArray(ws.bookmarks) ? ws.bookmarks.filter(b => b && b.link) : [],
+    notes: Array.isArray(ws.notes) ? ws.notes.filter(n => n && n.id) : []
+  };
+}
+function wsUserId(){ return (CURRENT_USER && CURRENT_USER.id) || null; }
+// The device copy is only used for the user who saved it (shared browsers).
+function wsDeviceCopy(){
+  try {
+    const d = wsNormalize(JSON.parse(localStorage.getItem(WS_LOCAL_KEY) || 'null'));
+    return d.owner === wsUserId() ? d : wsNormalize(null);
+  } catch(e){ return wsNormalize(null); }
+}
+async function wsLoad(force){
+  if (WS && !force) return WS;
+  let cloudMeta = {};
+  try { cloudMeta = await loadMeta(); } catch(e) {}
+  const fromCloud = wsNormalize(cloudMeta && cloudMeta.ws), fromDevice = wsDeviceCopy();
+  if (fromDevice.savedAt > fromCloud.savedAt) {
+    WS = fromDevice;
+    if (SB && CURRENT_USER) wsFlush();   // bring the account copy up to date
+  } else {
+    WS = fromCloud;
+    WS.owner = wsUserId();
+    try { localStorage.setItem(WS_LOCAL_KEY, JSON.stringify(WS)); } catch(e) {}
+  }
+  return WS;
+}
+// Save: the device copy is written at once; the account copy shortly after (debounced).
+function wsSave(){
+  if (!WS) return;
+  WS.savedAt = new Date().toISOString();
+  WS.owner = wsUserId();
+  try { localStorage.setItem(WS_LOCAL_KEY, JSON.stringify(WS)); } catch(e) {}
+  wsSetStatus('Saving…');
+  clearTimeout(wsSaveTimer);
+  wsSaveTimer = setTimeout(wsFlush, 700);
+}
+async function wsFlush(){
+  clearTimeout(wsSaveTimer); wsSaveTimer = null;
+  if (!WS) return;
+  let m = {};
+  try { m = await loadMeta(); } catch(e) {}
+  m = (m && typeof m === 'object') ? m : {};
+  m.ws = WS;
+  const ok = await cloudSet('meta', m, META_KEY);
+  wsSetStatus(ok ? 'Saved · synced to your account' : (CURRENT_USER && navigator.onLine ? 'Saved on this device (sync failed)' : 'Saved on this device'));
+}
+document.addEventListener('visibilitychange', () => { if (document.visibilityState === 'hidden' && wsSaveTimer) wsFlush(); });
+// Signing out forgets the in-memory copy, so the next user starts from their own data.
+document.getElementById('logout-btn').addEventListener('click', () => {
+  clearTimeout(wsSaveTimer); wsSaveTimer = null;
+  WS = null; NOTES_state = { sel: null, q: '' }; BM_state = { q: '' };
+});
+function wsSetStatus(text){ document.querySelectorAll('.ws-status').forEach(el => { el.textContent = text; }); }
+function wsSafeUrl(u){ return /^https?:\/\//i.test(String(u || '')) ? String(u) : '#'; }
+function wsFmtDate(d){ if(!d) return ''; const t = new Date(d); return isNaN(t) ? '' : t.toLocaleDateString(undefined, { year:'numeric', month:'short', day:'numeric' }); }
+function wsFmtDateTime(d){ if(!d) return ''; const t = new Date(d); return isNaN(t) ? '' : t.toLocaleString(undefined, { year:'numeric', month:'short', day:'numeric', hour:'2-digit', minute:'2-digit' }); }
+
+/* ---------- Bookmarks ---------- */
+function isBookmarked(link){ return !!(WS && WS.bookmarks.some(b => b.link === link)); }
+async function toggleBookmark(item){
+  await wsLoad();
+  const i = WS.bookmarks.findIndex(b => b.link === item.link);
+  if (i >= 0) WS.bookmarks.splice(i, 1);
+  else WS.bookmarks.unshift({
+    link: item.link, title: item.title || '(untitled)', source: item.source || '',
+    date: item.date || '', category: item.category || 'General', savedAt: new Date().toISOString()
+  });
+  wsSave();
+  return i < 0;
+}
+
+let BM_state = { q: '' };
+async function renderBookmarks(){
+  const el = document.getElementById('bookmarks-content');
+  if (!el) return;
+  await wsLoad();
+  const q = BM_state.q.trim().toLowerCase();
+  const list = WS.bookmarks.filter(b => !q || ((b.title||'') + ' ' + (b.source||'') + ' ' + (b.category||'')).toLowerCase().includes(q));
+  let html = '<div class="pv-block">';
+  html += '<div class="pv-block-head"><span class="num">☆</span><h2>Bookmarked headlines</h2><span class="cite">' + WS.bookmarks.length + ' saved</span></div>';
+  if (!WS.bookmarks.length) {
+    html += '<div class="pv-callout"><div class="lbl">No bookmarks yet</div>Open <a href="#" onclick="navigate(\'news\');return false;" style="color:var(--burgundy);text-decoration:underline">Regulatory &amp; PV News</a> and tap ☆ on any headline to save it here. Saved headlines stay here even after they drop out of the daily feed.</div>';
+  } else {
+    html += '<div class="search-bar" style="margin:0 0 0.8rem"><input class="search-input" id="bm-search" placeholder="Search your bookmarks…" value="' + escapeHtml(BM_state.q) + '"></div>';
+    if (!list.length) html += '<p style="color:var(--muted);font-style:italic">No bookmarks match your search.</p>';
+    list.forEach(b => {
+      html += '<div class="ws-card">'
+        + '<div style="display:flex;justify-content:space-between;gap:0.8rem;flex-wrap:wrap;font-size:0.72rem;color:var(--muted)">'
+        +   '<span><strong style="color:var(--ink-soft);text-transform:uppercase;letter-spacing:0.05em">' + escapeHtml(b.source) + '</strong> · ' + escapeHtml(b.category) + (b.date ? ' · ' + escapeHtml(wsFmtDate(b.date)) : '') + '</span>'
+        +   '<span>Saved ' + escapeHtml(wsFmtDate(b.savedAt)) + '</span>'
+        + '</div>'
+        + '<a href="' + escapeHtml(wsSafeUrl(b.link)) + '" target="_blank" rel="noopener noreferrer" style="display:block;font-family:\'Cormorant Garamond\',serif;font-size:1.12rem;font-weight:500;color:var(--ink);margin-top:0.25rem;line-height:1.3;text-decoration:none">' + escapeHtml(b.title) + '</a>'
+        + '<div class="ws-actions">'
+        +   '<button class="btn small subtle" data-bm-note="' + escapeHtml(b.link) + '">✎ Add note</button>'
+        +   '<button class="btn small subtle" data-bm-remove="' + escapeHtml(b.link) + '">Remove</button>'
+        + '</div></div>';
+    });
+  }
+  html += '<p class="ws-status" style="font-size:0.78rem;color:var(--muted);margin-top:0.6rem"></p>';
+  html += '</div>';
+  el.innerHTML = html;
+
+  const s = document.getElementById('bm-search');
+  if (s) s.addEventListener('input', () => { BM_state.q = s.value; const pos = s.selectionStart; renderBookmarks().then(() => { const n = document.getElementById('bm-search'); if (n) { n.focus(); try { n.setSelectionRange(pos, pos); } catch(e) {} } }); });
+  el.querySelectorAll('[data-bm-remove]').forEach(btn => btn.addEventListener('click', async () => {
+    const i = WS.bookmarks.findIndex(b => b.link === btn.dataset.bmRemove);
+    if (i >= 0) { WS.bookmarks.splice(i, 1); wsSave(); renderBookmarks(); }
+  }));
+  el.querySelectorAll('[data-bm-note]').forEach(btn => btn.addEventListener('click', () => {
+    const b = WS.bookmarks.find(x => x.link === btn.dataset.bmNote);
+    if (!b) return;
+    const n = wsAddNote({ title: b.title, body: '', ref: { title: b.title, link: b.link, source: b.source } });
+    NOTES_state.sel = n.id; NOTES_state.q = '';
+    navigate('notes');
+  }));
+}
+
+/* ---------- Notes ---------- */
+let NOTES_state = { sel: null, q: '' };
+function wsNewId(){ return 'n' + Date.now().toString(36) + Math.random().toString(36).slice(2, 7); }
+function wsAddNote(fields){
+  const now = new Date().toISOString();
+  const n = { id: wsNewId(), title: (fields && fields.title) || '', body: (fields && fields.body) || '', createdAt: now, updatedAt: now };
+  if (fields && fields.ref && fields.ref.link) n.ref = { title: fields.ref.title || '', link: fields.ref.link, source: fields.ref.source || '' };
+  WS.notes.unshift(n);
+  wsSave();
+  return n;
+}
+function wsNotesSorted(){ return WS.notes.slice().sort((a, b) => String(b.updatedAt).localeCompare(String(a.updatedAt))); }
+function wsNoteMatches(n, q){ return !q || ((n.title||'') + ' ' + (n.body||'') + ' ' + ((n.ref && n.ref.title) || '')).toLowerCase().includes(q); }
+
+function notesListHtml(){
+  const q = NOTES_state.q.trim().toLowerCase();
+  const notes = wsNotesSorted().filter(n => wsNoteMatches(n, q));
+  if (!WS.notes.length) return '<p style="font-size:0.85rem;color:var(--muted);font-style:italic">No notes yet.</p>';
+  if (!notes.length) return '<p style="font-size:0.85rem;color:var(--muted);font-style:italic">No notes match your search.</p>';
+  return notes.map(n => {
+    const preview = (n.body || '').replace(/\s+/g, ' ').trim().slice(0, 90);
+    return '<div class="note-row' + (n.id === NOTES_state.sel ? ' active' : '') + '" data-note="' + escapeHtml(n.id) + '" role="button" tabindex="0">'
+      + '<div class="t">' + escapeHtml(n.title || 'Untitled note') + '</div>'
+      + '<div class="p">' + (preview ? escapeHtml(preview) : '<em>Empty</em>') + '</div>'
+      + '<div class="d">' + escapeHtml(wsFmtDateTime(n.updatedAt)) + '</div>'
+      + '</div>';
+  }).join('');
+}
+function notesEditorHtml(n){
+  if (!n) return '<div class="pv-callout"><div class="lbl">Notes</div>Select a note on the left, or create one with <strong>+ New note</strong>. Notes save automatically as you type.</div>';
+  return '<input class="note-title" id="note-title" maxlength="200" placeholder="Note title" value="' + escapeHtml(n.title) + '">'
+    + '<div class="note-meta">Created ' + escapeHtml(wsFmtDateTime(n.createdAt)) + ' · Last edited <span id="note-updated">' + escapeHtml(wsFmtDateTime(n.updatedAt)) + '</span></div>'
+    + (n.ref ? '<div class="note-ref">Linked article' + (n.ref.source ? ' (' + escapeHtml(n.ref.source) + ')' : '') + ': <a href="' + escapeHtml(wsSafeUrl(n.ref.link)) + '" target="_blank" rel="noopener noreferrer">' + escapeHtml(n.ref.title || n.ref.link) + '</a></div>' : '')
+    + '<textarea id="note-body" placeholder="Write your note…">' + escapeHtml(n.body) + '</textarea>'
+    + '<div style="display:flex;justify-content:space-between;align-items:center;gap:0.6rem;flex-wrap:wrap;margin-top:0.6rem">'
+    +   '<span class="ws-status" style="font-size:0.78rem;color:var(--muted)"></span>'
+    +   '<button class="btn small subtle" id="note-delete">Delete note</button>'
+    + '</div>';
+}
+
+async function renderNotes(){
+  const el = document.getElementById('notes-content');
+  if (!el) return;
+  await wsLoad();
+  if (NOTES_state.sel && !WS.notes.some(n => n.id === NOTES_state.sel)) NOTES_state.sel = null;
+  if (!NOTES_state.sel && WS.notes.length && window.innerWidth > 760) NOTES_state.sel = wsNotesSorted()[0].id;
+  const cur = WS.notes.find(n => n.id === NOTES_state.sel);
+  el.innerHTML = '<div class="notes-shell">'
+    + '<div class="notes-side">'
+    +   '<div style="display:flex;gap:0.4rem;flex-wrap:wrap;margin-bottom:0.6rem"><button class="btn small primary" id="note-new">+ New note</button><button class="btn small subtle" id="note-export"' + (WS.notes.length ? '' : ' disabled') + '>⤓ Download all</button></div>'
+    +   '<input class="search-input" id="note-search" placeholder="Search notes…" value="' + escapeHtml(NOTES_state.q) + '" style="width:100%;margin-bottom:0.6rem">'
+    +   '<div class="notes-list" id="notes-list">' + notesListHtml() + '</div>'
+    + '</div>'
+    + '<div class="notes-editor" id="notes-editor">' + notesEditorHtml(cur) + '</div>'
+    + '</div>';
+
+  const refreshList = () => { const l = document.getElementById('notes-list'); if (l) { l.innerHTML = notesListHtml(); wireRows(); } };
+  const select = (id) => { NOTES_state.sel = id; renderNotes().then(() => { const ed = document.getElementById('notes-editor'); if (ed && window.innerWidth <= 760) ed.scrollIntoView({ block: 'start' }); }); };
+  function wireRows(){
+    el.querySelectorAll('.note-row').forEach(r => {
+      r.addEventListener('click', () => select(r.dataset.note));
+      r.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); select(r.dataset.note); } });
+    });
+  }
+  wireRows();
+
+  document.getElementById('note-new').addEventListener('click', () => {
+    const n = wsAddNote({});
+    NOTES_state.sel = n.id; NOTES_state.q = '';
+    renderNotes().then(() => { const t = document.getElementById('note-title'); if (t) t.focus(); });
+  });
+  const search = document.getElementById('note-search');
+  search.addEventListener('input', () => { NOTES_state.q = search.value; refreshList(); });
+  const exp = document.getElementById('note-export');
+  if (exp) exp.addEventListener('click', wsExportNotes);
+
+  if (cur) {
+    const t = document.getElementById('note-title'), body = document.getElementById('note-body');
+    const touch = () => {
+      cur.updatedAt = new Date().toISOString();
+      const u = document.getElementById('note-updated'); if (u) u.textContent = wsFmtDateTime(cur.updatedAt);
+      wsSave(); refreshList();
+    };
+    t.addEventListener('input', () => { cur.title = t.value; touch(); });
+    body.addEventListener('input', () => { cur.body = body.value; touch(); });
+    document.getElementById('note-delete').addEventListener('click', () => {
+      if (!confirm('Delete this note? This cannot be undone.')) return;
+      WS.notes = WS.notes.filter(n => n.id !== cur.id);
+      NOTES_state.sel = null; wsSave(); renderNotes();
+    });
+  }
+}
+
+function wsExportNotes(){
+  if (!WS || !WS.notes.length) return;
+  const md = '# My Notes\n\nExported ' + new Date().toLocaleString() + '\n\n'
+    + wsNotesSorted().map(n => '## ' + (n.title || 'Untitled note') + '\n\n'
+      + '_Last edited ' + wsFmtDateTime(n.updatedAt) + '_\n\n'
+      + (n.ref ? 'Linked article: [' + (n.ref.title || n.ref.link) + '](' + n.ref.link + ')\n\n' : '')
+      + (n.body || '') + '\n').join('\n---\n\n');
+  const blob = new Blob([md], { type: 'text/markdown;charset=utf-8' });
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(blob);
+  a.download = 'my-notes-' + new Date().toISOString().slice(0, 10) + '.md';
+  document.body.appendChild(a); a.click();
+  setTimeout(() => { URL.revokeObjectURL(a.href); a.remove(); }, 1000);
+}
+
 
 function renderCaseStudies(){
   const list = document.getElementById('casestudy-list');
