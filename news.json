@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-31T12:26:45.581Z",
+  "generated": "2026-11-01T13:22:08.487Z",
   "sources": [
     "FDA",
     "EMA",
@@ -17,7 +17,7 @@
     "Deals / Business",
     "General"
   ],
-  "count": 91,
+  "count": 87,
   "items": [
     {
       "source": "EMA",
@@ -791,42 +791,6 @@
       "link": "https://doi.org/10.1007/s40264-026-01732-z",
       "date": "2026-10-02T00:00:00.000Z",
       "category": "Safety / PV",
-      "priority": false
-    },
-    {
-      "source": "EMA",
-      "tier": "regulator",
-      "title": "Advice on ‘end-of-year’ submission dates for type I variations in 2026",
-      "link": "https://www.ema.europa.eu/en/news/advice-end-year-submission-dates-type-i-variations-2026",
-      "date": "2026-10-01T14:00:00.000Z",
-      "category": "Regulatory / Policy",
-      "priority": false
-    },
-    {
-      "source": "EMA",
-      "tier": "regulator",
-      "title": "EMA Management Board: highlights of September 2026 meeting",
-      "link": "https://www.ema.europa.eu/en/news/ema-management-board-highlights-september-2026-meeting",
-      "date": "2026-10-01T13:49:00.000Z",
-      "category": "Regulatory / Policy",
-      "priority": false
-    },
-    {
-      "source": "EMA",
-      "tier": "regulator",
-      "title": "Global regulators call for advancing alternatives to animal testing across the medicine lifecycle",
-      "link": "https://www.ema.europa.eu/en/news/global-regulators-call-advancing-alternatives-animal-testing-across-medicine-lifecycle",
-      "date": "2026-10-01T11:00:00.000Z",
-      "category": "Regulatory / Policy",
-      "priority": false
-    },
-    {
-      "source": "EMA",
-      "tier": "regulator",
-      "title": "Executive Director speech at EMA women’s health multi-stakeholder workshop",
-      "link": "https://www.ema.europa.eu/en/news/executive-director-speech-ema-womens-health-multi-stakeholder-workshop",
-      "date": "2026-10-01T08:37:00.000Z",
-      "category": "Regulatory / Policy",
       "priority": false
     },
     {
