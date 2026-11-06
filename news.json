@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-05T14:38:49.882Z",
+  "generated": "2026-11-06T14:15:39.390Z",
   "sources": [
     "FDA",
     "EMA",
@@ -17,17 +17,8 @@
     "Deals / Business",
     "General"
   ],
-  "count": 86,
+  "count": 87,
   "items": [
-    {
-      "source": "RAPS",
-      "tier": "industry",
-      "title": "Mifepristone study highlights need for more transparency, data collection in FDA’s REMS program",
-      "link": "https://www.raps.org/resource/mifepristone-study-highlights-need-for-more-transparency-data-collection-in-fda-s-rems-program.html",
-      "date": "2026-11-02T00:00:00.000Z",
-      "category": "Safety / PV",
-      "priority": true
-    },
     {
       "source": "EMA",
       "tier": "regulator",
@@ -54,6 +45,114 @@
       "date": "2026-10-21T04:00:00.000Z",
       "category": "Safety / PV",
       "priority": true
+    },
+    {
+      "source": "EMA",
+      "tier": "regulator",
+      "title": "Meeting highlights from the Committee for Veterinary Medicinal Products (CVMP) 3-5 November 2026",
+      "link": "https://www.ema.europa.eu/en/news/meeting-highlights-committee-veterinary-medicinal-products-cvmp-3-5-november-2026",
+      "date": "2026-11-06T13:20:00.000Z",
+      "category": "Regulatory / Policy",
+      "priority": false
+    },
+    {
+      "source": "BioSpace",
+      "tier": "industry",
+      "title": "Verdicts for Summit/Akeso, Capricor, Vertex mark FDA’s stacked November",
+      "link": "https://www.biospace.com/fda/verdicts-for-summit-akeso-capricor-vertex-mark-fdas-stacked-november",
+      "date": "2026-11-06T13:04:52.000Z",
+      "category": "Regulatory / Policy",
+      "priority": false
+    },
+    {
+      "source": "BioSpace",
+      "tier": "industry",
+      "title": "Merck, Moderna serve 99% of trial patients with mRNA vaccine as personalized shots near market",
+      "link": "https://www.biospace.com/business/merck-moderna-serve-99-of-trial-patients-with-mrna-vaccine-as-personalized-shots-near-market",
+      "date": "2026-11-06T12:35:21.000Z",
+      "category": "General",
+      "priority": false
+    },
+    {
+      "source": "BioPharma Dive",
+      "tier": "industry",
+      "title": "This week in charts: 3 drug launches Wall Street is watching",
+      "link": "https://www.biopharmadive.com/news/biotech-charts-drug-launches-sales-wegovy-rezdiffra-auvelity/873549/",
+      "date": "2026-11-06T12:00:00.000Z",
+      "category": "General",
+      "priority": false
+    },
+    {
+      "source": "FDA",
+      "tier": "regulator",
+      "title": "FDA Grants Accelerated Approval to a New Treatment for Head and Neck Squamous Cell Carcinoma",
+      "link": "http://www.fda.gov/news-events/press-announcements/fda-grants-accelerated-approval-new-treatment-head-and-neck-squamous-cell-carcinoma",
+      "date": "2026-11-05T22:30:38.000Z",
+      "category": "Approval",
+      "priority": false
+    },
+    {
+      "source": "BioPharma Dive",
+      "tier": "industry",
+      "title": "Medicare will cut billions from 340B, expand site-neutral payments in 2027",
+      "link": "https://www.biopharmadive.com/news/medicare-will-cut-billions-from-340b-expand-site-neutral-payments-in-2027/873909/",
+      "date": "2026-11-05T21:06:00.000Z",
+      "category": "Deals / Business",
+      "priority": false
+    },
+    {
+      "source": "BioSpace",
+      "tier": "industry",
+      "title": "Novartis confirms 9 reported cases of tumors in patients treated with Zolgensma",
+      "link": "https://www.biospace.com/drug-development/novartis-confirms-9-reported-cases-of-tumors-in-patients-treated-with-zolgensma",
+      "date": "2026-11-05T17:19:07.000Z",
+      "category": "General",
+      "priority": false
+    },
+    {
+      "source": "BioPharma Dive",
+      "tier": "industry",
+      "title": "At ASH, drugmakers to showcase early data for three-pronged cancer therapies",
+      "link": "https://www.biopharmadive.com/news/ash-2026-trispecific-multiple-myeloma-johnson-johnson-abbvie/873852/",
+      "date": "2026-11-05T17:09:00.000Z",
+      "category": "General",
+      "priority": false
+    },
+    {
+      "source": "BioPharma Dive",
+      "tier": "industry",
+      "title": "Revolution’s Rasonque off to best cancer drug launch ‘in history’",
+      "link": "https://www.biopharmadive.com/news/revolution-rasonque-sales-3q-2026-pancreatic-cancer/873839/",
+      "date": "2026-11-05T16:21:00.000Z",
+      "category": "General",
+      "priority": false
+    },
+    {
+      "source": "BioSpace",
+      "tier": "industry",
+      "title": "RevMed’s Rasonque shatters analyst estimates with $198M quarter",
+      "link": "https://www.biospace.com/business/revmeds-rasonque-shatters-analyst-estimates-with-198m-quarter",
+      "date": "2026-11-05T15:39:43.000Z",
+      "category": "General",
+      "priority": false
+    },
+    {
+      "source": "BioSpace",
+      "tier": "industry",
+      "title": "T-time: British biotech pours $133M into the pot for bispecifics",
+      "link": "https://www.biospace.com/drug-development/t-time-british-biotech-pours-133m-into-the-pot-for-bispecifics",
+      "date": "2026-11-05T15:01:20.000Z",
+      "category": "General",
+      "priority": false
+    },
+    {
+      "source": "BioSpace",
+      "tier": "industry",
+      "title": "Novartis subsidiary Avidity will lay off 40 in San Diego",
+      "link": "https://www.biospace.com/biospace-layoff-tracker",
+      "date": "2026-11-05T14:47:00.000Z",
+      "category": "General",
+      "priority": false
     },
     {
       "source": "BioSpace",
@@ -130,6 +229,51 @@
     {
       "source": "Fierce Pharma",
       "tier": "industry",
+      "title": "ANI makes $560M play for Egetis and its approved orphan drug Emcitate",
+      "link": "https://www.fiercepharma.com/pharma/ani-makes-560m-play-egetis-and-its-orphan-drug-emcitate",
+      "date": "2026-11-05T00:00:00.000Z",
+      "category": "Approval",
+      "priority": false
+    },
+    {
+      "source": "Fierce Pharma",
+      "tier": "industry",
+      "title": "RevMed’s Rasonque debut nets ‘eye-popping’ $198M in 5 weeks, even as exec tempers expectations",
+      "link": "https://www.fiercepharma.com/pharma/revmed-wows-analysts-eye-popping-rasonque-debut-even-management-tempers-expectations",
+      "date": "2026-11-05T00:00:00.000Z",
+      "category": "General",
+      "priority": false
+    },
+    {
+      "source": "Fierce Pharma",
+      "tier": "industry",
+      "title": "Boehringer Ingelheim brings liver health education push to the NASCAR fast lane",
+      "link": "https://www.fiercepharma.com/marketing/boehringer-ingelheim-brings-liver-health-education-push-nascar-fast-lane",
+      "date": "2026-11-05T00:00:00.000Z",
+      "category": "General",
+      "priority": false
+    },
+    {
+      "source": "Fierce Pharma",
+      "tier": "industry",
+      "title": "VintaBio assets go on auction block as CGT viral vector demand slows",
+      "link": "https://www.fiercepharma.com/manufacturing/vintabio-assets-go-auction-block-cgt-production-sector-slows",
+      "date": "2026-11-05T00:00:00.000Z",
+      "category": "Regulatory / Policy",
+      "priority": false
+    },
+    {
+      "source": "Fierce Pharma",
+      "tier": "industry",
+      "title": "AstraZeneca said to offer $10B to acquire Rhythm, analysts whisper of a bidding war",
+      "link": "https://www.fiercepharma.com/pharma/astrazeneca-offers-10b-acquire-rhythm-analysts-whisper-bidding-war",
+      "date": "2026-11-05T00:00:00.000Z",
+      "category": "Deals / Business",
+      "priority": false
+    },
+    {
+      "source": "Fierce Pharma",
+      "tier": "industry",
       "title": "Agios aims to shed over 100 R&D roles this year ahead of hoped-for sickle cell disease approval",
       "link": "https://www.fiercepharma.com/biotech/agios-aims-shed-100-rd-roles-year-ahead-hoped-scd-approval",
       "date": "2026-11-05T00:00:00.000Z",
@@ -155,6 +299,42 @@
       "priority": false
     },
     {
+      "source": "RAPS",
+      "tier": "industry",
+      "title": "Experts call for streamlined EU AI framework, urge greater literacy",
+      "link": "https://www.raps.org/resource/experts-call-for-streamlined-eu-ai-framework-urge-greater-literacy.html",
+      "date": "2026-11-05T00:00:00.000Z",
+      "category": "Regulatory / Policy",
+      "priority": false
+    },
+    {
+      "source": "RAPS",
+      "tier": "industry",
+      "title": "FDA official expects user fee reauthorization despite midterm shakeup",
+      "link": "https://www.raps.org/resource/fda-official-expects-user-fee-reauthorization-despite-midterm-shakeup.html",
+      "date": "2026-11-05T00:00:00.000Z",
+      "category": "Approval",
+      "priority": false
+    },
+    {
+      "source": "RAPS",
+      "tier": "industry",
+      "title": "Euro Roundup: MDCG shares guidance on clinical evidence for orphan in vitro diagnostics",
+      "link": "https://www.raps.org/resource/euro-roundup-mdcg-shares-guidance-on-clinical-evidence-for-orphan-in-vitro-diagnostics.html",
+      "date": "2026-11-05T00:00:00.000Z",
+      "category": "Approval",
+      "priority": false
+    },
+    {
+      "source": "RAPS",
+      "tier": "industry",
+      "title": "Recon: Sino, Boehringer ink cancer drug deal worth $7B; CVS to split pharmacy business from insurance",
+      "link": "https://www.raps.org/resource/recon-sino-boehringer-ink-cancer-drug-deal-worth-7b-cvs-to-split-pharmacy-business-from-insurance.html",
+      "date": "2026-11-05T00:00:00.000Z",
+      "category": "Deals / Business",
+      "priority": false
+    },
+    {
       "source": "BioSpace",
       "tier": "industry",
       "title": "Boehringer bets big on China, offering $7B biobucks for Sino cancer programs",
@@ -169,15 +349,6 @@
       "title": "Sanofi stops development of Nurix-partnered immune drug",
       "link": "https://www.biopharmadive.com/news/sanofi-discontinue-development-nurix-stat6-degrader-eczema/873697/",
       "date": "2026-11-04T17:18:00.000Z",
-      "category": "General",
-      "priority": false
-    },
-    {
-      "source": "BioSpace",
-      "tier": "industry",
-      "title": "Ultragenyx’s pivot to a smaller R&D footprint claims 20% of workforce",
-      "link": "https://www.biospace.com/biospace-layoff-tracker",
-      "date": "2026-11-04T16:44:00.000Z",
       "category": "General",
       "priority": false
     },
@@ -209,15 +380,6 @@
       "priority": false
     },
     {
-      "source": "BioSpace",
-      "tier": "industry",
-      "title": "Sanofi’s axing of Nurix STAT6 program ‘not a target-related issue’",
-      "link": "https://www.biospace.com/drug-development/sanofis-axing-of-nurix-stat6-program-not-a-target-related-issue",
-      "date": "2026-11-04T15:58:02.000Z",
-      "category": "General",
-      "priority": false
-    },
-    {
       "source": "BioPharma Dive",
       "tier": "industry",
       "title": "CVS to split into two companies in stunning strategic about-face",
@@ -232,42 +394,6 @@
       "title": "Biopharma likely to climb higher after ‘blue wave,’ analysts say",
       "link": "https://www.biopharmadive.com/news/biotech-pharma-midterm-elections-impact/873667/",
       "date": "2026-11-04T15:28:00.000Z",
-      "category": "General",
-      "priority": false
-    },
-    {
-      "source": "BioSpace",
-      "tier": "industry",
-      "title": "With MFN now embedded in pharma, execs see little impact from Democrats’ blue wave",
-      "link": "https://www.biospace.com/business/with-mfn-now-embedded-in-pharma-execs-see-little-impact-from-democrats-blue-wave",
-      "date": "2026-11-04T13:33:26.000Z",
-      "category": "General",
-      "priority": false
-    },
-    {
-      "source": "BioSpace",
-      "tier": "industry",
-      "title": "2026 IPO stock tracker: How newly public biotechs are performing",
-      "link": "https://www.biospace.com/business/2026-ipo-stock-tracker-how-biotechs-new-to-public-markets-are-performing",
-      "date": "2026-11-04T12:59:00.000Z",
-      "category": "Deals / Business",
-      "priority": false
-    },
-    {
-      "source": "BioSpace",
-      "tier": "industry",
-      "title": "Novo, Lilly battle for oral GLP-1 dominance with data tit for tat",
-      "link": "https://www.biospace.com/business/novo-lilly-battle-for-oral-glp-1-dominance-with-data-tit-for-tat",
-      "date": "2026-11-04T12:25:20.000Z",
-      "category": "General",
-      "priority": false
-    },
-    {
-      "source": "BioSpace",
-      "tier": "industry",
-      "title": "Pfizer eyes Europe first for Lyme vaccine as prevalence rises in US",
-      "link": "https://www.biospace.com/business/pfizer-eyes-europe-first-for-lyme-vaccine-as-prevalence-rises-in-us",
-      "date": "2026-11-04T12:12:00.000Z",
       "category": "General",
       "priority": false
     },
@@ -344,33 +470,6 @@
       "priority": false
     },
     {
-      "source": "BioPharma Dive",
-      "tier": "industry",
-      "title": "Vertex, ahead of FDA decision, calms fears surrounding kidney drug",
-      "link": "https://www.biopharmadive.com/news/vertex-earnings-q3-2026-povetacicept-iga-nephropathy-kidney/873600/",
-      "date": "2026-11-03T17:32:00.000Z",
-      "category": "Regulatory / Policy",
-      "priority": false
-    },
-    {
-      "source": "BioPharma Dive",
-      "tier": "industry",
-      "title": "Medicare Part D premiums are spiking 50% on average next year, KFF finds",
-      "link": "https://www.biopharmadive.com/news/medicare-part-d-premiums-skyrocket-2027-kff/873552/",
-      "date": "2026-11-03T13:46:00.000Z",
-      "category": "General",
-      "priority": false
-    },
-    {
-      "source": "BioPharma Dive",
-      "tier": "industry",
-      "title": "UniQure gets an FDA decision date; Teva scraps brain drug study",
-      "link": "https://www.biopharmadive.com/news/uniqure-fda-bright-minds-specific-teva-cinrock/873455/",
-      "date": "2026-11-03T13:41:00.000Z",
-      "category": "Regulatory / Policy",
-      "priority": false
-    },
-    {
       "source": "FDA",
       "tier": "regulator",
       "title": "Early Alert: Compact Medical Removes and Updates Use Instructions for ButterflyBVM Bag-Valve-Mask Resuscitators",
@@ -384,51 +483,6 @@
       "tier": "industry",
       "title": "Rising Stars: Publicis Health’s Ariel Rabinowitz knows what it takes to 'meet people where they are'",
       "link": "https://www.fiercepharma.com/marketing/rising-stars-publicis-healths-ariel-rabinowitz",
-      "date": "2026-11-03T00:00:00.000Z",
-      "category": "General",
-      "priority": false
-    },
-    {
-      "source": "Fierce Pharma",
-      "tier": "industry",
-      "title": "Madrigal’s Rezdiffra storms past blockbuster milestone as CEO hails ‘accelerating’ MASH market",
-      "link": "https://www.fiercepharma.com/pharma/madrigal-rezdiffra-storms-past-blockbuster-milestone-ceo-hails-accelerating-mash-market",
-      "date": "2026-11-03T00:00:00.000Z",
-      "category": "General",
-      "priority": false
-    },
-    {
-      "source": "Fierce Pharma",
-      "tier": "industry",
-      "title": "Amgen's quality chief to retire as internal successor steps up",
-      "link": "https://www.fiercepharma.com/pharma/amgens-quality-chief-heads-retirement-her-deputy-take-reins",
-      "date": "2026-11-03T00:00:00.000Z",
-      "category": "General",
-      "priority": false
-    },
-    {
-      "source": "Fierce Pharma",
-      "tier": "industry",
-      "title": "Pfizer delivers Q3 beat as post-COVID comeback gains momentum",
-      "link": "https://www.fiercepharma.com/pharma/pfizer-post-q3-beat-post-covid-comeback-gains-momentum",
-      "date": "2026-11-03T00:00:00.000Z",
-      "category": "Deals / Business",
-      "priority": false
-    },
-    {
-      "source": "Fierce Pharma",
-      "tier": "industry",
-      "title": "As Bayer spots pharma recovery, questions resurface over potential crop science split",
-      "link": "https://www.fiercepharma.com/pharma/bayer-spots-pharma-recovery-questions-resurface-over-potential-crop-science-split",
-      "date": "2026-11-03T00:00:00.000Z",
-      "category": "General",
-      "priority": false
-    },
-    {
-      "source": "Fierce Pharma",
-      "tier": "industry",
-      "title": "Lonza bets big on US growth, snaps up Merck KGaA’s CDMO business",
-      "link": "https://www.fiercepharma.com/manufacturing/lonza-bets-big-us-growth-snaps-merck-kgaa-cdmo-business-amid-industry-consolidation",
       "date": "2026-11-03T00:00:00.000Z",
       "category": "General",
       "priority": false
@@ -461,24 +515,6 @@
       "priority": false
     },
     {
-      "source": "RAPS",
-      "tier": "industry",
-      "title": "Recon: Merck KGaA to exit CDMO business; Karyopharm to sell itself in bankruptcy",
-      "link": "https://www.raps.org/resource/recon-merck-kgaa-to-exit-cdmo-business-karyopharm-to-sell-itself-in-bankruptcy.html",
-      "date": "2026-11-03T00:00:00.000Z",
-      "category": "General",
-      "priority": false
-    },
-    {
-      "source": "BioPharma Dive",
-      "tier": "industry",
-      "title": "Karyopharm, deep in debt, to sell itself in bankruptcy",
-      "link": "https://www.biopharmadive.com/news/karyopharm-bankruptcy-chapter-11-auction-ayrmid-gamida-cell/873415/",
-      "date": "2026-11-02T17:07:00.000Z",
-      "category": "General",
-      "priority": false
-    },
-    {
       "source": "FDA",
       "tier": "regulator",
       "title": "FDA Provides Clarity to Support Cell and Gene Therapy Development and Quality",
@@ -503,24 +539,6 @@
       "link": "http://www.fda.gov/medical-devices/medical-device-recalls-and-early-alerts/early-alert-b-braun-medical-inc-removes-streamline-bloodline-set-dialog",
       "date": "2026-11-02T05:00:00.000Z",
       "category": "Regulatory / Policy",
-      "priority": false
-    },
-    {
-      "source": "RAPS",
-      "tier": "industry",
-      "title": "FDA finalizes cell and gene therapy potency guidance",
-      "link": "https://www.raps.org/resource/fda-finalizes-cell-and-gene-therapy-potency-guidance.html",
-      "date": "2026-11-02T00:00:00.000Z",
-      "category": "Regulatory / Policy",
-      "priority": false
-    },
-    {
-      "source": "RAPS",
-      "tier": "industry",
-      "title": "Asia-Pacific Roundup: Australia’s TGA seeks feedback on sharing clinical trial information, ICH GCP proposals",
-      "link": "https://www.raps.org/resource/asia-pacific-roundup-australia-s-tga-seeks-feedback-on-sharing-clinical-trial-information-ich-gcp-proposals.html",
-      "date": "2026-11-02T00:00:00.000Z",
-      "category": "Clinical trial",
       "priority": false
     },
     {
@@ -663,15 +681,6 @@
       "tier": "regulator",
       "title": "Early Alert: Cardinal Health Updates Use Instructions for Presource Packs Containing BD Alaris Pump Infusion Sets",
       "link": "http://www.fda.gov/medical-devices/medical-device-recalls-and-early-alerts/early-alert-cardinal-health-updates-use-instructions-presource-packs-containing-bd-alaris-pump",
-      "date": "2026-10-20T04:00:00.000Z",
-      "category": "Regulatory / Policy",
-      "priority": false
-    },
-    {
-      "source": "FDA",
-      "tier": "regulator",
-      "title": "Update: Import Alert for Certain Olympus Medical Devices Manufactured in Japan - Letter to Health Care Providers",
-      "link": "http://www.fda.gov/medical-devices/letters-health-care-providers/update-import-alert-certain-olympus-medical-devices-manufactured-japan-letter-health-care-providers",
       "date": "2026-10-20T04:00:00.000Z",
       "category": "Regulatory / Policy",
       "priority": false
