@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-06T14:15:39.390Z",
+  "generated": "2026-11-07T12:59:00.457Z",
   "sources": [
     "FDA",
     "EMA",
@@ -47,12 +47,75 @@
       "priority": true
     },
     {
+      "source": "BioPharma Dive",
+      "tier": "industry",
+      "title": "Novartis reveals cancer cases possibly linked to gene therapy Zolgensma",
+      "link": "https://www.biopharmadive.com/news/zolgensma-tumor-report-novartis-sma-spinal-muscular-atrophy/873990/",
+      "date": "2026-11-06T16:51:00.000Z",
+      "category": "General",
+      "priority": false
+    },
+    {
+      "source": "BioSpace",
+      "tier": "industry",
+      "title": "Moderna enjoys stable vaccine sales thanks to global COVID uptake",
+      "link": "https://www.biospace.com/business/moderna-enjoys-stable-vaccine-sales-thanks-to-global-covid-uptake",
+      "date": "2026-11-06T16:43:26.000Z",
+      "category": "General",
+      "priority": false
+    },
+    {
+      "source": "BioSpace",
+      "tier": "industry",
+      "title": "Voyager, C4 cut workforces",
+      "link": "https://www.biospace.com/biospace-layoff-tracker",
+      "date": "2026-11-06T15:46:00.000Z",
+      "category": "General",
+      "priority": false
+    },
+    {
+      "source": "BioSpace",
+      "tier": "industry",
+      "title": "Forge’s Piteri-Molina on AI, Ohio and what’s next for gene therapy manufacturing",
+      "link": "https://www.biospace.com/drug-delivery/forges-piteri-molina-on-ai-ohio-and-whats-next-for-gene-therapy-manufacturing",
+      "date": "2026-11-06T15:25:02.000Z",
+      "category": "General",
+      "priority": false
+    },
+    {
+      "source": "BioSpace",
+      "tier": "industry",
+      "title": "Agios axes 100-plus R&D roles while awaiting FDA decision",
+      "link": "https://www.biospace.com/job-trends/agios-axes-100-plus-r-d-roles-while-awaiting-fda-decision",
+      "date": "2026-11-06T14:21:05.000Z",
+      "category": "Regulatory / Policy",
+      "priority": false
+    },
+    {
+      "source": "BioSpace",
+      "tier": "industry",
+      "title": "Sarepta’s new CEO confident in clinical execution as DMD competitors close in",
+      "link": "https://www.biospace.com/business/sareptas-new-ceo-confident-in-clinical-execution-as-dmd-competitors-close-in",
+      "date": "2026-11-06T14:19:01.000Z",
+      "category": "General",
+      "priority": false
+    },
+    {
       "source": "EMA",
       "tier": "regulator",
       "title": "Meeting highlights from the Committee for Veterinary Medicinal Products (CVMP) 3-5 November 2026",
       "link": "https://www.ema.europa.eu/en/news/meeting-highlights-committee-veterinary-medicinal-products-cvmp-3-5-november-2026",
       "date": "2026-11-06T13:20:00.000Z",
       "category": "Regulatory / Policy",
+      "priority": false
+    },
+    {
+      "source": "BioPharma Dive",
+      "tier": "industry",
+      "title": "Lilly, Hims reach GLP-1 deal; Alnylam sales chief to step down",
+      "link": "https://www.biopharmadive.com/news/lilly-hims-alnylam-boehringer-ultragenyx-sevasemten-ani-egetis/873843/",
+      "date": "2026-11-06T13:13:00.000Z",
+      "category": "Deals / Business",
       "priority": false
     },
     {
@@ -80,6 +143,87 @@
       "link": "https://www.biopharmadive.com/news/biotech-charts-drug-launches-sales-wegovy-rezdiffra-auvelity/873549/",
       "date": "2026-11-06T12:00:00.000Z",
       "category": "General",
+      "priority": false
+    },
+    {
+      "source": "Fierce Pharma",
+      "tier": "industry",
+      "title": "Hims & Hers inks deal with Eli Lilly to offer branded weight loss drugs",
+      "link": "https://www.fiercepharma.com/health-tech/hims-hers-inks-deal-eli-lilly-offer-branded-weight-loss-drugs",
+      "date": "2026-11-06T00:00:00.000Z",
+      "category": "Deals / Business",
+      "priority": false
+    },
+    {
+      "source": "Fierce Pharma",
+      "tier": "industry",
+      "title": "CMS makes it official, codifying Medicare drug price negotiations established under IRA",
+      "link": "https://www.fiercepharma.com/pharma/cms-makes-it-official-codifying-medicare-drug-price-negotiations-rolled-out-under-ira",
+      "date": "2026-11-06T00:00:00.000Z",
+      "category": "General",
+      "priority": false
+    },
+    {
+      "source": "Fierce Pharma",
+      "tier": "industry",
+      "title": "Actor Jeremy Pope joins ViiV's 'PrEP Wisdom' campaign to educate on long-acting PrEP options",
+      "link": "https://www.fiercepharma.com/marketing/actor-jeremy-pope-joins-viivs-prep-wisdom-campaign-continuing-long-acting-injectable",
+      "date": "2026-11-06T00:00:00.000Z",
+      "category": "General",
+      "priority": false
+    },
+    {
+      "source": "Fierce Pharma",
+      "tier": "industry",
+      "title": "Moderna's COVID vaccine carries stellar Q3 revenue beat",
+      "link": "https://www.fiercepharma.com/pharma/modernas-covid-vaccine-carries-stellar-q3-revenue-beat",
+      "date": "2026-11-06T00:00:00.000Z",
+      "category": "Deals / Business",
+      "priority": false
+    },
+    {
+      "source": "Fierce Pharma",
+      "tier": "industry",
+      "title": "Novartis confirms more reported tumor cases in Zolgensma patients as SMA groups seek details",
+      "link": "https://www.fiercepharma.com/pharma/novartis-confirms-more-reported-tumor-cases-zolgensma-patients-sma-groups-seek-details",
+      "date": "2026-11-06T00:00:00.000Z",
+      "category": "General",
+      "priority": false
+    },
+    {
+      "source": "Fierce Pharma",
+      "tier": "industry",
+      "title": "Fierce Pharma Asia—Boehringer’s $7.4B SBP deal; Fresenius’ sweeping biosim pact; A $1B molecular glue bet",
+      "link": "https://www.fiercepharma.com/pharma/boehringer-74b-sbp-deal-fresenius-wuxi-bio-sweeping-biosim-pact-evommune-molecular-glue-bet",
+      "date": "2026-11-06T00:00:00.000Z",
+      "category": "Deals / Business",
+      "priority": false
+    },
+    {
+      "source": "Fierce Pharma",
+      "tier": "industry",
+      "title": "Eli Lilly forces compounding rival to shed weight loss claims",
+      "link": "https://www.fiercepharma.com/marketing/eli-lilly-forces-compounding-rival-shed-weight-loss-claims",
+      "date": "2026-11-06T00:00:00.000Z",
+      "category": "General",
+      "priority": false
+    },
+    {
+      "source": "RAPS",
+      "tier": "industry",
+      "title": "AI in regulatory: Experts say to look beyond validation",
+      "link": "https://www.raps.org/resource/ai-in-regulatory-experts-say-to-look-beyond-validation.html",
+      "date": "2026-11-06T00:00:00.000Z",
+      "category": "Regulatory / Policy",
+      "priority": false
+    },
+    {
+      "source": "RAPS",
+      "tier": "industry",
+      "title": "This Week at FDA: Midterms may complicate Overton confirmation, influence user fee reauthorization, and more",
+      "link": "https://www.raps.org/resource/this-week-at-fda-midterms-may-complicate-overton-confirmation-influence-user-fee-reauthorization-and-more.html",
+      "date": "2026-11-06T00:00:00.000Z",
+      "category": "Approval",
       "priority": false
     },
     {
@@ -148,15 +292,6 @@
     {
       "source": "BioSpace",
       "tier": "industry",
-      "title": "Novartis subsidiary Avidity will lay off 40 in San Diego",
-      "link": "https://www.biospace.com/biospace-layoff-tracker",
-      "date": "2026-11-05T14:47:00.000Z",
-      "category": "General",
-      "priority": false
-    },
-    {
-      "source": "BioSpace",
-      "tier": "industry",
       "title": "Evommune inks molecular glue deal worth $1.1B biobucks to fill pipeline gap",
       "link": "https://www.biospace.com/deals/evommune-inks-molecular-glue-deal-worth-1-1b-biobucks-to-fill-pipeline-gap",
       "date": "2026-11-05T13:53:16.000Z",
@@ -215,15 +350,6 @@
       "link": "https://www.biospace.com/drug-development/opinion-a-treatment-revolution-is-underway-in-mash",
       "date": "2026-11-05T05:54:00.000Z",
       "category": "General",
-      "priority": false
-    },
-    {
-      "source": "BioSpace",
-      "tier": "industry",
-      "title": "1 in 5 have had multiple biopharma layoffs, poll finds",
-      "link": "https://www.biospace.com/job-trends/1-in-5-have-had-multiple-biopharma-layoffs-poll-finds",
-      "date": "2026-11-05T05:01:00.000Z",
-      "category": "Deals / Business",
       "priority": false
     },
     {
@@ -335,15 +461,6 @@
       "priority": false
     },
     {
-      "source": "BioSpace",
-      "tier": "industry",
-      "title": "Boehringer bets big on China, offering $7B biobucks for Sino cancer programs",
-      "link": "https://www.biospace.com/deals/boehringer-bets-big-on-china-offering-7b-biobucks-for-sino-cancer-programs",
-      "date": "2026-11-04T19:32:28.000Z",
-      "category": "General",
-      "priority": false
-    },
-    {
       "source": "BioPharma Dive",
       "tier": "industry",
       "title": "Sanofi stops development of Nurix-partnered immune drug",
@@ -358,96 +475,6 @@
       "title": "Novo gets much-needed lift as Wegovy pill tops Wall Street forecasts",
       "link": "https://www.biopharmadive.com/news/novo-wegovy-pill-sales-3q-2026-earnings-cfo/873693/",
       "date": "2026-11-04T16:13:00.000Z",
-      "category": "General",
-      "priority": false
-    },
-    {
-      "source": "BioSpace",
-      "tier": "industry",
-      "title": "AbbVie bets up to $1.47B for Nxera’s discarded IBD program",
-      "link": "https://www.biospace.com/deals/abbvie-bets-up-to-1-47b-for-nxeras-discarded-ibd-program",
-      "date": "2026-11-04T16:10:33.000Z",
-      "category": "General",
-      "priority": false
-    },
-    {
-      "source": "BioSpace",
-      "tier": "industry",
-      "title": "Amgen starts MariTide autoinjector study as pivotal readouts approach",
-      "link": "https://www.biospace.com/business/amgen-starts-maritide-autoinjector-study-as-pivotal-readouts-approach",
-      "date": "2026-11-04T16:01:06.000Z",
-      "category": "Clinical trial",
-      "priority": false
-    },
-    {
-      "source": "BioPharma Dive",
-      "tier": "industry",
-      "title": "CVS to split into two companies in stunning strategic about-face",
-      "link": "https://www.biopharmadive.com/news/cvs-split-two-companies-strategic-about-face/873742/",
-      "date": "2026-11-04T15:47:46.000Z",
-      "category": "General",
-      "priority": false
-    },
-    {
-      "source": "BioPharma Dive",
-      "tier": "industry",
-      "title": "Biopharma likely to climb higher after ‘blue wave,’ analysts say",
-      "link": "https://www.biopharmadive.com/news/biotech-pharma-midterm-elections-impact/873667/",
-      "date": "2026-11-04T15:28:00.000Z",
-      "category": "General",
-      "priority": false
-    },
-    {
-      "source": "Fierce Pharma",
-      "tier": "industry",
-      "title": "With oncology pipeline at ‘inflection point,’ Merck puts finish line in focus with new corporate campaign",
-      "link": "https://www.fiercepharma.com/marketing/oncology-pipeline-inflection-point-merck-maps-out-finish-line-focus-new-corporate",
-      "date": "2026-11-04T00:00:00.000Z",
-      "category": "General",
-      "priority": false
-    },
-    {
-      "source": "Fierce Pharma",
-      "tier": "industry",
-      "title": "Sanofi runs emotive RSV campaign zeroing in on a baby’s bronchiolitis breathing sounds",
-      "link": "https://www.fiercepharma.com/marketing/sanofi-runs-emotive-rsv-campaign-zeroing-babys-bronchiolitis-breathing-sounds",
-      "date": "2026-11-04T00:00:00.000Z",
-      "category": "General",
-      "priority": false
-    },
-    {
-      "source": "Fierce Pharma",
-      "tier": "industry",
-      "title": "Samsung Bio union vows strike as labor negotiations stall",
-      "link": "https://www.fiercepharma.com/pharma/samsung-bio-union-vows-strike-labor-negotiations-stall",
-      "date": "2026-11-04T00:00:00.000Z",
-      "category": "General",
-      "priority": false
-    },
-    {
-      "source": "Fierce Pharma",
-      "tier": "industry",
-      "title": "Novo catches Wegovy pill tailwind in Q3 as CEO eyes new launch horizons in 2027",
-      "link": "https://www.fiercepharma.com/pharma/novo-catches-wegovy-pill-tailwind-q3-ceo-eyes-new-launch-horizons-2027",
-      "date": "2026-11-04T00:00:00.000Z",
-      "category": "Deals / Business",
-      "priority": false
-    },
-    {
-      "source": "Fierce Pharma",
-      "tier": "industry",
-      "title": "Madrigal’s former clinical development head files whistleblower lawsuit alleging Rezdiffra safety cover-up",
-      "link": "https://www.fiercepharma.com/pharma/madrigal-former-clinical-development-head-files-whistleblower-lawsuit-alleging-rezdiffra",
-      "date": "2026-11-04T00:00:00.000Z",
-      "category": "Safety / PV",
-      "priority": false
-    },
-    {
-      "source": "Fierce Pharma",
-      "tier": "industry",
-      "title": "BMS Canada teams with TANK Worldwide, Ogilvy Health to turn autumn leaves into melanoma awareness campaign",
-      "link": "https://www.fiercepharma.com/marketing/bms-canada-teams-tank-worldwide-ogilvy-health-autumnal-melanoma-messaging",
-      "date": "2026-11-04T00:00:00.000Z",
       "category": "General",
       "priority": false
     },
@@ -479,37 +506,10 @@
       "priority": false
     },
     {
-      "source": "Fierce Pharma",
-      "tier": "industry",
-      "title": "Rising Stars: Publicis Health’s Ariel Rabinowitz knows what it takes to 'meet people where they are'",
-      "link": "https://www.fiercepharma.com/marketing/rising-stars-publicis-healths-ariel-rabinowitz",
-      "date": "2026-11-03T00:00:00.000Z",
-      "category": "General",
-      "priority": false
-    },
-    {
       "source": "RAPS",
       "tier": "industry",
       "title": "FDA unannounced foreign inspections in China and India increased in FY 2026",
       "link": "https://www.raps.org/resource/fda-foreign-unannounced-inspections-in-china-and-india-increased-in-fy-2026.html",
-      "date": "2026-11-03T00:00:00.000Z",
-      "category": "Regulatory / Policy",
-      "priority": false
-    },
-    {
-      "source": "RAPS",
-      "tier": "industry",
-      "title": "GenAI: Stakeholders offer competing views on FDA's regulatory approach",
-      "link": "https://www.raps.org/resource/stakeholders-offer-competing-feedback-on-how-fda-should-regulate-genai-devices.html",
-      "date": "2026-11-03T00:00:00.000Z",
-      "category": "Regulatory / Policy",
-      "priority": false
-    },
-    {
-      "source": "RAPS",
-      "tier": "industry",
-      "title": "Legal experts: Environmental law can be daunting but having a plan helps",
-      "link": "https://www.raps.org/resource/legal-experts-environmental-law-can-be-daunting-but-having-a-plan-helps.html",
       "date": "2026-11-03T00:00:00.000Z",
       "category": "Regulatory / Policy",
       "priority": false
