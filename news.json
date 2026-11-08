@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-07T12:59:00.457Z",
+  "generated": "2026-11-08T13:23:51.864Z",
   "sources": [
     "FDA",
     "EMA",
@@ -17,7 +17,7 @@
     "Deals / Business",
     "General"
   ],
-  "count": 87,
+  "count": 86,
   "items": [
     {
       "source": "EMA",
@@ -526,8 +526,8 @@
     {
       "source": "FDA",
       "tier": "regulator",
-      "title": "FDA Advises Consumers Not to Buy or Serve Once Upon a Farm Tractor Wheels Organic Toddler Soft-Baked Bars",
-      "link": "http://www.fda.gov/safety/medical-product-safety-information/fda-advises-consumers-not-buy-or-serve-once-upon-farm-tractor-wheels-organic-toddler-soft-baked-bars",
+      "title": "Early Alert: B. Braun Medical Inc. Removes Streamline Bloodline Set for Dialog+",
+      "link": "http://www.fda.gov/medical-devices/medical-device-recalls-and-early-alerts/early-alert-b-braun-medical-inc-removes-streamline-bloodline-set-dialog",
       "date": "2026-11-02T05:00:00.000Z",
       "category": "Regulatory / Policy",
       "priority": false
@@ -535,8 +535,8 @@
     {
       "source": "FDA",
       "tier": "regulator",
-      "title": "Early Alert: B. Braun Medical Inc. Removes Streamline Bloodline Set for Dialog+",
-      "link": "http://www.fda.gov/medical-devices/medical-device-recalls-and-early-alerts/early-alert-b-braun-medical-inc-removes-streamline-bloodline-set-dialog",
+      "title": "FDA Advises Consumers Not to Buy or Serve Once Upon a Farm Tractor Wheels Organic Toddler Soft-Baked Bars",
+      "link": "http://www.fda.gov/safety/medical-product-safety-information/fda-advises-consumers-not-buy-or-serve-once-upon-farm-tractor-wheels-organic-toddler-soft-baked-bars",
       "date": "2026-11-02T05:00:00.000Z",
       "category": "Regulatory / Policy",
       "priority": false
@@ -679,8 +679,8 @@
     {
       "source": "FDA",
       "tier": "regulator",
-      "title": "Early Alert: Cardinal Health Updates Use Instructions for Presource Packs Containing BD Alaris Pump Infusion Sets",
-      "link": "http://www.fda.gov/medical-devices/medical-device-recalls-and-early-alerts/early-alert-cardinal-health-updates-use-instructions-presource-packs-containing-bd-alaris-pump",
+      "title": "Update: Import Alert for Certain Olympus Medical Devices Manufactured in Japan - Letter to Health Care Providers",
+      "link": "http://www.fda.gov/medical-devices/letters-health-care-providers/update-import-alert-certain-olympus-medical-devices-manufactured-japan-letter-health-care-providers",
       "date": "2026-10-20T04:00:00.000Z",
       "category": "Regulatory / Policy",
       "priority": false
@@ -746,15 +746,6 @@
       "link": "https://www.ema.europa.eu/en/news/meeting-highlights-committee-veterinary-medicinal-products-cvmp-6-8-october-2026",
       "date": "2026-10-09T13:30:00.000Z",
       "category": "Regulatory / Policy",
-      "priority": false
-    },
-    {
-      "source": "EMA",
-      "tier": "regulator",
-      "title": "Clinical trial applications advice pilot becomes permanent",
-      "link": "https://www.ema.europa.eu/en/news/clinical-trial-applications-advice-pilot-becomes-permanent",
-      "date": "2026-10-08T15:09:00.000Z",
-      "category": "Clinical trial",
       "priority": false
     },
     {
