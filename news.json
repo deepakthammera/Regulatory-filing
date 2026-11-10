@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-09T16:16:56.553Z",
+  "generated": "2026-11-10T14:51:48.732Z",
   "sources": [
     "FDA",
     "EMA",
@@ -19,6 +19,33 @@
   ],
   "count": 85,
   "items": [
+    {
+      "source": "FDA",
+      "tier": "regulator",
+      "title": "Eugia US LLC (f/k/a Auro Medics Pharma LLC) Issues Voluntary Nationwide Recall of Vancomycin Hydrochloride for Injection USP 1.25g/Vial-30mL (Single Dose Vial) Due to Presence of Particulate Matter",
+      "link": "http://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/eugia-us-llc-fka-auro-medics-pharma-llc-issues-voluntary-nationwide-recall-vancomycin-hydrochloride",
+      "date": "2026-11-09T05:00:00.000Z",
+      "category": "Safety / PV",
+      "priority": true
+    },
+    {
+      "source": "FDA",
+      "tier": "regulator",
+      "title": "Heart Pump Controller Recall: Abiomed Removes Automated Impella Controllers (AIC)",
+      "link": "http://www.fda.gov/medical-devices/medical-device-recalls-and-early-alerts/heart-pump-controller-recall-abiomed-removes-automated-impella-controllers-aic",
+      "date": "2026-11-09T05:00:00.000Z",
+      "category": "Safety / PV",
+      "priority": true
+    },
+    {
+      "source": "RAPS",
+      "tier": "industry",
+      "title": "Asia-Pacific Roundup: India proposes immediate license suspensions for manufacturers of substandard drugs",
+      "link": "https://www.raps.org/resource/asia-pacific-roundup-india-proposes-immediate-license-suspensions-for-manufacturers-of-substandard-drugs.html",
+      "date": "2026-11-09T00:00:00.000Z",
+      "category": "Safety / PV",
+      "priority": true
+    },
     {
       "source": "FDA",
       "tier": "regulator",
@@ -47,13 +74,166 @@
       "priority": true
     },
     {
+      "source": "BioSpace",
+      "tier": "industry",
+      "title": "Delix raises $100M to advance at-home psychedelic without hallucinatory effects",
+      "link": "https://www.biospace.com/business/delix-raises-100m-to-advance-at-home-psychedelic-without-hallucinatory-effects",
+      "date": "2026-11-10T14:26:23.000Z",
+      "category": "Deals / Business",
+      "priority": false
+    },
+    {
+      "source": "BioSpace",
+      "tier": "industry",
+      "title": "Altimmune gears up for FDA meeting on pivotal Phase 3 trial in alcohol use disorder",
+      "link": "https://www.biospace.com/drug-development/altimmune-gears-up-for-fda-meeting-on-pivotal-phase-3-trial-in-alcohol-use-disorder",
+      "date": "2026-11-10T13:23:18.000Z",
+      "category": "Clinical trial",
+      "priority": false
+    },
+    {
+      "source": "BioPharma Dive",
+      "tier": "industry",
+      "title": "London biotech Oyster harvests $60M for tau-targeting brain drugs",
+      "link": "https://www.biopharmadive.com/news/oyster-venture-financing-tau-targeted-protein-degraders/874160/",
+      "date": "2026-11-10T07:00:00.000Z",
+      "category": "General",
+      "priority": false
+    },
+    {
+      "source": "BioPharma Dive",
+      "tier": "industry",
+      "title": "BIO unveils plan for US to remain biotech’s ‘global leader’",
+      "link": "https://www.biopharmadive.com/news/bio-bioadvance-proposal-us-trial-competition-china/874162/",
+      "date": "2026-11-10T05:01:00.000Z",
+      "category": "Regulatory / Policy",
+      "priority": false
+    },
+    {
+      "source": "BioSpace",
+      "tier": "industry",
+      "title": "BioSpace 2027 Best Places to Work shines light on most admired employers",
+      "link": "https://www.biospace.com/job-trends/biospace-2027-best-places-to-work-shines-light-on-most-admired-employers",
+      "date": "2026-11-10T05:00:00.000Z",
+      "category": "General",
+      "priority": false
+    },
+    {
+      "source": "Fierce Pharma",
+      "tier": "industry",
+      "title": "After court win, WuXi AppTec scores removal from US list of Chinese military companies",
+      "link": "https://www.fiercepharma.com/pharma/after-court-win-wuxi-apptec-scores-removal-us-list-chinese-military-companies",
+      "date": "2026-11-10T00:00:00.000Z",
+      "category": "General",
+      "priority": false
+    },
+    {
+      "source": "Fierce Pharma",
+      "tier": "industry",
+      "title": "FDA orders new eye risk be listed on a dozen GLP-1s, including Novo's Ozempic, Lilly's Zepbound",
+      "link": "https://www.fiercepharma.com/pharma/fda-orders-new-eye-risk-be-listed-ozempic-zepbound-labels",
+      "date": "2026-11-10T00:00:00.000Z",
+      "category": "Regulatory / Policy",
+      "priority": false
+    },
+    {
+      "source": "Fierce Pharma",
+      "tier": "industry",
+      "title": "Phillips Medisize strikes deal to expand UK inhalation production",
+      "link": "https://www.fiercepharma.com/manufacturing/phillips-medisize-expands-uk-inhalation-production-footprint-deal",
+      "date": "2026-11-10T00:00:00.000Z",
+      "category": "Deals / Business",
+      "priority": false
+    },
+    {
+      "source": "Drug Safety",
+      "tier": "journal",
+      "title": "A Data-Mining Study of the Safety of the 20-Valent Pneumococcal Conjugate Vaccine in Adults in the Vaccine Safety Datalink",
+      "link": "https://doi.org/10.1007/s40264-026-01742-x",
+      "date": "2026-11-10T00:00:00.000Z",
+      "category": "Safety / PV",
+      "priority": false
+    },
+    {
+      "source": "Drug Safety",
+      "tier": "journal",
+      "title": "Pharmacovigilance of Maternal Vaccines in Africa: An Analysis of Reporting Patterns from VigiBase®, 2010–2024",
+      "link": "https://doi.org/10.1007/s40264-026-01725-y",
+      "date": "2026-11-10T00:00:00.000Z",
+      "category": "Safety / PV",
+      "priority": false
+    },
+    {
+      "source": "BioPharma Dive",
+      "tier": "industry",
+      "title": "Bayer wins FDA nod for a new kind of blood thinner",
+      "link": "https://www.biopharmadive.com/news/bayer-sunharbo-asundexian-fda-approve-stroke-factor-xi/872837/",
+      "date": "2026-11-09T22:40:00.000Z",
+      "category": "Regulatory / Policy",
+      "priority": false
+    },
+    {
       "source": "FDA",
       "tier": "regulator",
-      "title": "Wedgewood Pharmacy Issues Recall of Certain Compounded Veterinary Medications Within Expiry Due to Potential Potency Issues",
-      "link": "http://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/wedgewood-pharmacy-issues-recall-certain-compounded-veterinary-medications-within-expiry-due",
-      "date": "2026-10-21T04:00:00.000Z",
-      "category": "Safety / PV",
-      "priority": true
+      "title": "FDA Approves First Factor Xla Inhibitor to Help Prevent Stroke in Certain Adults at High Risk",
+      "link": "http://www.fda.gov/news-events/press-announcements/fda-approves-first-factor-xla-inhibitor-help-prevent-stroke-certain-adults-high-risk",
+      "date": "2026-11-09T22:15:46.000Z",
+      "category": "Approval",
+      "priority": false
+    },
+    {
+      "source": "BioSpace",
+      "tier": "industry",
+      "title": "FDA orders class-wide GLP-1 label update to include potential risk for rare eye disease",
+      "link": "https://www.biospace.com/fda/fda-orders-class-wide-glp-1-label-update-to-include-potential-risk-for-rare-eye-disease",
+      "date": "2026-11-09T18:47:04.000Z",
+      "category": "Regulatory / Policy",
+      "priority": false
+    },
+    {
+      "source": "BioSpace",
+      "tier": "industry",
+      "title": "Boehringer, Zealand’s obesity drug doesn’t elevate heart risk in key late-stage test",
+      "link": "https://www.biospace.com/drug-development/boehringer-zealands-obesity-drug-doesnt-elevate-heart-risk-in-key-late-stage-test",
+      "date": "2026-11-09T18:33:07.000Z",
+      "category": "General",
+      "priority": false
+    },
+    {
+      "source": "BioSpace",
+      "tier": "industry",
+      "title": "Lilly to seek second sleep apnea approval after Foundayo reduces disease severity in Phase 3",
+      "link": "https://www.biospace.com/drug-development/lilly-to-seek-second-sleep-apnea-approval-after-foundayo-reduces-disease-severity-in-phase-3",
+      "date": "2026-11-09T18:21:52.000Z",
+      "category": "Approval",
+      "priority": false
+    },
+    {
+      "source": "BioSpace",
+      "tier": "industry",
+      "title": "Vir's hepatitis delta combo tamps down virus as Gilead showdown looms",
+      "link": "https://www.biospace.com/drug-development/virs-hepatitis-delta-combo-tamps-down-virus-as-gilead-showdown-looms",
+      "date": "2026-11-09T17:26:05.000Z",
+      "category": "General",
+      "priority": false
+    },
+    {
+      "source": "BioPharma Dive",
+      "tier": "industry",
+      "title": "Vir hepatitis D drug succeeds in first pivotal study",
+      "link": "https://www.biopharmadive.com/news/vir-chronic-hepatitis-d-drug-results-elebsiran-tobevibart/874089/",
+      "date": "2026-11-09T17:09:00.000Z",
+      "category": "Clinical trial",
+      "priority": false
+    },
+    {
+      "source": "BioPharma Dive",
+      "tier": "industry",
+      "title": "Argenx to buy peptide platform in potentially billion-dollar deal",
+      "link": "https://www.biopharmadive.com/news/argenx-unnatural-products-acquisition-deal-peptides-protein-macrocyclic-immune/874119/",
+      "date": "2026-11-09T16:27:00.000Z",
+      "category": "Deals / Business",
+      "priority": false
     },
     {
       "source": "BioSpace",
@@ -164,21 +344,57 @@
       "priority": false
     },
     {
-      "source": "BioSpace",
-      "tier": "industry",
-      "title": "FDA’s new rare disease framework aims to leverage patient voices for better innovation",
-      "link": "https://www.biospace.com/fda/fdas-new-rare-disease-framework-aims-to-leverage-patient-voices-for-better-innovation",
-      "date": "2026-11-09T05:02:00.000Z",
+      "source": "FDA",
+      "tier": "regulator",
+      "title": "Convenience Kit Correction: Cardinal Health Updates Use Instructions for Presource Packs Containing BD Alaris Pump Infusion Sets",
+      "link": "http://www.fda.gov/medical-devices/medical-device-recalls-and-early-alerts/convenience-kit-correction-cardinal-health-updates-use-instructions-presource-packs-containing-bd",
+      "date": "2026-11-09T05:00:00.000Z",
       "category": "Regulatory / Policy",
       "priority": false
     },
     {
-      "source": "BioSpace",
+      "source": "FDA",
+      "tier": "regulator",
+      "title": "MedWatch Alert: FDA Requires Safety Labeling Changes for Glucagon-Like Peptide-1 Receptor Agonists (GLP-1 RAs) Due to Potential Increased Risk of Rare But Serious Eye Condition: FDA Safety Communication",
+      "link": "http://www.fda.gov/safety/medical-product-safety-information/medwatch-alert-fda-requires-safety-labeling-changes-glucagon-peptide-1-receptor-agonists-glp-1-ras",
+      "date": "2026-11-09T05:00:00.000Z",
+      "category": "Safety / PV",
+      "priority": false
+    },
+    {
+      "source": "Fierce Pharma",
       "tier": "industry",
-      "title": "Before GMP: Six manufacturing considerations gene therapy sponsors should address earlier",
-      "link": "https://www.biospace.com/drug-development/before-gmp-six-manufacturing-considerations-gene-therapy-sponsors-should-address-earlier",
-      "date": "2026-11-09T05:01:00.000Z",
-      "category": "Regulatory / Policy",
+      "title": "Insulet, Marvel Comics smash diabetes stigma with new Omnipod-powered superhero",
+      "link": "https://www.fiercepharma.com/marketing/insulet-marvel-comics-smash-diabetes-stigma-new-omnipod-powered-superhero",
+      "date": "2026-11-09T00:00:00.000Z",
+      "category": "Deals / Business",
+      "priority": false
+    },
+    {
+      "source": "Fierce Pharma",
+      "tier": "industry",
+      "title": "Vertex lays off 78 Crinetics staffers amid $10B integration",
+      "link": "https://www.fiercepharma.com/pharma/vertex-lays-78-crinetics-staffers-amid-10b-integration",
+      "date": "2026-11-09T00:00:00.000Z",
+      "category": "General",
+      "priority": false
+    },
+    {
+      "source": "Fierce Pharma",
+      "tier": "industry",
+      "title": "Veradermics wraps phase 3 program in men with 'better-than-expected' hair growth at 1 year",
+      "link": "https://www.fiercepharma.com/pharma/veradermics-wraps-phase-3-program-men-better-expected-hair-growth-1-year",
+      "date": "2026-11-09T00:00:00.000Z",
+      "category": "Clinical trial",
+      "priority": false
+    },
+    {
+      "source": "Fierce Pharma",
+      "tier": "industry",
+      "title": "FDA opens safety probe into Novartis’ Zolgensma over potential tumor risks",
+      "link": "https://www.fiercepharma.com/pharma/fda-opens-safety-probe-novartis-zolgensma-over-potential-tumor-risks",
+      "date": "2026-11-09T00:00:00.000Z",
+      "category": "Safety / PV",
       "priority": false
     },
     {
@@ -200,6 +416,33 @@
       "priority": false
     },
     {
+      "source": "RAPS",
+      "tier": "industry",
+      "title": "Regulatory intelligence requires critical thinking, actionability to be valuable, experts say",
+      "link": "https://www.raps.org/resource/regulatory-intelligence-requires-critical-thinking-actionability-to-be-valuable-experts-say.html",
+      "date": "2026-11-09T00:00:00.000Z",
+      "category": "Regulatory / Policy",
+      "priority": false
+    },
+    {
+      "source": "RAPS",
+      "tier": "industry",
+      "title": "FDA slashes number of analytical tests for IVDs used in public health emergencies",
+      "link": "https://www.raps.org/resource/fda-slashes-number-of-analytical-tests-for-ivds-used-in-public-health-emergencies.html",
+      "date": "2026-11-09T00:00:00.000Z",
+      "category": "Regulatory / Policy",
+      "priority": false
+    },
+    {
+      "source": "RAPS",
+      "tier": "industry",
+      "title": "Recon: FDA orders new eye risk warnings for Ozempic, Zepbound; FDA launches investigation of Novartis’ Zolgensma after cancer ca...",
+      "link": "https://www.raps.org/resource/recon-fda-orders-new-eye-risk-warnings-for-ozempic-zepbound-fda-launches-investigation-of-novartis-zolgensma-after-cancer-cases.html",
+      "date": "2026-11-09T00:00:00.000Z",
+      "category": "Safety / PV",
+      "priority": false
+    },
+    {
       "source": "Fierce Pharma",
       "tier": "industry",
       "title": "Lilly looks to gird Foundayo label after late-stage win in sleep apnea",
@@ -218,75 +461,12 @@
       "priority": false
     },
     {
-      "source": "BioSpace",
-      "tier": "industry",
-      "title": "Moderna enjoys stable vaccine sales thanks to global COVID uptake",
-      "link": "https://www.biospace.com/business/moderna-enjoys-stable-vaccine-sales-thanks-to-global-covid-uptake",
-      "date": "2026-11-06T16:43:26.000Z",
-      "category": "General",
-      "priority": false
-    },
-    {
-      "source": "BioSpace",
-      "tier": "industry",
-      "title": "Forge’s Piteri-Molina on AI, Ohio and what’s next for gene therapy manufacturing",
-      "link": "https://www.biospace.com/drug-delivery/forges-piteri-molina-on-ai-ohio-and-whats-next-for-gene-therapy-manufacturing",
-      "date": "2026-11-06T15:25:02.000Z",
-      "category": "General",
-      "priority": false
-    },
-    {
-      "source": "BioSpace",
-      "tier": "industry",
-      "title": "Agios axes 100-plus R&D roles while awaiting FDA decision",
-      "link": "https://www.biospace.com/job-trends/agios-axes-100-plus-r-d-roles-while-awaiting-fda-decision",
-      "date": "2026-11-06T14:21:05.000Z",
-      "category": "Regulatory / Policy",
-      "priority": false
-    },
-    {
-      "source": "BioSpace",
-      "tier": "industry",
-      "title": "Sarepta’s new CEO confident in clinical execution as DMD competitors close in",
-      "link": "https://www.biospace.com/business/sareptas-new-ceo-confident-in-clinical-execution-as-dmd-competitors-close-in",
-      "date": "2026-11-06T14:19:01.000Z",
-      "category": "General",
-      "priority": false
-    },
-    {
       "source": "EMA",
       "tier": "regulator",
       "title": "Meeting highlights from the Committee for Veterinary Medicinal Products (CVMP) 3-5 November 2026",
       "link": "https://www.ema.europa.eu/en/news/meeting-highlights-committee-veterinary-medicinal-products-cvmp-3-5-november-2026",
       "date": "2026-11-06T13:20:00.000Z",
       "category": "Regulatory / Policy",
-      "priority": false
-    },
-    {
-      "source": "BioPharma Dive",
-      "tier": "industry",
-      "title": "Lilly, Hims reach GLP-1 deal; Alnylam sales chief to step down",
-      "link": "https://www.biopharmadive.com/news/lilly-hims-alnylam-boehringer-ultragenyx-sevasemten-ani-egetis/873843/",
-      "date": "2026-11-06T13:13:00.000Z",
-      "category": "Deals / Business",
-      "priority": false
-    },
-    {
-      "source": "BioSpace",
-      "tier": "industry",
-      "title": "Verdicts for Summit/Akeso, Capricor, Vertex mark FDA’s stacked November",
-      "link": "https://www.biospace.com/fda/verdicts-for-summit-akeso-capricor-vertex-mark-fdas-stacked-november",
-      "date": "2026-11-06T13:04:52.000Z",
-      "category": "Regulatory / Policy",
-      "priority": false
-    },
-    {
-      "source": "BioPharma Dive",
-      "tier": "industry",
-      "title": "This week in charts: 3 drug launches Wall Street is watching",
-      "link": "https://www.biopharmadive.com/news/biotech-charts-drug-launches-sales-wegovy-rezdiffra-auvelity/873549/",
-      "date": "2026-11-06T12:00:00.000Z",
-      "category": "General",
       "priority": false
     },
     {
@@ -335,33 +515,6 @@
       "priority": false
     },
     {
-      "source": "Fierce Pharma",
-      "tier": "industry",
-      "title": "Novartis confirms more reported tumor cases in Zolgensma patients as SMA groups seek details",
-      "link": "https://www.fiercepharma.com/pharma/novartis-confirms-more-reported-tumor-cases-zolgensma-patients-sma-groups-seek-details",
-      "date": "2026-11-06T00:00:00.000Z",
-      "category": "General",
-      "priority": false
-    },
-    {
-      "source": "Fierce Pharma",
-      "tier": "industry",
-      "title": "Fierce Pharma Asia—Boehringer’s $7.4B SBP deal; Fresenius’ sweeping biosim pact; A $1B molecular glue bet",
-      "link": "https://www.fiercepharma.com/pharma/boehringer-74b-sbp-deal-fresenius-wuxi-bio-sweeping-biosim-pact-evommune-molecular-glue-bet",
-      "date": "2026-11-06T00:00:00.000Z",
-      "category": "Deals / Business",
-      "priority": false
-    },
-    {
-      "source": "Fierce Pharma",
-      "tier": "industry",
-      "title": "Eli Lilly forces compounding rival to shed weight loss claims",
-      "link": "https://www.fiercepharma.com/marketing/eli-lilly-forces-compounding-rival-shed-weight-loss-claims",
-      "date": "2026-11-06T00:00:00.000Z",
-      "category": "General",
-      "priority": false
-    },
-    {
       "source": "RAPS",
       "tier": "industry",
       "title": "AI in regulatory: Experts say to look beyond validation",
@@ -386,69 +539,6 @@
       "link": "http://www.fda.gov/news-events/press-announcements/fda-grants-accelerated-approval-new-treatment-head-and-neck-squamous-cell-carcinoma",
       "date": "2026-11-05T22:30:38.000Z",
       "category": "Approval",
-      "priority": false
-    },
-    {
-      "source": "BioPharma Dive",
-      "tier": "industry",
-      "title": "Medicare will cut billions from 340B, expand site-neutral payments in 2027",
-      "link": "https://www.biopharmadive.com/news/medicare-will-cut-billions-from-340b-expand-site-neutral-payments-in-2027/873909/",
-      "date": "2026-11-05T21:06:00.000Z",
-      "category": "Deals / Business",
-      "priority": false
-    },
-    {
-      "source": "BioPharma Dive",
-      "tier": "industry",
-      "title": "At ASH, drugmakers to showcase early data for three-pronged cancer therapies",
-      "link": "https://www.biopharmadive.com/news/ash-2026-trispecific-multiple-myeloma-johnson-johnson-abbvie/873852/",
-      "date": "2026-11-05T17:09:00.000Z",
-      "category": "General",
-      "priority": false
-    },
-    {
-      "source": "BioPharma Dive",
-      "tier": "industry",
-      "title": "Revolution’s Rasonque off to best cancer drug launch ‘in history’",
-      "link": "https://www.biopharmadive.com/news/revolution-rasonque-sales-3q-2026-pancreatic-cancer/873839/",
-      "date": "2026-11-05T16:21:00.000Z",
-      "category": "General",
-      "priority": false
-    },
-    {
-      "source": "Fierce Pharma",
-      "tier": "industry",
-      "title": "ANI makes $560M play for Egetis and its approved orphan drug Emcitate",
-      "link": "https://www.fiercepharma.com/pharma/ani-makes-560m-play-egetis-and-its-orphan-drug-emcitate",
-      "date": "2026-11-05T00:00:00.000Z",
-      "category": "Approval",
-      "priority": false
-    },
-    {
-      "source": "Fierce Pharma",
-      "tier": "industry",
-      "title": "RevMed’s Rasonque debut nets ‘eye-popping’ $198M in 5 weeks, even as exec tempers expectations",
-      "link": "https://www.fiercepharma.com/pharma/revmed-wows-analysts-eye-popping-rasonque-debut-even-management-tempers-expectations",
-      "date": "2026-11-05T00:00:00.000Z",
-      "category": "General",
-      "priority": false
-    },
-    {
-      "source": "Fierce Pharma",
-      "tier": "industry",
-      "title": "Boehringer Ingelheim brings liver health education push to the NASCAR fast lane",
-      "link": "https://www.fiercepharma.com/marketing/boehringer-ingelheim-brings-liver-health-education-push-nascar-fast-lane",
-      "date": "2026-11-05T00:00:00.000Z",
-      "category": "General",
-      "priority": false
-    },
-    {
-      "source": "Fierce Pharma",
-      "tier": "industry",
-      "title": "VintaBio assets go on auction block as CGT viral vector demand slows",
-      "link": "https://www.fiercepharma.com/manufacturing/vintabio-assets-go-auction-block-cgt-production-sector-slows",
-      "date": "2026-11-05T00:00:00.000Z",
-      "category": "Regulatory / Policy",
       "priority": false
     },
     {
@@ -479,47 +569,11 @@
       "priority": false
     },
     {
-      "source": "RAPS",
-      "tier": "industry",
-      "title": "Recon: Sino, Boehringer ink cancer drug deal worth $7B; CVS to split pharmacy business from insurance",
-      "link": "https://www.raps.org/resource/recon-sino-boehringer-ink-cancer-drug-deal-worth-7b-cvs-to-split-pharmacy-business-from-insurance.html",
-      "date": "2026-11-05T00:00:00.000Z",
-      "category": "Deals / Business",
-      "priority": false
-    },
-    {
-      "source": "RAPS",
-      "tier": "industry",
-      "title": "AI won’t erase jobs, but regulatory professionals need to be vigilant, experts say",
-      "link": "https://www.raps.org/resource/ai-won-t-erase-jobs-but-regulatory-professionals-need-to-be-vigilant-experts-say.html",
-      "date": "2026-11-04T00:00:00.000Z",
-      "category": "Regulatory / Policy",
-      "priority": false
-    },
-    {
-      "source": "RAPS",
-      "tier": "industry",
-      "title": "FDA official urges sponsors to use alternatives to clinical efficacy studies for biosimilars",
-      "link": "https://www.raps.org/resource/fda-official-urges-sponsors-to-use-alternatives-to-clinical-efficacy-studies-for-biosimilars.html",
-      "date": "2026-11-04T00:00:00.000Z",
-      "category": "Regulatory / Policy",
-      "priority": false
-    },
-    {
       "source": "FDA",
       "tier": "regulator",
       "title": "Early Alert: Compact Medical Removes and Updates Use Instructions for ButterflyBVM Bag-Valve-Mask Resuscitators",
       "link": "http://www.fda.gov/medical-devices/medical-device-recalls-and-early-alerts/early-alert-compact-medical-removes-and-updates-use-instructions-butterflybvm-bag-valve-mask",
       "date": "2026-11-03T05:00:00.000Z",
-      "category": "Regulatory / Policy",
-      "priority": false
-    },
-    {
-      "source": "RAPS",
-      "tier": "industry",
-      "title": "FDA unannounced foreign inspections in China and India increased in FY 2026",
-      "link": "https://www.raps.org/resource/fda-foreign-unannounced-inspections-in-china-and-india-increased-in-fy-2026.html",
-      "date": "2026-11-03T00:00:00.000Z",
       "category": "Regulatory / Policy",
       "priority": false
     },
@@ -544,8 +598,8 @@
     {
       "source": "FDA",
       "tier": "regulator",
-      "title": "FDA Advises Consumers Not to Buy or Serve Once Upon a Farm Tractor Wheels Organic Toddler Soft-Baked Bars",
-      "link": "http://www.fda.gov/safety/medical-product-safety-information/fda-advises-consumers-not-buy-or-serve-once-upon-farm-tractor-wheels-organic-toddler-soft-baked-bars",
+      "title": "MedWatch Alert: FDA Advises Consumers Not to Buy or Serve Once Upon a Farm Tractor Wheels Organic Toddler Soft-Baked Bars",
+      "link": "http://www.fda.gov/safety/medical-product-safety-information/medwatch-alert-fda-advises-consumers-not-buy-or-serve-once-upon-farm-tractor-wheels-organic-toddler",
       "date": "2026-11-02T05:00:00.000Z",
       "category": "Regulatory / Policy",
       "priority": false
@@ -641,48 +695,12 @@
       "priority": false
     },
     {
-      "source": "FDA",
-      "tier": "regulator",
-      "title": "FDA Launches New Program to Advance Neuroscience Medical Product Development",
-      "link": "http://www.fda.gov/news-events/press-announcements/fda-launches-new-program-advance-neuroscience-medical-product-development",
-      "date": "2026-10-22T16:58:19.000Z",
-      "category": "Regulatory / Policy",
-      "priority": false
-    },
-    {
       "source": "Drug Safety",
       "tier": "journal",
       "title": "EudraScore: Modification of the Vigi4Eudra-score for the Assessment of the Completeness of Adverse Drug Reaction Reports in EudraVigilance",
       "link": "https://doi.org/10.1007/s40264-026-01720-3",
       "date": "2026-10-21T00:00:00.000Z",
       "category": "Safety / PV",
-      "priority": false
-    },
-    {
-      "source": "FDA",
-      "tier": "regulator",
-      "title": "FDA Approves First-of-Its-Kind Chronic Hepatitis B Treatment",
-      "link": "http://www.fda.gov/news-events/press-announcements/fda-approves-first-its-kind-chronic-hepatitis-b-treatment",
-      "date": "2026-10-20T19:40:38.000Z",
-      "category": "Approval",
-      "priority": false
-    },
-    {
-      "source": "FDA",
-      "tier": "regulator",
-      "title": "FDA Approves Once-Weekly Generic Hormone Therapy Patch for Women",
-      "link": "http://www.fda.gov/news-events/press-announcements/fda-approves-once-weekly-generic-hormone-therapy-patch-women",
-      "date": "2026-10-20T15:57:36.000Z",
-      "category": "Approval",
-      "priority": false
-    },
-    {
-      "source": "FDA",
-      "tier": "regulator",
-      "title": "FDA Issues Final Guidance on Prescription Drug Apps and Software",
-      "link": "http://www.fda.gov/news-events/press-announcements/fda-issues-final-guidance-prescription-drug-apps-and-software",
-      "date": "2026-10-20T13:03:14.000Z",
-      "category": "Regulatory / Policy",
       "priority": false
     },
     {
@@ -763,24 +781,6 @@
       "title": "Safety Monitoring of COVID-19 Vaccines in the Vaccine Adverse Event Reporting System (VAERS): United States, August 22, 2024–July 4, 2025",
       "link": "https://doi.org/10.1007/s40264-026-01709-y",
       "date": "2026-10-03T00:00:00.000Z",
-      "category": "Safety / PV",
-      "priority": false
-    },
-    {
-      "source": "Drug Safety",
-      "tier": "journal",
-      "title": "Consumer Views on the Role of the Natural Health Products (NHPs) Industry in Pharmacovigilance for NHPs: A Qualitative Study in New Zealand",
-      "link": "https://doi.org/10.1007/s40264-026-01732-z",
-      "date": "2026-10-02T00:00:00.000Z",
-      "category": "Safety / PV",
-      "priority": false
-    },
-    {
-      "source": "Drug Safety",
-      "tier": "journal",
-      "title": "Drug Brand Switching: A Regulatory Perspective",
-      "link": "https://doi.org/10.1007/s40264-026-01712-3",
-      "date": "2026-10-01T00:00:00.000Z",
       "category": "Safety / PV",
       "priority": false
     }
