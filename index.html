@@ -6,7 +6,18 @@
 <title>Regulatory Terminator — Personal Training Platform</title>
 <!-- Installable web app (PWA): manifest, icons and iOS home-screen settings -->
 <link rel="manifest" href="manifest.webmanifest">
-<meta name="theme-color" content="#5e2d8e">
+<meta name="theme-color" content="#5e2d8e" id="meta-theme-color">
+<script>
+// Theme: apply the saved choice (light / dark / auto = follow the device) before the page
+// paints, so there is no white flash at night. Full logic lives with the app script.
+(function(){
+  var pref = 'auto';
+  try { pref = localStorage.getItem('rt-theme') || 'auto'; } catch(e) {}
+  var dark = pref === 'dark' || (pref === 'auto' && window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches);
+  document.documentElement.setAttribute('data-theme', dark ? 'dark' : 'light');
+  document.documentElement.setAttribute('data-theme-pref', pref);
+})();
+</script>
 <link rel="icon" type="image/png" sizes="192x192" href="icons/icon-192.png">
 <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
 <meta name="mobile-web-app-capable" content="yes">
@@ -17,7 +28,10 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Newsreader:ital,wght@0,300;0,400;0,500;0,600;1,400&family=JetBrains+Mono:wght@400;500&family=Outfit:wght@400;500;600;700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
-  :root{--bg:#ffffff;--paper:#ffffff;--paper-2:#faf7fc;--paper-3:#f3edf7;--ink:#2d1b4e;--ink-soft:#4a2d6e;--muted:#6b5c80;--muted-soft:#9d8eb0;--rule:#e0d4ec;--rule-soft:#efe8f5;--burgundy:#e6007e;--burgundy-soft:#ff4ba3;--gold:#00b8b8;--gold-soft:#4dd4d4;--forest:#00a878;--forest-soft:#4dc99c;--amber:#ff6b35;--teal:#00b8b8;--indigo:#5e2d8e;--purple-deep:#3a1d5e;--purple:#5e2d8e;--pink:#e6007e}
+  :root{--bg:#ffffff;--paper:#ffffff;--paper-2:#faf7fc;--paper-3:#f3edf7;--ink:#2d1b4e;--ink-soft:#4a2d6e;--muted:#6b5c80;--muted-soft:#9d8eb0;--rule:#e0d4ec;--rule-soft:#efe8f5;--burgundy:#e6007e;--burgundy-soft:#ff4ba3;--gold:#00b8b8;--gold-soft:#4dd4d4;--forest:#00a878;--forest-soft:#4dc99c;--amber:#ff6b35;--teal:#00b8b8;--indigo:#5e2d8e;--purple-deep:#3a1d5e;--purple:#5e2d8e;--pink:#e6007e;--fill:#5e2d8e;--pink-fill:#e6007e}
+  /* ===== DARK THEME: same tokens, night-friendly values ===== */
+  :root[data-theme="dark"]{color-scheme:dark;--bg:#14111c;--paper:#1b1626;--paper-2:#221b30;--paper-3:#2b223c;--ink:#ece6f6;--ink-soft:#d4c9e8;--muted:#a99cc0;--muted-soft:#8b7ea3;--rule:#3b3152;--rule-soft:#2d2641;--burgundy:#ff5cae;--burgundy-soft:#ff8cc6;--gold:#3ad3d3;--gold-soft:#6fe0e0;--forest:#3ddba0;--forest-soft:#7be8c0;--amber:#ff9a6b;--teal:#3ad3d3;--indigo:#bea4f3;--purple-deep:#dccbfa;--purple:#c4a8f4;--pink:#ff5cae;--fill:#6c3fb3;--pink-fill:#c9006c}
+  :root[data-theme="light"]{color-scheme:light}
   *{box-sizing:border-box;margin:0;padding:0}
   html,body{height:100%}
   body{background:var(--bg);color:var(--ink);font-family:"Inter",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;font-weight:400;font-size:15px;line-height:1.55;-webkit-font-smoothing:antialiased}
@@ -1471,6 +1485,58 @@
   .notes-shell{grid-template-columns:minmax(0,1fr)}
   .notes-list{max-height:40vh}
 }
+
+/* ============================================================
+   THEME — controls, and dark-mode overrides for colours that are not tokens
+   ============================================================ */
+.top-actions{position:fixed;top:1rem;right:1rem;z-index:900;display:flex;gap:0.5rem;align-items:stretch}
+.top-actions .global-search-btn{position:static}
+.theme-toggle{display:flex;align-items:center;justify-content:center;background:var(--paper);color:var(--ink);border:1px solid var(--rule);padding:0.5rem 0.6rem;cursor:pointer;border-radius:2px;box-shadow:0 2px 8px rgba(0,0,0,0.06)}
+.theme-toggle:hover{border-color:var(--burgundy);color:var(--burgundy)}
+.theme-toggle svg{color:var(--burgundy)}
+.theme-toggle .ti-sun{display:none}
+[data-theme="dark"] .theme-toggle .ti-sun{display:block}
+[data-theme="dark"] .theme-toggle .ti-moon{display:none}
+.theme-seg-label{font-size:0.65rem;text-transform:uppercase;letter-spacing:0.14em;font-weight:700;color:var(--muted);margin:0.2rem 0 0.35rem}
+.theme-seg{display:flex;border:1px solid var(--rule);border-radius:999px;overflow:hidden;margin-bottom:0.8rem}
+.theme-seg button{flex:1;background:transparent;border:none;color:var(--ink-soft);font:inherit;font-size:0.78rem;padding:0.4rem 0.3rem;cursor:pointer}
+.theme-seg button+button{border-left:1px solid var(--rule)}
+.theme-seg button[aria-pressed="true"]{background:var(--fill);color:#fff}
+@media(max-width:760px){ .theme-toggle{padding:0.6rem} }
+
+/* Brand fills that carry white text: a deeper fill in dark mode keeps them readable */
+[data-theme="dark"] .nav-item.active,
+[data-theme="dark"] .pv-tab.active,
+[data-theme="dark"] .pathway,
+[data-theme="dark"] .case-card .pathway{background:var(--fill)!important;border-color:var(--fill)!important;color:#fff!important}
+/* Light tints hard-coded in the stylesheet -> translucent tints that work on dark */
+[data-theme="dark"] .dev-onc-callout,[data-theme="dark"] .sim-option.chosen,[data-theme="dark"] .bimo-scenario,[data-theme="dark"] .bimo-option.chosen{background:rgba(58,211,211,0.10)}
+[data-theme="dark"] .sim-cons-strong-pos,[data-theme="dark"] .bimo-cons-strong-pos,[data-theme="dark"] .tmf-placed-doc.tmf-correct,[data-theme="dark"] .quiz-choice.correct,[data-theme="dark"] .quiz-feedback.correct{background:rgba(61,219,160,0.12)}
+[data-theme="dark"] .sim-cons-strong-neg,[data-theme="dark"] .bimo-cons-strong-neg,[data-theme="dark"] .tmf-placed-doc.tmf-wrong,[data-theme="dark"] .quiz-choice.incorrect,[data-theme="dark"] .quiz-feedback.incorrect,[data-theme="dark"] .quiz-history-item .diff.hard{background:rgba(255,92,174,0.13)}
+[data-theme="dark"] .quiz-history-item .diff.hard{color:var(--pink)}
+[data-theme="dark"] .search-snippet mark,[data-theme="dark"] mark.search-hit{background:#5c4a10;color:var(--ink)}
+[data-theme="dark"] .quiz-choice .letter{background:var(--paper)}
+[data-theme="dark"] .quiz-feedback .citation{background:rgba(255,255,255,0.06)}
+[data-theme="dark"] [style*="background:#fef9f0"]{background:rgba(58,211,211,0.10)!important}
+/* "Inverse" panels (dark panel with light text) stay dark in dark mode */
+[data-theme="dark"] .login-left,
+[data-theme="dark"] [style*="background:var(--ink)"]{background:#2a1f41!important;color:var(--ink)!important}
+[data-theme="dark"] [style*="background:var(--ink)"] [style*="color:var(--paper)"]{color:var(--ink)!important}
+/* Bright pink / burgundy fills that carry light text: deeper fill in dark mode */
+[data-theme="dark"] .login-btn,
+[data-theme="dark"] [style*="background:var(--pink)"],
+[data-theme="dark"] [style*="background:var(--burgundy)"]{background:var(--pink-fill)!important}
+[data-theme="dark"] [style*="background:var(--burgundy)"]{color:#fff!important}
+[data-theme="dark"] .ectd-mod-pill.active{background:var(--pink-fill);border-color:var(--pink-fill)}
+[data-theme="dark"] .sim-cons-tag{color:#fff}
+[data-theme="dark"] .sim-cons-regulatory .sim-cons-tag{background:var(--pink-fill)}
+/* News source colours (set inline from SOURCE_META): lighter versions for dark backgrounds */
+[data-theme="dark"] [style*="color:#1d4ed8"]{color:#86aaff!important}
+[data-theme="dark"] [style*="color:#0369a1"]{color:#5cc4f4!important}
+[data-theme="dark"] [style*="color:#c2410c"]{color:#ff9a6b!important}
+[data-theme="dark"] [style*="color:#0f766e"]{color:#3fd4c0!important}
+[data-theme="dark"] [style*="color:#6d28d9"]{color:#bb9bff!important}
+[data-theme="dark"] [style*="color:#b45309"]{color:#ffad66!important}
 </style>
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.39.0/dist/umd/supabase.min.js"></script>
 </head>
@@ -1570,6 +1636,12 @@
       <div class="nav-item" data-nav="quizpv"><span class="ico">23</span><span>PV Quiz</span></div>
     </div>
     <div class="sidebar-foot">
+      <div class="theme-seg-label">Appearance</div>
+      <div class="theme-seg" role="group" aria-label="Appearance">
+        <button type="button" data-theme-set="light" aria-pressed="false">Light</button>
+        <button type="button" data-theme-set="dark" aria-pressed="false">Dark</button>
+        <button type="button" data-theme-set="auto" aria-pressed="false" title="Follow your device setting">Auto</button>
+      </div>
       <div class="user-pill">
         <div class="user-avatar">D</div>
         <div>
@@ -2407,6 +2479,11 @@
 </div>
 
 <!-- GLOBAL SEARCH -->
+<div class="top-actions">
+<button type="button" class="theme-toggle" id="theme-toggle" title="Switch to dark mode" aria-label="Switch to dark mode">
+  <svg class="ti-moon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"></path></svg>
+  <svg class="ti-sun" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4.5"></circle><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path></svg>
+</button>
 <button class="global-search-btn" id="global-search-btn" title="Search the site (Ctrl+K)" aria-label="Search">
   <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
     <circle cx="11" cy="11" r="7"></circle>
@@ -2415,6 +2492,7 @@
   <span class="gs-label">Search</span>
   <span class="gs-shortcut">Ctrl+K</span>
 </button>
+</div>
 
 <div class="global-search-modal" id="global-search-modal" role="dialog" aria-label="Search the site">
   <div class="global-search-overlay" id="global-search-overlay"></div>
@@ -10697,7 +10775,7 @@ const PAC_CATEGORIES = [
   { id: 'pas', code: 'PAS', name: 'Prior Approval Supplement', risk: 'Major', wait: 'Until FDA approves', cite: '21 CFR 314.70(b) · 21 CFR 601.12(b) · FDCA §506A', color: 'burgundy', desc: 'Highest scrutiny. Used when the change has substantial potential to adversely affect identity, strength, quality, purity, or potency. Distribution is prohibited until FDA approves the supplement.', fee: 'Yes — full PDUFA / GDUFA / BsUFA fee depending on application type.', review: 'PDUFA: 4 months (standard) or 6 months (clinical data). GDUFA III: 4–10 months. BsUFA: 6 months standard.' },
   { id: 'cbe30', code: 'CBE-30', name: 'Changes Being Effected in 30 Days', risk: 'Moderate', wait: '30 days from FDA receipt', cite: '21 CFR 314.70(c) · 21 CFR 601.12(c)', color: 'gold', desc: 'Moderate change. Submit the supplement and wait 30 days. If FDA does not object within 30 days, distribution may begin. FDA can downgrade a CBE-30 to a PAS during the window.', fee: 'No additional user fee for the supplement itself, but facility/program fees still apply.', review: 'Implicit 30-day clock from FDA receipt. Substantive review may continue beyond the 30 days, but distribution is permitted unless FDA objects.' },
   { id: 'cbe0', code: 'CBE-0', name: 'Changes Being Effected (Immediately)', risk: 'Moderate (lower)', wait: 'None — upon FDA receipt', cite: '21 CFR 314.70(c)(6) · 21 CFR 601.12(c)(5)', color: 'gold', desc: 'Moderate change with lower risk profile, or a safety-strengthening label change. Distribution may begin as soon as FDA receives the supplement.', fee: 'No additional user fee.', review: 'No formal pre-distribution clock. FDA reviews and can issue questions, require labeling revisions, or downgrade to PAS post-receipt.' },
-  { id: 'ar', code: 'AR', name: 'Annual Report', risk: 'Minor', wait: 'None — already implemented', cite: '21 CFR 314.81(b)(2) · 21 CFR 601.12(d)', color: 'rule', desc: 'Minor change with minimal potential to adversely affect product. No supplement required — change is implemented when ready and reported in the next Annual Report.', fee: 'No fee specific to the AR.', review: 'No FDA pre-review of the change itself. FDA reviews the AR for completeness.' }
+  { id: 'ar', code: 'AR', name: 'Annual Report', risk: 'Minor', wait: 'None — already implemented', cite: '21 CFR 314.81(b)(2) · 21 CFR 601.12(d)', color: 'muted', desc: 'Minor change with minimal potential to adversely affect product. No supplement required — change is implemented when ready and reported in the next Annual Report.', fee: 'No fee specific to the AR.', review: 'No FDA pre-review of the change itself. FDA reviews the AR for completeness.' }
 ];
 
 const PAC_EXAMPLES = [
@@ -10783,7 +10861,7 @@ function renderPostApprovalChanges(){
   html += '<p class="lede">Twenty-three common changes mapped to their typical reporting categories.</p>';
   html += '<table class="device-pathway-table"><tr><th style="width:46%">Proposed Change</th><th style="width:14%">Category</th><th>Why</th></tr>';
   PAC_EXAMPLES.forEach(ex => {
-    const colorMap = { 'PAS': 'burgundy', 'CBE-30': 'gold', 'CBE-0': 'gold', 'AR': 'rule' };
+    const colorMap = { 'PAS': 'burgundy', 'CBE-30': 'gold', 'CBE-0': 'gold', 'AR': 'muted' };
     const c = colorMap[ex.cat] || 'ink';
     html += `<tr><td>${escapeHtml(ex.change)}</td><td><strong style="color:var(--${c})">${escapeHtml(ex.cat)}</strong></td><td style="font-size:0.86rem">${escapeHtml(ex.why)}</td></tr>`;
   });
@@ -16791,6 +16869,29 @@ function mbResultHTML(e) {
 
 </script>
 <script>
+// Theme: light / dark / auto (auto follows the device's setting). Saved on this device.
+(function(){
+  var mq = window.matchMedia ? window.matchMedia('(prefers-color-scheme: dark)') : null;
+  function pref(){ try { return localStorage.getItem('rt-theme') || 'auto'; } catch(e) { return 'auto'; } }
+  function apply(){
+    var p = pref(), dark = p === 'dark' || (p === 'auto' && !!(mq && mq.matches));
+    var root = document.documentElement;
+    root.setAttribute('data-theme', dark ? 'dark' : 'light');
+    root.setAttribute('data-theme-pref', p);
+    var meta = document.getElementById('meta-theme-color');
+    if (meta) meta.setAttribute('content', dark ? '#1b1626' : '#5e2d8e');
+    var t = document.getElementById('theme-toggle');
+    if (t) { t.title = dark ? 'Switch to light mode' : 'Switch to dark mode'; t.setAttribute('aria-label', t.title); }
+    document.querySelectorAll('[data-theme-set]').forEach(function(b){ b.setAttribute('aria-pressed', b.getAttribute('data-theme-set') === p ? 'true' : 'false'); });
+  }
+  window.setThemePref = function(p){ try { localStorage.setItem('rt-theme', p); } catch(e) {} apply(); };
+  var t = document.getElementById('theme-toggle');
+  if (t) t.addEventListener('click', function(){ window.setThemePref(document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark'); });
+  document.querySelectorAll('[data-theme-set]').forEach(function(b){ b.addEventListener('click', function(){ window.setThemePref(b.getAttribute('data-theme-set')); }); });
+  if (mq) { var onChange = function(){ if (pref() === 'auto') apply(); }; if (mq.addEventListener) mq.addEventListener('change', onChange); else if (mq.addListener) mq.addListener(onChange); }
+  apply();
+})();
+
 // Register the service worker (installable app + offline use). Needs http(s);
 // it is skipped when index.html is opened directly from disk (file://).
 if ('serviceWorker' in navigator && /^https?:$/.test(location.protocol)) {
