@@ -41,6 +41,9 @@ Each area combines reference content, worked examples, interactive decision help
 
 ## What's new
 
+### November 2026
+- **Dark mode.** Choose **Light**, **Dark** or **Auto** (follows your phone or computer's setting) under *Appearance* at the bottom of the sidebar, or tap the moon/sun button next to Search to switch quickly. The choice is remembered on each device, and the page opens in the right theme with no white flash. Every page and tab was checked so text stays readable in dark mode.
+
 ### October 2026
 - **My Space: news bookmarks and personal notes.** Tap ☆ on any headline in the news feed to bookmark it; bookmarks are listed under **My Space → Saved News** (kept even after a headline leaves the feed) with search, remove and "Add note". **My Space → My Notes** lets you create, search, edit and delete notes that save automatically, can link to a bookmarked article, and can be downloaded as a Markdown file. Both sync to your account when signed in and online, and work offline.
 - **News feed now updates daily** (06:17 UTC) instead of weekly. The sidebar folder is now **Daily Feed**.
@@ -104,6 +107,7 @@ How it works: `manifest.webmanifest` (name, colours, icons), `icons/` (home-scre
 ## Features
 
 - **Sidebar navigation** across News & Updates, My Space, Regulatory, and Pharmacovigilance.
+- **Light and dark mode**, with an Auto option that follows the device setting.
 - **My Space**: bookmark news headlines and keep personal notes, synced to your account and available offline.
 - **News & Updates**: a daily auto-refreshed headline feed (`news.json`, built by a GitHub Action) and a curated **PV Updates & News** page explaining new guidelines (e.g., ICH E2D(R1), MedDRA releases) and regulator safety actions.
 - **Interactive tools** — a pathway decision helper, development-lifecycle views, submission checklists, and document templates.
