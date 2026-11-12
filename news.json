@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-11T14:20:36.013Z",
+  "generated": "2026-11-12T15:13:13.274Z",
   "sources": [
     "FDA",
     "EMA",
@@ -19,6 +19,24 @@
   ],
   "count": 85,
   "items": [
+    {
+      "source": "BioPharma Dive",
+      "tier": "industry",
+      "title": "The FDA has over 1k open jobs — and the staffing shortage is hitting pharma",
+      "link": "https://www.biopharmadive.com/news/fda-staffing-shortages-drug-reviews-pharma/874480/",
+      "date": "2026-11-12T14:38:00.000Z",
+      "category": "Safety / PV",
+      "priority": true
+    },
+    {
+      "source": "BioSpace",
+      "tier": "industry",
+      "title": "Can we finally get ahead of drug shortages?",
+      "link": "https://www.biospace.com/drug-development/can-we-finally-get-ahead-of-drug-shortages",
+      "date": "2026-11-12T12:26:32.000Z",
+      "category": "Safety / PV",
+      "priority": true
+    },
     {
       "source": "BioPharma Dive",
       "tier": "industry",
@@ -49,8 +67,8 @@
     {
       "source": "FDA",
       "tier": "regulator",
-      "title": "Eugia US LLC (f/k/a Auro Medics Pharma LLC) Issues Voluntary Nationwide Recall of Vancomycin Hydrochloride for Injection USP 1.25g/Vial-30mL (Single Dose Vial) Due to Presence of Particulate Matter",
-      "link": "http://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/eugia-us-llc-fka-auro-medics-pharma-llc-issues-voluntary-nationwide-recall-vancomycin-hydrochloride",
+      "title": "Heart Pump Controller Recall: Abiomed Removes Automated Impella Controllers (AIC)",
+      "link": "http://www.fda.gov/medical-devices/medical-device-recalls-and-early-alerts/heart-pump-controller-recall-abiomed-removes-automated-impella-controllers-aic",
       "date": "2026-11-09T05:00:00.000Z",
       "category": "Safety / PV",
       "priority": true
@@ -58,8 +76,8 @@
     {
       "source": "FDA",
       "tier": "regulator",
-      "title": "Heart Pump Controller Recall: Abiomed Removes Automated Impella Controllers (AIC)",
-      "link": "http://www.fda.gov/medical-devices/medical-device-recalls-and-early-alerts/heart-pump-controller-recall-abiomed-removes-automated-impella-controllers-aic",
+      "title": "Eugia US LLC (f/k/a Auro Medics Pharma LLC) Issues Voluntary Nationwide Recall of Vancomycin Hydrochloride for Injection USP 1.25g/Vial-30mL (Single Dose Vial) Due to Presence of Particulate Matter",
+      "link": "http://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/eugia-us-llc-fka-auro-medics-pharma-llc-issues-voluntary-nationwide-recall-vancomycin-hydrochloride",
       "date": "2026-11-09T05:00:00.000Z",
       "category": "Safety / PV",
       "priority": true
@@ -92,13 +110,121 @@
       "priority": true
     },
     {
-      "source": "FDA",
-      "tier": "regulator",
-      "title": "Platelet Factor 4 (PF4) Radioimmunoassay Recall: Instrumentation Laboratories Removes HemosIL AcuStar HIT-IgG(PF4-H)",
-      "link": "http://www.fda.gov/medical-devices/medical-device-recalls-and-early-alerts/platelet-factor-4-pf4-radioimmunoassay-recall-instrumentation-laboratories-removes-hemosil-acustar",
-      "date": "2026-10-30T04:00:00.000Z",
-      "category": "Safety / PV",
-      "priority": true
+      "source": "BioSpace",
+      "tier": "industry",
+      "title": "Pfizer snags $1.5B financing from PE firm Blackstone to support Metsera asset",
+      "link": "https://www.biospace.com/business/pfizer-snags-1-5b-financing-from-pe-firm-blackstone-to-support-metsera-asset",
+      "date": "2026-11-12T13:55:43.000Z",
+      "category": "Deals / Business",
+      "priority": false
+    },
+    {
+      "source": "BioSpace",
+      "tier": "industry",
+      "title": "BMS R&D head to depart amid restructure",
+      "link": "https://www.biospace.com/business/bms-r-d-head-to-depart-amid-restructure",
+      "date": "2026-11-12T13:38:39.000Z",
+      "category": "Deals / Business",
+      "priority": false
+    },
+    {
+      "source": "BioSpace",
+      "tier": "industry",
+      "title": "Biopharma layoffs rise YOY in October but sharply trend down for 2026",
+      "link": "https://www.biospace.com/job-trends/biopharma-layoffs-rise-yoy-in-october-but-sharply-trend-down-for-2026",
+      "date": "2026-11-12T06:01:00.000Z",
+      "category": "Deals / Business",
+      "priority": false
+    },
+    {
+      "source": "BioSpace",
+      "tier": "industry",
+      "title": "2026 Q3 Job Market Report: Job opportunities, layoffs show YOY improvement",
+      "link": "https://www.biospace.com/job-trends/2026-q3-job-market-report-job-opportunities-layoffs-show-yoy-improvement",
+      "date": "2026-11-12T06:01:00.000Z",
+      "category": "Deals / Business",
+      "priority": false
+    },
+    {
+      "source": "BioSpace",
+      "tier": "industry",
+      "title": "10 companies hiring in New Jersey",
+      "link": "https://www.biospace.com/job-trends/10-companies-hiring-in-new-jersey",
+      "date": "2026-11-12T05:00:00.000Z",
+      "category": "General",
+      "priority": false
+    },
+    {
+      "source": "Fierce Pharma",
+      "tier": "industry",
+      "title": "BMS reunites R&D divisions under Cristian Massacesi, while Robert Plenge departs",
+      "link": "https://www.fiercepharma.com/biotech/bristol-myers-reunites-rd-divisions-under-cristian-massacesi",
+      "date": "2026-11-12T00:00:00.000Z",
+      "category": "General",
+      "priority": false
+    },
+    {
+      "source": "Fierce Pharma",
+      "tier": "industry",
+      "title": "AI models from Google, Anthropic and more lean on recommending promoted drugs: study",
+      "link": "https://www.fiercepharma.com/marketing/ai-models-google-anthropic-and-more-lean-recommending-promoted-drugs",
+      "date": "2026-11-12T00:00:00.000Z",
+      "category": "General",
+      "priority": false
+    },
+    {
+      "source": "Fierce Pharma",
+      "tier": "industry",
+      "title": "Radiopharma player PharmaLogic snaps up Lantheus' CDMO business, plant as Curium acquisition advances",
+      "link": "https://www.fiercepharma.com/pharma/radiopharma-player-pharmalogic-snaps-lantheus-cdmo-business-plant-curium-acquisition",
+      "date": "2026-11-12T00:00:00.000Z",
+      "category": "Deals / Business",
+      "priority": false
+    },
+    {
+      "source": "BioSpace",
+      "tier": "industry",
+      "title": "FDA warns Chinese providers of compounding APIs over record-request refusals",
+      "link": "https://www.biospace.com/drug-delivery/fda-warns-chinese-providers-of-compounding-apis-over-record-request-refusals",
+      "date": "2026-11-11T16:20:46.000Z",
+      "category": "Regulatory / Policy",
+      "priority": false
+    },
+    {
+      "source": "BioPharma Dive",
+      "tier": "industry",
+      "title": "Drug price hikes in Germany could push US costs higher, study says",
+      "link": "https://www.biopharmadive.com/news/germany-us-drug-price-study-healthcare-costs/874360/",
+      "date": "2026-11-11T16:11:00.000Z",
+      "category": "General",
+      "priority": false
+    },
+    {
+      "source": "BioSpace",
+      "tier": "industry",
+      "title": "PepGen shares almost double as DM1 oligonucleotide achieves ‘best in class’ splicing",
+      "link": "https://www.biospace.com/drug-development/pepgen-shares-almost-double-as-dm1-oligonucleotide-achieves-best-in-class-splicing",
+      "date": "2026-11-11T15:23:20.000Z",
+      "category": "Deals / Business",
+      "priority": false
+    },
+    {
+      "source": "BioSpace",
+      "tier": "industry",
+      "title": "Capricor parts ways with 10% of staff as FDA decision on DMD cell therapy nears",
+      "link": "https://www.biospace.com/business/capricor-parts-ways-with-10-of-staff-as-fda-decision-on-dmd-cell-therapy-nears",
+      "date": "2026-11-11T15:15:08.000Z",
+      "category": "Regulatory / Policy",
+      "priority": false
+    },
+    {
+      "source": "BioSpace",
+      "tier": "industry",
+      "title": "Capricor ramps up manufacturing spend ahead of FDA decision for DMD therapy",
+      "link": "https://www.biospace.com/drug-development/capricor-ramps-up-manufacturing-spend-ahead-of-fda-decision-for-dmd-therapy",
+      "date": "2026-11-11T15:00:29.000Z",
+      "category": "Regulatory / Policy",
+      "priority": false
     },
     {
       "source": "BioSpace",
@@ -139,10 +265,37 @@
     {
       "source": "Fierce Pharma",
       "tier": "industry",
+      "title": "FDA cites record request breakdowns in trio of warning letters to API makers",
+      "link": "https://www.fiercepharma.com/pharma/fda-cites-record-request-breakdowns-trio-api-maker-warning-letters",
+      "date": "2026-11-11T00:00:00.000Z",
+      "category": "Safety / PV",
+      "priority": false
+    },
+    {
+      "source": "Fierce Pharma",
+      "tier": "industry",
+      "title": "Legend Biotech shares fall 16% after first earnings report under new CEO",
+      "link": "https://www.fiercepharma.com/pharma/legend-biotech-shares-fall-16-after-first-earnings-report-under-new-ceo",
+      "date": "2026-11-11T00:00:00.000Z",
+      "category": "Deals / Business",
+      "priority": false
+    },
+    {
+      "source": "Fierce Pharma",
+      "tier": "industry",
       "title": "BioNTech pays $205M for FDA voucher to speed up ‘late-stage oncology pipeline’",
       "link": "https://www.fiercepharma.com/pharma/biontech-pays-205m-fda-voucher-speed-late-stage-oncology-pipeline",
       "date": "2026-11-11T00:00:00.000Z",
       "category": "Regulatory / Policy",
+      "priority": false
+    },
+    {
+      "source": "RAPS",
+      "tier": "industry",
+      "title": "FDA issues draft guidance on early-phase IND studies for solid tumors",
+      "link": "https://www.raps.org/resource/fda-issues-draft-guidance-on-early-phase-ind-studies-for-solid-tumors.html",
+      "date": "2026-11-11T00:00:00.000Z",
+      "category": "Clinical trial",
       "priority": false
     },
     {
@@ -155,74 +308,11 @@
       "priority": false
     },
     {
-      "source": "BioSpace",
-      "tier": "industry",
-      "title": "FDA's rare disease framework faces its first real test in Capricor’s DMD drug",
-      "link": "https://www.biospace.com/fda/opinion-fdas-rare-disease-framework-faces-its-first-real-test-in-capricors-dmd-drug",
-      "date": "2026-11-10T19:06:56.000Z",
-      "category": "Regulatory / Policy",
-      "priority": false
-    },
-    {
       "source": "BioPharma Dive",
       "tier": "industry",
       "title": "Beam’s base editing therapy for sickle cell hits goal in pivotal trial",
       "link": "https://www.biopharmadive.com/news/beam-sickle-cell-base-editing-risto-cel-results/874242/",
       "date": "2026-11-10T17:06:00.000Z",
-      "category": "Clinical trial",
-      "priority": false
-    },
-    {
-      "source": "BioSpace",
-      "tier": "industry",
-      "title": "Coherus cuts 30% of staffers, Gyre makes post-acquisition layoffs",
-      "link": "https://www.biospace.com/job-trends/coherus-cuts-30-of-staffers-gyre-makes-post-acquisition-layoffs",
-      "date": "2026-11-10T16:10:45.000Z",
-      "category": "Deals / Business",
-      "priority": false
-    },
-    {
-      "source": "BioSpace",
-      "tier": "industry",
-      "title": "BIO pitches US plan to beat China in biotech ‘space race’",
-      "link": "https://www.biospace.com/business/bio-pitches-us-plan-to-beat-china-in-biotech-space-race",
-      "date": "2026-11-10T15:52:33.000Z",
-      "category": "General",
-      "priority": false
-    },
-    {
-      "source": "BioSpace",
-      "tier": "industry",
-      "title": "Beam preps FDA run for industry-first base-edited therapy after pivotal sickle cell success",
-      "link": "https://www.biospace.com/drug-development/beam-preps-fda-run-for-industry-first-base-edited-therapy-after-pivotal-sickle-cell-success",
-      "date": "2026-11-10T15:23:08.000Z",
-      "category": "Clinical trial",
-      "priority": false
-    },
-    {
-      "source": "BioSpace",
-      "tier": "industry",
-      "title": "Bayer wins first-in-class FDA nod for blood thinner, setting stage for BMS-J&J rival",
-      "link": "https://www.biospace.com/drug-development/bayer-wins-first-in-class-fda-nod-for-blood-thinner-setting-stage-for-bms-j-j-rival",
-      "date": "2026-11-10T15:04:56.000Z",
-      "category": "Regulatory / Policy",
-      "priority": false
-    },
-    {
-      "source": "BioSpace",
-      "tier": "industry",
-      "title": "Delix raises $100M to advance at-home psychedelic without hallucinogenic effects",
-      "link": "https://www.biospace.com/business/delix-raises-100m-to-advance-at-home-psychedelic-without-hallucinogenic-effects",
-      "date": "2026-11-10T14:26:23.000Z",
-      "category": "Deals / Business",
-      "priority": false
-    },
-    {
-      "source": "BioSpace",
-      "tier": "industry",
-      "title": "Altimmune gears up for FDA meeting on pivotal Phase 3 trial in alcohol use disorder",
-      "link": "https://www.biospace.com/drug-development/altimmune-gears-up-for-fda-meeting-on-pivotal-phase-3-trial-in-alcohol-use-disorder",
-      "date": "2026-11-10T13:23:18.000Z",
       "category": "Clinical trial",
       "priority": false
     },
@@ -247,15 +337,6 @@
     {
       "source": "FDA",
       "tier": "regulator",
-      "title": "Early Alert: Intersurgical Inc. Removes 22mm Smoothbore breathing tubes and systems",
-      "link": "http://www.fda.gov/medical-devices/medical-device-recalls-and-early-alerts/early-alert-intersurgical-inc-removes-22mm-smoothbore-breathing-tubes-and-systems",
-      "date": "2026-11-10T05:00:00.000Z",
-      "category": "Regulatory / Policy",
-      "priority": false
-    },
-    {
-      "source": "FDA",
-      "tier": "regulator",
       "title": "Early Alert: Arrow International Removes Products Containing Spring Wire Guide Components",
       "link": "http://www.fda.gov/medical-devices/medical-device-recalls-and-early-alerts/early-alert-arrow-international-removes-products-containing-spring-wire-guide-components",
       "date": "2026-11-10T05:00:00.000Z",
@@ -263,12 +344,12 @@
       "priority": false
     },
     {
-      "source": "BioSpace",
-      "tier": "industry",
-      "title": "BioSpace 2027 Best Places to Work shines light on most admired employers",
-      "link": "https://www.biospace.com/job-trends/biospace-2027-best-places-to-work-shines-light-on-most-admired-employers",
+      "source": "FDA",
+      "tier": "regulator",
+      "title": "Early Alert: Intersurgical Inc. Removes 22mm Smoothbore breathing tubes and systems",
+      "link": "http://www.fda.gov/medical-devices/medical-device-recalls-and-early-alerts/early-alert-intersurgical-inc-removes-22mm-smoothbore-breathing-tubes-and-systems",
       "date": "2026-11-10T05:00:00.000Z",
-      "category": "General",
+      "category": "Regulatory / Policy",
       "priority": false
     },
     {
@@ -344,24 +425,6 @@
       "priority": false
     },
     {
-      "source": "Fierce Pharma",
-      "tier": "industry",
-      "title": "AchieveRx stubs out old identity ahead of smoking cessation launch",
-      "link": "https://www.fiercepharma.com/marketing/achieverx-stubs-out-old-identity-ahead-smoking-cessation-launch",
-      "date": "2026-11-10T00:00:00.000Z",
-      "category": "General",
-      "priority": false
-    },
-    {
-      "source": "Fierce Pharma",
-      "tier": "industry",
-      "title": "UCB continues reign as largest drug ad spender as Bimzelx once again tops the ranks",
-      "link": "https://www.fiercepharma.com/marketing/ucb-continues-reign-largest-drug-ad-spender-bimzelx-once-again-tops-ranks",
-      "date": "2026-11-10T00:00:00.000Z",
-      "category": "General",
-      "priority": false
-    },
-    {
       "source": "RAPS",
       "tier": "industry",
       "title": "Develop regulatory intelligence system before legal deadlines, experts say",
@@ -425,24 +488,6 @@
       "priority": false
     },
     {
-      "source": "BioSpace",
-      "tier": "industry",
-      "title": "FDA orders class-wide GLP-1 label update to include potential risk for rare eye disease",
-      "link": "https://www.biospace.com/fda/fda-orders-class-wide-glp-1-label-update-to-include-potential-risk-for-rare-eye-disease",
-      "date": "2026-11-09T18:47:04.000Z",
-      "category": "Regulatory / Policy",
-      "priority": false
-    },
-    {
-      "source": "BioSpace",
-      "tier": "industry",
-      "title": "Boehringer, Zealand’s obesity drug doesn’t elevate heart risk in key late-stage test",
-      "link": "https://www.biospace.com/drug-development/boehringer-zealands-obesity-drug-doesnt-elevate-heart-risk-in-key-late-stage-test",
-      "date": "2026-11-09T18:33:07.000Z",
-      "category": "General",
-      "priority": false
-    },
-    {
       "source": "BioPharma Dive",
       "tier": "industry",
       "title": "Vir hepatitis D drug succeeds in first pivotal study",
@@ -461,24 +506,6 @@
       "priority": false
     },
     {
-      "source": "BioPharma Dive",
-      "tier": "industry",
-      "title": "Ramaswamy’s biotech baggage haunted his political run",
-      "link": "https://www.biopharmadive.com/news/vivek-ramaswamy-biotech-axovant-roivant-ohio/874093/",
-      "date": "2026-11-09T15:37:00.000Z",
-      "category": "General",
-      "priority": false
-    },
-    {
-      "source": "BioPharma Dive",
-      "tier": "industry",
-      "title": "Translating Phase II success into Phase III readiness takes more than scale",
-      "link": "https://www.biopharmadive.com/spons/translating-phase-ii-success-into-phase-iii-readiness-takes-more-than-scale/833059/",
-      "date": "2026-11-09T10:00:00.000Z",
-      "category": "Clinical trial",
-      "priority": false
-    },
-    {
       "source": "FDA",
       "tier": "regulator",
       "title": "MedWatch Alert: FDA Requires Safety Labeling Changes for Glucagon-Like Peptide-1 Receptor Agonists (GLP-1 RAs) Due to Potential Increased Risk of Rare But Serious Eye Condition: FDA Safety Communication",
@@ -494,33 +521,6 @@
       "link": "http://www.fda.gov/medical-devices/medical-device-recalls-and-early-alerts/convenience-kit-correction-cardinal-health-updates-use-instructions-presource-packs-containing-bd",
       "date": "2026-11-09T05:00:00.000Z",
       "category": "Regulatory / Policy",
-      "priority": false
-    },
-    {
-      "source": "Fierce Pharma",
-      "tier": "industry",
-      "title": "Insulet, Marvel Comics smash diabetes stigma with new Omnipod-powered superhero",
-      "link": "https://www.fiercepharma.com/marketing/insulet-marvel-comics-smash-diabetes-stigma-new-omnipod-powered-superhero",
-      "date": "2026-11-09T00:00:00.000Z",
-      "category": "Deals / Business",
-      "priority": false
-    },
-    {
-      "source": "Fierce Pharma",
-      "tier": "industry",
-      "title": "Vertex lays off 78 Crinetics staffers amid $10B integration",
-      "link": "https://www.fiercepharma.com/pharma/vertex-lays-78-crinetics-staffers-amid-10b-integration",
-      "date": "2026-11-09T00:00:00.000Z",
-      "category": "General",
-      "priority": false
-    },
-    {
-      "source": "Fierce Pharma",
-      "tier": "industry",
-      "title": "Veradermics wraps phase 3 program in men with 'better-than-expected' hair growth at 1 year",
-      "link": "https://www.fiercepharma.com/pharma/veradermics-wraps-phase-3-program-men-better-expected-hair-growth-1-year",
-      "date": "2026-11-09T00:00:00.000Z",
-      "category": "Clinical trial",
       "priority": false
     },
     {
@@ -569,15 +569,6 @@
       "priority": false
     },
     {
-      "source": "RAPS",
-      "tier": "industry",
-      "title": "This Week at FDA: Midterms may complicate Overton confirmation, influence user fee reauthorization, and more",
-      "link": "https://www.raps.org/resource/this-week-at-fda-midterms-may-complicate-overton-confirmation-influence-user-fee-reauthorization-and-more.html",
-      "date": "2026-11-06T00:00:00.000Z",
-      "category": "Approval",
-      "priority": false
-    },
-    {
       "source": "FDA",
       "tier": "regulator",
       "title": "FDA Grants Accelerated Approval to a New Treatment for Head and Neck Squamous Cell Carcinoma",
@@ -607,8 +598,8 @@
     {
       "source": "FDA",
       "tier": "regulator",
-      "title": "Early Alert: B. Braun Medical Inc. Removes Streamline Bloodline Set for Dialog+",
-      "link": "http://www.fda.gov/medical-devices/medical-device-recalls-and-early-alerts/early-alert-b-braun-medical-inc-removes-streamline-bloodline-set-dialog",
+      "title": "MedWatch Alert: FDA Advises Consumers Not to Buy or Serve Once Upon a Farm Tractor Wheels Organic Toddler Soft-Baked Bars",
+      "link": "http://www.fda.gov/safety/medical-product-safety-information/medwatch-alert-fda-advises-consumers-not-buy-or-serve-once-upon-farm-tractor-wheels-organic-toddler",
       "date": "2026-11-02T05:00:00.000Z",
       "category": "Regulatory / Policy",
       "priority": false
@@ -616,8 +607,8 @@
     {
       "source": "FDA",
       "tier": "regulator",
-      "title": "MedWatch Alert: FDA Advises Consumers Not to Buy or Serve Once Upon a Farm Tractor Wheels Organic Toddler Soft-Baked Bars",
-      "link": "http://www.fda.gov/safety/medical-product-safety-information/medwatch-alert-fda-advises-consumers-not-buy-or-serve-once-upon-farm-tractor-wheels-organic-toddler",
+      "title": "Early Alert: B. Braun Medical Inc. Removes Streamline Bloodline Set for Dialog+",
+      "link": "http://www.fda.gov/medical-devices/medical-device-recalls-and-early-alerts/early-alert-b-braun-medical-inc-removes-streamline-bloodline-set-dialog",
       "date": "2026-11-02T05:00:00.000Z",
       "category": "Regulatory / Policy",
       "priority": false
@@ -629,6 +620,15 @@
       "link": "http://www.fda.gov/news-events/press-announcements/fda-approves-first-plasmid-dna-based-immunotherapy-adults-recurrent-respiratory-papillomatosis",
       "date": "2026-10-30T20:32:08.000Z",
       "category": "Approval",
+      "priority": false
+    },
+    {
+      "source": "FDA",
+      "tier": "regulator",
+      "title": "Hospital Glucose Meter Correction: Nova Biomedical Updates Use Instructions for StatStrip Glucose Hospital Meter Systems",
+      "link": "http://www.fda.gov/medical-devices/medical-device-recalls-and-early-alerts/hospital-glucose-meter-correction-nova-biomedical-updates-use-instructions-statstrip-glucose",
+      "date": "2026-10-30T04:00:00.000Z",
+      "category": "Regulatory / Policy",
       "priority": false
     },
     {
