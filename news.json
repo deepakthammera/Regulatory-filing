@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-13T14:33:52.666Z",
+  "generated": "2026-11-14T13:29:45.226Z",
   "sources": [
     "FDA",
     "EMA",
@@ -17,8 +17,17 @@
     "Deals / Business",
     "General"
   ],
-  "count": 86,
+  "count": 71,
   "items": [
+    {
+      "source": "FDA",
+      "tier": "regulator",
+      "title": "Medline Updates Customers and Patients on Repair and Replace Program for Recall of Medline Brand Beds, Rails, Mattresses and Accessories",
+      "link": "http://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/medline-updates-customers-and-patients-repair-and-replace-program-recall-medline-brand-beds-rails",
+      "date": "2026-11-13T05:00:00.000Z",
+      "category": "Safety / PV",
+      "priority": true
+    },
     {
       "source": "BioPharma Dive",
       "tier": "industry",
@@ -52,15 +61,6 @@
       "title": "AstraZeneca buys vaccine startup; FDA issues GLP-1 safety warning",
       "link": "https://www.biopharmadive.com/news/glp1-naion-compass-zura-abeona/874076/",
       "date": "2026-11-11T13:42:00.000Z",
-      "category": "Safety / PV",
-      "priority": true
-    },
-    {
-      "source": "Fierce Pharma",
-      "tier": "industry",
-      "title": "Aurobindo unit Eugia recalls antibiotic lot, citing glass particle concerns",
-      "link": "https://www.fiercepharma.com/manufacturing/aurobindo-unit-eugia-recalls-one-lot-antibiotic-injectables-glass-particles",
-      "date": "2026-11-11T00:00:00.000Z",
       "category": "Safety / PV",
       "priority": true
     },
@@ -101,9 +101,72 @@
       "priority": true
     },
     {
+      "source": "BioSpace",
+      "tier": "industry",
+      "title": "Cellectis could cut 70% of workforce in shift to in vivo therapies",
+      "link": "https://www.biospace.com/job-trends/cellectis-could-cut-70-of-workforce-in-shift-to-in-vivo-therapies",
+      "date": "2026-11-13T19:59:07.000Z",
+      "category": "General",
+      "priority": false
+    },
+    {
+      "source": "BioSpace",
+      "tier": "industry",
+      "title": "PharmaLogic buys Lantheus plant to build transatlantic radiopharmaceutical CDMO",
+      "link": "https://www.biospace.com/drug-delivery/pharmalogic-buys-lantheus-plant-to-build-transatlantic-radiopharmaceutical-cdmo",
+      "date": "2026-11-13T19:11:45.000Z",
+      "category": "General",
+      "priority": false
+    },
+    {
+      "source": "BioSpace",
+      "tier": "industry",
+      "title": "Milestone cutting 20% of HQ team, including CMO",
+      "link": "https://www.biospace.com/biospace-layoff-tracker",
+      "date": "2026-11-13T16:25:00.000Z",
+      "category": "General",
+      "priority": false
+    },
+    {
+      "source": "BioSpace",
+      "tier": "industry",
+      "title": "Arrowhead’s Ionis problem, Kyverna’s next-gen end and more biotech earnings",
+      "link": "https://www.biospace.com/business/arrowheads-ionis-problem-kyvernas-next-gen-end-and-more-biotech-earnings",
+      "date": "2026-11-13T15:51:56.000Z",
+      "category": "Deals / Business",
+      "priority": false
+    },
+    {
+      "source": "BioSpace",
+      "tier": "industry",
+      "title": "HHS pumps up to $25M into ibogaine, other psychotropic drugs on Veteran’s Day",
+      "link": "https://www.biospace.com/drug-development/hhs-pumps-up-to-25m-into-ibogaine-other-psychotropic-drugs-on-veterans-day",
+      "date": "2026-11-13T15:36:50.000Z",
+      "category": "General",
+      "priority": false
+    },
+    {
+      "source": "BioSpace",
+      "tier": "industry",
+      "title": "Windward nets $175M IPO, bringing 2026 biotech debuts to 35",
+      "link": "https://www.biospace.com/business/windward-nets-175m-ipo-bringing-2026-biotech-debuts-to-35",
+      "date": "2026-11-13T15:26:48.000Z",
+      "category": "Deals / Business",
+      "priority": false
+    },
+    {
       "source": "BioPharma Dive",
       "tier": "industry",
-      "title": "This week in charts: Brain drugs are back on venture’s minds",
+      "title": "Novo submits sickle cell drug; Flagship, Gates Foundation deepen ties",
+      "link": "https://www.biopharmadive.com/news/novo-etavopivat-flagship-gates-ascidian-immuneering-neurosterix/874120/",
+      "date": "2026-11-13T14:36:00.000Z",
+      "category": "General",
+      "priority": false
+    },
+    {
+      "source": "BioPharma Dive",
+      "tier": "industry",
+      "title": "This week in charts: Brain drugs are back on venture capitalists’ minds",
       "link": "https://www.biopharmadive.com/news/charts-venture-neuroscience-oyster-vectory-acr-cell-therapy/874570/",
       "date": "2026-11-13T14:00:00.000Z",
       "category": "General",
@@ -146,30 +209,21 @@
       "priority": false
     },
     {
-      "source": "Fierce Pharma",
+      "source": "RAPS",
       "tier": "industry",
-      "title": "Fierce Pharma Asia—China’s Big Pharma ambition; Treasury’s China crackdown; Takeda’s narcolepsy launch",
-      "link": "https://www.fiercepharma.com/pharma/china-big-pharma-dream-treasury-china-crackdown-takeda-narcolepsy-launch",
+      "title": "This Week: Senate HELP to vote on Overton, FDA shelves CNPV, and more",
+      "link": "https://www.raps.org/resource/this-week-senate-help-to-vote-on-overton-fda-shelves-cnpv-and-more.html",
       "date": "2026-11-13T00:00:00.000Z",
-      "category": "General",
+      "category": "Regulatory / Policy",
       "priority": false
     },
     {
-      "source": "Fierce Pharma",
+      "source": "RAPS",
       "tier": "industry",
-      "title": "Sanofi teams with British comic Beano for Type 1 diabetes education push",
-      "link": "https://www.fiercepharma.com/marketing/sanofi-teams-british-comic-beano-type-1-diabetes-education-push",
+      "title": "FDA warns Chinese API manufacturers for refusing records requests, quality oversight",
+      "link": "https://www.raps.org/resource/fda-warns-three-chinese-api-manufacturers-for-refusing-records-requests-quality-oversight.html",
       "date": "2026-11-13T00:00:00.000Z",
-      "category": "General",
-      "priority": false
-    },
-    {
-      "source": "Fierce Pharma",
-      "tier": "industry",
-      "title": "Novo amps up Wegovy marketing with DJ Khaled spinning his weight-loss tale",
-      "link": "https://www.fiercepharma.com/marketing/novo-amps-wegovy-marketing-dj-khaled-spinning-his-weight-loss-tale",
-      "date": "2026-11-13T00:00:00.000Z",
-      "category": "General",
+      "category": "Regulatory / Policy",
       "priority": false
     },
     {
@@ -229,15 +283,6 @@
     {
       "source": "BioSpace",
       "tier": "industry",
-      "title": "Capricor lays off 10% of workforce ahead of key DMD decision",
-      "link": "https://www.biospace.com/biospace-layoff-tracker",
-      "date": "2026-11-12T15:28:00.000Z",
-      "category": "General",
-      "priority": false
-    },
-    {
-      "source": "BioSpace",
-      "tier": "industry",
       "title": "Pfizer snags $1.5B financing from PE firm Blackstone to support Metsera asset",
       "link": "https://www.biospace.com/business/pfizer-snags-1-5b-financing-from-pe-firm-blackstone-to-support-metsera-asset",
       "date": "2026-11-12T13:55:43.000Z",
@@ -250,96 +295,6 @@
       "title": "BMS R&D head to depart amid restructure",
       "link": "https://www.biospace.com/business/bms-r-d-head-to-depart-amid-restructure",
       "date": "2026-11-12T13:38:39.000Z",
-      "category": "Deals / Business",
-      "priority": false
-    },
-    {
-      "source": "BioSpace",
-      "tier": "industry",
-      "title": "Biopharma layoffs rise YOY in October but sharply trend down for 2026",
-      "link": "https://www.biospace.com/job-trends/biopharma-layoffs-rise-yoy-in-october-but-sharply-trend-down-for-2026",
-      "date": "2026-11-12T06:01:00.000Z",
-      "category": "Deals / Business",
-      "priority": false
-    },
-    {
-      "source": "BioSpace",
-      "tier": "industry",
-      "title": "2026 Q3 Job Market Report: Job opportunities, layoffs show YOY improvement",
-      "link": "https://www.biospace.com/job-trends/2026-q3-job-market-report-job-opportunities-layoffs-show-yoy-improvement",
-      "date": "2026-11-12T06:01:00.000Z",
-      "category": "Deals / Business",
-      "priority": false
-    },
-    {
-      "source": "BioSpace",
-      "tier": "industry",
-      "title": "10 companies hiring in New Jersey",
-      "link": "https://www.biospace.com/job-trends/10-companies-hiring-in-new-jersey",
-      "date": "2026-11-12T05:00:00.000Z",
-      "category": "General",
-      "priority": false
-    },
-    {
-      "source": "Fierce Pharma",
-      "tier": "industry",
-      "title": "Pharmas should stay agile as Democrats amp up scrutiny over Trump's MFN deals",
-      "link": "https://www.fiercepharma.com/pharma/pharmas-ready-democrats-take-aim-trumps-mfn-deals",
-      "date": "2026-11-12T00:00:00.000Z",
-      "category": "Deals / Business",
-      "priority": false
-    },
-    {
-      "source": "Fierce Pharma",
-      "tier": "industry",
-      "title": "Gilead rolls out the red carpet for HIV prevention at the Latin Grammy Awards",
-      "link": "https://www.fiercepharma.com/marketing/gilead-rolls-out-red-carpet-hiv-prevention-latin-grammy-awards",
-      "date": "2026-11-12T00:00:00.000Z",
-      "category": "General",
-      "priority": false
-    },
-    {
-      "source": "Fierce Pharma",
-      "tier": "industry",
-      "title": "FDA appears to pause controversial speedy review program, complete response letter disclosures",
-      "link": "https://www.fiercepharma.com/pharma/fda-appears-pause-controversial-speedy-review-program-complete-response-letter-disclosures",
-      "date": "2026-11-12T00:00:00.000Z",
-      "category": "Approval",
-      "priority": false
-    },
-    {
-      "source": "Fierce Pharma",
-      "tier": "industry",
-      "title": "Orzeyful's 'lighter' DEA schedule paves way for Takeda's first-in-class narcolepsy launch",
-      "link": "https://www.fiercepharma.com/pharma/orzeyfuls-lighter-dea-schedule-paves-takedas-first-class-narcolepsy-launch",
-      "date": "2026-11-12T00:00:00.000Z",
-      "category": "General",
-      "priority": false
-    },
-    {
-      "source": "Fierce Pharma",
-      "tier": "industry",
-      "title": "BMS reunites R&D divisions under Cristian Massacesi, while Robert Plenge departs",
-      "link": "https://www.fiercepharma.com/biotech/bristol-myers-reunites-rd-divisions-under-cristian-massacesi",
-      "date": "2026-11-12T00:00:00.000Z",
-      "category": "General",
-      "priority": false
-    },
-    {
-      "source": "Fierce Pharma",
-      "tier": "industry",
-      "title": "AI models from Google, Anthropic and more lean on recommending promoted drugs: study",
-      "link": "https://www.fiercepharma.com/marketing/ai-models-google-anthropic-and-more-lean-recommending-promoted-drugs",
-      "date": "2026-11-12T00:00:00.000Z",
-      "category": "General",
-      "priority": false
-    },
-    {
-      "source": "Fierce Pharma",
-      "tier": "industry",
-      "title": "Radiopharma player PharmaLogic snaps up Lantheus' CDMO business, plant as Curium acquisition advances",
-      "link": "https://www.fiercepharma.com/pharma/radiopharma-player-pharmalogic-snaps-lantheus-cdmo-business-plant-curium-acquisition",
-      "date": "2026-11-12T00:00:00.000Z",
       "category": "Deals / Business",
       "priority": false
     },
@@ -380,57 +335,12 @@
       "priority": false
     },
     {
-      "source": "BioSpace",
-      "tier": "industry",
-      "title": "FDA warns Chinese providers of compounding APIs over record-request refusals",
-      "link": "https://www.biospace.com/drug-delivery/fda-warns-chinese-providers-of-compounding-apis-over-record-request-refusals",
-      "date": "2026-11-11T16:20:46.000Z",
-      "category": "Regulatory / Policy",
-      "priority": false
-    },
-    {
       "source": "BioPharma Dive",
       "tier": "industry",
       "title": "Drug price hikes in Germany could push US costs higher, study says",
       "link": "https://www.biopharmadive.com/news/germany-us-drug-price-study-healthcare-costs/874360/",
       "date": "2026-11-11T16:11:00.000Z",
       "category": "General",
-      "priority": false
-    },
-    {
-      "source": "BioSpace",
-      "tier": "industry",
-      "title": "PepGen shares almost double as DM1 oligonucleotide achieves ‘best in class’ splicing",
-      "link": "https://www.biospace.com/drug-development/pepgen-shares-almost-double-as-dm1-oligonucleotide-achieves-best-in-class-splicing",
-      "date": "2026-11-11T15:23:20.000Z",
-      "category": "Deals / Business",
-      "priority": false
-    },
-    {
-      "source": "Fierce Pharma",
-      "tier": "industry",
-      "title": "FDA cites record request breakdowns in trio of warning letters to API makers",
-      "link": "https://www.fiercepharma.com/pharma/fda-cites-record-request-breakdowns-trio-api-maker-warning-letters",
-      "date": "2026-11-11T00:00:00.000Z",
-      "category": "Safety / PV",
-      "priority": false
-    },
-    {
-      "source": "Fierce Pharma",
-      "tier": "industry",
-      "title": "Legend Biotech shares fall 16% after first earnings report under new CEO",
-      "link": "https://www.fiercepharma.com/pharma/legend-biotech-shares-fall-16-after-first-earnings-report-under-new-ceo",
-      "date": "2026-11-11T00:00:00.000Z",
-      "category": "Deals / Business",
-      "priority": false
-    },
-    {
-      "source": "Fierce Pharma",
-      "tier": "industry",
-      "title": "BioNTech pays $205M for FDA voucher to speed up ‘late-stage oncology pipeline’",
-      "link": "https://www.fiercepharma.com/pharma/biontech-pays-205m-fda-voucher-speed-late-stage-oncology-pipeline",
-      "date": "2026-11-11T00:00:00.000Z",
-      "category": "Regulatory / Policy",
       "priority": false
     },
     {
@@ -461,15 +371,6 @@
       "priority": false
     },
     {
-      "source": "BioPharma Dive",
-      "tier": "industry",
-      "title": "London biotech Oyster harvests $60M for tau-targeting brain drugs",
-      "link": "https://www.biopharmadive.com/news/oyster-venture-financing-tau-targeted-protein-degraders/874160/",
-      "date": "2026-11-10T07:00:00.000Z",
-      "category": "General",
-      "priority": false
-    },
-    {
       "source": "FDA",
       "tier": "regulator",
       "title": "Early Alert: Intersurgical Inc. Removes 22mm Smoothbore breathing tubes and systems",
@@ -488,15 +389,6 @@
       "priority": false
     },
     {
-      "source": "Fierce Pharma",
-      "tier": "industry",
-      "title": "Lilly’s Foundayo marketing push keeps pace with another celeb partner in comedian Leanne Morgan",
-      "link": "https://www.fiercepharma.com/marketing/lillys-foundayo-marketing-push-keeps-pace-another-celeb-spokesperson-comedian-leanne",
-      "date": "2026-11-10T00:00:00.000Z",
-      "category": "General",
-      "priority": false
-    },
-    {
       "source": "RAPS",
       "tier": "industry",
       "title": "Develop regulatory intelligence system before legal deadlines, experts say",
@@ -512,15 +404,6 @@
       "link": "https://www.raps.org/resource/fda-commissioner-touts-strong-interest-in-early-stage-trial-pilot.html",
       "date": "2026-11-10T00:00:00.000Z",
       "category": "Regulatory / Policy",
-      "priority": false
-    },
-    {
-      "source": "RAPS",
-      "tier": "industry",
-      "title": "Recon: Bayer wins FDA approval for stroke prevention drug; Third Rock enters $2B partnership with AI-focused Chinese biotech",
-      "link": "https://www.raps.org/resource/recon-bayer-wins-fda-approval-for-stroke-prevention-drug-third-rock-enters-2b-partnership-with-ai-focused-chinese-biotech.html",
-      "date": "2026-11-10T00:00:00.000Z",
-      "category": "Approval",
       "priority": false
     },
     {
@@ -565,15 +448,6 @@
       "title": "Convenience Kit Correction: Cardinal Health Updates Use Instructions for Presource Packs Containing BD Alaris Pump Infusion Sets",
       "link": "http://www.fda.gov/medical-devices/medical-device-recalls-and-early-alerts/convenience-kit-correction-cardinal-health-updates-use-instructions-presource-packs-containing-bd",
       "date": "2026-11-09T05:00:00.000Z",
-      "category": "Regulatory / Policy",
-      "priority": false
-    },
-    {
-      "source": "RAPS",
-      "tier": "industry",
-      "title": "Regulatory intelligence requires critical thinking, actionability to be valuable, experts say",
-      "link": "https://www.raps.org/resource/regulatory-intelligence-requires-critical-thinking-actionability-to-be-valuable-experts-say.html",
-      "date": "2026-11-09T00:00:00.000Z",
       "category": "Regulatory / Policy",
       "priority": false
     },
@@ -629,15 +503,6 @@
       "link": "http://www.fda.gov/safety/medical-product-safety-information/medwatch-alert-fda-advises-consumers-not-buy-or-serve-once-upon-farm-tractor-wheels-organic-toddler",
       "date": "2026-11-02T05:00:00.000Z",
       "category": "Regulatory / Policy",
-      "priority": false
-    },
-    {
-      "source": "FDA",
-      "tier": "regulator",
-      "title": "FDA Approves First Plasmid DNA-based Immunotherapy for Adults with Recurrent Respiratory Papillomatosis",
-      "link": "http://www.fda.gov/news-events/press-announcements/fda-approves-first-plasmid-dna-based-immunotherapy-adults-recurrent-respiratory-papillomatosis",
-      "date": "2026-10-30T20:32:08.000Z",
-      "category": "Approval",
       "priority": false
     },
     {
