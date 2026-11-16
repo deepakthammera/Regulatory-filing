@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-15T13:55:08.149Z",
+  "generated": "2026-11-16T15:43:57.239Z",
   "sources": [
     "FDA",
     "EMA",
@@ -17,8 +17,17 @@
     "Deals / Business",
     "General"
   ],
-  "count": 86,
+  "count": 84,
   "items": [
+    {
+      "source": "BioSpace",
+      "tier": "industry",
+      "title": "Deaths, failed trials and other recent setbacks in the autoimmune space",
+      "link": "https://www.biospace.com/drug-development/deaths-failed-trials-and-other-recent-setbacks-in-the-autoimmune-space",
+      "date": "2026-11-16T05:01:00.000Z",
+      "category": "Safety / PV",
+      "priority": true
+    },
     {
       "source": "FDA",
       "tier": "regulator",
@@ -29,38 +38,11 @@
       "priority": true
     },
     {
-      "source": "BioPharma Dive",
-      "tier": "industry",
-      "title": "The FDA has over 1k open jobs — and the staffing shortage is hitting pharma",
-      "link": "https://www.biopharmadive.com/news/fda-staffing-shortages-drug-reviews-pharma/874480/",
-      "date": "2026-11-12T14:38:00.000Z",
-      "category": "Safety / PV",
-      "priority": true
-    },
-    {
-      "source": "BioSpace",
-      "tier": "industry",
-      "title": "Can we finally get ahead of drug shortages?",
-      "link": "https://www.biospace.com/drug-development/can-we-finally-get-ahead-of-drug-shortages",
-      "date": "2026-11-12T12:26:32.000Z",
-      "category": "Safety / PV",
-      "priority": true
-    },
-    {
       "source": "FDA",
       "tier": "regulator",
       "title": "Game Changer Products LLC Issues Voluntary Nationwide Recall of 10 Day Forecast Capsules Due to the Presence of Undeclared Sildenafil and Acetaminophen",
       "link": "http://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/game-changer-products-llc-issues-voluntary-nationwide-recall-10-day-forecast-capsules-due-presence",
       "date": "2026-11-12T05:00:00.000Z",
-      "category": "Safety / PV",
-      "priority": true
-    },
-    {
-      "source": "BioPharma Dive",
-      "tier": "industry",
-      "title": "AstraZeneca buys vaccine startup; FDA issues GLP-1 safety warning",
-      "link": "https://www.biopharmadive.com/news/glp1-naion-compass-zura-abeona/874076/",
-      "date": "2026-11-11T13:42:00.000Z",
       "category": "Safety / PV",
       "priority": true
     },
@@ -101,6 +83,186 @@
       "priority": true
     },
     {
+      "source": "BioSpace",
+      "tier": "industry",
+      "title": "J&J pays $2.2B upfront for Ollin, taps Blackstone to fund eye disease trial",
+      "link": "https://www.biospace.com/deals/j-j-pays-2-2b-upfront-for-ollin-taps-blackstone-to-fund-eye-disease-trial",
+      "date": "2026-11-16T15:21:03.000Z",
+      "category": "General",
+      "priority": false
+    },
+    {
+      "source": "BioSpace",
+      "tier": "industry",
+      "title": "Lilly’s early-stage M&A quest finds $1.5B deal for Calytrix’s blood cancer work",
+      "link": "https://www.biospace.com/business/lillys-early-stage-m-a-quest-finds-1-5b-deal-for-calytrixs-blood-cancer-work",
+      "date": "2026-11-16T15:13:51.000Z",
+      "category": "Deals / Business",
+      "priority": false
+    },
+    {
+      "source": "BioSpace",
+      "tier": "industry",
+      "title": "FDA’s Summit rejection puts PD-1xVEGF class on notice to establish overall survival",
+      "link": "https://www.biospace.com/drug-development/fdas-summit-rejection-puts-pd-1xvegf-class-on-notice-to-establish-overall-survival",
+      "date": "2026-11-16T14:58:12.000Z",
+      "category": "Regulatory / Policy",
+      "priority": false
+    },
+    {
+      "source": "BioSpace",
+      "tier": "industry",
+      "title": "Novo’s CagriSema drives more than 20% weight loss at lower doses",
+      "link": "https://www.biospace.com/drug-development/novos-cagrisema-drives-more-than-20-weight-loss-at-lower-doses",
+      "date": "2026-11-16T14:53:32.000Z",
+      "category": "Regulatory / Policy",
+      "priority": false
+    },
+    {
+      "source": "BioSpace",
+      "tier": "industry",
+      "title": "Their loss, our gain? Canada makes its case to Europe amid U.S. instability",
+      "link": "https://www.biospace.com/business/their-loss-our-gain-canada-makes-its-case-to-europe-amid-u-s-instability",
+      "date": "2026-11-16T14:39:13.000Z",
+      "category": "General",
+      "priority": false
+    },
+    {
+      "source": "BioSpace",
+      "tier": "industry",
+      "title": "ObesityWeek 2026: Wave outlines case for body composition–based trial design",
+      "link": "https://www.biospace.com/drug-development/obesityweek-2026-wave-outlines-case-for-body-composition-based-trial-design",
+      "date": "2026-11-16T14:35:21.000Z",
+      "category": "General",
+      "priority": false
+    },
+    {
+      "source": "BioSpace",
+      "tier": "industry",
+      "title": "Rising costs leave 9 in 10 new medicines unprofitable, IQVIA finds",
+      "link": "https://www.biospace.com/business/rising-costs-leave-9-in-10-new-medicines-unprofitable-iqvia-finds",
+      "date": "2026-11-16T12:55:35.000Z",
+      "category": "General",
+      "priority": false
+    },
+    {
+      "source": "BioPharma Dive",
+      "tier": "industry",
+      "title": "Lilly adds to buyout streak with $1.5B purchase of startup Calytrix",
+      "link": "https://www.biopharmadive.com/news/lilly-calytrix-bio-acquire-deal-myelofibrosis-essential-thrombocythemiaenial-/874719/",
+      "date": "2026-11-16T12:44:00.000Z",
+      "category": "Deals / Business",
+      "priority": false
+    },
+    {
+      "source": "BioSpace",
+      "tier": "industry",
+      "title": "Seawolf surfaces with $100M, $1.2B Sanofi pact for redosable DNA medicines",
+      "link": "https://www.biospace.com/business/seawolf-surfaces-with-100m-1-2b-sanofi-pact-for-redosable-dna-medicines",
+      "date": "2026-11-16T10:00:00.000Z",
+      "category": "General",
+      "priority": false
+    },
+    {
+      "source": "BioPharma Dive",
+      "tier": "industry",
+      "title": "Big-name investors pour $100M into DNA therapeutics developer Seawolf",
+      "link": "https://www.biopharmadive.com/news/seawolf-therapeutics-dna-versant-startup-financing/874465/",
+      "date": "2026-11-16T10:00:00.000Z",
+      "category": "General",
+      "priority": false
+    },
+    {
+      "source": "BioPharma Dive",
+      "tier": "industry",
+      "title": "Completing the circle: the next evolution in sustainable pharmaceutical blister packaging",
+      "link": "https://www.biopharmadive.com/spons/completing-the-circle-the-next-evolution-in-sustainable-pharmaceutical-bli/874350/",
+      "date": "2026-11-16T10:00:00.000Z",
+      "category": "General",
+      "priority": false
+    },
+    {
+      "source": "BioPharma Dive",
+      "tier": "industry",
+      "title": "Your AI pilots aren’t stalling because of the AI – they’re stalling because of your environment",
+      "link": "https://www.biopharmadive.com/spons/your-ai-pilots-arent-stalling-because-of-the-ai-theyre-stalling-because/874345/",
+      "date": "2026-11-16T10:00:00.000Z",
+      "category": "General",
+      "priority": false
+    },
+    {
+      "source": "BioPharma Dive",
+      "tier": "industry",
+      "title": "The infrastructure decisions that will enable tomorrow’s biggest breakthroughs",
+      "link": "https://www.biopharmadive.com/spons/the-infrastructure-decisions-that-will-enable-tomorrows-biggest-breakthrou/874507/",
+      "date": "2026-11-16T10:00:00.000Z",
+      "category": "Approval",
+      "priority": false
+    },
+    {
+      "source": "BioPharma Dive",
+      "tier": "industry",
+      "title": "One of Europe’s leading VCs banks a €725M ‘crossover’ fund",
+      "link": "https://www.biopharmadive.com/news/sofinnova-crossover-fund-ii-european-investment/874656/",
+      "date": "2026-11-16T07:00:00.000Z",
+      "category": "General",
+      "priority": false
+    },
+    {
+      "source": "BioSpace",
+      "tier": "industry",
+      "title": "Emerging biotech hubs step up as innovation economics evolve",
+      "link": "https://www.biospace.com/drug-development/opinion-emerging-biotech-hubs-step-up-as-innovation-economics-evolve",
+      "date": "2026-11-16T05:25:00.000Z",
+      "category": "General",
+      "priority": false
+    },
+    {
+      "source": "BioSpace",
+      "tier": "industry",
+      "title": "BioSpace 40 Under 40 winners Paull, Zhang let patients with rare disease lead the way at BridgeBio",
+      "link": "https://www.biospace.com/business/biospace-40-under-40-winners-paull-zhang-let-patients-with-rare-disease-lead-the-way-at-bridgebio",
+      "date": "2026-11-16T05:24:00.000Z",
+      "category": "General",
+      "priority": false
+    },
+    {
+      "source": "BioSpace",
+      "tier": "industry",
+      "title": "Alzheimer’s field looks beyond amyloid as biopharma converges at CTAD 2026",
+      "link": "https://www.biospace.com/drug-development/alzheimers-field-looks-beyond-amyloid-as-biopharma-converges-at-ctad-2026",
+      "date": "2026-11-16T05:02:00.000Z",
+      "category": "General",
+      "priority": false
+    },
+    {
+      "source": "BioSpace",
+      "tier": "industry",
+      "title": "Cellectis may cut 70% of workforce",
+      "link": "https://www.biospace.com/biospace-layoff-tracker",
+      "date": "2026-11-16T01:38:00.000Z",
+      "category": "General",
+      "priority": false
+    },
+    {
+      "source": "Fierce Pharma",
+      "tier": "industry",
+      "title": "With Klygefa approvals, AZ expands myasthenia gravis domain beyond Soliris, Ultomiris",
+      "link": "https://www.fiercepharma.com/pharma/klygefa-approvals-az-expands-myasthenia-gravis-domain-beyond-soliris-ultomiris",
+      "date": "2026-11-16T00:00:00.000Z",
+      "category": "Approval",
+      "priority": false
+    },
+    {
+      "source": "BioSpace",
+      "tier": "industry",
+      "title": "Summit's PD-1xVEGF rejected by FDA in lung cancer",
+      "link": "https://www.biospace.com/drug-development/summits-pd-1xvegf-rejected-by-fda-in-lung-cancer",
+      "date": "2026-11-15T14:03:30.000Z",
+      "category": "Regulatory / Policy",
+      "priority": false
+    },
+    {
       "source": "Drug Safety",
       "tier": "journal",
       "title": "Discontinuation of Additional Risk Minimisation Measure Tools Implemented at Authorisation for Centrally Authorised Medicinal Products in the EU",
@@ -119,51 +281,6 @@
       "priority": false
     },
     {
-      "source": "BioSpace",
-      "tier": "industry",
-      "title": "PharmaLogic buys Lantheus plant to build transatlantic radiopharmaceutical CDMO",
-      "link": "https://www.biospace.com/drug-delivery/pharmalogic-buys-lantheus-plant-to-build-transatlantic-radiopharmaceutical-cdmo",
-      "date": "2026-11-13T19:11:45.000Z",
-      "category": "General",
-      "priority": false
-    },
-    {
-      "source": "BioSpace",
-      "tier": "industry",
-      "title": "Milestone cutting 20% of HQ team, including CMO",
-      "link": "https://www.biospace.com/biospace-layoff-tracker",
-      "date": "2026-11-13T16:25:00.000Z",
-      "category": "General",
-      "priority": false
-    },
-    {
-      "source": "BioSpace",
-      "tier": "industry",
-      "title": "Arrowhead’s Ionis problem, Kyverna’s next-gen end and more biotech earnings",
-      "link": "https://www.biospace.com/business/arrowheads-ionis-problem-kyvernas-next-gen-end-and-more-biotech-earnings",
-      "date": "2026-11-13T15:51:56.000Z",
-      "category": "Deals / Business",
-      "priority": false
-    },
-    {
-      "source": "BioSpace",
-      "tier": "industry",
-      "title": "HHS pumps up to $25M into ibogaine, other psychotropic drugs on Veteran’s Day",
-      "link": "https://www.biospace.com/drug-development/hhs-pumps-up-to-25m-into-ibogaine-other-psychotropic-drugs-on-veterans-day",
-      "date": "2026-11-13T15:36:50.000Z",
-      "category": "General",
-      "priority": false
-    },
-    {
-      "source": "BioSpace",
-      "tier": "industry",
-      "title": "Windward nets $175M IPO, bringing 2026 biotech debuts to 35",
-      "link": "https://www.biospace.com/business/windward-nets-175m-ipo-bringing-2026-biotech-debuts-to-35",
-      "date": "2026-11-13T15:26:48.000Z",
-      "category": "Deals / Business",
-      "priority": false
-    },
-    {
       "source": "BioPharma Dive",
       "tier": "industry",
       "title": "Novo submits sickle cell drug; Flagship, Gates Foundation deepen ties",
@@ -178,24 +295,6 @@
       "title": "This week in charts: Brain drugs are back on venture capitalists’ minds",
       "link": "https://www.biopharmadive.com/news/charts-venture-neuroscience-oyster-vectory-acr-cell-therapy/874570/",
       "date": "2026-11-13T14:00:00.000Z",
-      "category": "General",
-      "priority": false
-    },
-    {
-      "source": "BioSpace",
-      "tier": "industry",
-      "title": "Regeneron’s POTS antibody curbs heart rate spikes, teeing up Phase 3 trial",
-      "link": "https://www.biospace.com/drug-development/regenerons-pots-antibody-curbs-heart-rate-spikes-teeing-up-phase-3-trial",
-      "date": "2026-11-13T13:59:44.000Z",
-      "category": "Clinical trial",
-      "priority": false
-    },
-    {
-      "source": "BioSpace",
-      "tier": "industry",
-      "title": "Biopharma pushes beyond GLP-1s, weight loss at ObesityWeek 2026",
-      "link": "https://www.biospace.com/drug-development/biopharma-pushes-beyond-glp-1s-weight-loss-at-obesityweek-2026",
-      "date": "2026-11-13T13:15:31.000Z",
       "category": "General",
       "priority": false
     },
@@ -326,24 +425,6 @@
       "priority": false
     },
     {
-      "source": "BioSpace",
-      "tier": "industry",
-      "title": "Webinar: Optimizing Cell Therapy Manufacturing Efficiency with Cryopreserved Cells",
-      "link": "https://www.biospace.com/events/webinar-optimizing-cell-therapy-manufacturing-efficiency-with-cryopreserved-cells",
-      "date": "2026-11-12T21:54:21.000Z",
-      "category": "General",
-      "priority": false
-    },
-    {
-      "source": "BioSpace",
-      "tier": "industry",
-      "title": "Deep dive: Cardiovascular calamities and catalysts",
-      "link": "https://www.biospace.com/drug-development/deep-dive-cardiovascular-calamities-and-catalysts",
-      "date": "2026-11-12T19:01:36.000Z",
-      "category": "General",
-      "priority": false
-    },
-    {
       "source": "BioPharma Dive",
       "tier": "industry",
       "title": "Blackstone bets $1.5B on Pfizer’s obesity drug",
@@ -353,48 +434,12 @@
       "priority": false
     },
     {
-      "source": "BioSpace",
+      "source": "Fierce Pharma",
       "tier": "industry",
-      "title": "Neurosterix nabs $105M, recruits Karuna veterans for schizophrenia push",
-      "link": "https://www.biospace.com/drug-development/neurosterix-nabs-105m-recruits-karuna-veterans-for-schizophrenia-push",
-      "date": "2026-11-12T16:13:50.000Z",
+      "title": "Measurement Everywhere: Why the Future Can’t Be Measured in the Rearview Mirror",
+      "link": "https://www.fiercepharma.com/sponsored/measurement-everywhere-why-future-cant-be-measured-rearview-mirror",
+      "date": "2026-11-12T00:00:00.000Z",
       "category": "General",
-      "priority": false
-    },
-    {
-      "source": "BioPharma Dive",
-      "tier": "industry",
-      "title": "Bristol Myers research chief to depart in ‘evolution’ of company’s structure",
-      "link": "https://www.biopharmadive.com/news/bristol-myers-robert-plenge-cristian-massacesi-research-transition/874476/",
-      "date": "2026-11-12T16:03:00.000Z",
-      "category": "General",
-      "priority": false
-    },
-    {
-      "source": "BioSpace",
-      "tier": "industry",
-      "title": "FDA’s commissioner voucher program reportedly shuttered ahead of Senate vote on Overton",
-      "link": "https://www.biospace.com/fda/fdas-commissioner-voucher-program-reportedly-shuttered-ahead-of-senate-vote-on-overton",
-      "date": "2026-11-12T15:52:15.000Z",
-      "category": "Regulatory / Policy",
-      "priority": false
-    },
-    {
-      "source": "BioSpace",
-      "tier": "industry",
-      "title": "Pfizer snags $1.5B financing from PE firm Blackstone to support Metsera asset",
-      "link": "https://www.biospace.com/business/pfizer-snags-1-5b-financing-from-pe-firm-blackstone-to-support-metsera-asset",
-      "date": "2026-11-12T13:55:43.000Z",
-      "category": "Deals / Business",
-      "priority": false
-    },
-    {
-      "source": "BioSpace",
-      "tier": "industry",
-      "title": "BMS R&D head to depart amid restructure",
-      "link": "https://www.biospace.com/business/bms-r-d-head-to-depart-amid-restructure",
-      "date": "2026-11-12T13:38:39.000Z",
-      "category": "Deals / Business",
       "priority": false
     },
     {
@@ -422,24 +467,6 @@
       "link": "https://www.fiercepharma.com/pharma/fda-appears-pause-controversial-speedy-review-program-complete-response-letter-disclosures",
       "date": "2026-11-12T00:00:00.000Z",
       "category": "Approval",
-      "priority": false
-    },
-    {
-      "source": "Fierce Pharma",
-      "tier": "industry",
-      "title": "Orzeyful's 'lighter' DEA schedule paves way for Takeda's first-in-class narcolepsy launch",
-      "link": "https://www.fiercepharma.com/pharma/orzeyfuls-lighter-dea-schedule-paves-takedas-first-class-narcolepsy-launch",
-      "date": "2026-11-12T00:00:00.000Z",
-      "category": "General",
-      "priority": false
-    },
-    {
-      "source": "Fierce Pharma",
-      "tier": "industry",
-      "title": "BMS reunites R&D divisions under Cristian Massacesi, while Robert Plenge departs",
-      "link": "https://www.fiercepharma.com/biotech/bristol-myers-reunites-rd-divisions-under-cristian-massacesi",
-      "date": "2026-11-12T00:00:00.000Z",
-      "category": "General",
       "priority": false
     },
     {
@@ -479,38 +506,11 @@
       "priority": false
     },
     {
-      "source": "BioPharma Dive",
-      "tier": "industry",
-      "title": "Drug price hikes in Germany could push US costs higher, study says",
-      "link": "https://www.biopharmadive.com/news/germany-us-drug-price-study-healthcare-costs/874360/",
-      "date": "2026-11-11T16:11:00.000Z",
-      "category": "General",
-      "priority": false
-    },
-    {
       "source": "RAPS",
       "tier": "industry",
       "title": "FDA issues draft guidance on early-phase IND studies for solid tumors",
       "link": "https://www.raps.org/resource/fda-issues-draft-guidance-on-early-phase-ind-studies-for-solid-tumors.html",
       "date": "2026-11-11T00:00:00.000Z",
-      "category": "Clinical trial",
-      "priority": false
-    },
-    {
-      "source": "BioPharma Dive",
-      "tier": "industry",
-      "title": "PepGen soars on promising early data for muscular dystrophy drug",
-      "link": "https://www.biopharmadive.com/news/pepgen-myotonic-dystrophy-dm1-drug-results-freedom/874249/",
-      "date": "2026-11-10T21:48:00.000Z",
-      "category": "General",
-      "priority": false
-    },
-    {
-      "source": "BioPharma Dive",
-      "tier": "industry",
-      "title": "Beam’s base editing therapy for sickle cell hits goal in pivotal trial",
-      "link": "https://www.biopharmadive.com/news/beam-sickle-cell-base-editing-risto-cel-results/874242/",
-      "date": "2026-11-10T17:06:00.000Z",
       "category": "Clinical trial",
       "priority": false
     },
@@ -728,24 +728,6 @@
       "link": "https://doi.org/10.1007/s40264-026-01739-6",
       "date": "2026-10-20T00:00:00.000Z",
       "category": "Safety / PV",
-      "priority": false
-    },
-    {
-      "source": "EMA",
-      "tier": "regulator",
-      "title": "Meeting highlights from the Committee for Medicinal Products for Human Use (CHMP) 12-15 October 2026",
-      "link": "https://www.ema.europa.eu/en/news/meeting-highlights-committee-medicinal-products-human-use-chmp-12-15-october-2026",
-      "date": "2026-10-16T10:00:00.000Z",
-      "category": "Approval",
-      "priority": false
-    },
-    {
-      "source": "EMA",
-      "tier": "regulator",
-      "title": "EMA recommends authorisation of Rasonque for metastatic pancreatic cancer",
-      "link": "https://www.ema.europa.eu/en/news/ema-recommends-authorisation-rasonque-metastatic-pancreatic-cancer",
-      "date": "2026-10-15T13:30:00.000Z",
-      "category": "Approval",
       "priority": false
     },
     {
