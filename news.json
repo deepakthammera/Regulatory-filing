@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-20T15:26:02.929Z",
+  "generated": "2026-11-21T14:38:35.687Z",
   "sources": [
     "FDA",
     "EMA",
@@ -19,6 +19,24 @@
   ],
   "count": 85,
   "items": [
+    {
+      "source": "FDA",
+      "tier": "regulator",
+      "title": "Breckenridge Pharmaceutical, Inc. Issues Voluntary Nationwide Consumer-Level Recall of One Lot of Propranolol Hydrochloride Extended-Release Capsules, USP, 60 mg, Due to Potential Metal Contamination",
+      "link": "http://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/breckenridge-pharmaceutical-inc-issues-voluntary-nationwide-consumer-level-recall-one-lot",
+      "date": "2026-11-20T05:00:00.000Z",
+      "category": "Safety / PV",
+      "priority": true
+    },
+    {
+      "source": "FDA",
+      "tier": "regulator",
+      "title": "Greenwich Rx Issues Voluntary Nationwide Recall of Compounded Sterile Products Due to Lack of Sterility Assurance",
+      "link": "http://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/greenwich-rx-issues-voluntary-nationwide-recall-compounded-sterile-products-due-lack-sterility",
+      "date": "2026-11-20T05:00:00.000Z",
+      "category": "Safety / PV",
+      "priority": true
+    },
     {
       "source": "Fierce Pharma",
       "tier": "industry",
@@ -56,24 +74,6 @@
       "priority": true
     },
     {
-      "source": "FDA",
-      "tier": "regulator",
-      "title": "Eugia US LLC (f/k/a Auro Medics Pharma LLC) Issues Voluntary Nationwide Recall of Vancomycin Hydrochloride for Injection USP 1.25g/Vial-30mL (Single Dose Vial) Due to Presence of Particulate Matter",
-      "link": "http://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/eugia-us-llc-fka-auro-medics-pharma-llc-issues-voluntary-nationwide-recall-vancomycin-hydrochloride",
-      "date": "2026-11-09T05:00:00.000Z",
-      "category": "Safety / PV",
-      "priority": true
-    },
-    {
-      "source": "FDA",
-      "tier": "regulator",
-      "title": "Heart Pump Controller Recall: Abiomed Removes Automated Impella Controllers (AIC)",
-      "link": "http://www.fda.gov/medical-devices/medical-device-recalls-and-early-alerts/heart-pump-controller-recall-abiomed-removes-automated-impella-controllers-aic",
-      "date": "2026-11-09T05:00:00.000Z",
-      "category": "Safety / PV",
-      "priority": true
-    },
-    {
       "source": "EMA",
       "tier": "regulator",
       "title": "Meeting highlights from the Pharmacovigilance Risk Assessment Committee (PRAC) 26 - 29 October 2026",
@@ -81,6 +81,42 @@
       "date": "2026-10-30T11:11:00.000Z",
       "category": "Safety / PV",
       "priority": true
+    },
+    {
+      "source": "BioSpace",
+      "tier": "industry",
+      "title": "Capricor’s regulatory odyssey for DMD cell therapy hits second FDA rejection",
+      "link": "https://www.biospace.com/fda/capricors-regulatory-odyssey-for-dmd-cell-therapy-hits-second-fda-rejection",
+      "date": "2026-11-21T14:01:57.000Z",
+      "category": "Regulatory / Policy",
+      "priority": false
+    },
+    {
+      "source": "BioPharma Dive",
+      "tier": "industry",
+      "title": "Will the first approved psychedelic become a blockbuster?",
+      "link": "https://www.biopharmadive.com/news/race-first-psilocybin-blockbuster-compass-usona/875369/",
+      "date": "2026-11-20T19:53:09.000Z",
+      "category": "Approval",
+      "priority": false
+    },
+    {
+      "source": "BioPharma Dive",
+      "tier": "industry",
+      "title": "Erasca data add to pressure facing Revolution’s breakthrough cancer drug",
+      "link": "https://www.biopharmadive.com/news/erasca-kras-pancreatic-cancer-drug-results-revolution-rasonque/875314/",
+      "date": "2026-11-20T17:18:00.000Z",
+      "category": "Approval",
+      "priority": false
+    },
+    {
+      "source": "BioSpace",
+      "tier": "industry",
+      "title": "FDA will miss rare decision deadline for Savara candidate after three-month delay",
+      "link": "https://www.biospace.com/fda/fda-will-miss-rare-decision-deadline-for-savara-candidate-after-three-month-delay",
+      "date": "2026-11-20T16:10:04.000Z",
+      "category": "Regulatory / Policy",
+      "priority": false
     },
     {
       "source": "BioSpace",
@@ -112,8 +148,8 @@
     {
       "source": "BioSpace",
       "tier": "industry",
-      "title": "Merck-Kelun ADC scores survival win in Phase 3 stomach cancer trial",
-      "link": "https://www.biospace.com/drug-development/merck-kelun-adc-scores-survival-win-in-phase-3-stomach-cancer-trial",
+      "title": "Merck-Kelun ADC scores survival win in Phase 3 gastroesophageal cancer trial",
+      "link": "https://www.biospace.com/drug-development/merck-kelun-adc-scores-survival-win-in-phase-3-gastroesophageal-cancer-trial",
       "date": "2026-11-20T14:33:19.000Z",
       "category": "Clinical trial",
       "priority": false
@@ -134,6 +170,96 @@
       "link": "https://www.biopharmadive.com/news/biotech-china-deals-venture-returns-summit-stock/874912/",
       "date": "2026-11-20T12:00:00.000Z",
       "category": "General",
+      "priority": false
+    },
+    {
+      "source": "FDA",
+      "tier": "regulator",
+      "title": "Early Alert: Heraeus Medical Components Removes Vascular Guidewires",
+      "link": "http://www.fda.gov/medical-devices/medical-device-recalls-and-early-alerts/early-alert-heraeus-medical-components-removes-vascular-guidewires",
+      "date": "2026-11-20T05:00:00.000Z",
+      "category": "Regulatory / Policy",
+      "priority": false
+    },
+    {
+      "source": "Fierce Pharma",
+      "tier": "industry",
+      "title": "Merck scores US, German wins over Halozyme in Keytruda Qlex patent fight",
+      "link": "https://www.fiercepharma.com/pharma/merck-scores-us-german-wins-over-halozyme-keytruda-qlex-patent-fight",
+      "date": "2026-11-20T00:00:00.000Z",
+      "category": "General",
+      "priority": false
+    },
+    {
+      "source": "Fierce Pharma",
+      "tier": "industry",
+      "title": "Mapping psychedelics’ commercial summit",
+      "link": "https://www.fiercepharma.com/pharma/mapping-psychedelics-commercial-summit",
+      "date": "2026-11-20T00:00:00.000Z",
+      "category": "General",
+      "priority": false
+    },
+    {
+      "source": "Fierce Pharma",
+      "tier": "industry",
+      "title": "Merck’s TROP2 ADC extends survival in pivotal gastroesophageal cancer trial",
+      "link": "https://www.fiercepharma.com/biotech/mercks-trop2-adc-extends-survival-pivotal-gastroesophageal-cancer-trial",
+      "date": "2026-11-20T00:00:00.000Z",
+      "category": "Clinical trial",
+      "priority": false
+    },
+    {
+      "source": "Fierce Pharma",
+      "tier": "industry",
+      "title": "Another 215 layoffs linked to Novo's New Jersey HQ",
+      "link": "https://www.fiercepharma.com/pharma/another-215-layoffs-linked-novos-new-jersey-hq",
+      "date": "2026-11-20T00:00:00.000Z",
+      "category": "Deals / Business",
+      "priority": false
+    },
+    {
+      "source": "Fierce Pharma",
+      "tier": "industry",
+      "title": "FDA sets up new safety council to keep tabs on approved vaccines, cell and gene therapies",
+      "link": "https://www.fiercepharma.com/pharma/fda-sets-new-safety-council-under-cber-keep-tabs-approved-vaccines-cell-and-gene-therapies",
+      "date": "2026-11-20T00:00:00.000Z",
+      "category": "Safety / PV",
+      "priority": false
+    },
+    {
+      "source": "RAPS",
+      "tier": "industry",
+      "title": "This Week at FDA: Overton nomination pulled, FDA promotes international reliance, and more",
+      "link": "https://www.raps.org/resource/this-week-at-fda-overton-nomination-pulled-fda-promotes-international-reliance-and-more.html",
+      "date": "2026-11-20T00:00:00.000Z",
+      "category": "Regulatory / Policy",
+      "priority": false
+    },
+    {
+      "source": "RAPS",
+      "tier": "industry",
+      "title": "Docket commenters call for flexibility in rare disease trial design and evidence, but question FDA’s RCT focus",
+      "link": "https://www.raps.org/resource/docket-commenters-call-for-flexibility-in-rare-disease-trial-design-and-evidence-but-question-fda-s-rct-focus.html",
+      "date": "2026-11-20T00:00:00.000Z",
+      "category": "Regulatory / Policy",
+      "priority": false
+    },
+    {
+      "source": "RAPS",
+      "tier": "industry",
+      "title": "Final ICH Q1 stability testing guideline expected to be released soon",
+      "link": "https://www.raps.org/resource/final-ich-q1-stability-testing-guideline-expected-to-be-released-soon.html",
+      "date": "2026-11-20T00:00:00.000Z",
+      "category": "Regulatory / Policy",
+      "priority": false
+    },
+    {
+      "source": "RAPS",
+      "tier": "industry",
+      "title": "FDA officials detail inspection expectations for combination products",
+      "link": "https://www.raps.org/resource/fda-officials-detail-inspection-expectations-for-combination-products.html",
+      "date": "2026-11-20T00:00:00.000Z",
+      "category": "Regulatory / Policy",
       "priority": false
     },
     {
@@ -220,15 +346,6 @@
     {
       "source": "FDA",
       "tier": "regulator",
-      "title": "Early Alert: B. Braun Medical Inc. Updates Use Instructions for Caresite Micro Luer Access Device",
-      "link": "http://www.fda.gov/medical-devices/medical-device-recalls-and-early-alerts/early-alert-b-braun-medical-inc-updates-use-instructions-caresite-micro-luer-access-device",
-      "date": "2026-11-19T05:00:00.000Z",
-      "category": "Regulatory / Policy",
-      "priority": false
-    },
-    {
-      "source": "FDA",
-      "tier": "regulator",
       "title": "Early Alert: Outset Medical Updates Use Instructions for the Tablo Console and the TabloCart with Prefiltration Drawer",
       "link": "http://www.fda.gov/medical-devices/medical-device-recalls-and-early-alerts/early-alert-outset-medical-updates-use-instructions-tablo-console-and-tablocart-prefiltration-drawer",
       "date": "2026-11-19T05:00:00.000Z",
@@ -240,6 +357,15 @@
       "tier": "regulator",
       "title": "Medical Device Correction Update Luna® G3 BPAP System (Model LG3800-30VT)",
       "link": "http://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/medical-device-correction-update-lunar-g3-bpap-system-model-lg3800-30vt",
+      "date": "2026-11-19T05:00:00.000Z",
+      "category": "Regulatory / Policy",
+      "priority": false
+    },
+    {
+      "source": "FDA",
+      "tier": "regulator",
+      "title": "Early Alert: B. Braun Medical Inc. Updates Use Instructions for Caresite Micro Luer Access Device",
+      "link": "http://www.fda.gov/medical-devices/medical-device-recalls-and-early-alerts/early-alert-b-braun-medical-inc-updates-use-instructions-caresite-micro-luer-access-device",
       "date": "2026-11-19T05:00:00.000Z",
       "category": "Regulatory / Policy",
       "priority": false
@@ -416,66 +542,12 @@
       "priority": false
     },
     {
-      "source": "BioSpace",
-      "tier": "industry",
-      "title": "CTAD 2026: Biogen, AriBio lead the way in slowing cognitive decline in Alzheimer’s",
-      "link": "https://www.biospace.com/drug-development/ctad-2026-biogen-aribio-lead-the-way-in-slowing-cognitive-decline-in-alzheimers",
-      "date": "2026-11-18T16:02:23.000Z",
-      "category": "General",
-      "priority": false
-    },
-    {
       "source": "BioPharma Dive",
       "tier": "industry",
       "title": "Pfizer leaps into ‘in vivo’ CAR-T with latest China deal",
       "link": "https://www.biopharmadive.com/news/pfizer-starna-in-vivo-cell-therapy-autoimmune-disease-deal/875018/",
       "date": "2026-11-18T15:55:00.000Z",
       "category": "Deals / Business",
-      "priority": false
-    },
-    {
-      "source": "BioSpace",
-      "tier": "industry",
-      "title": "Merck scraps centerpiece of $2.7B ArQule buy after late-stage safety concerns",
-      "link": "https://www.biospace.com/drug-development/merck-scraps-centerpiece-of-2-7b-arqule-buy-after-late-stage-safety-concerns",
-      "date": "2026-11-18T14:58:06.000Z",
-      "category": "Safety / PV",
-      "priority": false
-    },
-    {
-      "source": "BioPharma Dive",
-      "tier": "industry",
-      "title": "FDA publishes rejection letter for Summit drug; Nuvalent buyout pays more dividends for GSK",
-      "link": "https://www.biopharmadive.com/news/summit-crl-sellas-data-nelkarmi-lilly-astrazeneca-biogen/874825/",
-      "date": "2026-11-18T14:21:00.000Z",
-      "category": "Regulatory / Policy",
-      "priority": false
-    },
-    {
-      "source": "Fierce Pharma",
-      "tier": "industry",
-      "title": "BMS' ph. 3 Alzheimer's psychosis teaser builds confidence in Cobenfy expansion plan",
-      "link": "https://www.fiercepharma.com/pharma/bms-ph-3-alzheimers-agitation-teaser-builds-confidence-cobenfy-expansion-plan",
-      "date": "2026-11-18T00:00:00.000Z",
-      "category": "General",
-      "priority": false
-    },
-    {
-      "source": "Fierce Pharma",
-      "tier": "industry",
-      "title": "Beren clinches long-awaited FDA nod for cyclodextrin drug in Niemann-Pick disease",
-      "link": "https://www.fiercepharma.com/pharma/beren-clinches-long-awaited-fda-nod-niemann-pick-disease",
-      "date": "2026-11-18T00:00:00.000Z",
-      "category": "Regulatory / Policy",
-      "priority": false
-    },
-    {
-      "source": "Fierce Pharma",
-      "tier": "industry",
-      "title": "FDA moves to yank Salerno's liquid cholesterol drug approval on missing reports",
-      "link": "https://www.fiercepharma.com/pharma/fda-moves-yank-salernos-liquid-cholesterol-med-approval-missing-reports",
-      "date": "2026-11-18T00:00:00.000Z",
-      "category": "Approval",
       "priority": false
     },
     {
@@ -515,15 +587,6 @@
       "priority": false
     },
     {
-      "source": "BioPharma Dive",
-      "tier": "industry",
-      "title": "Roche breast cancer pill cleared by FDA",
-      "link": "https://www.biopharmadive.com/news/roche-fda-approve-wilserdly-giredestrant-breast-cancer/874884/",
-      "date": "2026-11-17T17:18:00.000Z",
-      "category": "Approval",
-      "priority": false
-    },
-    {
       "source": "EMA",
       "tier": "regulator",
       "title": "EU recommendations for 2026/2027 seasonal flu vaccine composition",
@@ -542,66 +605,12 @@
       "priority": false
     },
     {
-      "source": "Fierce Pharma",
-      "tier": "industry",
-      "title": "Novo expands DTC program Novocare to support Wegovy users through holistic health journey",
-      "link": "https://www.fiercepharma.com/marketing/novo-expands-dtc-program-novocare-support-wegovy-users-through-holistic-health-journey",
-      "date": "2026-11-17T00:00:00.000Z",
-      "category": "General",
-      "priority": false
-    },
-    {
-      "source": "Fierce Pharma",
-      "tier": "industry",
-      "title": "Heidi Overton’s FDA nomination pulled by White House",
-      "link": "https://www.fiercepharma.com/pharma/overtons-fda-nomination-has-been-pulled-white-house",
-      "date": "2026-11-17T00:00:00.000Z",
-      "category": "Regulatory / Policy",
-      "priority": false
-    },
-    {
       "source": "RAPS",
       "tier": "industry",
       "title": "New FDA MAPP sheds light on clinical pharmacology reviews",
       "link": "https://www.raps.org/resource/new-fda-mapp-sheds-light-on-clinical-pharmacology-reviews.html",
       "date": "2026-11-17T00:00:00.000Z",
       "category": "Regulatory / Policy",
-      "priority": false
-    },
-    {
-      "source": "RAPS",
-      "tier": "industry",
-      "title": "Regulators, industry experts look to streamline EU combination product oversight",
-      "link": "https://www.raps.org/resource/regulators-industry-experts-look-to-streamline-eu-combination-product-oversight.html",
-      "date": "2026-11-17T00:00:00.000Z",
-      "category": "Regulatory / Policy",
-      "priority": false
-    },
-    {
-      "source": "RAPS",
-      "tier": "industry",
-      "title": "FDA to refer to AI as ‘super intelligence’ going forward",
-      "link": "https://www.raps.org/resource/fda-to-refer-to-ai-as-super-intelligence-going-forward.html",
-      "date": "2026-11-17T00:00:00.000Z",
-      "category": "Regulatory / Policy",
-      "priority": false
-    },
-    {
-      "source": "RAPS",
-      "tier": "industry",
-      "title": "Recon: FDA approves Roche’s oral SERD for late-stage breast cancer; Lilly strikes up to $5.9B cancer deal with Stipple Bio",
-      "link": "https://www.raps.org/resource/recon-fda-approves-roche-s-oral-serd-for-late-stage-breast-cancer-lilly-strikes-up-to-5-9b-cancer-deal-with-stipple-bio.html",
-      "date": "2026-11-17T00:00:00.000Z",
-      "category": "Approval",
-      "priority": false
-    },
-    {
-      "source": "RAPS",
-      "tier": "industry",
-      "title": "AI for conformity assessments: Experts highlight use cases, pitfalls",
-      "link": "https://www.raps.org/resource/ai-for-conformity-assessments-experts-highlight-use-cases-pitfalls.html",
-      "date": "2026-11-16T00:00:00.000Z",
-      "category": "General",
       "priority": false
     },
     {
@@ -625,8 +634,8 @@
     {
       "source": "FDA",
       "tier": "regulator",
-      "title": "Early Alert: Arrow International Removes Products Containing Spring Wire Guide Components",
-      "link": "http://www.fda.gov/medical-devices/medical-device-recalls-and-early-alerts/early-alert-arrow-international-removes-products-containing-spring-wire-guide-components",
+      "title": "Early Alert: Intersurgical Inc. Removes 22mm Smoothbore breathing tubes and systems",
+      "link": "http://www.fda.gov/medical-devices/medical-device-recalls-and-early-alerts/early-alert-intersurgical-inc-removes-22mm-smoothbore-breathing-tubes-and-systems",
       "date": "2026-11-10T05:00:00.000Z",
       "category": "Regulatory / Policy",
       "priority": false
@@ -634,8 +643,8 @@
     {
       "source": "FDA",
       "tier": "regulator",
-      "title": "Early Alert: Intersurgical Inc. Removes 22mm Smoothbore breathing tubes and systems",
-      "link": "http://www.fda.gov/medical-devices/medical-device-recalls-and-early-alerts/early-alert-intersurgical-inc-removes-22mm-smoothbore-breathing-tubes-and-systems",
+      "title": "Early Alert: Arrow International Removes Products Containing Spring Wire Guide Components",
+      "link": "http://www.fda.gov/medical-devices/medical-device-recalls-and-early-alerts/early-alert-arrow-international-removes-products-containing-spring-wire-guide-components",
       "date": "2026-11-10T05:00:00.000Z",
       "category": "Regulatory / Policy",
       "priority": false
@@ -665,15 +674,6 @@
       "link": "http://www.fda.gov/news-events/press-announcements/fda-approves-first-factor-xla-inhibitor-help-prevent-stroke-certain-adults-high-risk",
       "date": "2026-11-09T22:15:46.000Z",
       "category": "Approval",
-      "priority": false
-    },
-    {
-      "source": "FDA",
-      "tier": "regulator",
-      "title": "MedWatch Alert: FDA Requires Safety Labeling Changes for Glucagon-Like Peptide-1 Receptor Agonists (GLP-1 RAs) Due to Potential Increased Risk of Rare But Serious Eye Condition: FDA Safety Communication",
-      "link": "http://www.fda.gov/safety/medical-product-safety-information/medwatch-alert-fda-requires-safety-labeling-changes-glucagon-peptide-1-receptor-agonists-glp-1-ras",
-      "date": "2026-11-09T05:00:00.000Z",
-      "category": "Safety / PV",
       "priority": false
     },
     {
