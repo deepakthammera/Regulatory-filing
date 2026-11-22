@@ -12,6 +12,9 @@ import { writeFileSync } from "node:fs";
 // Each source lists one or more feed URLs. If one URL fails, the others still run.
 // Optional fields:
 //   type: "crossref"   -> feeds are Crossref REST API URLs (JSON), used for journals
+//   type: "federalregister" -> feeds are Federal Register API URLs (JSON)
+//   exclude            -> regular expression; items whose title matches are skipped
+//   noPriority: true   -> never set the ⚑ priority flag for this source
 //   defaultCategory    -> category to use when no keyword rule matches (instead of "General")
 //   category           -> fixed category for every item (skips keyword rules; used for journals)
 // NOTES (check the "[Source] ..." lines in the Actions log when a source goes quiet):
@@ -26,7 +29,12 @@ import { writeFileSync } from "node:fs";
 //     "https://www.gov.uk/drug-safety-update.atom", "https://www.gov.uk/drug-device-alerts.atom" ]}
 //   and a matching 'MHRA' colour in SOURCE_META in index.html.
 // - Springer's search.rss for Drug Safety returns no items, so the journal is read from
-//   Crossref instead (Drug Safety eISSN 1179-1942).
+//   Crossref instead (Drug Safety eISSN 1179-1942). Pharmacoepidemiology and Drug Safety
+//   (Wiley; ISSN 1099-1557 / 1053-8569) and Therapeutic Advances in Drug Safety (SAGE;
+//   ISSN 2042-0994 / 2042-0986) are read the same way.
+// Journal "articles" that are really front/back matter.
+const JOURNAL_FRONT_MATTER = /^(Issue Information|Table of Contents|Cover Image|Masthead|Editorial Board|Front Matter|Back Matter)\b/i;
+
 const SOURCES = [
   { source: "FDA", tier: "regulator", defaultCategory: "Regulatory / Policy", feeds: [
     "https://www.fda.gov/about-fda/contact-fda/stay-informed/rss-feeds/medwatch/rss.xml",
@@ -34,6 +42,25 @@ const SOURCES = [
   ]},
   { source: "EMA", tier: "regulator", defaultCategory: "Regulatory / Policy", feeds: [
     "https://www.ema.europa.eu/en/news.xml"
+  ]},
+  // FDA guidances, notices, proposed and final rules as published in the Federal Register.
+  // Routine notices are skipped so substantive documents are not crowded out: paperwork-burden
+  // (information collection / OMB review) notices, and "Determination That ... Was Not Withdrawn
+  // From Sale for Reasons of Safety or Effectiveness" notices (generic-drug eligibility, not safety
+  // news, but their wording would otherwise trip the safety keywords). Priority is reserved for
+  // urgent safety news, so it is off for this source.
+  { source: "Federal Register (FDA)", tier: "regulator", type: "federalregister", defaultCategory: "Regulatory / Policy",
+    noPriority: true,
+    // Also skipped: topics outside this app's scope (tobacco, foods, colour/food additives,
+    // dietary supplements, animal drugs).
+    exclude: /^(Agency Information Collection Activities|Submission for Office of Management and Budget Review)|^Determination That .* Withdrawn From Sale|Tobacco|Color Additive|Food Additive|Dietary Supplement|Food Labeling|Animal Drug|Animal Food/i,
+    feeds: [
+      "https://www.federalregister.gov/api/v1/documents.json?conditions%5Bagencies%5D%5B%5D=food-and-drug-administration&order=newest&per_page=50&fields%5B%5D=title&fields%5B%5D=html_url&fields%5B%5D=publication_date"
+  ]},
+  // Hyman, Phelps & McNamara's FDA Law Blog: expert commentary on FDA law, guidance and enforcement.
+  { source: "FDA Law Blog", tier: "industry", defaultCategory: "Regulatory / Policy", feeds: [
+    "https://www.thefdalawblog.com/feed/",
+    "https://www.fdalawblog.net/feed/"
   ]},
   { source: "BioSpace", tier: "industry", feeds: [
     "https://www.biospace.com/all-news.rss",
@@ -45,6 +72,9 @@ const SOURCES = [
   { source: "Fierce Pharma", tier: "industry", feeds: [
     "https://www.fiercepharma.com/rss/xml"
   ]},
+  { source: "Fierce Biotech", tier: "industry", feeds: [
+    "https://www.fiercebiotech.com/rss/xml"
+  ]},
   { source: "BioPharma Dive", tier: "industry", feeds: [
     "https://www.biopharmadive.com/feeds/news/",
     "https://www.biopharmadive.com/feeds/news"
@@ -52,13 +82,22 @@ const SOURCES = [
   { source: "RAPS", tier: "industry", feeds: [
     "https://fetchrss.com/feed/1w2Af33Ym6mQ1wCHDT7rBDVj.rss"
   ]},
-  { source: "Drug Safety", tier: "journal", type: "crossref", category: "Safety / PV", feeds: [
+  { source: "Drug Safety", tier: "journal", type: "crossref", category: "Safety / PV", exclude: JOURNAL_FRONT_MATTER, feeds: [
     "https://api.crossref.org/journals/1179-1942/works?sort=published&order=desc&rows=30&filter=type:journal-article&select=title,URL,published,published-online,created"
+  ]},
+  // Further pharmacovigilance journals, also read from Crossref (online ISSN first, print ISSN as fallback).
+  { source: "Pharmacoepidemiology & Drug Safety", tier: "journal", type: "crossref", category: "Safety / PV", exclude: JOURNAL_FRONT_MATTER, feeds: [
+    "https://api.crossref.org/journals/1099-1557/works?sort=published&order=desc&rows=30&filter=type:journal-article&select=title,URL,published,published-online,created",
+    "https://api.crossref.org/journals/1053-8569/works?sort=published&order=desc&rows=30&filter=type:journal-article&select=title,URL,published,published-online,created"
+  ]},
+  { source: "Therapeutic Advances in Drug Safety", tier: "journal", type: "crossref", category: "Safety / PV", exclude: JOURNAL_FRONT_MATTER, feeds: [
+    "https://api.crossref.org/journals/2042-0994/works?sort=published&order=desc&rows=30&filter=type:journal-article&select=title,URL,published,published-online,created",
+    "https://api.crossref.org/journals/2042-0986/works?sort=published&order=desc&rows=30&filter=type:journal-article&select=title,URL,published,published-online,created"
   ]}
 ];
 
 const MAX_PER_SOURCE = 15;
-const MAX_TOTAL = 160;
+const MAX_TOTAL = 200;
 const MAX_AGE_DAYS = 150;
 const TIMEOUT_MS = 20000;
 
@@ -114,7 +153,7 @@ function classify(title, src) {
   const t = (" " + (title || "").toLowerCase() + " ");
   // Journal article titles routinely mention "adverse events", "deaths", etc.; the priority
   // flag is reserved for actionable safety news, so it is not applied to journals.
-  const priority = src.tier !== "journal" && PRIORITY_KEYWORDS.some((k) => t.includes(k));
+  const priority = src.tier !== "journal" && !src.noPriority && PRIORITY_KEYWORDS.some((k) => t.includes(k));
   if (src.category) return { priority, category: src.category };
   let category = src.defaultCategory || "General";
   for (const rule of CATEGORY_RULES) {
@@ -181,6 +220,13 @@ function parseCrossref(text) {
   }).filter((it) => it.title && it.link);
 }
 
+// Federal Register API (JSON) -> same {title, link, date} shape as parseItems().
+function parseFederalRegister(text) {
+  const results = JSON.parse(text).results || [];
+  return results.map((d) => ({ title: clean(d.title || ""), link: d.html_url || "", date: d.publication_date || "" }))
+    .filter((it) => it.title && it.link);
+}
+
 async function fetchText(url) {
   const ctrl = new AbortController();
   const t = setTimeout(() => ctrl.abort(), TIMEOUT_MS);
@@ -230,7 +276,9 @@ async function run() {
     for (const url of src.feeds) {
       try {
         const text = await fetchText(url);
-        const parsed = src.type === "crossref" ? parseCrossref(text) : parseItems(text);
+        const parsed = (src.type === "crossref" ? parseCrossref(text)
+          : src.type === "federalregister" ? parseFederalRegister(text)
+          : parseItems(text)).filter((it) => !src.exclude || !src.exclude.test(it.title));
         const items = parsed.map((it) => {
           const { priority, category } = classify(it.title, src);
           return {
@@ -263,11 +311,15 @@ async function run() {
     all.push(...collected);
   }
 
-  all.sort((a, b) => {
+  // The same article can appear under two sources (e.g., Fierce Pharma and Fierce Biotech):
+  // keep the first (sources are listed in priority order).
+  const seenAll = new Set();
+  const unique = all.filter((it) => !seenAll.has(it.link) && seenAll.add(it.link));
+  unique.sort((a, b) => {
     if (a.priority !== b.priority) return a.priority ? -1 : 1;
     return new Date(b.date || 0) - new Date(a.date || 0);
   });
-  const items = all.slice(0, MAX_TOTAL);
+  const items = unique.slice(0, MAX_TOTAL);
 
   const payload = {
     generated: new Date().toISOString(),

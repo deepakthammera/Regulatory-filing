@@ -42,6 +42,7 @@ Each area combines reference content, worked examples, interactive decision help
 ## What's new
 
 ### November 2026
+- **Three new daily news sources:** **Federal Register (FDA)** (FDA guidances, notices, proposed and final rules the day they are published; routine paperwork notices are filtered out), **FDA Law Blog** (expert commentary on FDA law and enforcement), and **Fierce Biotech**, plus two more pharmacovigilance journals: **Pharmacoepidemiology and Drug Safety** and **Therapeutic Advances in Drug Safety** (new articles via Crossref). Headlines that appear under two sources are now shown once.
 - **Dark mode.** Choose **Light**, **Dark** or **Auto** (follows your phone or computer's setting) under *Appearance* at the bottom of the sidebar, or tap the moon/sun button next to Search to switch quickly. The choice is remembered on each device, and the page opens in the right theme with no white flash. Every page and tab was checked so text stays readable in dark mode.
 
 ### October 2026
@@ -135,7 +136,7 @@ Bookmarks and notes are stored with your account (Supabase `user_data.meta`, fie
 | Icon | Section | What it covers |
 |---|---------|----------------|
 | ★ | **PV Updates & News** (Latest) | Curated, explained PV updates: a recent & upcoming ICH / EMA / FDA radar, ICH E2D(R1) section-by-section, MedDRA 29.1, and recent FDA / EMA PRAC safety actions |
-| ◆ | Regulatory & PV News (Daily Feed) | Auto-refreshed headlines from regulators (FDA, EMA), industry news and the *Drug Safety* journal, filterable by source, category and ⚑ priority |
+| ◆ | Regulatory & PV News (Daily Feed) | Auto-refreshed headlines from regulators (FDA, EMA, Federal Register), FDA Law Blog, industry news and three PV journals, filterable by source, category and ⚑ priority |
 
 ### Regulatory domain
 | # | Section | What it covers |
@@ -261,7 +262,7 @@ Content is written in original wording and summarises publicly available regulat
 - **CIOMS Working Group XIV** — guiding principles for AI in pharmacovigilance (open-access source, summarised with citation).
 - **WHO-UMC** — global pharmacovigilance and VigiBase context.
 - **Regulator safety communications** (PV Updates & News page): FDA Drug Safety Communications, EMA PRAC meeting highlights, and MedDRA MSSO release notes, each linked from the relevant update.
-- **Daily news feed**: headlines, dates and links only (no article text) from FDA, EMA, BioSpace, Fierce Pharma, BioPharma Dive, RAPS, and *Drug Safety* (article metadata via the Crossref API).
+- **Daily news feed**: headlines, dates and links only (no article text) from FDA, EMA, the Federal Register (FDA documents, via its public API), FDA Law Blog, BioSpace, Fierce Pharma, Fierce Biotech, BioPharma Dive, RAPS, and the journals *Drug Safety*, *Pharmacoepidemiology and Drug Safety* and *Therapeutic Advances in Drug Safety* (article metadata via the Crossref API).
 
 Where a section draws on a specific publication, the citation is shown inline within that section. Trademarks and guideline names belong to their respective owners. This project claims no endorsement by any of these bodies.
 
