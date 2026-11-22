@@ -14,6 +14,7 @@ import { writeFileSync } from "node:fs";
 //   type: "crossref"   -> feeds are Crossref REST API URLs (JSON), used for journals
 //   type: "federalregister" -> feeds are Federal Register API URLs (JSON)
 //   exclude            -> regular expression; items whose title matches are skipped
+//   noPriority: true   -> never set the ⚑ priority flag for this source
 //   defaultCategory    -> category to use when no keyword rule matches (instead of "General")
 //   category           -> fixed category for every item (skips keyword rules; used for journals)
 // NOTES (check the "[Source] ..." lines in the Actions log when a source goes quiet):
@@ -38,9 +39,14 @@ const SOURCES = [
     "https://www.ema.europa.eu/en/news.xml"
   ]},
   // FDA guidances, notices, proposed and final rules as published in the Federal Register.
-  // Routine paperwork-burden notices are skipped so substantive documents are not crowded out.
+  // Routine notices are skipped so substantive documents are not crowded out: paperwork-burden
+  // (information collection / OMB review) notices, and "Determination That ... Was Not Withdrawn
+  // From Sale for Reasons of Safety or Effectiveness" notices (generic-drug eligibility, not safety
+  // news, but their wording would otherwise trip the safety keywords). Priority is reserved for
+  // urgent safety news, so it is off for this source.
   { source: "Federal Register (FDA)", tier: "regulator", type: "federalregister", defaultCategory: "Regulatory / Policy",
-    exclude: /^(Agency Information Collection Activities|Submission for Office of Management and Budget Review)/i,
+    noPriority: true,
+    exclude: /^(Agency Information Collection Activities|Submission for Office of Management and Budget Review)|^Determination That .* Withdrawn From Sale/i,
     feeds: [
       "https://www.federalregister.gov/api/v1/documents.json?conditions%5Bagencies%5D%5B%5D=food-and-drug-administration&order=newest&per_page=50&fields%5B%5D=title&fields%5B%5D=html_url&fields%5B%5D=publication_date"
   ]},
@@ -131,7 +137,7 @@ function classify(title, src) {
   const t = (" " + (title || "").toLowerCase() + " ");
   // Journal article titles routinely mention "adverse events", "deaths", etc.; the priority
   // flag is reserved for actionable safety news, so it is not applied to journals.
-  const priority = src.tier !== "journal" && PRIORITY_KEYWORDS.some((k) => t.includes(k));
+  const priority = src.tier !== "journal" && !src.noPriority && PRIORITY_KEYWORDS.some((k) => t.includes(k));
   if (src.category) return { priority, category: src.category };
   let category = src.defaultCategory || "General";
   for (const rule of CATEGORY_RULES) {
