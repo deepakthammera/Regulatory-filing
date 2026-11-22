@@ -1,10 +1,13 @@
 {
-  "generated": "2026-11-21T14:38:35.687Z",
+  "generated": "2026-11-22T06:30:10.649Z",
   "sources": [
     "FDA",
     "EMA",
+    "Federal Register (FDA)",
+    "FDA Law Blog",
     "BioSpace",
     "Fierce Pharma",
+    "Fierce Biotech",
     "BioPharma Dive",
     "RAPS",
     "Drug Safety"
@@ -17,7 +20,7 @@
     "Deals / Business",
     "General"
   ],
-  "count": 85,
+  "count": 125,
   "items": [
     {
       "source": "FDA",
@@ -56,11 +59,56 @@
       "priority": true
     },
     {
+      "source": "Federal Register (FDA)",
+      "tier": "regulator",
+      "title": "Determination That BROMFED-DM (Brompheniramine Maleate; Dextromethorphan Hydrobromide; Pseudoephedrine Hydrochloride) Syrup, 2 Milligrams/5 Milliliters; 10 Milligrams/5 Milliliters; 30 Milligrams/5 Milliliters, Was Not Withdrawn From Sale for Reasons of Safety or Effectiveness",
+      "link": "https://www.federalregister.gov/documents/2026/11/18/2026-23414/determination-that-bromfed-dm-brompheniramine-maleate-dextromethorphan-hydrobromide-pseudoephedrine",
+      "date": "2026-11-18T00:00:00.000Z",
+      "category": "Safety / PV",
+      "priority": true
+    },
+    {
+      "source": "Federal Register (FDA)",
+      "tier": "regulator",
+      "title": "Salerno Pharmaceuticals; Proposal To Withdraw Approval of a New Drug Application for Flolipid Suspension, 20 Milligrams/5 Milliliters and 40 Milligrams/5 Milliliters; Opportunity for a Hearing",
+      "link": "https://www.federalregister.gov/documents/2026/11/18/2026-23413/salerno-pharmaceuticals-proposal-to-withdraw-approval-of-a-new-drug-application-for-flolipid",
+      "date": "2026-11-18T00:00:00.000Z",
+      "category": "Approval",
+      "priority": true
+    },
+    {
+      "source": "Federal Register (FDA)",
+      "tier": "regulator",
+      "title": "Determination That M.V.I. PEDIATRIC (Multiple Vitamins for Injection) Was Not Withdrawn From Sale for Reasons of Safety or Effectiveness",
+      "link": "https://www.federalregister.gov/documents/2026/11/17/2026-23367/determination-that-mvi-pediatric-multiple-vitamins-for-injection-was-not-withdrawn-from-sale-for",
+      "date": "2026-11-17T00:00:00.000Z",
+      "category": "Safety / PV",
+      "priority": true
+    },
+    {
+      "source": "Federal Register (FDA)",
+      "tier": "regulator",
+      "title": "Determination That M.V.I. ADULT (Multiple Vitamins for Injection) Was Not Withdrawn From Sale for Reasons of Safety or Effectiveness",
+      "link": "https://www.federalregister.gov/documents/2026/11/17/2026-23366/determination-that-mvi-adult-multiple-vitamins-for-injection-was-not-withdrawn-from-sale-for-reasons",
+      "date": "2026-11-17T00:00:00.000Z",
+      "category": "Safety / PV",
+      "priority": true
+    },
+    {
       "source": "FDA",
       "tier": "regulator",
       "title": "Medline Updates Customers and Patients on Repair and Replace Program for Recall of Medline Brand Beds, Rails, Mattresses and Accessories",
       "link": "http://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/medline-updates-customers-and-patients-repair-and-replace-program-recall-medline-brand-beds-rails",
       "date": "2026-11-13T05:00:00.000Z",
+      "category": "Safety / PV",
+      "priority": true
+    },
+    {
+      "source": "Federal Register (FDA)",
+      "tier": "regulator",
+      "title": "Determination That DIBENZYLINE (Phenoxybenzamine Hydrochloride) Oral Capsule, 10 Milligrams, and Other Drug Products Were Not Withdrawn From Sale for Reasons of Safety or Effectiveness",
+      "link": "https://www.federalregister.gov/documents/2026/11/13/2026-23141/determination-that-dibenzyline-phenoxybenzamine-hydrochloride-oral-capsule-10-milligrams-and-other",
+      "date": "2026-11-13T00:00:00.000Z",
       "category": "Safety / PV",
       "priority": true
     },
@@ -81,6 +129,24 @@
       "date": "2026-10-30T11:11:00.000Z",
       "category": "Safety / PV",
       "priority": true
+    },
+    {
+      "source": "Federal Register (FDA)",
+      "tier": "regulator",
+      "title": "Tobacco Products Scientific Advisory Committee; Notice of Meeting; Establishment of a Public Docket; Request for Comments",
+      "link": "https://www.federalregister.gov/documents/2026/11/23/2026-23750/tobacco-products-scientific-advisory-committee-notice-of-meeting-establishment-of-a-public-docket",
+      "date": "2026-11-22T06:30:09.027Z",
+      "category": "Approval",
+      "priority": false
+    },
+    {
+      "source": "BioPharma Dive",
+      "tier": "industry",
+      "title": "FDA again turns back Capricor Duchenne cell therapy",
+      "link": "https://www.biopharmadive.com/news/capricor-fda-duchenne-cell-therapy-deramiocel/875384/",
+      "date": "2026-11-21T20:46:00.000Z",
+      "category": "Regulatory / Policy",
+      "priority": false
     },
     {
       "source": "BioSpace",
@@ -173,12 +239,39 @@
       "priority": false
     },
     {
+      "source": "FDA Law Blog",
+      "tier": "industry",
+      "title": "Small Innovators, Big Hurdles: How Company Size Affects De Novo Success",
+      "link": "https://www.thefdalawblog.com/2026/11/small-innovators-big-hurdles-how-company-size-affects-de-novo-success/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=small-innovators-big-hurdles-how-company-size-affects-de-novo-success",
+      "date": "2026-11-20T05:20:39.000Z",
+      "category": "Regulatory / Policy",
+      "priority": false
+    },
+    {
       "source": "FDA",
       "tier": "regulator",
       "title": "Early Alert: Heraeus Medical Components Removes Vascular Guidewires",
       "link": "http://www.fda.gov/medical-devices/medical-device-recalls-and-early-alerts/early-alert-heraeus-medical-components-removes-vascular-guidewires",
       "date": "2026-11-20T05:00:00.000Z",
       "category": "Regulatory / Policy",
+      "priority": false
+    },
+    {
+      "source": "Federal Register (FDA)",
+      "tier": "regulator",
+      "title": "Product-Specific Guidances; Draft and Revised Draft Guidances for Industry; Availability",
+      "link": "https://www.federalregister.gov/documents/2026/11/20/2026-23692/product-specific-guidances-draft-and-revised-draft-guidances-for-industry-availability",
+      "date": "2026-11-20T00:00:00.000Z",
+      "category": "Regulatory / Policy",
+      "priority": false
+    },
+    {
+      "source": "Federal Register (FDA)",
+      "tier": "regulator",
+      "title": "Transfer of a Premarket Notification (510(k)) Clearance-Questions and Answers; Guidance for Industry and Food and Drug Administration Staff; Availability",
+      "link": "https://www.federalregister.gov/documents/2026/11/20/2026-23668/transfer-of-a-premarket-notification-510k-clearance-questions-and-answers-guidance-for-industry-and",
+      "date": "2026-11-20T00:00:00.000Z",
+      "category": "Approval",
       "priority": false
     },
     {
@@ -224,6 +317,42 @@
       "link": "https://www.fiercepharma.com/pharma/fda-sets-new-safety-council-under-cber-keep-tabs-approved-vaccines-cell-and-gene-therapies",
       "date": "2026-11-20T00:00:00.000Z",
       "category": "Safety / PV",
+      "priority": false
+    },
+    {
+      "source": "Fierce Biotech",
+      "tier": "industry",
+      "title": "Merck’s TROP2 ADC extends survival in pivotal gastroesophageal cancer trial",
+      "link": "https://www.fiercebiotech.com/biotech/mercks-trop2-adc-extends-survival-pivotal-gastroesophageal-cancer-trial",
+      "date": "2026-11-20T00:00:00.000Z",
+      "category": "Clinical trial",
+      "priority": false
+    },
+    {
+      "source": "Fierce Biotech",
+      "tier": "industry",
+      "title": "FDA pushes decision on Belite’s eye disease pill back to May",
+      "link": "https://www.fiercebiotech.com/biotech/fda-delays-belites-eye-disease-pill-decision-three-months-may",
+      "date": "2026-11-20T00:00:00.000Z",
+      "category": "Regulatory / Policy",
+      "priority": false
+    },
+    {
+      "source": "Fierce Biotech",
+      "tier": "industry",
+      "title": "‘It’s a very healthy sector’: Biopharma gathers in London as M&A shines and China clouds loom",
+      "link": "https://www.fiercebiotech.com/biotech/its-very-health-sector-biopharma-gathers-london-ma-shines-will-china-clouds-loom",
+      "date": "2026-11-20T00:00:00.000Z",
+      "category": "General",
+      "priority": false
+    },
+    {
+      "source": "Fierce Biotech",
+      "tier": "industry",
+      "title": "Bausch + Lomb and Celldex rocked by respective phase 2 flops",
+      "link": "https://www.fiercebiotech.com/biotech/bausch-lomb-and-celldex-rocked-phase-2-flops",
+      "date": "2026-11-20T00:00:00.000Z",
+      "category": "Clinical trial",
       "priority": false
     },
     {
@@ -470,6 +599,78 @@
       "priority": false
     },
     {
+      "source": "Fierce Biotech",
+      "tier": "industry",
+      "title": "Chutes & Ladders—Teva loses R&D head as innovation pivot advances",
+      "link": "https://www.fiercebiotech.com/biotech/chutes-ladders-teva-loses-rd-head",
+      "date": "2026-11-19T00:00:00.000Z",
+      "category": "General",
+      "priority": false
+    },
+    {
+      "source": "Fierce Biotech",
+      "tier": "industry",
+      "title": "Anthropic board director Vas Narasimhan bets AI can help Novartis solve ‘biological latency’",
+      "link": "https://www.fiercebiotech.com/biotech/anthropic-board-director-vas-narasimhan-bets-ai-can-help-novartis-solve-biological-latency",
+      "date": "2026-11-19T00:00:00.000Z",
+      "category": "General",
+      "priority": false
+    },
+    {
+      "source": "Fierce Biotech",
+      "tier": "industry",
+      "title": "Vaccine biotech Evaxion halts infectious disease, autoimmune work to focus on oncology",
+      "link": "https://www.fiercebiotech.com/biotech/vaccine-biotech-evaxion-progressing-only-oncology-assets-rd-refocus",
+      "date": "2026-11-19T00:00:00.000Z",
+      "category": "General",
+      "priority": false
+    },
+    {
+      "source": "Fierce Biotech",
+      "tier": "industry",
+      "title": "nChroma halves headcount, calls time on trial of potential HBV ‘cure’",
+      "link": "https://www.fiercebiotech.com/biotech/nchroma-halves-headcount-calls-time-trial-potential-hbv-cure",
+      "date": "2026-11-19T00:00:00.000Z",
+      "category": "General",
+      "priority": false
+    },
+    {
+      "source": "Fierce Biotech",
+      "tier": "industry",
+      "title": "Isomorphic adds Merck to AI drug discovery roster days after $5B raise",
+      "link": "https://www.fiercebiotech.com/biotech/isomorphic-labs-adds-merck-ai-drug-discovery-roster-days-after-5b-raise",
+      "date": "2026-11-19T00:00:00.000Z",
+      "category": "Deals / Business",
+      "priority": false
+    },
+    {
+      "source": "Fierce Biotech",
+      "tier": "industry",
+      "title": "Teva loses R&D head Eric Hughes amid push to grow innovative medicines business",
+      "link": "https://www.fiercebiotech.com/biotech/teva-loses-rd-head-eric-hughes-amid-push-grow-innovative-medicines-business",
+      "date": "2026-11-19T00:00:00.000Z",
+      "category": "General",
+      "priority": false
+    },
+    {
+      "source": "Fierce Biotech",
+      "tier": "industry",
+      "title": "Novartis CEO argues shareholders ‘happy overall’ with strategy, calls for COINS Act adjustment",
+      "link": "https://www.fiercebiotech.com/biotech/novartis-ceo-argues-shareholders-happy-overall-calls-coins-act-adjustment",
+      "date": "2026-11-19T00:00:00.000Z",
+      "category": "General",
+      "priority": false
+    },
+    {
+      "source": "Fierce Biotech",
+      "tier": "industry",
+      "title": "Majority rate home diagnostic tests ‘very helpful,’ but just 33% for accuracy: DNV survey",
+      "link": "https://www.fiercebiotech.com/medtech/majority-rate-home-diagnostic-tests-very-helpful-just-33-accuracy-dnv-survey",
+      "date": "2026-11-19T00:00:00.000Z",
+      "category": "General",
+      "priority": false
+    },
+    {
       "source": "RAPS",
       "tier": "industry",
       "title": "FDA finalizes guidance on transferring 510(k) ownership",
@@ -503,6 +704,15 @@
       "link": "https://doi.org/10.1007/s40264-026-01751-w",
       "date": "2026-11-19T00:00:00.000Z",
       "category": "Safety / PV",
+      "priority": false
+    },
+    {
+      "source": "FDA Law Blog",
+      "tier": "industry",
+      "title": "The Flexibility Papers No. 4: Rare Diseases Can’t Wait for Perfect Data – The Case for Adequately Documented Natural History Evidence for Historical Controls",
+      "link": "https://www.thefdalawblog.com/2026/11/the-flexibility-papers-no-4-rare-diseases-cant-wait-for-perfect-data-the-case-for-adequately-documented-natural-history-evidence-for-historical-controls/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=the-flexibility-papers-no-4-rare-diseases-cant-wait-for-perfect-data-the-case-for-adequately-documented-natural-history-evidence-for-historical-controls",
+      "date": "2026-11-18T23:14:07.000Z",
+      "category": "Regulatory / Policy",
       "priority": false
     },
     {
@@ -542,12 +752,30 @@
       "priority": false
     },
     {
-      "source": "BioPharma Dive",
+      "source": "Fierce Biotech",
       "tier": "industry",
-      "title": "Pfizer leaps into ‘in vivo’ CAR-T with latest China deal",
-      "link": "https://www.biopharmadive.com/news/pfizer-starna-in-vivo-cell-therapy-autoimmune-disease-deal/875018/",
-      "date": "2026-11-18T15:55:00.000Z",
+      "title": "Crown Biosciences stays put as $204M Adicon deal falls through",
+      "link": "https://www.fiercebiotech.com/cro/crown-stays-put-204m-adicon-deal-collapses",
+      "date": "2026-11-18T00:00:00.000Z",
       "category": "Deals / Business",
+      "priority": false
+    },
+    {
+      "source": "Fierce Biotech",
+      "tier": "industry",
+      "title": "AbbVie busts a move with Disco in $2.5B dance aimed at bispecific discovery",
+      "link": "https://www.fiercebiotech.com/biotech/abbvie-busts-move-disco-25b-pact-aimed-bispecific-discovery",
+      "date": "2026-11-18T00:00:00.000Z",
+      "category": "General",
+      "priority": false
+    },
+    {
+      "source": "Fierce Biotech",
+      "tier": "industry",
+      "title": "Less than a year into the job, Everett Cunningham steps down as Quanterix CEO",
+      "link": "https://www.fiercebiotech.com/medtech/less-year-job-everett-cunningham-steps-down-quanterix-ceo",
+      "date": "2026-11-18T00:00:00.000Z",
+      "category": "General",
       "priority": false
     },
     {
@@ -605,11 +833,29 @@
       "priority": false
     },
     {
+      "source": "Federal Register (FDA)",
+      "tier": "regulator",
+      "title": "Rulemaking To Provide That N-acetyl-L-cysteine Is Not Excluded From the Dietary Supplement Definition",
+      "link": "https://www.federalregister.gov/documents/2026/11/17/2026-23351/rulemaking-to-provide-that-n-acetyl-l-cysteine-is-not-excluded-from-the-dietary-supplement",
+      "date": "2026-11-17T00:00:00.000Z",
+      "category": "Regulatory / Policy",
+      "priority": false
+    },
+    {
       "source": "RAPS",
       "tier": "industry",
       "title": "New FDA MAPP sheds light on clinical pharmacology reviews",
       "link": "https://www.raps.org/resource/new-fda-mapp-sheds-light-on-clinical-pharmacology-reviews.html",
       "date": "2026-11-17T00:00:00.000Z",
+      "category": "Regulatory / Policy",
+      "priority": false
+    },
+    {
+      "source": "FDA Law Blog",
+      "tier": "industry",
+      "title": "DEA Issues Initial Medical Marijuana Dispensary Registrations",
+      "link": "https://www.thefdalawblog.com/2026/11/dea-issues-initial-medical-marijuana-dispensary-registrations/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=dea-issues-initial-medical-marijuana-dispensary-registrations",
+      "date": "2026-11-16T11:24:58.000Z",
       "category": "Regulatory / Policy",
       "priority": false
     },
@@ -632,6 +878,60 @@
       "priority": false
     },
     {
+      "source": "Federal Register (FDA)",
+      "tier": "regulator",
+      "title": "Revocation of the Color Additive Listing for Use of Orange B on Casings or Surfaces of Frankfurters and Sausages; Confirmation of Effective Date",
+      "link": "https://www.federalregister.gov/documents/2026/11/13/2026-23112/revocation-of-the-color-additive-listing-for-use-of-orange-b-on-casings-or-surfaces-of-frankfurters",
+      "date": "2026-11-13T00:00:00.000Z",
+      "category": "Regulatory / Policy",
+      "priority": false
+    },
+    {
+      "source": "FDA Law Blog",
+      "tier": "industry",
+      "title": "When in Brussels (or Bern, or London): FDA’s ConOps 2.0 and the Significance of MRA Inspections",
+      "link": "https://www.thefdalawblog.com/2026/11/when-in-brussels-or-bern-or-london-fdas-conops-2-0-and-the-significance-of-mra-inspections/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=when-in-brussels-or-bern-or-london-fdas-conops-2-0-and-the-significance-of-mra-inspections",
+      "date": "2026-11-12T03:42:52.000Z",
+      "category": "Regulatory / Policy",
+      "priority": false
+    },
+    {
+      "source": "Federal Register (FDA)",
+      "tier": "regulator",
+      "title": "Hematology and Pathology Devices; Reclassification of Immunohistochemistry Test Systems for Use With a Corresponding Approved Oncology Therapeutic Product",
+      "link": "https://www.federalregister.gov/documents/2026/11/12/2026-23005/hematology-and-pathology-devices-reclassification-of-immunohistochemistry-test-systems-for-use-with",
+      "date": "2026-11-12T00:00:00.000Z",
+      "category": "Approval",
+      "priority": false
+    },
+    {
+      "source": "Federal Register (FDA)",
+      "tier": "regulator",
+      "title": "Patient-Level Data for Drugs and Biological Products Submissions Containing Real-World Data and Real-World Evidence; Request for Information",
+      "link": "https://www.federalregister.gov/documents/2026/11/12/2026-22996/patient-level-data-for-drugs-and-biological-products-submissions-containing-real-world-data-and",
+      "date": "2026-11-12T00:00:00.000Z",
+      "category": "Regulatory / Policy",
+      "priority": false
+    },
+    {
+      "source": "Federal Register (FDA)",
+      "tier": "regulator",
+      "title": "Early-Phase IND Protocol Recommendations for Solid Tumors; Draft Guidance for Industry; Availability",
+      "link": "https://www.federalregister.gov/documents/2026/11/12/2026-22970/early-phase-ind-protocol-recommendations-for-solid-tumors-draft-guidance-for-industry-availability",
+      "date": "2026-11-12T00:00:00.000Z",
+      "category": "Clinical trial",
+      "priority": false
+    },
+    {
+      "source": "FDA Law Blog",
+      "tier": "industry",
+      "title": "The Material Difference: FDA Warning Letters Reinforce 510(k) Expectations for Material Changes",
+      "link": "https://www.thefdalawblog.com/2026/11/the-material-difference-fda-warning-letters-reinforce-510k-expectations-for-material-changes/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=the-material-difference-fda-warning-letters-reinforce-510k-expectations-for-material-changes",
+      "date": "2026-11-11T01:01:51.000Z",
+      "category": "Safety / PV",
+      "priority": false
+    },
+    {
       "source": "FDA",
       "tier": "regulator",
       "title": "Early Alert: Intersurgical Inc. Removes 22mm Smoothbore breathing tubes and systems",
@@ -646,6 +946,33 @@
       "title": "Early Alert: Arrow International Removes Products Containing Spring Wire Guide Components",
       "link": "http://www.fda.gov/medical-devices/medical-device-recalls-and-early-alerts/early-alert-arrow-international-removes-products-containing-spring-wire-guide-components",
       "date": "2026-11-10T05:00:00.000Z",
+      "category": "Regulatory / Policy",
+      "priority": false
+    },
+    {
+      "source": "FDA Law Blog",
+      "tier": "industry",
+      "title": "HP&#038;M Recognized by Best Law Firms® as National Tier 1 – FDA Law and Regional Washington, DC Tier 1 – FDA Law (2027 Edition)",
+      "link": "https://www.thefdalawblog.com/2026/11/hpm-recognized-by-best-law-firms-as-national-tier-1-fda-law-and-regional-washington-dc-tier-1-fda-law-2027-edition/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=hpm-recognized-by-best-law-firms-as-national-tier-1-fda-law-and-regional-washington-dc-tier-1-fda-law-2027-edition",
+      "date": "2026-11-10T03:55:04.000Z",
+      "category": "Regulatory / Policy",
+      "priority": false
+    },
+    {
+      "source": "Federal Register (FDA)",
+      "tier": "regulator",
+      "title": "Validation of Certain In Vitro Diagnostic Devices for Emerging Pathogens During a Section 564 Declared Emergency; Guidance for Industry and Food and Drug Administration Staff; Availability",
+      "link": "https://www.federalregister.gov/documents/2026/11/10/2026-22883/validation-of-certain-in-vitro-diagnostic-devices-for-emerging-pathogens-during-a-section-564",
+      "date": "2026-11-10T00:00:00.000Z",
+      "category": "Regulatory / Policy",
+      "priority": false
+    },
+    {
+      "source": "Federal Register (FDA)",
+      "tier": "regulator",
+      "title": "Color Additive Petition From the International Association of Color Manufacturers; Request To Amend the Color Additive Regulations To Remove the Solvents Methylene Chloride, Trichloroethylene, and Ethylene Dichloride",
+      "link": "https://www.federalregister.gov/documents/2026/11/10/2026-22866/color-additive-petition-from-the-international-association-of-color-manufacturers-request-to-amend",
+      "date": "2026-11-10T00:00:00.000Z",
       "category": "Regulatory / Policy",
       "priority": false
     },
@@ -677,11 +1004,47 @@
       "priority": false
     },
     {
+      "source": "FDA Law Blog",
+      "tier": "industry",
+      "title": "The PATIENT AI Act: A New Prescription for FDA Software Review, or More of the Same?",
+      "link": "https://www.thefdalawblog.com/2026/11/the-patient-ai-act-a-new-prescription-for-fda-software-review-or-more-of-the-same/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=the-patient-ai-act-a-new-prescription-for-fda-software-review-or-more-of-the-same",
+      "date": "2026-11-08T22:24:04.000Z",
+      "category": "Regulatory / Policy",
+      "priority": false
+    },
+    {
       "source": "EMA",
       "tier": "regulator",
       "title": "Meeting highlights from the Committee for Veterinary Medicinal Products (CVMP) 3-5 November 2026",
       "link": "https://www.ema.europa.eu/en/news/meeting-highlights-committee-veterinary-medicinal-products-cvmp-3-5-november-2026",
       "date": "2026-11-06T13:20:00.000Z",
+      "category": "Regulatory / Policy",
+      "priority": false
+    },
+    {
+      "source": "FDA Law Blog",
+      "tier": "industry",
+      "title": "The Flexibility Papers No. 3: Old Drugs, New Possibilities – Repurposing as Part of the Rare Disease Framework",
+      "link": "https://www.thefdalawblog.com/2026/11/the-flexibility-papers-no-3-old-drugs-new-possibilities-repurposing-as-part-of-the-rare-disease-framework/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=the-flexibility-papers-no-3-old-drugs-new-possibilities-repurposing-as-part-of-the-rare-disease-framework",
+      "date": "2026-11-06T02:26:05.000Z",
+      "category": "Regulatory / Policy",
+      "priority": false
+    },
+    {
+      "source": "FDA Law Blog",
+      "tier": "industry",
+      "title": "The Citizen Petition That Reads Like Legislative History: ROS1/RET Meets the Precision Oncology Modernization Act",
+      "link": "https://www.thefdalawblog.com/2026/11/the-citizen-petition-that-reads-like-legislative-history-ros1-ret-meets-the-precision-oncology-modernization-act/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=the-citizen-petition-that-reads-like-legislative-history-ros1-ret-meets-the-precision-oncology-modernization-act",
+      "date": "2026-11-05T01:52:15.000Z",
+      "category": "Regulatory / Policy",
+      "priority": false
+    },
+    {
+      "source": "FDA Law Blog",
+      "tier": "industry",
+      "title": "A Day Late, A Buck Short: Or How to Lose PTE Without Really Trying",
+      "link": "https://www.thefdalawblog.com/2026/11/a-day-late-a-buck-short-or-how-to-lose-pte-without-really-trying/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=a-day-late-a-buck-short-or-how-to-lose-pte-without-really-trying",
+      "date": "2026-11-03T03:37:14.000Z",
       "category": "Regulatory / Policy",
       "priority": false
     },
