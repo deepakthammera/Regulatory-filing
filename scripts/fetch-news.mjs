@@ -46,7 +46,9 @@ const SOURCES = [
   // urgent safety news, so it is off for this source.
   { source: "Federal Register (FDA)", tier: "regulator", type: "federalregister", defaultCategory: "Regulatory / Policy",
     noPriority: true,
-    exclude: /^(Agency Information Collection Activities|Submission for Office of Management and Budget Review)|^Determination That .* Withdrawn From Sale/i,
+    // Also skipped: topics outside this app's scope (tobacco, foods, colour/food additives,
+    // dietary supplements, animal drugs).
+    exclude: /^(Agency Information Collection Activities|Submission for Office of Management and Budget Review)|^Determination That .* Withdrawn From Sale|Tobacco|Color Additive|Food Additive|Dietary Supplement|Food Labeling|Animal Drug|Animal Food/i,
     feeds: [
       "https://www.federalregister.gov/api/v1/documents.json?conditions%5Bagencies%5D%5B%5D=food-and-drug-administration&order=newest&per_page=50&fields%5B%5D=title&fields%5B%5D=html_url&fields%5B%5D=publication_date"
   ]},
