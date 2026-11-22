@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-22T14:33:13.064Z",
+  "generated": "2026-11-22T15:23:44.837Z",
   "sources": [
     "FDA",
     "EMA",
@@ -22,23 +22,14 @@
     "Deals / Business",
     "General"
   ],
-  "count": 125,
+  "count": 155,
   "items": [
     {
-      "source": "FDA",
-      "tier": "regulator",
-      "title": "Breckenridge Pharmaceutical, Inc. Issues Voluntary Nationwide Consumer-Level Recall of One Lot of Propranolol Hydrochloride Extended-Release Capsules, USP, 60 mg, Due to Potential Metal Contamination",
-      "link": "http://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/breckenridge-pharmaceutical-inc-issues-voluntary-nationwide-consumer-level-recall-one-lot",
-      "date": "2026-11-20T05:00:00.000Z",
-      "category": "Safety / PV",
-      "priority": true
-    },
-    {
-      "source": "FDA",
-      "tier": "regulator",
-      "title": "Greenwich Rx Issues Voluntary Nationwide Recall of Compounded Sterile Products Due to Lack of Sterility Assurance",
-      "link": "http://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/greenwich-rx-issues-voluntary-nationwide-recall-compounded-sterile-products-due-lack-sterility",
-      "date": "2026-11-20T05:00:00.000Z",
+      "source": "Fierce Pharma",
+      "tier": "industry",
+      "title": "Fierce Pharma Asia—Ivonescimab’s FDA snub; Pfizer’s in vivo CAR-T deal; China fires scientists in fatal gene trial",
+      "link": "https://www.fiercepharma.com/pharma/ivonescimab-fda-rejection-pfizer-vivo-car-t-deal-china-fires-scientists-fatal-gene-trial",
+      "date": "2026-11-20T00:00:00.000Z",
       "category": "Safety / PV",
       "priority": true
     },
@@ -52,24 +43,6 @@
       "priority": true
     },
     {
-      "source": "FDA",
-      "tier": "regulator",
-      "title": "Medline Updates Customers and Patients on Repair and Replace Program for Recall of Medline Brand Beds, Rails, Mattresses and Accessories",
-      "link": "http://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/medline-updates-customers-and-patients-repair-and-replace-program-recall-medline-brand-beds-rails",
-      "date": "2026-11-13T05:00:00.000Z",
-      "category": "Safety / PV",
-      "priority": true
-    },
-    {
-      "source": "FDA",
-      "tier": "regulator",
-      "title": "Game Changer Products LLC Issues Voluntary Nationwide Recall of 10 Day Forecast Capsules Due to the Presence of Undeclared Sildenafil and Acetaminophen",
-      "link": "http://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/game-changer-products-llc-issues-voluntary-nationwide-recall-10-day-forecast-capsules-due-presence",
-      "date": "2026-11-12T05:00:00.000Z",
-      "category": "Safety / PV",
-      "priority": true
-    },
-    {
       "source": "EMA",
       "tier": "regulator",
       "title": "Meeting highlights from the Pharmacovigilance Risk Assessment Committee (PRAC) 26 - 29 October 2026",
@@ -77,6 +50,15 @@
       "date": "2026-10-30T11:11:00.000Z",
       "category": "Safety / PV",
       "priority": true
+    },
+    {
+      "source": "Fierce Biotech",
+      "tier": "industry",
+      "title": "Danaher teams up with Microsoft to boost ‘experimental execution’",
+      "link": "https://www.fiercebiotech.com/medtech/danaher-teams-microsoft-boost-experimental-execution",
+      "date": "2026-11-22T00:00:00.000Z",
+      "category": "General",
+      "priority": false
     },
     {
       "source": "BioPharma Dive",
@@ -189,6 +171,24 @@
     {
       "source": "FDA",
       "tier": "regulator",
+      "title": "Breckenridge Pharmaceutical, Inc. Issues Voluntary Nationwide Consumer-Level Recall of One Lot of Propranolol Hydrochloride Extended-Release Capsules, USP, 60 mg, Due to Potential Metal Contamination",
+      "link": "http://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/breckenridge-pharmaceutical-inc-issues-voluntary-nationwide-consumer-level-recall-one-lot",
+      "date": "2026-11-20T05:00:00.000Z",
+      "category": "Safety / PV",
+      "priority": false
+    },
+    {
+      "source": "FDA",
+      "tier": "regulator",
+      "title": "Greenwich Rx Issues Voluntary Nationwide Recall of Compounded Sterile Products Due to Lack of Sterility Assurance",
+      "link": "http://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/greenwich-rx-issues-voluntary-nationwide-recall-compounded-sterile-products-due-lack-sterility",
+      "date": "2026-11-20T05:00:00.000Z",
+      "category": "Safety / PV",
+      "priority": false
+    },
+    {
+      "source": "FDA",
+      "tier": "regulator",
       "title": "Early Alert: Heraeus Medical Components Removes Vascular Guidewires",
       "link": "http://www.fda.gov/medical-devices/medical-device-recalls-and-early-alerts/early-alert-heraeus-medical-components-removes-vascular-guidewires",
       "date": "2026-11-20T05:00:00.000Z",
@@ -211,6 +211,87 @@
       "link": "https://www.federalregister.gov/documents/2026/11/20/2026-23668/transfer-of-a-premarket-notification-510k-clearance-questions-and-answers-guidance-for-industry-and",
       "date": "2026-11-20T00:00:00.000Z",
       "category": "Approval",
+      "priority": false
+    },
+    {
+      "source": "Fierce Pharma",
+      "tier": "industry",
+      "title": "Merck scores US, German wins over Halozyme in Keytruda Qlex patent fight",
+      "link": "https://www.fiercepharma.com/pharma/merck-scores-us-german-wins-over-halozyme-keytruda-qlex-patent-fight",
+      "date": "2026-11-20T00:00:00.000Z",
+      "category": "General",
+      "priority": false
+    },
+    {
+      "source": "Fierce Pharma",
+      "tier": "industry",
+      "title": "Mapping psychedelics’ commercial summit",
+      "link": "https://www.fiercepharma.com/pharma/mapping-psychedelics-commercial-summit",
+      "date": "2026-11-20T00:00:00.000Z",
+      "category": "General",
+      "priority": false
+    },
+    {
+      "source": "Fierce Pharma",
+      "tier": "industry",
+      "title": "Merck’s TROP2 ADC extends survival in pivotal gastroesophageal cancer trial",
+      "link": "https://www.fiercepharma.com/biotech/mercks-trop2-adc-extends-survival-pivotal-gastroesophageal-cancer-trial",
+      "date": "2026-11-20T00:00:00.000Z",
+      "category": "Clinical trial",
+      "priority": false
+    },
+    {
+      "source": "Fierce Pharma",
+      "tier": "industry",
+      "title": "Another 215 layoffs linked to Novo's New Jersey HQ",
+      "link": "https://www.fiercepharma.com/pharma/another-215-layoffs-linked-novos-new-jersey-hq",
+      "date": "2026-11-20T00:00:00.000Z",
+      "category": "Deals / Business",
+      "priority": false
+    },
+    {
+      "source": "Fierce Pharma",
+      "tier": "industry",
+      "title": "FDA sets up new safety council to keep tabs on approved vaccines, cell and gene therapies",
+      "link": "https://www.fiercepharma.com/pharma/fda-sets-new-safety-council-under-cber-keep-tabs-approved-vaccines-cell-and-gene-therapies",
+      "date": "2026-11-20T00:00:00.000Z",
+      "category": "Safety / PV",
+      "priority": false
+    },
+    {
+      "source": "Fierce Biotech",
+      "tier": "industry",
+      "title": "Merck’s TROP2 ADC extends survival in pivotal gastroesophageal cancer trial",
+      "link": "https://www.fiercebiotech.com/biotech/mercks-trop2-adc-extends-survival-pivotal-gastroesophageal-cancer-trial",
+      "date": "2026-11-20T00:00:00.000Z",
+      "category": "Clinical trial",
+      "priority": false
+    },
+    {
+      "source": "Fierce Biotech",
+      "tier": "industry",
+      "title": "FDA pushes decision on Belite’s eye disease pill back to May",
+      "link": "https://www.fiercebiotech.com/biotech/fda-delays-belites-eye-disease-pill-decision-three-months-may",
+      "date": "2026-11-20T00:00:00.000Z",
+      "category": "Regulatory / Policy",
+      "priority": false
+    },
+    {
+      "source": "Fierce Biotech",
+      "tier": "industry",
+      "title": "‘It’s a very healthy sector’: Biopharma gathers in London as M&A shines and China clouds loom",
+      "link": "https://www.fiercebiotech.com/biotech/its-very-health-sector-biopharma-gathers-london-ma-shines-will-china-clouds-loom",
+      "date": "2026-11-20T00:00:00.000Z",
+      "category": "General",
+      "priority": false
+    },
+    {
+      "source": "Fierce Biotech",
+      "tier": "industry",
+      "title": "Bausch + Lomb and Celldex rocked by respective phase 2 flops",
+      "link": "https://www.fiercebiotech.com/biotech/bausch-lomb-and-celldex-rocked-phase-2-flops",
+      "date": "2026-11-20T00:00:00.000Z",
+      "category": "Clinical trial",
       "priority": false
     },
     {
@@ -376,6 +457,159 @@
       "priority": false
     },
     {
+      "source": "Fierce Pharma",
+      "tier": "industry",
+      "title": "Sanofi gets Genzyme asset across FDA finish line with key nod in Gaucher type 3",
+      "link": "https://www.fiercepharma.com/pharma/sanofi-snags-fda-nod-become-first-neurologic-treatment-rare-gd3",
+      "date": "2026-11-19T00:00:00.000Z",
+      "category": "Regulatory / Policy",
+      "priority": false
+    },
+    {
+      "source": "Fierce Pharma",
+      "tier": "industry",
+      "title": "Biogen unblurs life with Friedreich ataxia in patient-centered Skyclarys campaign",
+      "link": "https://www.fiercepharma.com/marketing/biogen-unblurs-life-friedreich-ataxia-patient-centered-skyclarys-campaign",
+      "date": "2026-11-19T00:00:00.000Z",
+      "category": "Regulatory / Policy",
+      "priority": false
+    },
+    {
+      "source": "Fierce Pharma",
+      "tier": "industry",
+      "title": "Facing down Dupixent cliff, Sanofi mulls buyout of Insmed and its blockbuster-to-be Brinsupri: Bloomberg",
+      "link": "https://www.fiercepharma.com/pharma/facing-down-dupixent-cliff-sanofi-mulls-buyout-insmed-and-its-blockbuster-be-brinsupri",
+      "date": "2026-11-19T00:00:00.000Z",
+      "category": "Deals / Business",
+      "priority": false
+    },
+    {
+      "source": "Fierce Pharma",
+      "tier": "industry",
+      "title": "Novartis CEO, staring down $16.7B post-2030 patent cliff, challenges Wall Street consensus",
+      "link": "https://www.fiercepharma.com/pharma/novartis-staring-down-167b-post-2030-patent-cliff-cuts-mid-term-growth-forecast",
+      "date": "2026-11-19T00:00:00.000Z",
+      "category": "General",
+      "priority": false
+    },
+    {
+      "source": "Fierce Pharma",
+      "tier": "industry",
+      "title": "Arcera strikes $1B+ pact to license Innogen's approved GLP-1 outside China",
+      "link": "https://www.fiercepharma.com/pharma/arcera-ponies-1b-innogens-china-approved-glp-1",
+      "date": "2026-11-19T00:00:00.000Z",
+      "category": "Approval",
+      "priority": false
+    },
+    {
+      "source": "Fierce Pharma",
+      "tier": "industry",
+      "title": "Regeneron breaks into neurology with FDA nod in crowded myasthenia gravis",
+      "link": "https://www.fiercepharma.com/pharma/regeneron-breaks-through-neurology-barrier-fda-nod-crowded-myasthenia-gravis",
+      "date": "2026-11-19T00:00:00.000Z",
+      "category": "Regulatory / Policy",
+      "priority": false
+    },
+    {
+      "source": "Fierce Pharma",
+      "tier": "industry",
+      "title": "J&J draws FDA rebuke for misstating Inlexzo’s bladder-sparing benefits",
+      "link": "https://www.fiercepharma.com/marketing/jj-draws-fda-rebuke-misstating-inlexzos-bladder-sparing-benefits",
+      "date": "2026-11-19T00:00:00.000Z",
+      "category": "Regulatory / Policy",
+      "priority": false
+    },
+    {
+      "source": "Fierce Pharma",
+      "tier": "industry",
+      "title": "CDMO Lotte inks commercial production deal as work on South Korean plant wraps",
+      "link": "https://www.fiercepharma.com/manufacturing/lotte-inks-production-deal-cdmo-preps-open-33b-south-korean-plant",
+      "date": "2026-11-19T00:00:00.000Z",
+      "category": "Deals / Business",
+      "priority": false
+    },
+    {
+      "source": "Fierce Pharma",
+      "tier": "industry",
+      "title": "Novartis CEO argues shareholders ‘happy overall’ with strategy, calls for COINS Act adjustment",
+      "link": "https://www.fiercepharma.com/biotech/novartis-ceo-argues-shareholders-happy-overall-calls-coins-act-adjustment",
+      "date": "2026-11-19T00:00:00.000Z",
+      "category": "General",
+      "priority": false
+    },
+    {
+      "source": "Fierce Biotech",
+      "tier": "industry",
+      "title": "Chutes & Ladders—Teva loses R&D head as innovation pivot advances",
+      "link": "https://www.fiercebiotech.com/biotech/chutes-ladders-teva-loses-rd-head",
+      "date": "2026-11-19T00:00:00.000Z",
+      "category": "General",
+      "priority": false
+    },
+    {
+      "source": "Fierce Biotech",
+      "tier": "industry",
+      "title": "Anthropic board director Vas Narasimhan bets AI can help Novartis solve ‘biological latency’",
+      "link": "https://www.fiercebiotech.com/biotech/anthropic-board-director-vas-narasimhan-bets-ai-can-help-novartis-solve-biological-latency",
+      "date": "2026-11-19T00:00:00.000Z",
+      "category": "General",
+      "priority": false
+    },
+    {
+      "source": "Fierce Biotech",
+      "tier": "industry",
+      "title": "Vaccine biotech Evaxion halts infectious disease, autoimmune work to focus on oncology",
+      "link": "https://www.fiercebiotech.com/biotech/vaccine-biotech-evaxion-progressing-only-oncology-assets-rd-refocus",
+      "date": "2026-11-19T00:00:00.000Z",
+      "category": "General",
+      "priority": false
+    },
+    {
+      "source": "Fierce Biotech",
+      "tier": "industry",
+      "title": "nChroma halves headcount, calls time on trial of potential HBV ‘cure’",
+      "link": "https://www.fiercebiotech.com/biotech/nchroma-halves-headcount-calls-time-trial-potential-hbv-cure",
+      "date": "2026-11-19T00:00:00.000Z",
+      "category": "General",
+      "priority": false
+    },
+    {
+      "source": "Fierce Biotech",
+      "tier": "industry",
+      "title": "Isomorphic adds Merck to AI drug discovery roster days after $5B raise",
+      "link": "https://www.fiercebiotech.com/biotech/isomorphic-labs-adds-merck-ai-drug-discovery-roster-days-after-5b-raise",
+      "date": "2026-11-19T00:00:00.000Z",
+      "category": "Deals / Business",
+      "priority": false
+    },
+    {
+      "source": "Fierce Biotech",
+      "tier": "industry",
+      "title": "Teva loses R&D head Eric Hughes amid push to grow innovative medicines business",
+      "link": "https://www.fiercebiotech.com/biotech/teva-loses-rd-head-eric-hughes-amid-push-grow-innovative-medicines-business",
+      "date": "2026-11-19T00:00:00.000Z",
+      "category": "General",
+      "priority": false
+    },
+    {
+      "source": "Fierce Biotech",
+      "tier": "industry",
+      "title": "Novartis CEO argues shareholders ‘happy overall’ with strategy, calls for COINS Act adjustment",
+      "link": "https://www.fiercebiotech.com/biotech/novartis-ceo-argues-shareholders-happy-overall-calls-coins-act-adjustment",
+      "date": "2026-11-19T00:00:00.000Z",
+      "category": "General",
+      "priority": false
+    },
+    {
+      "source": "Fierce Biotech",
+      "tier": "industry",
+      "title": "Majority rate home diagnostic tests ‘very helpful,’ but just 33% for accuracy: DNV survey",
+      "link": "https://www.fiercebiotech.com/medtech/majority-rate-home-diagnostic-tests-very-helpful-just-33-accuracy-dnv-survey",
+      "date": "2026-11-19T00:00:00.000Z",
+      "category": "General",
+      "priority": false
+    },
+    {
       "source": "RAPS",
       "tier": "industry",
       "title": "FDA finalizes guidance on transferring 510(k) ownership",
@@ -463,6 +697,24 @@
       "link": "https://www.federalregister.gov/documents/2026/11/18/2026-23413/salerno-pharmaceuticals-proposal-to-withdraw-approval-of-a-new-drug-application-for-flolipid",
       "date": "2026-11-18T00:00:00.000Z",
       "category": "Approval",
+      "priority": false
+    },
+    {
+      "source": "Fierce Biotech",
+      "tier": "industry",
+      "title": "Crown Biosciences stays put as $204M Adicon deal falls through",
+      "link": "https://www.fiercebiotech.com/cro/crown-stays-put-204m-adicon-deal-collapses",
+      "date": "2026-11-18T00:00:00.000Z",
+      "category": "Deals / Business",
+      "priority": false
+    },
+    {
+      "source": "Fierce Biotech",
+      "tier": "industry",
+      "title": "AbbVie busts a move with Disco in $2.5B dance aimed at bispecific discovery",
+      "link": "https://www.fiercebiotech.com/biotech/abbvie-busts-move-disco-25b-pact-aimed-bispecific-discovery",
+      "date": "2026-11-18T00:00:00.000Z",
+      "category": "General",
       "priority": false
     },
     {
@@ -601,6 +853,15 @@
       "priority": false
     },
     {
+      "source": "FDA",
+      "tier": "regulator",
+      "title": "Medline Updates Customers and Patients on Repair and Replace Program for Recall of Medline Brand Beds, Rails, Mattresses and Accessories",
+      "link": "http://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/medline-updates-customers-and-patients-repair-and-replace-program-recall-medline-brand-beds-rails",
+      "date": "2026-11-13T05:00:00.000Z",
+      "category": "Safety / PV",
+      "priority": false
+    },
+    {
       "source": "Pharmacoepidemiology & Drug Safety",
       "tier": "journal",
       "title": "Validation of ICD ‐10‐ CM Codes for Bleeding in Patients With an Indication for Antithrombotic Therapy",
@@ -615,6 +876,15 @@
       "title": "HEalth Data Research OMOP Network ( HERON ‐ UK ), A Real‐World Evidence Federated Network of Hospital and Primary Care Electronic Health Records Including 57 Million Individuals and 7 Data Partners in the United Kingdom",
       "link": "https://doi.org/10.1002/pds.70526",
       "date": "2026-11-13T00:00:00.000Z",
+      "category": "Safety / PV",
+      "priority": false
+    },
+    {
+      "source": "FDA",
+      "tier": "regulator",
+      "title": "Game Changer Products LLC Issues Voluntary Nationwide Recall of 10 Day Forecast Capsules Due to the Presence of Undeclared Sildenafil and Acetaminophen",
+      "link": "http://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/game-changer-products-llc-issues-voluntary-nationwide-recall-10-day-forecast-capsules-due-presence",
+      "date": "2026-11-12T05:00:00.000Z",
       "category": "Safety / PV",
       "priority": false
     },
