@@ -1136,8 +1136,12 @@
     .login-left{padding:2rem;min-height:30vh}
     .login-right{padding:2rem}
     #app.show{grid-template-columns:minmax(0,1fr)}
-    .sidebar{position:relative;height:auto;border-right:none;border-bottom:1px solid var(--rule)}
-    .main{padding:1.5rem}
+    /* Phones & tablets: the menu is a slide-in drawer opened with the Menu button */
+    .sidebar{position:fixed;top:0;left:0;bottom:0;z-index:1000;width:min(86vw,320px);height:100%;overflow-y:auto;overscroll-behavior:contain;border-right:1px solid var(--rule);transform:translateX(-105%);visibility:hidden;transition:transform .25s ease,visibility 0s linear .25s}
+    body.nav-open .sidebar{transform:none;visibility:visible;transition:transform .25s ease;box-shadow:0 0 40px rgba(0,0,0,0.35)}
+    body.nav-open .nav-scrim{opacity:1;pointer-events:auto}
+    body.nav-open{overflow:hidden}
+    .main{padding:1.5rem;padding-top:4.6rem}
     .stat-grid,.quick-actions,.type-grid,.form-grid,.card-grid,.glossary-grid,.wizard-options,.timeline-summary{grid-template-columns:minmax(0,1fr)}
     .ectd-layout{grid-template-columns:minmax(0,1fr)}
     .meeting-card,.designation-card .grid{grid-template-columns:minmax(0,1fr)}
@@ -1487,6 +1491,17 @@
 }
 
 /* ============================================================
+   SIDE MENU (phones & tablets) — Menu button and backdrop; the drawer itself is in the
+   max-width:1024px block above
+   ============================================================ */
+.nav-toggle{display:none;position:fixed;top:1rem;left:1rem;z-index:901;align-items:center;gap:0.45rem;background:var(--paper);color:var(--ink);border:1px solid var(--rule);padding:0.55rem 0.8rem;cursor:pointer;border-radius:2px;box-shadow:0 2px 8px rgba(0,0,0,0.06);font:inherit;font-size:0.85rem;font-weight:600}
+.nav-toggle svg{color:var(--burgundy)}
+.nav-toggle:hover{border-color:var(--burgundy);color:var(--burgundy)}
+.nav-scrim{display:none;position:fixed;inset:0;z-index:999;background:rgba(10,6,20,0.5);opacity:0;pointer-events:none;transition:opacity .25s ease}
+@media(max-width:1024px){ .nav-toggle{display:flex} .nav-scrim{display:block} }
+@media (prefers-reduced-motion: reduce){ .sidebar,.nav-scrim{transition:none!important} }
+
+/* ============================================================
    THEME — controls, and dark-mode overrides for colours that are not tokens
    ============================================================ */
 .top-actions{position:fixed;top:1rem;right:1rem;z-index:900;display:flex;gap:0.5rem;align-items:stretch}
@@ -1583,7 +1598,12 @@
 
 <!-- APP -->
 <div id="app">
-  <aside class="sidebar">
+  <button type="button" class="nav-toggle" id="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="app-sidebar">
+    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><line x1="4" y1="7" x2="20" y2="7"></line><line x1="4" y1="12" x2="20" y2="12"></line><line x1="4" y1="17" x2="20" y2="17"></line></svg>
+    <span class="nav-toggle-label">Menu</span>
+  </button>
+  <div class="nav-scrim" id="nav-scrim" aria-hidden="true"></div>
+  <aside class="sidebar" id="app-sidebar" tabindex="-1" aria-label="Main menu">
     <div class="sidebar-brand">
       <div><span class="num">§</span> <span class="name">Regulatory Terminator</span></div>
       <span class="sub">Drug · Biologic · Device · PV</span>
@@ -16896,6 +16916,26 @@ function mbResultHTML(e) {
   document.querySelectorAll('[data-theme-set]').forEach(function(b){ b.addEventListener('click', function(){ window.setThemePref(b.getAttribute('data-theme-set')); }); });
   if (mq) { var onChange = function(){ if (pref() === 'auto') apply(); }; if (mq.addEventListener) mq.addEventListener('change', onChange); else if (mq.addListener) mq.addListener(onChange); }
   apply();
+})();
+
+// Side menu (phones & tablets): open/close the slide-in drawer.
+(function(){
+  var btn = document.getElementById('nav-toggle'), scrim = document.getElementById('nav-scrim'), side = document.getElementById('app-sidebar');
+  if (!btn || !side) return;
+  var mq = window.matchMedia ? window.matchMedia('(max-width: 1024px)') : null;
+  function isOpen(){ return document.body.classList.contains('nav-open'); }
+  function setOpen(open){
+    document.body.classList.toggle('nav-open', open);
+    btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    btn.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+    if (open) setTimeout(function(){ side.focus({ preventScroll: true }); }, 30);
+  }
+  btn.addEventListener('click', function(){ setOpen(!isOpen()); });
+  if (scrim) scrim.addEventListener('click', function(){ setOpen(false); });
+  // Choosing a page (or signing out) closes the menu; the Appearance buttons do not.
+  side.addEventListener('click', function(e){ if (isOpen() && (e.target.closest('[data-nav]') || e.target.closest('#logout-btn'))) setOpen(false); });
+  document.addEventListener('keydown', function(e){ if (e.key === 'Escape' && isOpen()) { setOpen(false); btn.focus(); } });
+  if (mq) { var onChange = function(){ if (!mq.matches && isOpen()) setOpen(false); }; if (mq.addEventListener) mq.addEventListener('change', onChange); else if (mq.addListener) mq.addListener(onChange); }
 })();
 
 // Register the service worker (installable app + offline use). Needs http(s);

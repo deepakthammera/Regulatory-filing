@@ -42,6 +42,7 @@ Each area combines reference content, worked examples, interactive decision help
 ## What's new
 
 ### November 2026
+- **Side menu on phones and tablets.** The menu no longer sits at the top of every page: tap **☰ Menu** (top left) to slide it in from the side; choosing a page, tapping outside it or pressing Escape closes it. On desktop the sidebar stays as before.
 - **Three new daily news sources:** **Federal Register (FDA)** (FDA guidances, notices, proposed and final rules the day they are published; routine paperwork notices are filtered out), **FDA Law Blog** (expert commentary on FDA law and enforcement), and **Fierce Biotech**, plus two more pharmacovigilance journals: **Pharmacoepidemiology and Drug Safety** and **Therapeutic Advances in Drug Safety** (new articles via Crossref). Headlines that appear under two sources are now shown once.
 - **Dark mode.** Choose **Light**, **Dark** or **Auto** (follows your phone or computer's setting) under *Appearance* at the bottom of the sidebar, or tap the moon/sun button next to Search to switch quickly. The choice is remembered on each device, and the page opens in the right theme with no white flash. Every page and tab was checked so text stays readable in dark mode.
 
@@ -107,7 +108,7 @@ How it works: `manifest.webmanifest` (name, colours, icons), `icons/` (home-scre
 
 ## Features
 
-- **Sidebar navigation** across News & Updates, My Space, Regulatory, and Pharmacovigilance.
+- **Sidebar navigation** across News & Updates, My Space, Regulatory, and Pharmacovigilance; on phones and tablets it is a slide-in side menu opened with **☰ Menu**.
 - **Light and dark mode**, with an Auto option that follows the device setting.
 - **My Space**: bookmark news headlines and keep personal notes, synced to your account and available offline.
 - **News & Updates**: a daily auto-refreshed headline feed (`news.json`, built by a GitHub Action) and a curated **PV Updates & News** page explaining new guidelines (e.g., ICH E2D(R1), MedDRA releases) and regulator safety actions.
