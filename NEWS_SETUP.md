@@ -3,7 +3,7 @@
 Your app has a **News & Updates** section (top of the sidebar) with two entries:
 
 - **★ PV Updates & News** (Latest): a curated, hand-written page explaining new guidelines (e.g., ICH E2D(R1), MedDRA releases) and regulator safety actions. It is static content in `index.html` (the `view-pvupdates` section) and is **not** touched by the daily job.
-- **◆ Regulatory & PV News** (Daily Feed): headlines from **regulators** (FDA MedWatch safety alerts and press releases, EMA news, and FDA documents published in the **Federal Register**), **expert commentary** (FDA Law Blog), **industry news** (BioSpace, Fierce Pharma, Fierce Biotech, BioPharma Dive, RAPS Regulatory Focus) and new articles in the journal ***Drug Safety*** (via the Crossref API), refreshed automatically every day. It shows only headlines, source, date, and a link to each original article.
+- **◆ Regulatory & PV News** (Daily Feed): headlines from **regulators** (FDA MedWatch safety alerts and press releases, EMA news, and FDA documents published in the **Federal Register**), **expert commentary** (FDA Law Blog), **industry news** (BioSpace, Fierce Pharma, Fierce Biotech, BioPharma Dive, RAPS Regulatory Focus) and new articles in the pharmacovigilance journals ***Drug Safety***, ***Pharmacoepidemiology and Drug Safety*** and ***Therapeutic Advances in Drug Safety*** (via the Crossref API), refreshed automatically every day. It shows only headlines, source, date, and a link to each original article.
 
 This document covers the daily feed.
 

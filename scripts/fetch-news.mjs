@@ -29,7 +29,9 @@ import { writeFileSync } from "node:fs";
 //     "https://www.gov.uk/drug-safety-update.atom", "https://www.gov.uk/drug-device-alerts.atom" ]}
 //   and a matching 'MHRA' colour in SOURCE_META in index.html.
 // - Springer's search.rss for Drug Safety returns no items, so the journal is read from
-//   Crossref instead (Drug Safety eISSN 1179-1942).
+//   Crossref instead (Drug Safety eISSN 1179-1942). Pharmacoepidemiology and Drug Safety
+//   (Wiley; ISSN 1099-1557 / 1053-8569) and Therapeutic Advances in Drug Safety (SAGE;
+//   ISSN 2042-0994 / 2042-0986) are read the same way.
 const SOURCES = [
   { source: "FDA", tier: "regulator", defaultCategory: "Regulatory / Policy", feeds: [
     "https://www.fda.gov/about-fda/contact-fda/stay-informed/rss-feeds/medwatch/rss.xml",
@@ -79,6 +81,15 @@ const SOURCES = [
   ]},
   { source: "Drug Safety", tier: "journal", type: "crossref", category: "Safety / PV", feeds: [
     "https://api.crossref.org/journals/1179-1942/works?sort=published&order=desc&rows=30&filter=type:journal-article&select=title,URL,published,published-online,created"
+  ]},
+  // Further pharmacovigilance journals, also read from Crossref (online ISSN first, print ISSN as fallback).
+  { source: "Pharmacoepidemiology & Drug Safety", tier: "journal", type: "crossref", category: "Safety / PV", feeds: [
+    "https://api.crossref.org/journals/1099-1557/works?sort=published&order=desc&rows=30&filter=type:journal-article&select=title,URL,published,published-online,created",
+    "https://api.crossref.org/journals/1053-8569/works?sort=published&order=desc&rows=30&filter=type:journal-article&select=title,URL,published,published-online,created"
+  ]},
+  { source: "Therapeutic Advances in Drug Safety", tier: "journal", type: "crossref", category: "Safety / PV", feeds: [
+    "https://api.crossref.org/journals/2042-0994/works?sort=published&order=desc&rows=30&filter=type:journal-article&select=title,URL,published,published-online,created",
+    "https://api.crossref.org/journals/2042-0986/works?sort=published&order=desc&rows=30&filter=type:journal-article&select=title,URL,published,published-online,created"
   ]}
 ];
 
