@@ -14396,7 +14396,7 @@ function renderNews(){
     ALL.forEach(it=>{ html += itemCard(it); });
     html += '</div>';
     html += '<div id="news-empty" style="display:none;color:var(--muted);font-style:italic;padding:1rem 0">No headlines match your filters.</div>';
-    html += '<p style="font-size:0.8rem;color:var(--muted);margin-top:0.8rem">Tap ☆ to bookmark a headline; all bookmarks are listed under <strong>My Space → Saved News</strong>. Priority items (⚑) contain high-signal terms such as recall, safety warning, or pharmacovigilance. Headlines and links belong to their respective publishers — select an item to read the full article at the source.</p>';
+    html += '<p style="font-size:0.8rem;color:var(--muted);margin-top:0.8rem">Tap ☆ to bookmark a headline; all bookmarks are listed under <strong>My Space → Saved News</strong>. Priority items (⚑) contain high-signal terms such as safety warning, boxed warning, or pharmacovigilance; recalls are listed under Safety / PV but not flagged as priority. Headlines and links belong to their respective publishers — select an item to read the full article at the source.</p>';
     html += '</div>';
     return html;
   }

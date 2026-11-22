@@ -103,9 +103,10 @@ const TIMEOUT_MS = 20000;
 
 // --- Prioritization -------------------------------------------------------
 // Priority = genuine safety / urgent signals (kept deliberately narrow so it stays useful).
-// "Pharmacovigilance" is included per requirements.
+// "Pharmacovigilance" is included per requirements. Recalls are deliberately NOT priority
+// (they are frequent and mostly routine); see NOT_PRIORITY below.
 const PRIORITY_KEYWORDS = [
-  "pharmacovigilance", "recall", "recalled", "safety alert", "safety warning", "boxed warning",
+  "pharmacovigilance", "safety alert", "safety warning", "boxed warning",
   "black box", "black triangle", "withdrawn", "withdrawal", "suspension", "suspended",
   "contraindication", "serious risk", "urgent", "field safety", "falsified", "counterfeit",
   "contaminated", "substandard", "shortage", "prac", "referral", "safety signal",
@@ -149,11 +150,16 @@ const CATEGORY_RULES = [
   ]}
 ];
 
+// Headlines that are never flagged as priority, even if they contain a priority keyword
+// (recall notices often also say "contaminated", "death", etc.). They stay in the feed.
+const NOT_PRIORITY = /\brecall(s|ed|ing)?\b/i;
+
 function classify(title, src) {
   const t = (" " + (title || "").toLowerCase() + " ");
   // Journal article titles routinely mention "adverse events", "deaths", etc.; the priority
   // flag is reserved for actionable safety news, so it is not applied to journals.
-  const priority = src.tier !== "journal" && !src.noPriority && PRIORITY_KEYWORDS.some((k) => t.includes(k));
+  const priority = src.tier !== "journal" && !src.noPriority && !NOT_PRIORITY.test(title || "")
+    && PRIORITY_KEYWORDS.some((k) => t.includes(k));
   if (src.category) return { priority, category: src.category };
   let category = src.defaultCategory || "General";
   for (const rule of CATEGORY_RULES) {

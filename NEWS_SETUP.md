@@ -39,7 +39,7 @@ That's it. After the run finishes, open your site's **Regulatory & PV News** sec
 
 - The workflow runs **every day at 06:17 UTC** (`cron: "17 6 * * *"`). Change that line in the workflow if you want a different time; GitHub may start scheduled runs some minutes late, and runs at the top of the hour are delayed most.
 - A commit (`chore: daily news update (YYYY-MM-DD)`) is made only when `news.json` actually changed, so there is at most one commit per day.
-- It fetches each source's feed, keeps the newest items (headline + date + link only; up to 15 per source and 200 in total), de-duplicates, drops items older than ~150 days, tags each item with a category (e.g., Safety / PV, Approval) and a ⚑ priority flag for urgent safety news (not applied to journal articles), and writes `news.json`. Items with a future date are shown with the run date instead.
+- It fetches each source's feed, keeps the newest items (headline + date + link only; up to 15 per source and 200 in total), de-duplicates, drops items older than ~150 days, tags each item with a category (e.g., Safety / PV, Approval) and a ⚑ priority flag for urgent safety news (not applied to journal articles, Federal Register notices, or recalls; recalls still appear under Safety / PV), and writes `news.json`. Items with a future date are shown with the run date instead.
 - If **every** source fails on a given run, the script exits without overwriting your existing `news.json`, so the page never goes blank.
 
 ## Good to know
