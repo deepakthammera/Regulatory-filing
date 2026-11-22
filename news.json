@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-22T06:31:43.522Z",
+  "generated": "2026-11-22T06:34:21.984Z",
   "sources": [
     "FDA",
     "EMA",
@@ -10,7 +10,9 @@
     "Fierce Biotech",
     "BioPharma Dive",
     "RAPS",
-    "Drug Safety"
+    "Drug Safety",
+    "Pharmacoepidemiology & Drug Safety",
+    "Therapeutic Advances in Drug Safety"
   ],
   "categories": [
     "Safety / PV",
@@ -20,7 +22,7 @@
     "Deals / Business",
     "General"
   ],
-  "count": 125,
+  "count": 155,
   "items": [
     {
       "source": "FDA",
@@ -421,8 +423,8 @@
     {
       "source": "FDA",
       "tier": "regulator",
-      "title": "Early Alert: B. Braun Medical Inc. Updates Use Instructions for Caresite Micro Luer Access Device",
-      "link": "http://www.fda.gov/medical-devices/medical-device-recalls-and-early-alerts/early-alert-b-braun-medical-inc-updates-use-instructions-caresite-micro-luer-access-device",
+      "title": "Early Alert: Outset Medical Updates Use Instructions for the Tablo Console and the TabloCart with Prefiltration Drawer",
+      "link": "http://www.fda.gov/medical-devices/medical-device-recalls-and-early-alerts/early-alert-outset-medical-updates-use-instructions-tablo-console-and-tablocart-prefiltration-drawer",
       "date": "2026-11-19T05:00:00.000Z",
       "category": "Regulatory / Policy",
       "priority": false
@@ -439,8 +441,8 @@
     {
       "source": "FDA",
       "tier": "regulator",
-      "title": "Early Alert: Outset Medical Updates Use Instructions for the Tablo Console and the TabloCart with Prefiltration Drawer",
-      "link": "http://www.fda.gov/medical-devices/medical-device-recalls-and-early-alerts/early-alert-outset-medical-updates-use-instructions-tablo-console-and-tablocart-prefiltration-drawer",
+      "title": "Early Alert: B. Braun Medical Inc. Updates Use Instructions for Caresite Micro Luer Access Device",
+      "link": "http://www.fda.gov/medical-devices/medical-device-recalls-and-early-alerts/early-alert-b-braun-medical-inc-updates-use-instructions-caresite-micro-luer-access-device",
       "date": "2026-11-19T05:00:00.000Z",
       "category": "Regulatory / Policy",
       "priority": false
@@ -752,6 +754,42 @@
       "priority": false
     },
     {
+      "source": "Pharmacoepidemiology & Drug Safety",
+      "tier": "journal",
+      "title": "Follow‐Up Questionnaires in Pharmacovigilance: A Quantitative Evaluation Based on Completeness Score",
+      "link": "https://doi.org/10.1002/pds.70527",
+      "date": "2026-11-18T00:00:00.000Z",
+      "category": "Safety / PV",
+      "priority": false
+    },
+    {
+      "source": "Pharmacoepidemiology & Drug Safety",
+      "tier": "journal",
+      "title": "Issue Information",
+      "link": "https://doi.org/10.1002/pds.70292",
+      "date": "2026-11-18T00:00:00.000Z",
+      "category": "Safety / PV",
+      "priority": false
+    },
+    {
+      "source": "Pharmacoepidemiology & Drug Safety",
+      "tier": "journal",
+      "title": "Antidepressants and Pregnancy: Mixed Conclusions or an Ostrich Policy?",
+      "link": "https://doi.org/10.1002/pds.70520",
+      "date": "2026-11-18T00:00:00.000Z",
+      "category": "Safety / PV",
+      "priority": false
+    },
+    {
+      "source": "Pharmacoepidemiology & Drug Safety",
+      "tier": "journal",
+      "title": "Letter to the Editor Regarding “Antidepressant Use During Pregnancy and Birth Outcomes: Analysis From the UK , Norway, and Sweden” by Martin et al. (2026)",
+      "link": "https://doi.org/10.1002/pds.70519",
+      "date": "2026-11-18T00:00:00.000Z",
+      "category": "Safety / PV",
+      "priority": false
+    },
+    {
       "source": "FDA",
       "tier": "regulator",
       "title": "FDA Launches the Global Reliance Disclosure Program to Expand Patient Access to Medicines Worldwide",
@@ -815,12 +853,48 @@
       "priority": false
     },
     {
+      "source": "Pharmacoepidemiology & Drug Safety",
+      "tier": "journal",
+      "title": "Which Marginal Estimator to Apply for External Comparator Studies: The ATT , ATE , ATU , or ATO ?",
+      "link": "https://doi.org/10.1002/pds.70523",
+      "date": "2026-11-15T00:00:00.000Z",
+      "category": "Safety / PV",
+      "priority": false
+    },
+    {
+      "source": "Pharmacoepidemiology & Drug Safety",
+      "tier": "journal",
+      "title": "Disentangling the Link Between Testosterone, Oestrogen, Thyroid Replacement and Mood: Interrupted Time‐Series Analyses of the Australian Pharmaceutical Benefits Scheme Database",
+      "link": "https://doi.org/10.1002/pds.70532",
+      "date": "2026-11-15T00:00:00.000Z",
+      "category": "Safety / PV",
+      "priority": false
+    },
+    {
       "source": "EMA",
       "tier": "regulator",
       "title": "Meeting highlights from the Committee for Medicinal Products for Human Use (CHMP) 9-12 November 2026",
       "link": "https://www.ema.europa.eu/en/news/meeting-highlights-committee-medicinal-products-human-use-chmp-9-12-november-2026",
       "date": "2026-11-13T11:00:00.000Z",
       "category": "Approval",
+      "priority": false
+    },
+    {
+      "source": "Pharmacoepidemiology & Drug Safety",
+      "tier": "journal",
+      "title": "Validation of ICD ‐10‐ CM Codes for Bleeding in Patients With an Indication for Antithrombotic Therapy",
+      "link": "https://doi.org/10.1002/pds.70531",
+      "date": "2026-11-13T00:00:00.000Z",
+      "category": "Safety / PV",
+      "priority": false
+    },
+    {
+      "source": "Pharmacoepidemiology & Drug Safety",
+      "tier": "journal",
+      "title": "HEalth Data Research OMOP Network ( HERON ‐ UK ), A Real‐World Evidence Federated Network of Hospital and Primary Care Electronic Health Records Including 57 Million Individuals and 7 Data Partners in the United Kingdom",
+      "link": "https://doi.org/10.1002/pds.70526",
+      "date": "2026-11-13T00:00:00.000Z",
+      "category": "Safety / PV",
       "priority": false
     },
     {
@@ -869,12 +943,12 @@
       "priority": false
     },
     {
-      "source": "FDA",
-      "tier": "regulator",
-      "title": "Early Alert: Arrow International Removes Products Containing Spring Wire Guide Components",
-      "link": "http://www.fda.gov/medical-devices/medical-device-recalls-and-early-alerts/early-alert-arrow-international-removes-products-containing-spring-wire-guide-components",
-      "date": "2026-11-10T05:00:00.000Z",
-      "category": "Regulatory / Policy",
+      "source": "Pharmacoepidemiology & Drug Safety",
+      "tier": "journal",
+      "title": "Correction to “Risk of Heart Failure Hospitalization Associated With Hypoxia‐Inducible Factor Prolyl Hydroxylase Inhibitors Versus Erythropoiesis‐Stimulating Agents: A Nationwide Claims‐Based Cohort Study”",
+      "link": "https://doi.org/10.1002/pds.70522",
+      "date": "2026-11-11T00:00:00.000Z",
+      "category": "Safety / PV",
       "priority": false
     },
     {
@@ -882,6 +956,15 @@
       "tier": "regulator",
       "title": "Early Alert: Intersurgical Inc. Removes 22mm Smoothbore breathing tubes and systems",
       "link": "http://www.fda.gov/medical-devices/medical-device-recalls-and-early-alerts/early-alert-intersurgical-inc-removes-22mm-smoothbore-breathing-tubes-and-systems",
+      "date": "2026-11-10T05:00:00.000Z",
+      "category": "Regulatory / Policy",
+      "priority": false
+    },
+    {
+      "source": "FDA",
+      "tier": "regulator",
+      "title": "Early Alert: Arrow International Removes Products Containing Spring Wire Guide Components",
+      "link": "http://www.fda.gov/medical-devices/medical-device-recalls-and-early-alerts/early-alert-arrow-international-removes-products-containing-spring-wire-guide-components",
       "date": "2026-11-10T05:00:00.000Z",
       "category": "Regulatory / Policy",
       "priority": false
@@ -923,6 +1006,15 @@
       "priority": false
     },
     {
+      "source": "Pharmacoepidemiology & Drug Safety",
+      "tier": "journal",
+      "title": "Antiseizure Medication Dispensing Before and After Initiation of Antidementia Medicines: A Population‐Based Matched Cohort Study",
+      "link": "https://doi.org/10.1002/pds.70530",
+      "date": "2026-11-10T00:00:00.000Z",
+      "category": "Safety / PV",
+      "priority": false
+    },
+    {
       "source": "FDA",
       "tier": "regulator",
       "title": "FDA Approves First Factor Xla Inhibitor to Help Prevent Stroke in Certain Adults at High Risk",
@@ -938,6 +1030,15 @@
       "link": "https://www.thefdalawblog.com/2026/11/the-patient-ai-act-a-new-prescription-for-fda-software-review-or-more-of-the-same/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=the-patient-ai-act-a-new-prescription-for-fda-software-review-or-more-of-the-same",
       "date": "2026-11-08T22:24:04.000Z",
       "category": "Regulatory / Policy",
+      "priority": false
+    },
+    {
+      "source": "Pharmacoepidemiology & Drug Safety",
+      "tier": "journal",
+      "title": "Response to Gungor et al. Regarding Morishita et al., “Association of Quinolone Exposure in the First Trimester of Pregnancy and the Risk of Major Congenital Malformations: A Health Administrative Database Study in Japan”",
+      "link": "https://doi.org/10.1002/pds.70524",
+      "date": "2026-11-08T00:00:00.000Z",
+      "category": "Safety / PV",
       "priority": false
     },
     {
@@ -1004,6 +1105,33 @@
       "priority": false
     },
     {
+      "source": "Pharmacoepidemiology & Drug Safety",
+      "tier": "journal",
+      "title": "Monoclonal Antibody Dispensing Around Pregnancy: A Descriptive Analysis Using Electronic Health Records in Italy",
+      "link": "https://doi.org/10.1002/pds.70518",
+      "date": "2026-11-05T00:00:00.000Z",
+      "category": "Safety / PV",
+      "priority": false
+    },
+    {
+      "source": "Pharmacoepidemiology & Drug Safety",
+      "tier": "journal",
+      "title": "Validation of Diagnosis Code for Cardiogenic Shock in an Integrated Healthcare System",
+      "link": "https://doi.org/10.1002/pds.70525",
+      "date": "2026-11-05T00:00:00.000Z",
+      "category": "Safety / PV",
+      "priority": false
+    },
+    {
+      "source": "Therapeutic Advances in Drug Safety",
+      "tier": "journal",
+      "title": "Comparative ocular adverse events across immune checkpoint and targeted therapies in melanoma: A FAERS-based pharmacovigilance analysis",
+      "link": "https://doi.org/10.1177/20420986261505945",
+      "date": "2026-11-05T00:00:00.000Z",
+      "category": "Safety / PV",
+      "priority": false
+    },
+    {
       "source": "FDA Law Blog",
       "tier": "industry",
       "title": "A Day Late, A Buck Short: Or How to Lose PTE Without Really Trying",
@@ -1031,12 +1159,39 @@
       "priority": false
     },
     {
+      "source": "Therapeutic Advances in Drug Safety",
+      "tier": "journal",
+      "title": "Goserelin-triggered immune-mediated rhabdomyolysis in a patient receiving long-term rosuvastatin therapy: A case report",
+      "link": "https://doi.org/10.1177/20420986261506131",
+      "date": "2026-11-03T00:00:00.000Z",
+      "category": "Safety / PV",
+      "priority": false
+    },
+    {
       "source": "Federal Register (FDA)",
       "tier": "regulator",
       "title": "Infant Formula Nutrient Requirements",
       "link": "https://www.federalregister.gov/documents/2026/11/02/2026-22273/infant-formula-nutrient-requirements",
       "date": "2026-11-02T00:00:00.000Z",
       "category": "Regulatory / Policy",
+      "priority": false
+    },
+    {
+      "source": "Pharmacoepidemiology & Drug Safety",
+      "tier": "journal",
+      "title": "Index",
+      "link": "https://doi.org/10.1002/pds.70512",
+      "date": "2026-11-02T00:00:00.000Z",
+      "category": "Safety / PV",
+      "priority": false
+    },
+    {
+      "source": "Pharmacoepidemiology & Drug Safety",
+      "tier": "journal",
+      "title": "Issue Information",
+      "link": "https://doi.org/10.1002/pds.70498",
+      "date": "2026-11-02T00:00:00.000Z",
+      "category": "Safety / PV",
       "priority": false
     },
     {
@@ -1085,6 +1240,15 @@
       "priority": false
     },
     {
+      "source": "Therapeutic Advances in Drug Safety",
+      "tier": "journal",
+      "title": "Medication knowledge in psychiatric day hospital patients: The role of polypharmacy",
+      "link": "https://doi.org/10.1177/20420986261496193",
+      "date": "2026-10-28T00:00:00.000Z",
+      "category": "Safety / PV",
+      "priority": false
+    },
+    {
       "source": "Drug Safety",
       "tier": "journal",
       "title": "Acknowledgement to Referees",
@@ -1121,6 +1285,24 @@
       "priority": false
     },
     {
+      "source": "Therapeutic Advances in Drug Safety",
+      "tier": "journal",
+      "title": "Using a control plan for artificial intelligence and machine learning monitoring within pharmacovigilance",
+      "link": "https://doi.org/10.1177/20420986261492818",
+      "date": "2026-10-21T00:00:00.000Z",
+      "category": "Safety / PV",
+      "priority": false
+    },
+    {
+      "source": "Therapeutic Advances in Drug Safety",
+      "tier": "journal",
+      "title": "Specialist teleconsultation and changes in potentially inappropriate medication regimens among older adults in primary care: The AMELIORATION retrospective cohort study",
+      "link": "https://doi.org/10.1177/20420986261484293",
+      "date": "2026-10-21T00:00:00.000Z",
+      "category": "Safety / PV",
+      "priority": false
+    },
+    {
       "source": "Drug Safety",
       "tier": "journal",
       "title": "Strengthening Signal Detection by Proactive Adverse Event Case Identification in Electronic Health Records Using a Text-Mining Tool",
@@ -1144,6 +1326,96 @@
       "title": "Current Pharmacovigilance Outsourcing Practices in Arab Countries",
       "link": "https://doi.org/10.1007/s40264-026-01734-x",
       "date": "2026-10-14T00:00:00.000Z",
+      "category": "Safety / PV",
+      "priority": false
+    },
+    {
+      "source": "Therapeutic Advances in Drug Safety",
+      "tier": "journal",
+      "title": "Multisystem adverse drug events of low-dose tirzepatide in a normal - Weight individual: A case report and literature review",
+      "link": "https://doi.org/10.1177/20420986261492895",
+      "date": "2026-10-03T00:00:00.000Z",
+      "category": "Safety / PV",
+      "priority": false
+    },
+    {
+      "source": "Therapeutic Advances in Drug Safety",
+      "tier": "journal",
+      "title": "Comparative pharmacovigilance of glycaemic adverse-event reporting for alpelisib and capivasertib: A disproportionality analysis of the FDA adverse event monitoring system",
+      "link": "https://doi.org/10.1177/20420986261492821",
+      "date": "2026-09-30T00:00:00.000Z",
+      "category": "Safety / PV",
+      "priority": false
+    },
+    {
+      "source": "Therapeutic Advances in Drug Safety",
+      "tier": "journal",
+      "title": "Risk of Clostridioides difficile infection with potassium-competitive acid blockers: A systematic review with restricted quantitative synthesis",
+      "link": "https://doi.org/10.1177/20420986261492840",
+      "date": "2026-09-28T00:00:00.000Z",
+      "category": "Safety / PV",
+      "priority": false
+    },
+    {
+      "source": "Therapeutic Advances in Drug Safety",
+      "tier": "journal",
+      "title": "Comment on “Machine learning studies of drug-induced nephrotoxicity: A scoping review”. The missing role of causality",
+      "link": "https://doi.org/10.1177/20420986261492884",
+      "date": "2026-09-24T00:00:00.000Z",
+      "category": "Safety / PV",
+      "priority": false
+    },
+    {
+      "source": "Therapeutic Advances in Drug Safety",
+      "tier": "journal",
+      "title": "Safety-guided selection of CDK4/6 inhibitors in HR+/HER2− metastatic breast cancer: toxicity profiles, dose modification, and clinical risk–benefit considerations",
+      "link": "https://doi.org/10.1177/20420986261454205",
+      "date": "2026-09-16T00:00:00.000Z",
+      "category": "Safety / PV",
+      "priority": false
+    },
+    {
+      "source": "Therapeutic Advances in Drug Safety",
+      "tier": "journal",
+      "title": "Transient monocular vertical hemifield loss as a rare acute oxaliplatin-induced ophthalmological side effect: a case report and review of the literature",
+      "link": "https://doi.org/10.1177/20420986261467894",
+      "date": "2026-09-01T00:00:00.000Z",
+      "category": "Safety / PV",
+      "priority": false
+    },
+    {
+      "source": "Therapeutic Advances in Drug Safety",
+      "tier": "journal",
+      "title": "Evaluation of digoxin dosing and therapeutic drug monitoring in adult patients receiving continuous venovenous hemodiafiltration",
+      "link": "https://doi.org/10.1177/20420986261481989",
+      "date": "2026-09-01T00:00:00.000Z",
+      "category": "Safety / PV",
+      "priority": false
+    },
+    {
+      "source": "Therapeutic Advances in Drug Safety",
+      "tier": "journal",
+      "title": "An assessment of medication errors and associated factors to strengthen patient safety practices in a tertiary hospital in Cameroon",
+      "link": "https://doi.org/10.1177/20420986261477866",
+      "date": "2026-08-21T00:00:00.000Z",
+      "category": "Safety / PV",
+      "priority": false
+    },
+    {
+      "source": "Therapeutic Advances in Drug Safety",
+      "tier": "journal",
+      "title": "Factors associated with medication administration errors in hospitalized pediatric patients: A scoping review",
+      "link": "https://doi.org/10.1177/20420986261478390",
+      "date": "2026-08-21T00:00:00.000Z",
+      "category": "Safety / PV",
+      "priority": false
+    },
+    {
+      "source": "Therapeutic Advances in Drug Safety",
+      "tier": "journal",
+      "title": "Post-marketing safety signals and report-level ARIA-E stratification for lecanemab and donanemab: an integrated FAERS and WHO-VigiAccess pharmacovigilance study",
+      "link": "https://doi.org/10.1177/20420986261473013",
+      "date": "2026-08-18T00:00:00.000Z",
       "category": "Safety / PV",
       "priority": false
     }
