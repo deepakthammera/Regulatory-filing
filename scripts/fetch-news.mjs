@@ -12,6 +12,8 @@ import { writeFileSync } from "node:fs";
 // Each source lists one or more feed URLs. If one URL fails, the others still run.
 // Optional fields:
 //   type: "crossref"   -> feeds are Crossref REST API URLs (JSON), used for journals
+//   type: "federalregister" -> feeds are Federal Register API URLs (JSON)
+//   exclude            -> regular expression; items whose title matches are skipped
 //   defaultCategory    -> category to use when no keyword rule matches (instead of "General")
 //   category           -> fixed category for every item (skips keyword rules; used for journals)
 // NOTES (check the "[Source] ..." lines in the Actions log when a source goes quiet):
@@ -35,6 +37,18 @@ const SOURCES = [
   { source: "EMA", tier: "regulator", defaultCategory: "Regulatory / Policy", feeds: [
     "https://www.ema.europa.eu/en/news.xml"
   ]},
+  // FDA guidances, notices, proposed and final rules as published in the Federal Register.
+  // Routine paperwork-burden notices are skipped so substantive documents are not crowded out.
+  { source: "Federal Register (FDA)", tier: "regulator", type: "federalregister", defaultCategory: "Regulatory / Policy",
+    exclude: /^(Agency Information Collection Activities|Submission for Office of Management and Budget Review)/i,
+    feeds: [
+      "https://www.federalregister.gov/api/v1/documents.json?conditions%5Bagencies%5D%5B%5D=food-and-drug-administration&order=newest&per_page=50&fields%5B%5D=title&fields%5B%5D=html_url&fields%5B%5D=publication_date"
+  ]},
+  // Hyman, Phelps & McNamara's FDA Law Blog: expert commentary on FDA law, guidance and enforcement.
+  { source: "FDA Law Blog", tier: "industry", defaultCategory: "Regulatory / Policy", feeds: [
+    "https://www.thefdalawblog.com/feed/",
+    "https://www.fdalawblog.net/feed/"
+  ]},
   { source: "BioSpace", tier: "industry", feeds: [
     "https://www.biospace.com/all-news.rss",
     "https://www.biospace.com/fda.rss",
@@ -44,6 +58,9 @@ const SOURCES = [
   ]},
   { source: "Fierce Pharma", tier: "industry", feeds: [
     "https://www.fiercepharma.com/rss/xml"
+  ]},
+  { source: "Fierce Biotech", tier: "industry", feeds: [
+    "https://www.fiercebiotech.com/rss/xml"
   ]},
   { source: "BioPharma Dive", tier: "industry", feeds: [
     "https://www.biopharmadive.com/feeds/news/",
@@ -58,7 +75,7 @@ const SOURCES = [
 ];
 
 const MAX_PER_SOURCE = 15;
-const MAX_TOTAL = 160;
+const MAX_TOTAL = 200;
 const MAX_AGE_DAYS = 150;
 const TIMEOUT_MS = 20000;
 
@@ -181,6 +198,13 @@ function parseCrossref(text) {
   }).filter((it) => it.title && it.link);
 }
 
+// Federal Register API (JSON) -> same {title, link, date} shape as parseItems().
+function parseFederalRegister(text) {
+  const results = JSON.parse(text).results || [];
+  return results.map((d) => ({ title: clean(d.title || ""), link: d.html_url || "", date: d.publication_date || "" }))
+    .filter((it) => it.title && it.link);
+}
+
 async function fetchText(url) {
   const ctrl = new AbortController();
   const t = setTimeout(() => ctrl.abort(), TIMEOUT_MS);
@@ -230,7 +254,9 @@ async function run() {
     for (const url of src.feeds) {
       try {
         const text = await fetchText(url);
-        const parsed = src.type === "crossref" ? parseCrossref(text) : parseItems(text);
+        const parsed = (src.type === "crossref" ? parseCrossref(text)
+          : src.type === "federalregister" ? parseFederalRegister(text)
+          : parseItems(text)).filter((it) => !src.exclude || !src.exclude.test(it.title));
         const items = parsed.map((it) => {
           const { priority, category } = classify(it.title, src);
           return {
@@ -263,11 +289,15 @@ async function run() {
     all.push(...collected);
   }
 
-  all.sort((a, b) => {
+  // The same article can appear under two sources (e.g., Fierce Pharma and Fierce Biotech):
+  // keep the first (sources are listed in priority order).
+  const seenAll = new Set();
+  const unique = all.filter((it) => !seenAll.has(it.link) && seenAll.add(it.link));
+  unique.sort((a, b) => {
     if (a.priority !== b.priority) return a.priority ? -1 : 1;
     return new Date(b.date || 0) - new Date(a.date || 0);
   });
-  const items = all.slice(0, MAX_TOTAL);
+  const items = unique.slice(0, MAX_TOTAL);
 
   const payload = {
     generated: new Date().toISOString(),

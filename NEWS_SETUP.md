@@ -3,7 +3,7 @@
 Your app has a **News & Updates** section (top of the sidebar) with two entries:
 
 - **★ PV Updates & News** (Latest): a curated, hand-written page explaining new guidelines (e.g., ICH E2D(R1), MedDRA releases) and regulator safety actions. It is static content in `index.html` (the `view-pvupdates` section) and is **not** touched by the daily job.
-- **◆ Regulatory & PV News** (Daily Feed): headlines from **regulators** (FDA MedWatch safety alerts and press releases, EMA news), **industry news** (BioSpace, Fierce Pharma, BioPharma Dive, RAPS Regulatory Focus) and new articles in the journal ***Drug Safety*** (via the Crossref API), refreshed automatically every day. It shows only headlines, source, date, and a link to each original article.
+- **◆ Regulatory & PV News** (Daily Feed): headlines from **regulators** (FDA MedWatch safety alerts and press releases, EMA news, and FDA documents published in the **Federal Register**), **expert commentary** (FDA Law Blog), **industry news** (BioSpace, Fierce Pharma, Fierce Biotech, BioPharma Dive, RAPS Regulatory Focus) and new articles in the journal ***Drug Safety*** (via the Crossref API), refreshed automatically every day. It shows only headlines, source, date, and a link to each original article.
 
 This document covers the daily feed.
 
@@ -39,7 +39,7 @@ That's it. After the run finishes, open your site's **Regulatory & PV News** sec
 
 - The workflow runs **every day at 06:17 UTC** (`cron: "17 6 * * *"`). Change that line in the workflow if you want a different time; GitHub may start scheduled runs some minutes late, and runs at the top of the hour are delayed most.
 - A commit (`chore: daily news update (YYYY-MM-DD)`) is made only when `news.json` actually changed, so there is at most one commit per day.
-- It fetches each source's feed, keeps the newest items (headline + date + link only; up to 15 per source and 160 in total), de-duplicates, drops items older than ~150 days, tags each item with a category (e.g., Safety / PV, Approval) and a ⚑ priority flag for urgent safety news (not applied to journal articles), and writes `news.json`. Items with a future date are shown with the run date instead.
+- It fetches each source's feed, keeps the newest items (headline + date + link only; up to 15 per source and 200 in total), de-duplicates, drops items older than ~150 days, tags each item with a category (e.g., Safety / PV, Approval) and a ⚑ priority flag for urgent safety news (not applied to journal articles), and writes `news.json`. Items with a future date are shown with the run date instead.
 - If **every** source fails on a given run, the script exits without overwriting your existing `news.json`, so the page never goes blank.
 
 ## Good to know
@@ -57,6 +57,8 @@ Edit the `SOURCES` array in `scripts/fetch-news.mjs`. To add, e.g., Health Canad
 { source: "Health Canada", tier: "regulator", defaultCategory: "Safety / PV", feeds: ["https://<official-feed-url>"] }
 ```
 - `defaultCategory` (optional) is used when no keyword rule matches, instead of "General".
+- `exclude` (optional) is a regular expression; items whose title matches are skipped (used to drop routine Federal Register paperwork notices).
+- `type: "federalregister"` reads the Federal Register API (JSON); see the *Federal Register (FDA)* entry.
 - For a journal without a working RSS feed, use `type: "crossref"` with a Crossref API URL, e.g. `https://api.crossref.org/journals/<ISSN>/works?sort=published&order=desc&rows=30&filter=type:journal-article&select=title,URL,published,published-online,created` (see the *Drug Safety* entry).
 
 **Sources tried and dropped** (see the notes at the top of `SOURCES`): Endpoints News (HTTP 403 to automated requests), Springer RSS for *Drug Safety* (returns no items; replaced by Crossref), FDA "drugs" page feed (mostly page edits with misleading dates), MHRA (removed by choice: mostly device field-safety notices; the script comments show how to restore it), and WHO / Health Canada / TGA feeds (returned nothing from GitHub Actions runners).
