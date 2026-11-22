@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-22T06:31:08.644Z",
+  "generated": "2026-11-22T06:31:43.522Z",
   "sources": [
     "FDA",
     "EMA",
@@ -84,15 +84,6 @@
       "date": "2026-10-30T11:11:00.000Z",
       "category": "Safety / PV",
       "priority": true
-    },
-    {
-      "source": "Federal Register (FDA)",
-      "tier": "regulator",
-      "title": "Tobacco Products Scientific Advisory Committee; Notice of Meeting; Establishment of a Public Docket; Request for Comments",
-      "link": "https://www.federalregister.gov/documents/2026/11/23/2026-23750/tobacco-products-scientific-advisory-committee-notice-of-meeting-establishment-of-a-public-docket",
-      "date": "2026-11-22T06:31:05.412Z",
-      "category": "Approval",
-      "priority": false
     },
     {
       "source": "BioPharma Dive",
@@ -430,8 +421,8 @@
     {
       "source": "FDA",
       "tier": "regulator",
-      "title": "Early Alert: Outset Medical Updates Use Instructions for the Tablo Console and the TabloCart with Prefiltration Drawer",
-      "link": "http://www.fda.gov/medical-devices/medical-device-recalls-and-early-alerts/early-alert-outset-medical-updates-use-instructions-tablo-console-and-tablocart-prefiltration-drawer",
+      "title": "Early Alert: B. Braun Medical Inc. Updates Use Instructions for Caresite Micro Luer Access Device",
+      "link": "http://www.fda.gov/medical-devices/medical-device-recalls-and-early-alerts/early-alert-b-braun-medical-inc-updates-use-instructions-caresite-micro-luer-access-device",
       "date": "2026-11-19T05:00:00.000Z",
       "category": "Regulatory / Policy",
       "priority": false
@@ -448,8 +439,8 @@
     {
       "source": "FDA",
       "tier": "regulator",
-      "title": "Early Alert: B. Braun Medical Inc. Updates Use Instructions for Caresite Micro Luer Access Device",
-      "link": "http://www.fda.gov/medical-devices/medical-device-recalls-and-early-alerts/early-alert-b-braun-medical-inc-updates-use-instructions-caresite-micro-luer-access-device",
+      "title": "Early Alert: Outset Medical Updates Use Instructions for the Tablo Console and the TabloCart with Prefiltration Drawer",
+      "link": "http://www.fda.gov/medical-devices/medical-device-recalls-and-early-alerts/early-alert-outset-medical-updates-use-instructions-tablo-console-and-tablocart-prefiltration-drawer",
       "date": "2026-11-19T05:00:00.000Z",
       "category": "Regulatory / Policy",
       "priority": false
@@ -797,15 +788,6 @@
       "priority": false
     },
     {
-      "source": "Federal Register (FDA)",
-      "tier": "regulator",
-      "title": "Rulemaking To Provide That N-acetyl-L-cysteine Is Not Excluded From the Dietary Supplement Definition",
-      "link": "https://www.federalregister.gov/documents/2026/11/17/2026-23351/rulemaking-to-provide-that-n-acetyl-l-cysteine-is-not-excluded-from-the-dietary-supplement",
-      "date": "2026-11-17T00:00:00.000Z",
-      "category": "Regulatory / Policy",
-      "priority": false
-    },
-    {
       "source": "RAPS",
       "tier": "industry",
       "title": "New FDA MAPP sheds light on clinical pharmacology reviews",
@@ -839,15 +821,6 @@
       "link": "https://www.ema.europa.eu/en/news/meeting-highlights-committee-medicinal-products-human-use-chmp-9-12-november-2026",
       "date": "2026-11-13T11:00:00.000Z",
       "category": "Approval",
-      "priority": false
-    },
-    {
-      "source": "Federal Register (FDA)",
-      "tier": "regulator",
-      "title": "Revocation of the Color Additive Listing for Use of Orange B on Casings or Surfaces of Frankfurters and Sausages; Confirmation of Effective Date",
-      "link": "https://www.federalregister.gov/documents/2026/11/13/2026-23112/revocation-of-the-color-additive-listing-for-use-of-orange-b-on-casings-or-surfaces-of-frankfurters",
-      "date": "2026-11-13T00:00:00.000Z",
-      "category": "Regulatory / Policy",
       "priority": false
     },
     {
@@ -898,8 +871,8 @@
     {
       "source": "FDA",
       "tier": "regulator",
-      "title": "Early Alert: Intersurgical Inc. Removes 22mm Smoothbore breathing tubes and systems",
-      "link": "http://www.fda.gov/medical-devices/medical-device-recalls-and-early-alerts/early-alert-intersurgical-inc-removes-22mm-smoothbore-breathing-tubes-and-systems",
+      "title": "Early Alert: Arrow International Removes Products Containing Spring Wire Guide Components",
+      "link": "http://www.fda.gov/medical-devices/medical-device-recalls-and-early-alerts/early-alert-arrow-international-removes-products-containing-spring-wire-guide-components",
       "date": "2026-11-10T05:00:00.000Z",
       "category": "Regulatory / Policy",
       "priority": false
@@ -907,8 +880,8 @@
     {
       "source": "FDA",
       "tier": "regulator",
-      "title": "Early Alert: Arrow International Removes Products Containing Spring Wire Guide Components",
-      "link": "http://www.fda.gov/medical-devices/medical-device-recalls-and-early-alerts/early-alert-arrow-international-removes-products-containing-spring-wire-guide-components",
+      "title": "Early Alert: Intersurgical Inc. Removes 22mm Smoothbore breathing tubes and systems",
+      "link": "http://www.fda.gov/medical-devices/medical-device-recalls-and-early-alerts/early-alert-intersurgical-inc-removes-22mm-smoothbore-breathing-tubes-and-systems",
       "date": "2026-11-10T05:00:00.000Z",
       "category": "Regulatory / Policy",
       "priority": false
@@ -927,24 +900,6 @@
       "tier": "regulator",
       "title": "Validation of Certain In Vitro Diagnostic Devices for Emerging Pathogens During a Section 564 Declared Emergency; Guidance for Industry and Food and Drug Administration Staff; Availability",
       "link": "https://www.federalregister.gov/documents/2026/11/10/2026-22883/validation-of-certain-in-vitro-diagnostic-devices-for-emerging-pathogens-during-a-section-564",
-      "date": "2026-11-10T00:00:00.000Z",
-      "category": "Regulatory / Policy",
-      "priority": false
-    },
-    {
-      "source": "Federal Register (FDA)",
-      "tier": "regulator",
-      "title": "Color Additive Petition From the International Association of Color Manufacturers; Request To Amend the Color Additive Regulations To Remove the Solvents Methylene Chloride, Trichloroethylene, and Ethylene Dichloride",
-      "link": "https://www.federalregister.gov/documents/2026/11/10/2026-22866/color-additive-petition-from-the-international-association-of-color-manufacturers-request-to-amend",
-      "date": "2026-11-10T00:00:00.000Z",
-      "category": "Regulatory / Policy",
-      "priority": false
-    },
-    {
-      "source": "Federal Register (FDA)",
-      "tier": "regulator",
-      "title": "Color Additive Petition From Environmental Defense Fund et al.; Request To Amend the Color Additive Regulations To Remove the Solvents Ethylene Dichloride, Methylene Chloride, and Trichloroethylene",
-      "link": "https://www.federalregister.gov/documents/2026/11/10/2026-22865/color-additive-petition-from-environmental-defense-fund-et-al-request-to-amend-the-color-additive",
       "date": "2026-11-10T00:00:00.000Z",
       "category": "Regulatory / Policy",
       "priority": false
@@ -1006,15 +961,6 @@
     {
       "source": "Federal Register (FDA)",
       "tier": "regulator",
-      "title": "Food Additive Petitions; Change of Address",
-      "link": "https://www.federalregister.gov/documents/2026/11/06/2026-22663/food-additive-petitions-change-of-address",
-      "date": "2026-11-06T00:00:00.000Z",
-      "category": "Regulatory / Policy",
-      "priority": false
-    },
-    {
-      "source": "Federal Register (FDA)",
-      "tier": "regulator",
       "title": "Medical Devices; Ear, Nose, and Throat Devices; Classification of the External Mechanical Stimulator for the Relief of Congestion",
       "link": "https://www.federalregister.gov/documents/2026/11/06/2026-22657/medical-devices-ear-nose-and-throat-devices-classification-of-the-external-mechanical-stimulator-for",
       "date": "2026-11-06T00:00:00.000Z",
@@ -1040,11 +986,65 @@
       "priority": false
     },
     {
+      "source": "Federal Register (FDA)",
+      "tier": "regulator",
+      "title": "Medical Devices; Neurological Devices; Classification of the Prognostic Assessment Software of Mild Cognitive Impairment",
+      "link": "https://www.federalregister.gov/documents/2026/11/05/2026-22590/medical-devices-neurological-devices-classification-of-the-prognostic-assessment-software-of-mild",
+      "date": "2026-11-05T00:00:00.000Z",
+      "category": "Regulatory / Policy",
+      "priority": false
+    },
+    {
+      "source": "Federal Register (FDA)",
+      "tier": "regulator",
+      "title": "Medical Devices; Orthopedic Devices; Classification of the Wearable Vibration Device for Orthopedic Use",
+      "link": "https://www.federalregister.gov/documents/2026/11/05/2026-22589/medical-devices-orthopedic-devices-classification-of-the-wearable-vibration-device-for-orthopedic",
+      "date": "2026-11-05T00:00:00.000Z",
+      "category": "Regulatory / Policy",
+      "priority": false
+    },
+    {
       "source": "FDA Law Blog",
       "tier": "industry",
       "title": "A Day Late, A Buck Short: Or How to Lose PTE Without Really Trying",
       "link": "https://www.thefdalawblog.com/2026/11/a-day-late-a-buck-short-or-how-to-lose-pte-without-really-trying/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=a-day-late-a-buck-short-or-how-to-lose-pte-without-really-trying",
       "date": "2026-11-03T03:37:14.000Z",
+      "category": "Regulatory / Policy",
+      "priority": false
+    },
+    {
+      "source": "Federal Register (FDA)",
+      "tier": "regulator",
+      "title": "Potency Assurance for Cellular and Gene Therapy Products; Guidance for Industry; Availability",
+      "link": "https://www.federalregister.gov/documents/2026/11/03/2026-22427/potency-assurance-for-cellular-and-gene-therapy-products-guidance-for-industry-availability",
+      "date": "2026-11-03T00:00:00.000Z",
+      "category": "Regulatory / Policy",
+      "priority": false
+    },
+    {
+      "source": "Federal Register (FDA)",
+      "tier": "regulator",
+      "title": "Recommendations for Reducing the Risk of Transfusion-Transmitted Hepatitis B Virus; Guidance for Industry; Availability",
+      "link": "https://www.federalregister.gov/documents/2026/11/03/2026-22369/recommendations-for-reducing-the-risk-of-transfusion-transmitted-hepatitis-b-virus-guidance-for",
+      "date": "2026-11-03T00:00:00.000Z",
+      "category": "Regulatory / Policy",
+      "priority": false
+    },
+    {
+      "source": "Federal Register (FDA)",
+      "tier": "regulator",
+      "title": "Infant Formula Nutrient Requirements",
+      "link": "https://www.federalregister.gov/documents/2026/11/02/2026-22273/infant-formula-nutrient-requirements",
+      "date": "2026-11-02T00:00:00.000Z",
+      "category": "Regulatory / Policy",
+      "priority": false
+    },
+    {
+      "source": "Federal Register (FDA)",
+      "tier": "regulator",
+      "title": "Essential Drug Delivery Performance Characteristics for Devices Intended To Deliver Drugs and Biological Products; Revised Draft Guidance for Industry; Availability",
+      "link": "https://www.federalregister.gov/documents/2026/10/30/2026-22203/essential-drug-delivery-performance-characteristics-for-devices-intended-to-deliver-drugs-and",
+      "date": "2026-10-30T00:00:00.000Z",
       "category": "Regulatory / Policy",
       "priority": false
     },
