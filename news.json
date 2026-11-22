@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-22T06:34:21.984Z",
+  "generated": "2026-11-22T06:34:52.879Z",
   "sources": [
     "FDA",
     "EMA",
@@ -423,8 +423,8 @@
     {
       "source": "FDA",
       "tier": "regulator",
-      "title": "Early Alert: Outset Medical Updates Use Instructions for the Tablo Console and the TabloCart with Prefiltration Drawer",
-      "link": "http://www.fda.gov/medical-devices/medical-device-recalls-and-early-alerts/early-alert-outset-medical-updates-use-instructions-tablo-console-and-tablocart-prefiltration-drawer",
+      "title": "Early Alert: B. Braun Medical Inc. Updates Use Instructions for Caresite Micro Luer Access Device",
+      "link": "http://www.fda.gov/medical-devices/medical-device-recalls-and-early-alerts/early-alert-b-braun-medical-inc-updates-use-instructions-caresite-micro-luer-access-device",
       "date": "2026-11-19T05:00:00.000Z",
       "category": "Regulatory / Policy",
       "priority": false
@@ -441,8 +441,8 @@
     {
       "source": "FDA",
       "tier": "regulator",
-      "title": "Early Alert: B. Braun Medical Inc. Updates Use Instructions for Caresite Micro Luer Access Device",
-      "link": "http://www.fda.gov/medical-devices/medical-device-recalls-and-early-alerts/early-alert-b-braun-medical-inc-updates-use-instructions-caresite-micro-luer-access-device",
+      "title": "Early Alert: Outset Medical Updates Use Instructions for the Tablo Console and the TabloCart with Prefiltration Drawer",
+      "link": "http://www.fda.gov/medical-devices/medical-device-recalls-and-early-alerts/early-alert-outset-medical-updates-use-instructions-tablo-console-and-tablocart-prefiltration-drawer",
       "date": "2026-11-19T05:00:00.000Z",
       "category": "Regulatory / Policy",
       "priority": false
@@ -765,15 +765,6 @@
     {
       "source": "Pharmacoepidemiology & Drug Safety",
       "tier": "journal",
-      "title": "Issue Information",
-      "link": "https://doi.org/10.1002/pds.70292",
-      "date": "2026-11-18T00:00:00.000Z",
-      "category": "Safety / PV",
-      "priority": false
-    },
-    {
-      "source": "Pharmacoepidemiology & Drug Safety",
-      "tier": "journal",
       "title": "Antidepressants and Pregnancy: Mixed Conclusions or an Ostrich Policy?",
       "link": "https://doi.org/10.1002/pds.70520",
       "date": "2026-11-18T00:00:00.000Z",
@@ -954,8 +945,8 @@
     {
       "source": "FDA",
       "tier": "regulator",
-      "title": "Early Alert: Intersurgical Inc. Removes 22mm Smoothbore breathing tubes and systems",
-      "link": "http://www.fda.gov/medical-devices/medical-device-recalls-and-early-alerts/early-alert-intersurgical-inc-removes-22mm-smoothbore-breathing-tubes-and-systems",
+      "title": "Early Alert: Arrow International Removes Products Containing Spring Wire Guide Components",
+      "link": "http://www.fda.gov/medical-devices/medical-device-recalls-and-early-alerts/early-alert-arrow-international-removes-products-containing-spring-wire-guide-components",
       "date": "2026-11-10T05:00:00.000Z",
       "category": "Regulatory / Policy",
       "priority": false
@@ -963,8 +954,8 @@
     {
       "source": "FDA",
       "tier": "regulator",
-      "title": "Early Alert: Arrow International Removes Products Containing Spring Wire Guide Components",
-      "link": "http://www.fda.gov/medical-devices/medical-device-recalls-and-early-alerts/early-alert-arrow-international-removes-products-containing-spring-wire-guide-components",
+      "title": "Early Alert: Intersurgical Inc. Removes 22mm Smoothbore breathing tubes and systems",
+      "link": "http://www.fda.gov/medical-devices/medical-device-recalls-and-early-alerts/early-alert-intersurgical-inc-removes-22mm-smoothbore-breathing-tubes-and-systems",
       "date": "2026-11-10T05:00:00.000Z",
       "category": "Regulatory / Policy",
       "priority": false
@@ -1188,8 +1179,8 @@
     {
       "source": "Pharmacoepidemiology & Drug Safety",
       "tier": "journal",
-      "title": "Issue Information",
-      "link": "https://doi.org/10.1002/pds.70498",
+      "title": "Abstract‐RWE Conference 2026",
+      "link": "https://doi.org/10.1002/pds.70499",
       "date": "2026-11-02T00:00:00.000Z",
       "category": "Safety / PV",
       "priority": false
@@ -1208,6 +1199,15 @@
       "tier": "journal",
       "title": "Understanding the Relationship between Causality Assessment and Drug Labeling Practices: An Evaluation of US Regulations and FDA Policy Documents",
       "link": "https://doi.org/10.1007/s40264-026-01710-5",
+      "date": "2026-10-30T00:00:00.000Z",
+      "category": "Safety / PV",
+      "priority": false
+    },
+    {
+      "source": "Pharmacoepidemiology & Drug Safety",
+      "tier": "journal",
+      "title": "Janus Kinase Inhibitor Use Among People With Inflammatory Disease in Australia",
+      "link": "https://doi.org/10.1002/pds.70503",
       "date": "2026-10-30T00:00:00.000Z",
       "category": "Safety / PV",
       "priority": false
