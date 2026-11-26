@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-25T17:12:00.452Z",
+  "generated": "2026-11-26T16:52:41.424Z",
   "sources": [
     "FDA",
     "EMA",
@@ -32,6 +32,15 @@
       "date": "2026-10-30T11:11:00.000Z",
       "category": "Safety / PV",
       "priority": true
+    },
+    {
+      "source": "Federal Register (FDA)",
+      "tier": "regulator",
+      "title": "Individualized Human Genome Editing Products: Considerations for BLA Submission and Postapproval Management; Draft Guidance for Industry; Extension of Comment Period",
+      "link": "https://www.federalregister.gov/documents/2026/11/27/2026-24021/individualized-human-genome-editing-products-considerations-for-bla-submission-and-postapproval",
+      "date": "2026-11-26T16:52:37.281Z",
+      "category": "Approval",
+      "priority": false
     },
     {
       "source": "BioPharma Dive",
@@ -153,6 +162,15 @@
     {
       "source": "FDA",
       "tier": "regulator",
+      "title": "Insulin Pump Recall: Tandem Diabetes Removes Tandem Mobi Insulin Pumps",
+      "link": "http://www.fda.gov/medical-devices/medical-device-recalls-and-early-alerts/insulin-pump-recall-tandem-diabetes-removes-tandem-mobi-insulin-pumps",
+      "date": "2026-11-25T05:00:00.000Z",
+      "category": "Safety / PV",
+      "priority": false
+    },
+    {
+      "source": "FDA",
+      "tier": "regulator",
       "title": "Early Alert: ICU Medical Removes Portex Endotracheal Tubes",
       "link": "http://www.fda.gov/medical-devices/medical-device-recalls-and-early-alerts/early-alert-icu-medical-removes-portex-endotracheal-tubes",
       "date": "2026-11-25T05:00:00.000Z",
@@ -232,6 +250,15 @@
       "priority": false
     },
     {
+      "source": "RAPS",
+      "tier": "industry",
+      "title": "Janssen again cited by FDA for making claims unsupported by clinical studies",
+      "link": "https://www.raps.org/resource/janssen-again-cited-by-fda-for-making-claims-unsupported-by-clinical-studies.html",
+      "date": "2026-11-25T00:00:00.000Z",
+      "category": "Regulatory / Policy",
+      "priority": false
+    },
+    {
       "source": "Drug Safety",
       "tier": "journal",
       "title": "In Memoriam Jürgen Beckmann: Honorary Member of the International Society of Pharmacovigilance (ISoP)",
@@ -243,8 +270,26 @@
     {
       "source": "Drug Safety",
       "tier": "journal",
+      "title": "AskDrugTox: A Multi-agent System for Automated Drug Safety Classification Based on FDA-Approved Drug Labeling",
+      "link": "https://doi.org/10.1007/s40264-026-01754-7",
+      "date": "2026-11-25T00:00:00.000Z",
+      "category": "Safety / PV",
+      "priority": false
+    },
+    {
+      "source": "Drug Safety",
+      "tier": "journal",
       "title": "Real-World Occurrence of Early-Onset Pulmonary Events in Patients with Advanced Anaplastic Lymphoma Kinase-Positive (ALK+) Non-small Cell Lung Cancer Treated with Brigatinib: A Post-Authorization Safety Study",
       "link": "https://doi.org/10.1007/s40264-026-01745-8",
+      "date": "2026-11-25T00:00:00.000Z",
+      "category": "Safety / PV",
+      "priority": false
+    },
+    {
+      "source": "Therapeutic Advances in Drug Safety",
+      "tier": "journal",
+      "title": "Recovery profiles and safety of remimazolam compared with propofol and sevoflurane for general anaesthesia in paediatric patients undergoing laparoscopic day-case surgery: A randomised controlled trial",
+      "link": "https://doi.org/10.1177/20420986261510924",
       "date": "2026-11-25T00:00:00.000Z",
       "category": "Safety / PV",
       "priority": false
@@ -808,15 +853,6 @@
       "priority": false
     },
     {
-      "source": "RAPS",
-      "tier": "industry",
-      "title": "This Week at FDA: Overton nomination pulled, FDA promotes international reliance, and more",
-      "link": "https://www.raps.org/resource/this-week-at-fda-overton-nomination-pulled-fda-promotes-international-reliance-and-more.html",
-      "date": "2026-11-20T00:00:00.000Z",
-      "category": "Regulatory / Policy",
-      "priority": false
-    },
-    {
       "source": "FDA",
       "tier": "regulator",
       "title": "Early Alert: B. Braun Medical Inc. Updates Use Instructions for Caresite Micro Luer Access Device",
@@ -922,15 +958,6 @@
       "link": "https://doi.org/10.1002/pds.70519",
       "date": "2026-11-18T00:00:00.000Z",
       "category": "Safety / PV",
-      "priority": false
-    },
-    {
-      "source": "FDA",
-      "tier": "regulator",
-      "title": "FDA Launches the Global Reliance Disclosure Program to Expand Patient Access to Medicines Worldwide",
-      "link": "http://www.fda.gov/news-events/press-announcements/fda-launches-global-reliance-disclosure-program-expand-patient-access-medicines-worldwide",
-      "date": "2026-11-17T20:32:16.000Z",
-      "category": "Regulatory / Policy",
       "priority": false
     },
     {
@@ -1231,15 +1258,6 @@
       "priority": false
     },
     {
-      "source": "Federal Register (FDA)",
-      "tier": "regulator",
-      "title": "Infant Formula Nutrient Requirements",
-      "link": "https://www.federalregister.gov/documents/2026/11/02/2026-22273/infant-formula-nutrient-requirements",
-      "date": "2026-11-02T00:00:00.000Z",
-      "category": "Regulatory / Policy",
-      "priority": false
-    },
-    {
       "source": "Pharmacoepidemiology & Drug Safety",
       "tier": "journal",
       "title": "Index",
@@ -1299,15 +1317,6 @@
       "title": "Acknowledgement to Referees",
       "link": "https://doi.org/10.1007/s40264-026-01744-9",
       "date": "2026-10-25T00:00:00.000Z",
-      "category": "Safety / PV",
-      "priority": false
-    },
-    {
-      "source": "Drug Safety",
-      "tier": "journal",
-      "title": "Toward a Framework for Case Identification in Pharmacovigilance: Not All Reports are Created Equal",
-      "link": "https://doi.org/10.1007/s40264-026-01743-w",
-      "date": "2026-10-23T00:00:00.000Z",
       "category": "Safety / PV",
       "priority": false
     },
@@ -1397,15 +1406,6 @@
       "tier": "journal",
       "title": "An assessment of medication errors and associated factors to strengthen patient safety practices in a tertiary hospital in Cameroon",
       "link": "https://doi.org/10.1177/20420986261477866",
-      "date": "2026-08-21T00:00:00.000Z",
-      "category": "Safety / PV",
-      "priority": false
-    },
-    {
-      "source": "Therapeutic Advances in Drug Safety",
-      "tier": "journal",
-      "title": "Factors associated with medication administration errors in hospitalized pediatric patients: A scoping review",
-      "link": "https://doi.org/10.1177/20420986261478390",
       "date": "2026-08-21T00:00:00.000Z",
       "category": "Safety / PV",
       "priority": false
