@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-27T16:38:52.555Z",
+  "generated": "2026-11-28T15:29:46.219Z",
   "sources": [
     "FDA",
     "EMA",
@@ -41,6 +41,33 @@
       "date": "2026-10-30T11:11:00.000Z",
       "category": "Safety / PV",
       "priority": true
+    },
+    {
+      "source": "Federal Register (FDA)",
+      "tier": "regulator",
+      "title": "Medical Devices; Radiology Devices; Classification of the Post-Ablation Tissue Response Prediction Software",
+      "link": "https://www.federalregister.gov/documents/2026/11/30/2026-24214/medical-devices-radiology-devices-classification-of-the-post-ablation-tissue-response-prediction",
+      "date": "2026-11-28T15:29:43.940Z",
+      "category": "Regulatory / Policy",
+      "priority": false
+    },
+    {
+      "source": "Federal Register (FDA)",
+      "tier": "regulator",
+      "title": "Medical Devices; Gastroenterology-Urology Devices; Classification of the Gastrointestinal Capsule Endoscopy Analysis Software Device",
+      "link": "https://www.federalregister.gov/documents/2026/11/30/2026-24213/medical-devices-gastroenterology-urology-devices-classification-of-the-gastrointestinal-capsule",
+      "date": "2026-11-28T15:29:43.940Z",
+      "category": "Regulatory / Policy",
+      "priority": false
+    },
+    {
+      "source": "Federal Register (FDA)",
+      "tier": "regulator",
+      "title": "Global Blood Therapeutics; Withdrawal of Approval of New Drug Application for OXBRYTA (Voxelotor) Tablets, 300 Milligrams and 500 Milligrams and OXBRYTA (Voxelotor) Tablet, for Suspension, 300 Milligrams",
+      "link": "https://www.federalregister.gov/documents/2026/11/30/2026-24166/global-blood-therapeutics-withdrawal-of-approval-of-new-drug-application-for-oxbryta-voxelotor",
+      "date": "2026-11-28T15:29:43.940Z",
+      "category": "Safety / PV",
+      "priority": false
     },
     {
       "source": "EMA",
@@ -198,19 +225,19 @@
     {
       "source": "FDA",
       "tier": "regulator",
-      "title": "Insulin Pump Recall: Tandem Diabetes Removes Tandem Mobi Insulin Pumps",
-      "link": "http://www.fda.gov/medical-devices/medical-device-recalls-and-early-alerts/insulin-pump-recall-tandem-diabetes-removes-tandem-mobi-insulin-pumps",
+      "title": "Early Alert: Heraeus Medical Components Removes Vascular Guidewires",
+      "link": "http://www.fda.gov/medical-devices/medical-device-recalls-and-early-alerts/early-alert-heraeus-medical-components-removes-vascular-guidewires",
       "date": "2026-11-25T05:00:00.000Z",
-      "category": "Safety / PV",
+      "category": "Regulatory / Policy",
       "priority": false
     },
     {
       "source": "FDA",
       "tier": "regulator",
-      "title": "Early Alert: Heraeus Medical Components Removes Vascular Guidewires",
-      "link": "http://www.fda.gov/medical-devices/medical-device-recalls-and-early-alerts/early-alert-heraeus-medical-components-removes-vascular-guidewires",
+      "title": "Insulin Pump Recall: Tandem Diabetes Removes Tandem Mobi Insulin Pumps",
+      "link": "http://www.fda.gov/medical-devices/medical-device-recalls-and-early-alerts/insulin-pump-recall-tandem-diabetes-removes-tandem-mobi-insulin-pumps",
       "date": "2026-11-25T05:00:00.000Z",
-      "category": "Regulatory / Policy",
+      "category": "Safety / PV",
       "priority": false
     },
     {
@@ -864,8 +891,8 @@
     {
       "source": "FDA",
       "tier": "regulator",
-      "title": "Greenwich Rx Issues Voluntary Nationwide Recall of Compounded Sterile Products Due to Lack of Sterility Assurance",
-      "link": "http://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/greenwich-rx-issues-voluntary-nationwide-recall-compounded-sterile-products-due-lack-sterility",
+      "title": "Breckenridge Pharmaceutical, Inc. Issues Voluntary Nationwide Consumer-Level Recall of One Lot of Propranolol Hydrochloride Extended-Release Capsules, USP, 60 mg, Due to Potential Metal Contamination",
+      "link": "http://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/breckenridge-pharmaceutical-inc-issues-voluntary-nationwide-consumer-level-recall-one-lot",
       "date": "2026-11-20T05:00:00.000Z",
       "category": "Safety / PV",
       "priority": false
@@ -873,8 +900,8 @@
     {
       "source": "FDA",
       "tier": "regulator",
-      "title": "Breckenridge Pharmaceutical, Inc. Issues Voluntary Nationwide Consumer-Level Recall of One Lot of Propranolol Hydrochloride Extended-Release Capsules, USP, 60 mg, Due to Potential Metal Contamination",
-      "link": "http://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/breckenridge-pharmaceutical-inc-issues-voluntary-nationwide-consumer-level-recall-one-lot",
+      "title": "Greenwich Rx Issues Voluntary Nationwide Recall of Compounded Sterile Products Due to Lack of Sterility Assurance",
+      "link": "http://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/greenwich-rx-issues-voluntary-nationwide-recall-compounded-sterile-products-due-lack-sterility",
       "date": "2026-11-20T05:00:00.000Z",
       "category": "Safety / PV",
       "priority": false
@@ -900,15 +927,6 @@
     {
       "source": "FDA",
       "tier": "regulator",
-      "title": "Early Alert: Outset Medical Updates Use Instructions for the Tablo Console and the TabloCart with Prefiltration Drawer",
-      "link": "http://www.fda.gov/medical-devices/medical-device-recalls-and-early-alerts/early-alert-outset-medical-updates-use-instructions-tablo-console-and-tablocart-prefiltration-drawer",
-      "date": "2026-11-19T05:00:00.000Z",
-      "category": "Regulatory / Policy",
-      "priority": false
-    },
-    {
-      "source": "FDA",
-      "tier": "regulator",
       "title": "Early Alert: B. Braun Medical Inc. Updates Use Instructions for Caresite Micro Luer Access Device",
       "link": "http://www.fda.gov/medical-devices/medical-device-recalls-and-early-alerts/early-alert-b-braun-medical-inc-updates-use-instructions-caresite-micro-luer-access-device",
       "date": "2026-11-19T05:00:00.000Z",
@@ -920,6 +938,15 @@
       "tier": "regulator",
       "title": "Medical Device Correction Update Luna® G3 BPAP System (Model LG3800-30VT)",
       "link": "http://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/medical-device-correction-update-lunar-g3-bpap-system-model-lg3800-30vt",
+      "date": "2026-11-19T05:00:00.000Z",
+      "category": "Regulatory / Policy",
+      "priority": false
+    },
+    {
+      "source": "FDA",
+      "tier": "regulator",
+      "title": "Early Alert: Outset Medical Updates Use Instructions for the Tablo Console and the TabloCart with Prefiltration Drawer",
+      "link": "http://www.fda.gov/medical-devices/medical-device-recalls-and-early-alerts/early-alert-outset-medical-updates-use-instructions-tablo-console-and-tablocart-prefiltration-drawer",
       "date": "2026-11-19T05:00:00.000Z",
       "category": "Regulatory / Policy",
       "priority": false
@@ -1240,15 +1267,6 @@
       "priority": false
     },
     {
-      "source": "Federal Register (FDA)",
-      "tier": "regulator",
-      "title": "Medical Devices; Orthopedic Devices; Classification of the Wearable Vibration Device for Orthopedic Use",
-      "link": "https://www.federalregister.gov/documents/2026/11/05/2026-22589/medical-devices-orthopedic-devices-classification-of-the-wearable-vibration-device-for-orthopedic",
-      "date": "2026-11-05T00:00:00.000Z",
-      "category": "Regulatory / Policy",
-      "priority": false
-    },
-    {
       "source": "Pharmacoepidemiology & Drug Safety",
       "tier": "journal",
       "title": "Monoclonal Antibody Dispensing Around Pregnancy: A Descriptive Analysis Using Electronic Health Records in Italy",
@@ -1273,24 +1291,6 @@
       "link": "https://doi.org/10.1177/20420986261505945",
       "date": "2026-11-05T00:00:00.000Z",
       "category": "Safety / PV",
-      "priority": false
-    },
-    {
-      "source": "Federal Register (FDA)",
-      "tier": "regulator",
-      "title": "Potency Assurance for Cellular and Gene Therapy Products; Guidance for Industry; Availability",
-      "link": "https://www.federalregister.gov/documents/2026/11/03/2026-22427/potency-assurance-for-cellular-and-gene-therapy-products-guidance-for-industry-availability",
-      "date": "2026-11-03T00:00:00.000Z",
-      "category": "Regulatory / Policy",
-      "priority": false
-    },
-    {
-      "source": "Federal Register (FDA)",
-      "tier": "regulator",
-      "title": "Recommendations for Reducing the Risk of Transfusion-Transmitted Hepatitis B Virus; Guidance for Industry; Availability",
-      "link": "https://www.federalregister.gov/documents/2026/11/03/2026-22369/recommendations-for-reducing-the-risk-of-transfusion-transmitted-hepatitis-b-virus-guidance-for",
-      "date": "2026-11-03T00:00:00.000Z",
-      "category": "Regulatory / Policy",
       "priority": false
     },
     {
